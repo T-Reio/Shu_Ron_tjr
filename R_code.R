@@ -1,4 +1,5 @@
-tstats_npb<-read.csv("C:/Users/T-Reio/Master_thesis/team_stats_npb.csv",header=T,sep=",")
+library(data.table)
+tstats_npb<-fread("C:/Users/T-Reio/Master_thesis/team_stats_npb.csv",header=T,sep=",")
 summary(tstats_npb)
 Avg<-tstats_npb$AVG
 Obp<-tstats_npb$OBP
@@ -7,6 +8,7 @@ Slg<-tstats_npb$SLG
 Runs<-tstats_npb$Runs
 plot(Avg,Runs)
 plot(Obp,Runs)
+plot(Slg,Runs)
 RegObp<-lm(Runs~Obp,data=tstats_npb)
 RegAvg<-lm(Runs~Avg,data=tstats_npb)
 RegSlg<-lm(Runs~Slg,data=tstats_npb)
@@ -16,3 +18,12 @@ summary(RegObp)
 cor(Avg,Runs)
 cor(Obp,Runs)
 cor(Slg,Runs)
+cor(Avg,WA)
+cor(Obp,WA)
+cor(Slg,WA)
+OPS=Obp+Slg
+RegOPS<-lm(Runs~OPS,data=tstats_npb)
+summary(RegOPS)
+transform(tstats_npb,wOBA=(0.692*(tstats_npb$BB-tstats_npb$IB) + 0.73 * tstats_npb$HBP + 0.865 * tstats_npb$Basehit+1.334 * tstats_npb$Double+1.725 * tstats_npb$Triple+2.065 *tstats_npb$HR) / ( tstats_npb$AB + tstats_npb$BB - tstats_npb$IB + tstats_npb$HBP + tstats_npb$SF))
+RegwOBA<-lm(Runs~wOBA,data=tstats_npb)
+summary(RegwOBA)
