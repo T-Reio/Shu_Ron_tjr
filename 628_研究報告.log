@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.sjis) (TeX Live 2016/W32TeX) (preloaded format=platex 2017.6.25)  14 JUN 2018 13:56
+This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.sjis) (TeX Live 2016/W32TeX) (preloaded format=platex 2017.6.25)  18 JUN 2018 12:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -105,8 +105,8 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layoutvoffset=\dimen142
 \Gm@dimlist=\toks16
 )
-(c:/texlive/2016/texmf-dist/tex/latex/base/size12.clo
-File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+(c:/texlive/2016/texmf-dist/tex/latex/base/size11.clo
+File: size11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 (c:/texlive/2016/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
 (c:/texlive/2016/texmf-dist/tex/latex/graphics/graphicx.sty
@@ -707,9 +707,9 @@ LaTeX Info: Redefining \rmfamily on input line 40.
 LaTeX Info: Redefining \sffamily on input line 43.
 LaTeX Info: Redefining \ttfamily on input line 46.
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 49.
+(Font)              scaled to size 10.52292pt on input line 49.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 49.
+(Font)              scaled to size 10.52292pt on input line 49.
 )
 (c:/texlive/2016/texmf-dist/tex/latex/beamer/themes/theme/beamerthemeAnnarbor.s
 ty
@@ -770,23 +770,23 @@ LaTeX Font Info:    ... okay on input line 18.
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: includehead includefoot 
-* h-part:(L,W,R)=(11.74988pt, 340.6956pt, 11.74988pt)
+* h-part:(L,W,R)=(10.95003pt, 342.2953pt, 10.95003pt)
 * v-part:(T,H,B)=(0.0pt, 273.14662pt, 0.0pt)
 * \paperwidth=364.19536pt
 * \paperheight=273.14662pt
-* \textwidth=340.6956pt
+* \textwidth=342.2953pt
 * \textheight=244.6939pt
-* \oddsidemargin=-60.52011pt
-* \evensidemargin=-60.52011pt
+* \oddsidemargin=-61.31996pt
+* \evensidemargin=-61.31996pt
 * \topmargin=-72.26999pt
 * \headheight=14.22636pt
 * \headsep=0.0pt
-* \topskip=12.0pt
+* \topskip=11.0pt
 * \footskip=14.22636pt
 * \marginparwidth=4.0pt
 * \marginparsep=10.0pt
 * \columnsep=10.0pt
-* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
@@ -905,9 +905,9 @@ Overfull \hbox (12.28413pt too wide) in paragraph at lines 18--18
  []
 
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 16.60605pt on input line 21.
+(Font)              scaled to size 13.83836pt on input line 21.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 16.60605pt on input line 21.
+(Font)              scaled to size 13.83836pt on input line 21.
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
 (Font)              scaled to size 7.68799pt on input line 21.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
@@ -928,6 +928,22 @@ Overfull \hbox (12.28413pt too wide) has occurred while \output is active
 [1
 
 ]
+
+LaTeX Font Warning: Font shape `JT1/mc/m/it' undefined
+(Font)              using `JT1/mc/m/n' instead on input line 38.
+
+
+LaTeX Font Warning: Font shape `JY1/mc/m/it' undefined
+(Font)              using `JY1/mc/m/n' instead on input line 38.
+
+
+Overfull \hbox (12.28413pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[2
+
+]
 \tf@nav=\write6
 \openout6 = `628_研究報告.nav'.
 
@@ -937,27 +953,30 @@ Overfull \hbox (12.28413pt too wide) has occurred while \output is active
 \tf@snm=\write8
 \openout8 = `628_研究報告.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 25.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 25.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 40.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 40.
  (./628_研究報告.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 25.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 25.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 40.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 40.
 Package rerunfilecheck Info: File `628_研究報告.out' has not changed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+(rerunfilecheck)             Checksum: 4CA0FF56E3EE124326A4720E136735D1;47.
 
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 25.
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 40.
  ) 
 Here is how much of TeX's memory you used:
- 16384 strings out of 493683
- 315699 string characters out of 6152642
- 395816 words of memory out of 5000000
- 19572 multiletter control sequences out of 15000+600000
- 13717 words of font info for 48 fonts, out of 8000000 for 9000
+ 16440 strings out of 493683
+ 317022 string characters out of 6152642
+ 396817 words of memory out of 5000000
+ 19628 multiletter control sequences out of 15000+600000
+ 14537 words of font info for 51 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
- 56i,17n,55p,394b,685s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 56i,17n,57p,394b,685s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on 628_研究報告.dvi (1 page, 14816 bytes).
+Output written on 628_研究報告.dvi (2 pages, 25368 bytes).

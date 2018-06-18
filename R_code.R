@@ -30,6 +30,9 @@ WARegOPS1<-lm(WA~OPS+ERuns,data=tstats_npb)
 SRRegOPS<-lm(Runs~Obp+Slg,data=tstats_npb)
 SWARegOPS<-lm(WA~Obp+Slg+ERuns,data=tstats_npb)
 
+SRRegAPS<-lm(Runs~Avg+Slg,data=tstats_npb)
+SWARegAPS<-lm(WA~Avg+Slg+ERuns,data=tstats_npb)
+
 
 cor(Avg,Runs)
 cor(Obp,Runs)
@@ -58,3 +61,10 @@ summary(WARegOPS1)
 summary(SRRegOPS)
 summary(SWARegOPS)
 
+summary(SRRegAPS)
+summary(SWARegAPS)
+
+mean(Slg)
+median(Slg)
+mean(Obp)
+median(Obp)
