@@ -143,13 +143,55 @@ Players with at least 200 at bat (打数) : N=8,817
 
 \begin{frame}\frametitle{Hakes \& Sauer}
 
-\begin{itemize}
+ \begin{itemize}
+ \item \textit{``Moneyball Hypothesis''}
+ 
+ : Michael Lewis's claim that the valuation of skills in MLB player's market was grossly inefficient.
+ 
+ \item Members of the Society for American Baseball Research (In short, SABR) have studied that
+ on-base percentage (OBP) plays more important role to consider the winning percentage than batting average.
+ 
+ \end{itemize}
 
-\item \textit{``Moneyball Hypothesis''}
+\end{frame}
 
-: Michael Lewis's claim that the valuation of skills in MLB player's market was grossly inefficient.
+\begin{frame}
 
-\end{itemize}
+\begin{center}
+
+\includegraphics[width=9cm,height=7.75cm]{Hakes_Sauer_T1.pdf}
+
+\end{center}
+
+\end{frame}
+
+\begin{frame}
+
+\begin{center}
+
+\includegraphics[width=9cm,height=7.75cm]{Hakes_Sauer_T3.pdf}
+
+\end{center}
+
+\end{frame}
+
+\begin{frame}
+
+\begin{center}
+
+\includegraphics[width=11cm,height=5.75cm]{Hakes_Sauer_F1.pdf}
+
+\end{center}
+
+\end{frame}
+
+\begin{frame}
+
+\begin{center}
+
+\includegraphics[width=10.5cm,height=8cm]{Hakes_Sauer_F2.pdf}
+
+\end{center}
 
 \end{frame}
 
@@ -157,20 +199,50 @@ Players with at least 200 at bat (打数) : N=8,817
 
  \begin{itemize}
  
- \item How about other batting indexes other than batting average?
+ \item On-base percentage may be more important than batting average, when it comes to consider raising winning percentage, and it reflects players' effort in similar way to batting average.
  
+ $\Rightarrow$ Round numbers in on-base percentage may act as reference point, as well as batting-average : .350 or .400.
  
  \end{itemize}
 
 \end{frame}
 
+\begin{frame}\frametitle{Data}
 
+ \begin{itemize}
+ 
+ \item Sortable team stats of Nippon Professional Baseball (NPB), from 2008 to 2017.
+ 
+ : N=120
+ 
+ \item Indexes : Win average (勝率 : WA), Runs (得点 : R) Runs allowed (失点 : RA), Batting average (AVG),
+ On-base percentage (出塁率 : OBP) Slugging percentage(長打率 : SLG), OPS (OBP + SLG).
+ 
+ \end{itemize}
 
+\end{frame}
 
+\begin{frame}\frametitle{Model}
 
+ \begin{itemize}
+ 
+ \item Confirm that also in NPB, OBP contributes better to the Win Average than AVG or SLG.
+ 
+ Applying OLS,
+ 
+ \[\textit{WA}_i = \beta \mathbf{X}_i + \textit{RA}_i + u_i \]
+ 
+ \[\textit{R}_i = \gamma \mathbf{X}_i + v_i \]
+  
+  \begin{align*}
+  \textit{WA}_i &: \text{Win average of team } i \\
+  \textit{R}_i &: \text{Runs of team } i \\
+  \mathbf{X}_i &: \text{OBP, SLG and AVG of the team } i
+  \end{align*}
+ 
+ \end{itemize}
 
-
-
+\end{frame}
 
 
 

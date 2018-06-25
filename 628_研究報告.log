@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.sjis) (TeX Live 2016/W32TeX) (preloaded format=platex 2017.6.25)  25 JUN 2018 16:44
+This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.sjis) (TeX Live 2016/W32TeX) (preloaded format=platex 2017.6.25)  25 JUN 2018 18:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1050,9 +1050,9 @@ Overfull \hbox (12.28413pt too wide) has occurred while \output is active
 
 ]
 LaTeX Font Info:    Font shape `JT1/mc/m/it' will be
-(Font)              scaled to size 11.53198pt on input line 154.
+(Font)              scaled to size 11.53198pt on input line 156.
 LaTeX Font Info:    Font shape `JY1/mc/m/it' will be
-(Font)              scaled to size 11.53198pt on input line 154.
+(Font)              scaled to size 11.53198pt on input line 156.
 
 Overfull \hbox (12.28413pt too wide) has occurred while \output is active
  [][][][]  
@@ -1061,11 +1061,70 @@ Overfull \hbox (12.28413pt too wide) has occurred while \output is active
 [9
 
 ]
+File: Hakes_Sauer_T1.pdf Graphic file (type pdf)
+ <Hakes_Sauer_T1.pdf>
 Overfull \hbox (12.28413pt too wide) has occurred while \output is active
  [][][][]  
  []
 
 [10
+
+]
+File: Hakes_Sauer_T3.pdf Graphic file (type pdf)
+ <Hakes_Sauer_T3.pdf>
+Overfull \hbox (12.28413pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[11
+
+]
+File: Hakes_Sauer_F1.pdf Graphic file (type pdf)
+ <Hakes_Sauer_F1.pdf>
+Overfull \hbox (12.28413pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[12
+
+]
+File: Hakes_Sauer_F2.pdf Graphic file (type pdf)
+ <Hakes_Sauer_F2.pdf>
+Overfull \hbox (12.28413pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[13
+
+]
+Overfull \hbox (12.28413pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[14
+
+]
+Overfull \hbox (12.28413pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[15
+
+]
+LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
+(Font)              scaled to size 8.64899pt on input line 245.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 8.64899pt on input line 245.
+LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
+(Font)              scaled to size 6.72699pt on input line 245.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 6.72699pt on input line 245.
+
+Overfull \hbox (12.28413pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[16
 
 ]
 \tf@nav=\write6
@@ -1077,11 +1136,11 @@ Overfull \hbox (12.28413pt too wide) has occurred while \output is active
 \tf@snm=\write8
 \openout8 = `628_研究報告.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 180.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 180.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 252.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 252.
  (./628_研究報告.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 180.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 180.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 252.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 252.
 Package rerunfilecheck Info: File `628_研究報告.out' has not changed.
 (rerunfilecheck)             Checksum: 4CA0FF56E3EE124326A4720E136735D1;47.
 
@@ -1092,15 +1151,15 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 180.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 252.
  ) 
 Here is how much of TeX's memory you used:
- 16576 strings out of 493683
- 319847 string characters out of 6152642
+ 16625 strings out of 493683
+ 320801 string characters out of 6152642
  396816 words of memory out of 5000000
- 19727 multiletter control sequences out of 15000+600000
- 22069 words of font info for 75 fonts, out of 8000000 for 9000
+ 19766 multiletter control sequences out of 15000+600000
+ 23927 words of font info for 83 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
  56i,17n,57p,394b,685s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on 628_研究報告.dvi (10 pages, 98320 bytes).
+Output written on 628_研究報告.dvi (16 pages, 152360 bytes).
