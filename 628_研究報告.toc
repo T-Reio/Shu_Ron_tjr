@@ -1,2 +1,6 @@
 \beamer@endinputifotherversion {3.36pt}
 \beamer@sectionintoc {1}{Introduction}{2}{0}{1}
+\beamer@sectionintoc {2}{Pope \& Simonsohn}{4}{0}{2}
+\beamer@sectionintoc {3}{Hakes \& Sauer}{10}{0}{3}
+\beamer@sectionintoc {4}{Reserch Extension}{16}{0}{4}
+\beamer@sectionintoc {5}{Appendix}{21}{0}{5}
