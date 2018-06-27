@@ -66,3 +66,8 @@ median(SLG)
 mean(OBP)
 median(OBP)
 
+
+setwd("C:/Users/T-Reio/Master_thesis")
+library(stargazer)
+stargazer(SRRegOPS,SRRegAPS, title="Contribution to winning averages",out="C:/Users/T-Reio/Master_thesis/R_R_0628",align=T,no.space=T)
+stargazer(SWARegOPS,SWARegAPS, title="Contribution to runs",out="C:/Users/T-Reio/Master_thesis/R_WA_0628",align=T,no.space=T)
