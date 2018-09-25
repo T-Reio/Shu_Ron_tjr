@@ -1,0 +1,161 @@
+\documentclass[dvipdfmx]{article}
+\usepackage{mathpazo}
+\usepackage{amsmath,amssymb}
+\usepackage{array}
+\usepackage[hiresbb]{graphicx}
+\usepackage{textcomp}
+\usepackage{dcolumn}
+\usepackage{here}
+\usepackage{lscape}
+\usepackage[top=30truemm,bottom=30truemm,left=25truemm,right=25truemm]{geometry}
+\begin{document}
+
+\title{Results}
+\author{Reio.T}
+\date{9/27/2018}
+\maketitle
+
+\normalsize
+\setlength\intextsep{0pt}
+
+Data = from 1957 to 2017 ($n=53090$)
+
+\section{Full-sample analysis}
+
+
+\begin{itemize}
+  \item Batting-Average
+  ($n=17788$)
+   \begin{center}
+
+    \begin{figure}[H]
+     \centering
+     \includegraphics[width = 14cm, height = 10cm]{graphs/AVG_200PA.png}
+    \end{figure}
+
+
+     *difference between the number of batters with .299 (0.37\%)
+     and .300 (1.13\%) is significant at 0.1\% ($\chi^2 = 69.03$)
+
+     **Also, the difference between those with .299, .298 (0.87\%)
+     and with .300 and .301 (1.91\%) is significant at 0.1\%
+     ($\chi^2 = 70.26$)
+
+   \end{center}
+
+  \item Other Index for performance
+
+  \begin{figure}[H]
+   \centering
+   \begin{tabular}{cc}
+    \includegraphics[width = 8cm, height = 6cm]{graphs/OBP_200PA.png} &
+    \includegraphics[width = 8cm, height = 6cm]{graphs/OBP_200PA.png} \\
+    \includegraphics[width = 8cm, height = 6cm]{graphs/H_90PA.png} &
+    \includegraphics[width = 8cm, height = 6cm]{graphs/HR_90PA.png} \\
+    \includegraphics[width = 8cm, height = 6cm]{graphs/RBI_90PA.png} &
+    \includegraphics[width = 8cm, height = 6cm]{graphs/SB_5SB.png} \\
+   \end{tabular}
+ \end{figure}
+
+
+
+  \begin{landscape}
+    \input{results/sal_index}
+  \end{landscape}
+
+
+
+   \begin{landscape}
+     \input{results/sal_fwar}
+
+     \include{results/sal_off}
+   \end{landscape}
+
+  \end{itemize}
+
+ \section{Restricted-sample andalysis}
+
+ Behavior of the players may be influenced by the Season-specific effect.
+
+ Now I devide sample year into 4 era, according to three important
+ events for the players` contract:
+
+  \begin{itemize}
+    \item Before ``Free Agent'' system was introduced: -1975
+    ($n = 4292$)
+
+    \item Before ``Strike'' of the players occurred: 1976-1994
+    ($n = 5331$)
+
+    \item Before `\textit{Moneyball}` was published: 1995-2001
+    ($n = 2028$)
+
+    \item After `\textit{Moneyball}`: 2002-
+    ($n = 5555$)
+  \end{itemize}
+
+ \begin{figure}[H]
+   \centering
+
+   \includegraphics[width = 14cm, height = 10cm]{graphs/AVG_bffa.png}
+
+   .299 to .300: significant at 5\% ($\chi^2 = 3.04, p = 0.0406$)
+
+   .298, .299 to .300, .301: significant at 1\% ($\chi^2 = 7.34, p = 0.0034$)
+ \end{figure}
+
+ \begin{figure}[H]
+   \centering
+   \includegraphics[width = 14cm, height = 10cm]
+   {graphs/AVG_fast}
+
+   .299 to .300: significant at 0.1\% ($\chi^2 = 31.88$)
+
+   .298, .299 to .300, .301: significant at 0.1\% ($\chi^2 = 31.60$)
+
+ \end{figure}
+
+ \begin{figure}[H]
+   \centering
+   \includegraphics[width = 14cm, height = 10cm]
+   {graphs/AVG_stmb}
+
+   .299 to .300: significant at 0.1\% ($\chi^2 = 19.32$)
+
+   .298, .299 to .300, .301: significant at 1\% ($\chi^2 = 7.28, p = 0.0034$)
+ \end{figure}
+
+ \begin{figure}[H]
+   \centering
+   \includegraphics[width = 14cm, height = 10cm]
+   {graphs/AVG_afmb}
+
+   .299 to .300: significant at 0.1\% ($\chi^2 = 16.67$)
+
+   .298, .299 to .300, .301: significant at 0.1\% ($\chi^2 = 23.10$)
+ \end{figure}
+
+ \begin{landscape}
+   \input{results/sal_fwar_bfst}
+
+   \include{results/sal_bat_bfst}
+ \end{landscape}
+
+ \begin{landscape}
+   \input{results/sal_fwar_stmb}
+
+   \include{results/sal_bat_stmb}
+ \end{landscape}
+
+ \begin{landscape}
+   \input{results/sal_fwar_afmb}
+
+   \include{results/sal_bat_afmb}
+ \end{landscape}
+
+  \input{results/sal_fwar_didid}
+  \input{results/sal_bat_didid}
+
+
+
+\end{document}

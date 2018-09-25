@@ -1,0 +1,41 @@
+\documentclass[dvipdfmx]{jsarticle}
+\usepackage{mathpazo}
+\usepackage{amsmath,amssymb}
+\usepackage{array}
+\usepackage[hiresbb]{graphicx}
+\usepackage{tikz}
+\usepackage{textcomp}
+\usepackage{dcolumn}
+\begin{document}
+
+\title{分析結果 グラフ}
+\author{Reio.T}
+\date{}
+\maketitle
+
+\begin{center}
+
+  \input{results/team_stats_R_a.tex}
+  \input{results/team_stats_R_b}
+
+\newpage
+
+  \includegraphics[width=14cm, height = 10cm]{graphs/hist_AVG_all.png}
+  \includegraphics[width=14cm, height = 10cm]{graphs/hist_OBP_all.png}
+  \includegraphics[width=14cm, height = 10cm]{graphs/hist_OPS_all.png}
+  \includegraphics[width=14cm, height = 10cm]{graphs/hist_HR_all.png}
+  \includegraphics[width=14cm, height = 10cm]{graphs/hist_H_all.png}
+  \includegraphics[width=14cm, height = 10cm]{graphs/hist_RBI_all.png}
+  \includegraphics[width=14cm, height = 10cm]{graphs/hist_SB_all.png}
+  \includegraphics[width=14cm, height = 10cm]{graphs/hist_PA_all.png}
+
+  \include{results/Sal_OLS_include}
+
+  \include{results/Sal_fixed_effect}
+
+  \includegraphics[width = 14cm, height = 10cm]{graphs/hist_AVG_beforemb.png}
+  \includegraphics[width = 14cm, height = 10cm]{graphs/hist_AVG_aftermb.png}
+
+\end{center}
+
+\end{document}
