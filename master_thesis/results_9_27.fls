@@ -145,7 +145,8 @@ INPUT graphs/AVG_200PA.png
 INPUT extractbb -O graphs/AVG_200PA.png
 INPUT graphs/OBP_200PA.png
 INPUT extractbb -O graphs/OBP_200PA.png
-INPUT graphs/OBP_200PA.png
+INPUT graphs/OPS_200PA.png
+INPUT extractbb -O graphs/OPS_200PA.png
 INPUT graphs/H_90PA.png
 INPUT extractbb -O graphs/H_90PA.png
 INPUT graphs/HR_90PA.png
@@ -198,6 +199,10 @@ INPUT results/sal_fwar_didid.tex
 INPUT results/sal_fwar_didid.tex
 INPUT results/sal_bat_didid.tex
 INPUT results/sal_bat_didid.tex
+INPUT team_stats_R_a.tex
+INPUT team_stats_R_a.tex
+INPUT team_stats_R_b.tex
+INPUT team_stats_R_b.tex
 INPUT results_9_27.aux
 INPUT results/sal_off.aux
 INPUT results/sal_off.aux

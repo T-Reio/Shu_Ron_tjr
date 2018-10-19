@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (sjis) (TeX Live 2016/W32TeX) (preloaded format=platex 2017.6.25)  25 SEP 2018 13:42
+This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (sjis) (TeX Live 2016/W32TeX) (preloaded format=platex 2017.6.25)  28 SEP 2018 15:21
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -265,6 +265,12 @@ LaTeX Warning: Label `' multiply defined.
 
 LaTeX Warning: Label `' multiply defined.
 
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
 )
 \openout1 = `results_9_27.aux'.
 
@@ -383,8 +389,8 @@ File: graphs/AVG_200PA.png Graphic file (type bmp)
  <graphs/AVG_200PA.png>
 File: graphs/OBP_200PA.png Graphic file (type bmp)
  <graphs/OBP_200PA.png>
-File: graphs/OBP_200PA.png Graphic file (type bmp)
- <graphs/OBP_200PA.png>
+File: graphs/OPS_200PA.png Graphic file (type bmp)
+ <graphs/OPS_200PA.png>
 File: graphs/H_90PA.png Graphic file (type bmp)
  <graphs/H_90PA.png>
 File: graphs/HR_90PA.png Graphic file (type bmp)
@@ -464,7 +470,12 @@ File: graphs/AVG_afmb.png Graphic file (type bmp)
 ] (./results/sal_fwar_didid.tex) (./results/sal_bat_didid.tex) [15
 
 
-] [16] (./results_9_27.aux (./results/sal_off.aux) (./results/sal_bat_bfst.aux) (./results/sal_bat_stmb.aux) (./results/sal_bat_afmb.aux))
+] [16] (./team_stats_R_a.tex) [17
+
+] (./team_stats_R_b.tex) [18
+
+
+] (./results_9_27.aux (./results/sal_off.aux) (./results/sal_bat_bfst.aux) (./results/sal_bat_stmb.aux) (./results/sal_bat_afmb.aux))
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -473,12 +484,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 2860 strings out of 493683
- 38018 string characters out of 6152642
+ 2869 strings out of 493683
+ 38193 string characters out of 6152642
  114749 words of memory out of 5000000
- 6322 multiletter control sequences out of 15000+600000
+ 6324 multiletter control sequences out of 15000+600000
  27351 words of font info for 92 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
- 27i,9n,26p,263b,418s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 27i,9n,26p,265b,418s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on results_9_27.dvi (16 pages, 35088 bytes).
+Output written on results_9_27.dvi (18 pages, 38016 bytes).

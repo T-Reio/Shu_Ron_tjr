@@ -33,7 +33,9 @@ wRC <- stats_87$`wRC+`
 wOBA <- stats_87$wOBA
 DEFFENCE <- stats_87$Def
 WPA <- stats_87$WPA
-nWPA <- stats_87$`-WPA`
+nWPA <- -stats_87$`-WPA`
+WPA <- WPA/stats_87$G
+nWPA <- nWPA/stats_87$G
 
 #指標間の比較
 
@@ -65,14 +67,14 @@ M3 <- lm(L_Sal ~ fWAR * ABOVE_300 + AGE + AGE_sq)
 M4 <- lm(L_Sal ~ BATTING * ABOVE_300 + FIELDING + BaseRun + AGE + AGE_sq)
 M5 <- felm(L_Sal ~ fWAR * ABOVE_300 + AGE + AGE_sq | TEAM)
 M6 <- felm(L_Sal ~ BATTING * ABOVE_300 + FIELDING + BaseRun + AGE + AGE_sq | POS)
-M7 <- felm(L_Sal ~ fWAR * ABOVE_300 + AGE + AGE_sq | individual)
+M7 <- felm(L_Sal ~ fWAR * ABOVE_300 | individual)
 M8 <- felm(L_Sal ~ BATTING * ABOVE_300 + FIELDING + BaseRun + AGE + AGE_sq | POS + TEAM )
-M9 <- felm(L_Sal ~ fWAR * ABOVE_300 + AGE + AGE_sq | individual + TEAM)
-M10 <- felm(L_Sal ~ BATTING * ABOVE_300 + FIELDING + BaseRun + AGE + AGE_sq |
-             individual + TEAM)
-M11 <- felm(L_Sal ~ fWAR * ABOVE_300 + AGE + AGE_sq  + WPA + nWPA| individual + TEAM)
+M9 <- felm(L_Sal ~ fWAR * ABOVE_300 + WPA + nWPA | individual + TEAM)
+M10 <- felm(L_Sal ~ BATTING * ABOVE_300 + FIELDING + BaseRun + WPA + nWPA |
+             individual + TEAM + POS)
+M11 <- felm(L_Sal ~ fWAR * ABOVE_300 + AGE + AGE_sq + WPA + nWPA| TEAM)
 M12 <- felm(L_Sal ~ BATTING * ABOVE_300 + FIELDING + BaseRun + AGE + AGE_sq + WPA + nWPA|
-              individual + TEAM)
+              POS + TEAM)
 
 summary(M0)
 summary(M1)
@@ -92,46 +94,40 @@ summary(M12)
 
 stats_bfst <- subset(stats_87, stats_87$Season <= 1994)
 
-Sal_AVG_bfst <- stats_bfst$`AVG ANNUAL`
-AGE_bfst <- stats_bfst$Age
-AGE_sq_bfst <- AGE_bfst^2
-fWAR_bfst <- stats_bfst$WAR
-ABOVE_300_bfst <- stats_bfst$AVG_above
-TEAM_bfst <- stats_bfst$TEAM_nextyr
-POS_bfst <- stats_bfst$POS
-L_Sal_bfst <- stats_bfst$`Log AVG ANNUAL`
-individual_bfst <- stats_bfst$playerid
-BATTING_bfst <- stats_bfst$Bat
-FIELDING_bfst <- stats_bfst$Fld
-BaseRun_bfst <- stats_bfst$BsR
-AVG_bfst <- stats_bfst$AVG
-Season_bfst <- stats_bfst$Season
-DEFFENCE_bfst <- stats_bfst$Def
-WPA_bfst <- stats_bfst$WPA
-nWPA_bfst <- stats_bfst$`-WPA`
+Sal_AVG <- stats_bfst$`AVG ANNUAL`
+AGE <- stats_bfst$Age
+AGE_sq <- AGE^2
+fWAR <- stats_bfst$WAR
+ABOVE_300 <- stats_bfst$AVG_above
+TEAM <- stats_bfst$TEAM_nextyr
+POS <- stats_bfst$POS
+L_Sal <- stats_bfst$`Log AVG ANNUAL`
+individual <- stats_bfst$playerid
+BATTING <- stats_bfst$Bat
+FIELDING <- stats_bfst$Fld
+BaseRun <- stats_bfst$BsR
+AVG <- stats_bfst$AVG
+Season <- stats_bfst$Season
+DEFFENCE <- stats_bfst$Def
+WPA <- stats_bfst$WPA
+nWPA <- -stats_bfst$`-WPA`
+WPA <- WPA/stats_bfst$G
+nWPA <- nWPA/stats_bfst$G
 
-M0_bfst <- lm(L_Sal_bfst ~ AVG_bfst * ABOVE_300_bfst + FIELDING_bfst + BaseRun_bfst)
-M1_bfst <- lm(L_Sal_bfst ~ fWAR_bfst * ABOVE_300_bfst)
-M2_bfst <- lm(L_Sal_bfst ~ BATTING_bfst * ABOVE_300_bfst + FIELDING_bfst + BaseRun_bfst)
-M3_bfst <- lm(L_Sal_bfst ~ fWAR_bfst * ABOVE_300_bfst + AGE_bfst + AGE_sq_bfst)
-M4_bfst <- lm(L_Sal_bfst ~ BATTING_bfst * ABOVE_300_bfst + FIELDING_bfst + BaseRun_bfst
-              + AGE_bfst + AGE_sq_bfst)
-M5_bfst <- felm(L_Sal_bfst ~ fWAR_bfst * ABOVE_300_bfst + AGE_bfst + AGE_sq_bfst | TEAM_bfst)
-M6_bfst <- felm(L_Sal_bfst ~ BATTING_bfst * ABOVE_300_bfst + FIELDING_bfst + BaseRun_bfst
-                + AGE_bfst + AGE_sq_bfst | POS_bfst)
-M7_bfst <- felm(L_Sal_bfst ~ fWAR_bfst * ABOVE_300_bfst + AGE_bfst + AGE_sq_bfst 
-                | individual_bfst)
-M8_bfst <- felm(L_Sal_bfst ~ BATTING_bfst * ABOVE_300_bfst + FIELDING_bfst + BaseRun_bfst
-                + AGE_bfst + AGE_sq_bfst | POS_bfst + TEAM_bfst )
-M9_bfst <- felm(L_Sal_bfst ~ fWAR_bfst * ABOVE_300_bfst + AGE_bfst + AGE_sq_bfst 
-                | individual_bfst + TEAM_bfst)
-M10_bfst <- felm(L_Sal_bfst ~ BATTING_bfst * ABOVE_300_bfst + FIELDING_bfst + BaseRun_bfst
-                 + AGE_bfst + AGE_sq_bfst | individual_bfst + TEAM_bfst)
-M11_bfst <- felm(L_Sal_bfst ~ fWAR_bfst * ABOVE_300_bfst + AGE_bfst + AGE_sq_bfst  
-                 + WPA_bfst + nWPA_bfst| individual_bfst + TEAM_bfst)
-M12_bfst <- felm(L_Sal_bfst ~ BATTING_bfst * ABOVE_300_bfst + FIELDING_bfst + BaseRun_bfst
-                 + AGE_bfst + AGE_sq_bfst + WPA_bfst + nWPA_bfst
-                 | individual_bfst + TEAM_bfst)
+M1_bfst <- lm(L_Sal ~ fWAR * ABOVE_300)
+M2_bfst <- lm(L_Sal ~ BATTING * ABOVE_300 + FIELDING + BaseRun)
+M3_bfst <- lm(L_Sal ~ fWAR * ABOVE_300 + AGE + AGE_sq)
+M4_bfst <- lm(L_Sal ~ BATTING * ABOVE_300 + FIELDING + BaseRun + AGE + AGE_sq)
+M5_bfst <- felm(L_Sal ~ fWAR * ABOVE_300 + AGE + AGE_sq | TEAM)
+M6_bfst <- felm(L_Sal ~ BATTING * ABOVE_300 + FIELDING + BaseRun + AGE + AGE_sq | POS)
+M7_bfst <- felm(L_Sal ~ fWAR * ABOVE_300 | individual)
+M8_bfst <- felm(L_Sal ~ BATTING * ABOVE_300 + FIELDING + BaseRun + AGE + AGE_sq | POS + TEAM )
+M9_bfst <- felm(L_Sal ~ fWAR * ABOVE_300 + WPA + nWPA | individual + TEAM)
+M10_bfst <- felm(L_Sal ~ BATTING * ABOVE_300 + FIELDING + BaseRun + WPA + nWPA |
+              individual + TEAM + POS)
+M11_bfst <- felm(L_Sal ~ fWAR * ABOVE_300 + AGE + AGE_sq + WPA + nWPA| TEAM)
+M12_bfst <- felm(L_Sal ~ BATTING * ABOVE_300 + FIELDING + BaseRun + AGE + AGE_sq + WPA + nWPA|
+              POS + TEAM)
 
 summary(M0_bfst)
 summary(M1_bfst)
@@ -151,47 +147,40 @@ summary(M12_bfst)
 
 stats_stmb <- subset(stats_87, stats_87$Season >= 1995 & stats_87$Season <= 2001)
 
-Sal_AVG_stmb <- stats_stmb$`AVG ANNUAL`
-AGE_stmb <- stats_stmb$Age
-AGE_sq_stmb <- AGE_stmb^2
-fWAR_stmb <- stats_stmb$WAR
-ABOVE_300_stmb <- stats_stmb$AVG_above
-TEAM_stmb <- stats_stmb$TEAM_nextyr
-POS_stmb <- stats_stmb$POS
-L_Sal_stmb <- stats_stmb$`Log AVG ANNUAL`
-individual_stmb <- stats_stmb$playerid
-BATTING_stmb <- stats_stmb$Bat
-FIELDING_stmb <- stats_stmb$Fld
-BaseRun_stmb <- stats_stmb$BsR
-AVG_stmb <- stats_stmb$AVG
-Season_stmb <- stats_stmb$Season
-DEFFENCE_stmb <- stats_stmb$Def
-WPA_stmb <- stats_stmb$WPA
-nWPA_stmb <- stats_stmb$`-WPA`
+Sal_AVG <- stats_stmb$`AVG ANNUAL`
+AGE <- stats_stmb$Age
+AGE_sq <- AGE^2
+fWAR <- stats_stmb$WAR
+ABOVE_300 <- stats_stmb$AVG_above
+TEAM <- stats_stmb$TEAM_nextyr
+POS <- stats_stmb$POS
+L_Sal <- stats_stmb$`Log AVG ANNUAL`
+individual <- stats_stmb$playerid
+BATTING <- stats_stmb$Bat
+FIELDING <- stats_stmb$Fld
+BaseRun <- stats_stmb$BsR
+AVG <- stats_stmb$AVG
+Season <- stats_stmb$Season
+DEFFENCE <- stats_stmb$Def
+WPA <- stats_stmb$WPA
+nWPA <- -stats_stmb$`-WPA`
+WPA <- WPA/stats_stmb$G
+nWPA <- nWPA/stats_stmb$G
 
-M0_stmb <- lm(L_Sal_stmb ~ AVG_stmb * ABOVE_300_stmb + FIELDING_stmb + BaseRun_stmb)
-M1_stmb <- lm(L_Sal_stmb ~ fWAR_stmb * ABOVE_300_stmb)
-M2_stmb <- lm(L_Sal_stmb ~ BATTING_stmb * ABOVE_300_stmb + FIELDING_stmb + BaseRun_stmb)
-M3_stmb <- lm(L_Sal_stmb ~ fWAR_stmb * ABOVE_300_stmb + AGE_stmb + AGE_sq_stmb)
-M4_stmb <- lm(L_Sal_stmb ~ BATTING_stmb * ABOVE_300_stmb + FIELDING_stmb
-              + BaseRun_stmb + AGE_stmb + AGE_sq_stmb)
-M5_stmb <- felm(L_Sal_stmb ~ fWAR_stmb * ABOVE_300_stmb + AGE_stmb + AGE_sq_stmb 
-                | TEAM_stmb)
-M6_stmb <- felm(L_Sal_stmb ~ BATTING_stmb * ABOVE_300_stmb + FIELDING_stmb + BaseRun_stmb
-                + AGE_stmb + AGE_sq_stmb | POS_stmb)
-M7_stmb <- felm(L_Sal_stmb ~ fWAR_stmb * ABOVE_300_stmb + AGE_stmb + AGE_sq_stmb
-                | individual_stmb)
-M8_stmb <- felm(L_Sal_stmb ~ BATTING_stmb * ABOVE_300_stmb + FIELDING_stmb + BaseRun_stmb
-                + AGE_stmb + AGE_sq_stmb | POS_stmb + TEAM_stmb )
-M9_stmb <- felm(L_Sal_stmb ~ fWAR_stmb * ABOVE_300_stmb + AGE_stmb + AGE_sq_stmb
-                | individual_stmb + TEAM_stmb)
-M10_stmb <- felm(L_Sal_stmb ~ BATTING_stmb * ABOVE_300_stmb + FIELDING_stmb + BaseRun_stmb
-                 + AGE_stmb + AGE_sq_stmb | individual_stmb + TEAM_stmb)
-M11_stmb <- felm(L_Sal_stmb ~ fWAR_stmb * ABOVE_300_stmb + AGE_stmb + AGE_sq_stmb
-                 + WPA_stmb + nWPA_stmb| individual_stmb + TEAM_stmb)
-M12_stmb <- felm(L_Sal_stmb ~ BATTING_stmb * ABOVE_300_stmb + FIELDING_stmb
-                 + BaseRun_stmb + AGE_stmb + AGE_sq_stmb + WPA_stmb + nWPA_stmb|
-                   individual_stmb + TEAM_stmb)
+M1_stmb <- lm(L_Sal ~ fWAR * ABOVE_300)
+M2_stmb <- lm(L_Sal ~ BATTING * ABOVE_300 + FIELDING + BaseRun)
+M3_stmb <- lm(L_Sal ~ fWAR * ABOVE_300 + AGE + AGE_sq)
+M4_stmb <- lm(L_Sal ~ BATTING * ABOVE_300 + FIELDING + BaseRun + AGE + AGE_sq)
+M5_stmb <- felm(L_Sal ~ fWAR * ABOVE_300 + AGE + AGE_sq | TEAM)
+M6_stmb <- felm(L_Sal ~ BATTING * ABOVE_300 + FIELDING + BaseRun + AGE + AGE_sq | POS)
+M7_stmb <- felm(L_Sal ~ fWAR * ABOVE_300 | individual)
+M8_stmb <- felm(L_Sal ~ BATTING * ABOVE_300 + FIELDING + BaseRun + AGE + AGE_sq | POS + TEAM )
+M9_stmb <- felm(L_Sal ~ fWAR * ABOVE_300 + WPA + nWPA | individual + TEAM)
+M10_stmb <- felm(L_Sal ~ BATTING * ABOVE_300 + FIELDING + BaseRun + WPA + nWPA |
+              individual + TEAM + POS)
+M11_stmb <- felm(L_Sal ~ fWAR * ABOVE_300 + AGE + AGE_sq + WPA + nWPA| TEAM)
+M12_stmb <- felm(L_Sal ~ BATTING * ABOVE_300 + FIELDING + BaseRun + AGE + AGE_sq + WPA + nWPA|
+              POS + TEAM)
 
 summary(M0_stmb)
 summary(M1_stmb)
@@ -211,46 +200,40 @@ summary(M12_stmb)
 
 stats_afmb <- subset(stats_87, stats_87$Season >= 2002)
 
-Sal_AVG_afmb <- stats_afmb$`AVG ANNUAL`
-AGE_afmb <- stats_afmb$Age
-AGE_sq_afmb <- AGE_afmb^2
-fWAR_afmb <- stats_afmb$WAR
-ABOVE_300_afmb <- stats_afmb$AVG_above
-TEAM_afmb <- stats_afmb$TEAM_nextyr
-POS_afmb <- stats_afmb$POS
-L_Sal_afmb <- stats_afmb$`Log AVG ANNUAL`
-individual_afmb <- stats_afmb$playerid
-BATTING_afmb <- stats_afmb$Bat
-FIELDING_afmb <- stats_afmb$Fld
-BaseRun_afmb <- stats_afmb$BsR
-AVG_afmb <- stats_afmb$AVG
-Season_afmb <- stats_afmb$Season
-DEFFENCE_afmb <- stats_afmb$Def
-WPA_afmb <- stats_afmb$WPA
-nWPA_afmb <- stats_afmb$`-WPA`
+Sal_AVG <- stats_afmb$`AVG ANNUAL`
+AGE <- stats_afmb$Age
+AGE_sq <- AGE^2
+fWAR <- stats_afmb$WAR
+ABOVE_300 <- stats_afmb$AVG_above
+TEAM <- stats_afmb$TEAM_nextyr
+POS <- stats_afmb$POS
+L_Sal <- stats_afmb$`Log AVG ANNUAL`
+individual <- stats_afmb$playerid
+BATTING <- stats_afmb$Bat
+FIELDING <- stats_afmb$Fld
+BaseRun <- stats_afmb$BsR
+AVG <- stats_afmb$AVG
+Season <- stats_afmb$Season
+DEFFENCE <- stats_afmb$Def
+WPA <- stats_afmb$WPA
+nWPA <- -stats_afmb$`-WPA`
+WPA <- WPA/stats_afmb$G
+nWPA <- nWPA/stats_afmb$G
 
-M0_afmb <- lm(L_Sal_afmb ~ AVG_afmb * ABOVE_300_afmb + FIELDING_afmb + BaseRun_afmb)
-M1_afmb <- lm(L_Sal_afmb ~ fWAR_afmb * ABOVE_300_afmb)
-M2_afmb <- lm(L_Sal_afmb ~ BATTING_afmb * ABOVE_300_afmb + FIELDING_afmb + BaseRun_afmb)
-M3_afmb <- lm(L_Sal_afmb ~ fWAR_afmb * ABOVE_300_afmb + AGE_afmb + AGE_sq_afmb)
-M4_afmb <- lm(L_Sal_afmb ~ BATTING_afmb * ABOVE_300_afmb + FIELDING_afmb + BaseRun_afmb
-              + AGE_afmb + AGE_sq_afmb)
-M5_afmb <- felm(L_Sal_afmb ~ fWAR_afmb * ABOVE_300_afmb + AGE_afmb + AGE_sq_afmb | TEAM_afmb)
-M6_afmb <- felm(L_Sal_afmb ~ BATTING_afmb * ABOVE_300_afmb + FIELDING_afmb + BaseRun_afmb
-                + AGE_afmb + AGE_sq_afmb | POS_afmb)
-M7_afmb <- felm(L_Sal_afmb ~ fWAR_afmb * ABOVE_300_afmb + AGE_afmb + AGE_sq_afmb
-                | individual_afmb)
-M8_afmb <- felm(L_Sal_afmb ~ BATTING_afmb * ABOVE_300_afmb + FIELDING_afmb + BaseRun_afmb
-                + AGE_afmb + AGE_sq_afmb | POS_afmb + TEAM_afmb )
-M9_afmb <- felm(L_Sal_afmb ~ fWAR_afmb * ABOVE_300_afmb + AGE_afmb + AGE_sq_afmb
-                | individual_afmb + TEAM_afmb)
-M10_afmb <- felm(L_Sal_afmb ~ BATTING_afmb * ABOVE_300_afmb + FIELDING_afmb + BaseRun_afmb
-                 + AGE_afmb + AGE_sq_afmb | individual_afmb + TEAM_afmb)
-M11_afmb <- felm(L_Sal_afmb ~ fWAR_afmb * ABOVE_300_afmb + AGE_afmb + AGE_sq_afmb
-                 + WPA_afmb + nWPA_afmb| individual_afmb + TEAM_afmb)
-M12_afmb <- felm(L_Sal_afmb ~ BATTING_afmb * ABOVE_300_afmb + FIELDING_afmb
-                 + BaseRun_afmb + AGE_afmb + AGE_sq_afmb + WPA_afmb + nWPA_afmb|
-                   individual_afmb + TEAM_afmb)
+M1_afmb <- lm(L_Sal ~ fWAR * ABOVE_300)
+M2_afmb <- lm(L_Sal ~ BATTING * ABOVE_300 + FIELDING + BaseRun)
+M3_afmb <- lm(L_Sal ~ fWAR * ABOVE_300 + AGE + AGE_sq)
+M4_afmb <- lm(L_Sal ~ BATTING * ABOVE_300 + FIELDING + BaseRun + AGE + AGE_sq)
+M5_afmb <- felm(L_Sal ~ fWAR * ABOVE_300 + AGE + AGE_sq | TEAM)
+M6_afmb <- felm(L_Sal ~ BATTING * ABOVE_300 + FIELDING + BaseRun + AGE + AGE_sq | POS)
+M7_afmb <- felm(L_Sal ~ fWAR * ABOVE_300 | individual)
+M8_afmb <- felm(L_Sal ~ BATTING * ABOVE_300 + FIELDING + BaseRun + AGE + AGE_sq | POS + TEAM )
+M9_afmb <- felm(L_Sal ~ fWAR * ABOVE_300 + WPA + nWPA | individual + TEAM)
+M10_afmb <- felm(L_Sal ~ BATTING * ABOVE_300 + FIELDING + BaseRun + WPA + nWPA |
+              individual + TEAM + POS)
+M11_afmb <- felm(L_Sal ~ fWAR * ABOVE_300 + AGE + AGE_sq + WPA + nWPA| TEAM)
+M12_afmb <- felm(L_Sal ~ BATTING * ABOVE_300 + FIELDING + BaseRun + AGE + AGE_sq + WPA + nWPA|
+              POS + TEAM)
 
 summary(M0_afmb)
 summary(M1_afmb)
@@ -274,15 +257,15 @@ M14 <- felm(L_Sal ~ BATTING * ABOVE_300 + FIELDING + BaseRun + AGE + AGE_sq + Er
 
 
 MA1 <- felm(L_Sal ~ AVG_87 * ABOVE_300 * Era + FIELDING + BaseRun + AGE + AGE_sq
-            | POS + individual + TEAM)
+            | POS + TEAM)
 MA2 <- felm(L_Sal ~ OBP_87 * ABOVE_300 * Era + FIELDING + BaseRun + AGE + AGE_sq
-            | POS + individual + TEAM)
+            | POS + TEAM)
 MA3 <- felm(L_Sal ~ OPS_87 * ABOVE_300 * Era + FIELDING + BaseRun + AGE + AGE_sq
-            | POS + individual + TEAM)
-MA4 <- felm(L_Sal ~ BATTING * ABOVE_300 * Era + FIELDING + BaseRun + AGE + AGE_sq
-                   | POS + individual + TEAM)
-MA5 <- felm(L_Sal ~ fWAR * ABOVE_300 * Era + FIELDING + BaseRun + AGE + AGE_sq
-            | POS + individual + TEAM)
+            | POS + TEAM)
+MA4 <- felm(L_Sal ~ BATTING * ABOVE_300 * Era + FIELDING + BaseRun + WPA + nWPA
+                   | POS + TEAM + individual)
+MA5 <- felm(L_Sal ~ fWAR * ABOVE_300 * Era + FIELDING + BaseRun + WPA + nWPA
+            | TEAM + individual)
 
 summary(M13)
 summary(M14)

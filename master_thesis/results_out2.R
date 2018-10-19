@@ -49,6 +49,12 @@ png("C:/Users/T-Reio/Master_thesis/master_thesis/graphs/SB_5SB.png",
 hist(SB, breaks = seq(3,133,1), main = "SB for at least 90PA")
 dev.off()
 
+png("C:/Users/T-Reio/Master_thesis/master_thesis/graphs/OBP_afmb.png",
+    width = 700, height = 500)
+hist(OBP_afmb, breaks = seq(0.170, 0.610, 0.001), main = "OBP for after Moneyball",
+     xlab = "On-Base Percentage")
+dev.off()
+
 #三割の効果　full sample
 
 stargazer(M1, M3, M5, M7, M9, M11,

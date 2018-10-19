@@ -6,33 +6,170 @@
 \usepackage{tikz}
 \usepackage{textcomp}
 \usepackage{dcolumn}
+\usepackage{here}
+\usepackage{lscape}
+\usepackage[top=30truemm,bottom=30truemm,left=25truemm,right=25truemm]{geometry}
 \begin{document}
 
-\title{Reference Point for Professional Athletes}
+\title{Reference-Dependent Preferance, but whose? \\
+Evidence from MLB Batters}
 \author{Reio Tanji}
 \date{}
 \maketitle
 
 \large
 
+\begin{center}
+  (Abstract)
+\end{center}
+
+
 \section{Introduction}
 
+Reference-point dependence is one of the important concepts to
+evaluate outcome, and it affects the agents' following
+economic behavior. Classical economic models assume that
+economic agents evaluate choice/prospects according to abolute
+value of (expected) return. On the other hand, Tversky and
+Kahneman (1992) introduced behavioral
+assumption: reference-point dependent preference sets some
+target value of the outcome and then subjects regard the
+possible outcome as gain or loss from the target.
+For example, workers feel happy if her/his wage goes up
+to \$15 per hour, but vice versa if it goes down to \$15,
+although the absolute value of \$15 is actually same. In this case,
+s/he evaluates their new wage with the reference point of
+the previous one.
 
+When we pick up the evidence from competitive or incentivised
+situation or the behavior that is monitored by other people
+and evaluated depending on the performance they produced,
+however, we have to pay attention  to the design of the contract.
+If there is some ``rational''
+motivation to make effort to achieve their goals,
+then we can think that observed
+choice is evidence of the existance of behavioral preference of
+the principals, rather than the agents.
 
-In this paper, I specified if such behavior is in fact drived by
+In this paper, I picked up the evidence from Major League Baseball
+(MLB) players' behavior and find some ``possible'' choice that
+shows reference point dependent preference of them.
+Concretely, MLB batters seems to have a reference point of
+a batting statistics, .300 of batting average, and make effort
+to achieve it. This tendency was not observed other batting statistics,
+even though those that occupy more weight in evaluating players.
+
+Then, as the most important contribution, I specified if
+such behavior is in fact drived by ``players' ''
 reference-dependent preference. In other words, I try to answer
 a question ``Are there any monetary incentives that make players
-turn to .300 of batting-average? ``
+turn to .300 of batting-average? `` If MLB team managers overestimate
+the contribution of the players with .300 of batting-average to
+raising winning-perentage of the team and pay them discontinuously
+higher salary, then the observed behavior of the players are
+economically rational.
 
 \section{Theoretical Frameworks and Literature Review}
 
+ \subsection{Literature}
+
+  Tversky and Kahneman (1992) mentioned reference point dependence
+  as one of the two distinct respects of their prospect theory.
+  The most primitive form of reference dependent utility function is:
+  \[
+  u(x | r) = \begin{cases}
+  x - r & \text{ if }x \geq r \\
+  \lambda (x - r) & \text{ if }x < r
+\end{cases}
+  \]
+
+  where $x$ denotes a certain outcome, and $r$ is one of
+  reference point. This agent evaluates the outcome by the
+  difference from the reference point. In adiition, they
+  addumed that agents regard loss as larger than gain,
+  or ``loss aversion." Then, $\lambda$ is restricted to larger than 1.
+
+  There are a number of empirical literature that specifies the existence
+  of reference dependence in the field or lab studies.
+
+  Among them, the most important literature for this paper is Pope and
+  Simonsohn (2011). They picked up three empirical evidence of round number
+  as reference points: SAT (a standardized test for college admission in the
+  United States) scores, laboratory experiment, and baseball.
+  In their section of baseball, they picked up the evidence of
+  Major League Baseball (MLB) players and pointed out that they pay attention
+  to their batting-average (AVG), especially to whether they could finish
+  each season with their batting average of just above .300.
+  They observed position players (= players except for pitchers) with at
+  least 200 at-bats in each season, and found that their distribution
+  of the batting-average has excess mass just above .300.
+  Furthermore, they found that palyers with batting-average of just below
+  .300 are more likely to hit a base-hit and less likely to get a
+  base-on-balls.
+  Both base-hits and base-on-balls avoid the batter from out, so for the
+  team he belongs to, base-on-balls also have important value to win the
+  game. However, batting-average does not count base-on-balls as the
+  element to raise the number (For the definition of performance
+  statistics, see Appendix). Thus, observed behavior they claims is
+  sufficient evidence that shows the existance of round-number reference
+  point deendent preference.
+
+
+
+ \subsection{Frameworks}
+
+ Excess mass around the reference point dependence is caused by
+ ``notch'' in the utility function. In this paper, I exploit the
+ framework to specify the utility function of Diecidue and
+ Van De Ven (2008)`s ``aspiration level" model, following the
+ way
+
+ \[
+ \lim_{\epsilon \to 0} v_r (r + \epsilon) \neq
+ \lim_{\epsilon \to 0} v_r (r - \epsilon)
+ \]
+
+ This form of utility function is discontinuous at the
+ reference point $r$.
+
+
+ \subsection{Impact of `` \textit{Moneyball} ``
+ - Time Series Analysis -}
 
 
 \section{Method and Data}
 
  \subsection{Empirical Method}
 
+I examine the existance of the monetary incentive by regression
+analysis below:
+
+\[
+w_{it} = \beta_0 & X_{it} + \beta_1 \text{ABOVE}_{it}
+ + \beta_2 X_{it} \times \text{ABOVE}_{it} + \beta_3 Z_{it}
+\]
+
+For each player $i$ in the season $t$, $w_{it}$ is log annual salary
+in next season $t+1$. $X_{it}$ and $Z_{it}$ are the value of performance
+statistics (batting-average, on-base percentage,\ldots) and other
+player-specific characters (age, team he signed, position,\ldots),
+respectively. $\text{ABOVE}_{it}$ is a dummy variable that takes 1
+if the player achieves their reference point, and 0 if the failed
+to do so. I also introduce interaction term of $X_{it}$ and
+ $\text{ABOVE}_{it}$. Age term is introduce as quadratic form.
+I utilize both simple OLS and player, team, positional fixed effect model.
+
  \subsection{Data Description}
+
+ In order to make empirical research, I need information
+ about players' performance, contracts and other details.
+ Then, I generated panel data that contains these specific information
+ from some open data-source. Each sample is obtained by unit of a
+ single season between the time range from 1957 to 2017 ($T = 61$),
+ the number of sample is $N = 53090$.
+
+ Performance statistics is obtained from baseball fan website:
+ \textit{fangraphs} and \textit{Baseball Reference}.
 
 
 
@@ -40,10 +177,13 @@ turn to .300 of batting-average? ``
 
 \section{Result}
 
+ \subsection{Full-Sample analysis}
+  \subsubsection{Existance of Excess Mass around Round Number}
 
 
-\section{Impact of `` \textit{Moneyball} ``
-- Time Series Analysis -}
+
+ \subsection{Time-Series analysis}
+
 
 Through the previous section, I conducted analysis including
 all the sample as same, as Pope and Simonsohn (2011) did.
@@ -58,5 +198,21 @@ macroeconomic trend.
 
 
 
+\section{Appendix}
+
+\subsection{Proxies for Performance}
+
+To measure batter's performance, I use some \textit{SABR
+Metrics}'s statistics. \textit{SABR} is short for \textit{Society
+of American Baseball Research}, an American organization of
+analysing baseball. They try to evaluate players in more ``efficient ''
+way,  or by statistics with more close correlation with the
+expected wins the team obtain.
+
+\section{References}
+\small
+\begin{itemize}
+  \item
+\end{itemize}
 
 \end{document}

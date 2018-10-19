@@ -148,6 +148,7 @@ AB <- sum(stats_stmb$AVG >= 0.300 & stats_stmb$AVG < 0.302)
 prop.test(c(BL, AB), c(2028,2028), alternative = "less", conf.level = 0.95)
 
 
+
 #Moneyball以降
 
 stats_afmb <- subset(stats_57_200, stats_57_200$Season >= 2002)
@@ -164,6 +165,9 @@ BL <- sum(stats_afmb$AVG >= 0.298 & stats_afmb$AVG < 0.300)
 AB <- sum(stats_afmb$AVG >= 0.300 & stats_afmb$AVG < 0.302)
 
 prop.test(c(BL, AB), c(5555,5555), alternative = "less", conf.level = 0.95)
+
+OBP_afmb <- stats_afmb$OBP
+hist(OPS, breaks = seq(0., 1.425, 0.001), main = "OBP after Moneyball")
 
 #z検定
 
