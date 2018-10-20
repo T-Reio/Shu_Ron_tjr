@@ -104,22 +104,29 @@ stats <- fread("C:/Users/T-Reio/Master_thesis/master_thesis/output/roughstats_57
 stats <- subset(stats, stats$Season <= 1975)
 stats <- subset(stats, stats$Season >= 1976 & stats$Season <= 1994)
 stats <- subset(stats, stats$Season >= 1995 & stats$Season <= 2003)
-stats <- subset(stats, stats$Season <= 2004)
-
 stats <- subset(stats, stats$Season >= 2004)
+
+stats <- subset(stats, stats$Season >= 2008)
+stats <- subset(stats, stats$SB >= 5)
 
 AVG <- stats$H / stats$AB
 OBP <- stats$OBP
 fWAR <- stats$WAR
+HR <- stats$HR
+SB <- stats$SB
 
-DCdensity(AVG, 0.2995)
+DCdensity(AVG, 0.300, bin = 0.001)
+title('Discontinuity in .300', xlab = 'Batting-Average', ylab = 'Density')
+rect(0.297, 4.3, 0.303, 14, col = 'red')
 DCdensity(AVG, 0.2585)
 
-DCdensity(OBP, 0.39)
-DCdensity(fWAR, 3.0)
+DCdensity(OBP, 0.400, bin = 0.001)
+DCdensity(fWAR, 4.0, bin = 0.1)
+DCdensity(HR, 20, bin = 1)
+DCdensity(SB, 41, bin = 1)
 
 summary(fWAR)
-hist(fWAR, breaks = seq(-4, 13, 0.1))
+hist(fWAR, breaks = seq(-4, 13, 0.2))
 
 count <- fread("C:/Users/T-Reio/Master_thesis/master_thesis/output/count_AVG.csv"
                , header = T, sep = ",")
