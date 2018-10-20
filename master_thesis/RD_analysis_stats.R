@@ -17,7 +17,7 @@ HR <- as.numeric(HR)
 SB <- as.numeric(SB)
 
 
-rdd_AVG.300 <- rddensity(AVG, c = 0.300)
+rdd_AVG.300 <- rddensity(AVG, c = 0.2995)
 summary(rdd_AVG.300)
 rdd_AVG.300$test
 
@@ -98,11 +98,58 @@ x<-runif(1000,-1,1)
 x<-x+2*(runif(1000,-1,1)>0&x<0)
 DCdensity(x,0, ext.out = T)
 
-roughstats <- fread("C:/Users/T-Reio/Master_thesis/master_thesis/output/roughstats_5718.csv"
+stats <- fread("C:/Users/T-Reio/Master_thesis/master_thesis/output/roughstats_5718.csv"
                     , header = T, sep = ",")
-AVG <- roughstats$H / roughstats$AB
+
+stats <- subset(stats, stats$Season <= 1975)
+stats <- subset(stats, stats$Season >= 1976 & stats$Season <= 1994)
+stats <- subset(stats, stats$Season >= 1995 & stats$Season <= 2003)
+stats <- subset(stats, stats$Season <= 2004)
+
+stats <- subset(stats, stats$Season >= 2004)
+
+AVG <- stats$H / stats$AB
+OBP <- stats$OBP
+fWAR <- stats$WAR
 
 DCdensity(AVG, 0.2995)
-DCdensity(AVG, 0.3125)
+DCdensity(AVG, 0.2585)
 
-YR <- roughstats$Season
+DCdensity(OBP, 0.39)
+DCdensity(fWAR, 3.0)
+
+summary(fWAR)
+hist(fWAR, breaks = seq(-4, 13, 0.1))
+
+count <- fread("C:/Users/T-Reio/Master_thesis/master_thesis/output/count_AVG.csv"
+               , header = T, sep = ",")
+
+freq <- count$'0'
+AVG <- count$AVG
+
+summary(AVG)
+
+count <- subset(count, count$AVG >= 0.251)
+
+count <- subset(count, count$AVG <= 0.299)
+count <- subset(count, count$AVG >= 0.300)
+
+freq <- count$'0'
+AVG <- count$AVG
+AVG <- stats$AVG
+
+est2 <- lm(freq ~ AVG)
+
+summary(est1)
+summary(est2)
+
+predict(est1, df.test)
+
+1520.45 + 0.3 * (-4730.59)
+495.166 + 0.3 * (-1371.246)
+
+statmode <- function(x) {
+  names(which.max(table(x)))
+}
+
+statmode(AVG)
