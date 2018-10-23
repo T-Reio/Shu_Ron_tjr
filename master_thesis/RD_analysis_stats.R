@@ -73,8 +73,11 @@ x<-runif(1000,-1,1)
 x<-x+2*(runif(1000,-1,1)>0&x<0)
 DCdensity(x,0, ext.out = T)
 
-stats <- fread("C:/Users/T-Reio/Master_thesis/master_thesis/output/roughstats_5718.csv"
+stats <- fread("C:/Users/T-Reio/Master_thesis/master_thesis/input/fstats_5718.csv"
                     , header = T, sep = ",")
+stats <- subset(stats, stats$PA >= 200)
+stats <- subset(stats, stats$PA >= 90)
+stats <- subset(stats, stats$SB >= 5)
 
 stats <- subset(stats, stats$Season <= 1975)
 stats <- subset(stats, stats$Season >= 1976 & stats$Season <= 1994)
@@ -82,29 +85,37 @@ stats <- subset(stats, stats$Season >= 1995 & stats$Season <= 2003)
 stats <- subset(stats, stats$Season >= 2004)
 
 stats <- subset(stats, stats$Season >= 2008)
-stats <- subset(stats, stats$SB >= 5)
+
 
 AVG <- stats$H / stats$AB
-OBP <- stats$OBP
+OBP <- (stats$H + stats$BB + stats$IBB + stats$HBP) / (stats$AB ++ stats$BB 
+                                                       + stats$IBB + stats$HBP + stats$SF)
 fWAR <- stats$WAR
 HR <- stats$HR
 SB <- stats$SB
 RBI <- stats$RBI
 AVG <- stats$AVG
+OPS <- stats$SLG + stats$OBP
+PA <- stats$PA
+H <- stats$H
 
 DCdensity(AVG, 0.300, bin = 0.001, ext.out = T)
 title('Discontinuity in .300', xlab = 'Batting-Average', ylab = 'Density')
 rect(0.297, 4.3, 0.303, 14, col = 'red')
 DCdensity(AVG, 0.288, bin = 0.001, ext.out = T)
 
-DCdensity(OBP, 0.400, bin = 0.001)
+DCdensity(OBP, 0.3495, ext.out = T)
+DCdensity(OPS, 0.7, bin = 0.001, ext.out = T)
 DCdensity(fWAR, 4.0, bin = 0.1)
-DCdensity(HR, 20, bin = 1, ext.out = T)
-DCdensity(SB, 41, bin = 1)
-DCdensity(RBI, 90, bin = 1, ext.out = T)
+DCdensity(HR, 30, bin = 1, ext.out = T)
+DCdensity(SB, 10, bin = 1, ext.out = T)
+DCdensity(RBI, 120, bin = 1, ext.out = T)
+DCdensity(PA, 500, bin = 1, ext.out = T)
+DCdensity(H, 200, bin = 2, ext.out = T)
 
-summary(fWAR)
+summary(OPS)
 hist(fWAR, breaks = seq(-4, 13, 0.2))
+hist(OPS, breaks = seq(0.38, 1.5, 0.001))
 
 count <- fread("C:/Users/T-Reio/Master_thesis/master_thesis/output/count_AVG.csv"
                , header = T, sep = ",")

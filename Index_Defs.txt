@@ -1,1 +1,0 @@
-(wOBA<- 0.692*(tstats_npb$BB-tstats_npb$IB) +0.73*tstats_npb$HBP { 0.865 * tstats_npb$BaseHit{1.334 * tstats_npb$Double{1.725 * tstats_npb$Double{2.065 *tstats_npb$HRp/itstats_npb$AB{tstats_npb$BB?tstats_npb$IB{tstats_npb$HBP{tstats_npb$SFj
