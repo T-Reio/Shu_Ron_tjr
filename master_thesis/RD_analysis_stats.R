@@ -64,31 +64,6 @@ ks.test(AVG_af, AVG_bf)
 
 #count data
 
-count.AVG <- fread("C:/Users/T-Reio/Master_thesis/master_thesis/output/count_AVG.csv",
-                   header = T, sep = ",")
-AVG <- count.AVG$index
-freq <- count.AVG$`0`
-
-RDfu <- lm(freq ~ AVG)
-summary(RDfu)
-
-hist.AVG <- hist(AVG, breaks = seq(0.120, 0.400, 0.001))
-
-counts <- hist.AVG$counts
-hist.AVG$mids
-hist.AVG$breaks
-
-AVG.DC <- DCdensity(AVG, 0.217, bin = NULL, bw = NULL,
-                    verbose = FALSE, plot = TRUE, ext.out = T, htest = T)
-summary(AVG.DC)
-AVG.DC$p
-
-HR <- HR/100
-HR.DC <- DCdensity(HR, 0.26)
-HR.DC
-
-CalAVG <- 
-
 #No discontinuity
 x<-runif(1000,-1,1)
 DCdensity(x,0)
@@ -114,16 +89,19 @@ OBP <- stats$OBP
 fWAR <- stats$WAR
 HR <- stats$HR
 SB <- stats$SB
+RBI <- stats$RBI
+AVG <- stats$AVG
 
-DCdensity(AVG, 0.300, bin = 0.001)
+DCdensity(AVG, 0.300, bin = 0.001, ext.out = T)
 title('Discontinuity in .300', xlab = 'Batting-Average', ylab = 'Density')
 rect(0.297, 4.3, 0.303, 14, col = 'red')
-DCdensity(AVG, 0.2585)
+DCdensity(AVG, 0.288, bin = 0.001, ext.out = T)
 
 DCdensity(OBP, 0.400, bin = 0.001)
 DCdensity(fWAR, 4.0, bin = 0.1)
-DCdensity(HR, 20, bin = 1)
+DCdensity(HR, 20, bin = 1, ext.out = T)
 DCdensity(SB, 41, bin = 1)
+DCdensity(RBI, 90, bin = 1, ext.out = T)
 
 summary(fWAR)
 hist(fWAR, breaks = seq(-4, 13, 0.2))
@@ -160,3 +138,15 @@ statmode <- function(x) {
 }
 
 statmode(AVG)
+
+rdplotdensity(rdd_AVG.300, AVG, plotRange = NULL, plotN = 10, plotGrid = c("es",
+                                                                 "qs"), alpha = 0.05, type = NULL, CItype = NULL, title = "",
+              xlabel = "", ylabel = "", lty = NULL, lwd = NULL, lcol = NULL,
+              pty = NULL, pwd = NULL, pcol = NULL, CIshade = NULL, CIcol = NULL,
+              legendTitle = NULL, legendGroups = NULL)
+
+rdplotdensity(rdd_HR.20, HR, plotRange = NULL, plotN = 10, plotGrid = c("es",
+                                                                           "qs"), alpha = 0.05, type = NULL, CItype = NULL, title = "",
+              xlabel = "", ylabel = "", lty = NULL, lwd = NULL, lcol = NULL,
+              pty = NULL, pwd = NULL, pcol = NULL, CIshade = NULL, CIcol = NULL,
+              legendTitle = NULL, legendGroups = NULL)

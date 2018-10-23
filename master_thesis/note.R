@@ -11,6 +11,7 @@ help(ggplot, package = "ggplot2")
 help("shapiro.test")
 help("hist")
 help(package = "rdd")
+help(DCdensity)
 
 rdd <- rddensity(AVG, c = 0.300)
 summary(rdd)
