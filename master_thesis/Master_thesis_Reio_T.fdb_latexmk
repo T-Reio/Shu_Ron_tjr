@@ -1,11 +1,11 @@
 # Fdb version 3
-["dvipdf"] 1540201515 "Master_thesis_Reio_T.dvi" "Master_thesis_Reio_T.pdf" "Master_thesis_Reio_T" 1540201533
-  "Master_thesis_Reio_T.dvi" 1540201511 11260 be7d3c8842f2cf354234f971f1322d7c "latex"
+["dvipdf"] 1540343700 "Master_thesis_Reio_T.dvi" "Master_thesis_Reio_T.pdf" "Master_thesis_Reio_T" 1540343705
+  "Master_thesis_Reio_T.dvi" 1540343699 11444 d116d561c3700fc1d4848cfb46f79b91 "latex"
   (generated)
   "Master_thesis_Reio_T.pdf"
-["latex"] 1540201404 "Master_thesis_Reio_T.tex" "Master_thesis_Reio_T.dvi" "Master_thesis_Reio_T" 1540201533
-  "Master_thesis_Reio_T.aux" 1540201511 1391 f70b42ea51360bc33439c66b7b5da907 ""
-  "Master_thesis_Reio_T.tex" 1540201205 8148 48c8641555e6147a11be723c9a935b70 ""
+["latex"] 1540343692 "Master_thesis_Reio_T.tex" "Master_thesis_Reio_T.dvi" "Master_thesis_Reio_T" 1540343705
+  "Master_thesis_Reio_T.aux" 1540343697 1570 44883a5a8c4547f909ffdaa7d90caa2c ""
+  "Master_thesis_Reio_T.tex" 1540343666 8262 ee674459322a369343cbfdf623043252 ""
   "c:/texlive/2016/texmf-dist/fonts/map/fontname/texfonts.map" 1498229009 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "c:/texlive/2016/texmf-dist/fonts/tfm/adobe/palatino/pplb7t.tfm" 1498264284 1616 371d1ee60c04b008c8fd760060cd34f1 ""
   "c:/texlive/2016/texmf-dist/fonts/tfm/adobe/palatino/pplbi7t.tfm" 1498264284 1816 bb70e8d3600ea56abb211fdcc6909bf3 ""
@@ -20,6 +20,7 @@
   "c:/texlive/2016/texmf-dist/fonts/tfm/ptex-fonts/standard/tmin9.tfm" 1498307930 856 b22b8128b44bf8881977f2c74b361f47 ""
   "c:/texlive/2016/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1498219492 916 f87d7c45f9c908e672703b83b72241a3 ""
   "c:/texlive/2016/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm" 1498219492 908 2921f8a10601f252058503cc6570e581 ""
+  "c:/texlive/2016/texmf-dist/fonts/tfm/public/cm/cmr12.tfm" 1498222785 1288 655e228510b4c2a1abe905c368440826 ""
   "c:/texlive/2016/texmf-dist/fonts/tfm/public/mathpazo/zplmr7m.tfm" 1498250911 2080 40a71f65088bdd047622ce295520749e ""
   "c:/texlive/2016/texmf-dist/fonts/tfm/public/mathpazo/zplmr7t.tfm" 1498250911 1828 bb8add3bd19426549f9267c88b0cb8bd ""
   "c:/texlive/2016/texmf-dist/fonts/tfm/public/mathpazo/zplmr7v.tfm" 1498250911 1012 955c4ca523d7827d33db91a33412b048 ""
@@ -85,7 +86,7 @@
   "c:/texlive/2016/texmf-dist/tex/latex/amsmath/amsopn.sty" 1498219517 4115 318a66090112f3aa3f415aeb6fe8540f ""
   "c:/texlive/2016/texmf-dist/tex/latex/amsmath/amstext.sty" 1498219517 2431 fe3078ec12fc30287f568596f8e0b948 ""
   "c:/texlive/2016/texmf-dist/tex/latex/base/article.cls" 1498233778 19821 310da678527a7dfe2a02c88af38079b7 ""
-  "c:/texlive/2016/texmf-dist/tex/latex/base/size10.clo" 1498233779 8292 e897c12e1e886ce77fe26afc5d470886 ""
+  "c:/texlive/2016/texmf-dist/tex/latex/base/size12.clo" 1498233779 8303 1d67e16498f00f63da792fab169302fc ""
   "c:/texlive/2016/texmf-dist/tex/latex/base/textcomp.sty" 1498233779 16155 1316b351af259c7c28dcfb26e27d844e ""
   "c:/texlive/2016/texmf-dist/tex/latex/base/ts1cmr.fd" 1498233779 2217 d274654bda1292013bdf48d5f720a495 ""
   "c:/texlive/2016/texmf-dist/tex/latex/base/ts1enc.def" 1498233779 7767 aa88823823f5e767d79ea1166ab1ae74 ""
@@ -128,5 +129,5 @@
   "c:/texlive/2016/texmf.cnf" 1498327752 673 4ae7b2f49cee444c5343a45b5d0f169c ""
   (generated)
   "Master_thesis_Reio_T.aux"
-  "Master_thesis_Reio_T.log"
   "Master_thesis_Reio_T.dvi"
+  "Master_thesis_Reio_T.log"

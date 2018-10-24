@@ -1,4 +1,4 @@
-\documentclass[dvipdfmx]{article}
+\documentclass[dvipdfmx, 12pt]{article}
 \usepackage{mathpazo}
 \usepackage{amsmath,amssymb}
 \usepackage{array}
@@ -16,8 +16,6 @@
 \author{Reio Tanji}
 \date{}
 \maketitle
-
-\large
 
 \begin{center}
   (Abstract)
@@ -141,23 +139,29 @@ economically rational.
 
  \subsection{Empirical Method}
 
-I examine the existance of the monetary incentive by regression
-analysis below:
+  \subsubsection{Test for Bunching}
 
-\[
-w_{it} = \beta_0 & X_{it} + \beta_1 \text{ABOVE}_{it}
- + \beta_2 X_{it} \times \text{ABOVE}_{it} + \beta_3 Z_{it}
-\]
+  \subsubsection{Monetary Incentive}
 
-For each player $i$ in the season $t$, $w_{it}$ is log annual salary
-in next season $t+1$. $X_{it}$ and $Z_{it}$ are the value of performance
-statistics (batting-average, on-base percentage,\ldots) and other
-player-specific characters (age, team he signed, position,\ldots),
-respectively. $\text{ABOVE}_{it}$ is a dummy variable that takes 1
-if the player achieves their reference point, and 0 if the failed
-to do so. I also introduce interaction term of $X_{it}$ and
- $\text{ABOVE}_{it}$. Age term is introduce as quadratic form.
-I utilize both simple OLS and player, team, positional fixed effect model.
+  I examine the existance of the monetary incentive by regression
+  analysis below:
+
+  \[
+  w_{it} = \beta_0 & X_{it} + \beta_1 \text{ABOVE}_{it}
+  + \beta_2 X_{it} \times \text{ABOVE}_{it} + \beta_3 Z_{it}
+  \]
+
+  For each player $i$ in the season $t$, $w_{it}$ is log annual salary
+  in next season $t+1$. $X_{it}$ and $Z_{it}$ are the value of performance
+  statistics (batting-average, on-base percentage,\ldots) and other
+  player-specific characters (age, team he signed, position,\ldots),
+  respectively. $\text{ABOVE}_{it}$ is a dummy variable that takes 1
+  if the player achieves their reference point, and 0 if the failed
+  to do so. I also introduce interaction term of $X_{it}$ and
+  $\text{ABOVE}_{it}$. Age term is introduce as quadratic form.
+  I utilize both simple OLS and player, team, positional fixed effect model.
+
+
 
  \subsection{Data Description}
 
@@ -184,14 +188,14 @@ I utilize both simple OLS and player, team, positional fixed effect model.
 
  \subsection{Time-Series analysis}
 
+ Through the previous section, I conducted analysis including
+ all the sample as same, as Pope and Simonsohn (2011) did.
+ However, there is some time-specific factor that affect on
+ the behavior of the players, such as the relationship
+ between the player and the team manager, what index
+ was of the most importance to evaluate players, or some
+ macroeconomic trend.
 
-Through the previous section, I conducted analysis including
-all the sample as same, as Pope and Simonsohn (2011) did.
-However, there is some time-specific factor that affect on
-the behavior of the players, such as the relationship
-between the player and the team manager, what index
-was of the most importance to evaluate players, or some
-macroeconomic trend.
 
 
 \section{Discussions and Conclusion}
