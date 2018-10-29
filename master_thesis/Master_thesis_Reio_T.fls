@@ -207,10 +207,10 @@ INPUT c:/texlive/2016/texmf-dist/fonts/tfm/adobe/palatino/pplb7t.tfm
 INPUT c:/texlive/2016/texmf-dist/tex/latex/psnfss/ts1ppl.fd
 INPUT c:/texlive/2016/texmf-dist/tex/latex/psnfss/ts1ppl.fd
 INPUT c:/texlive/2016/texmf-dist/fonts/tfm/adobe/palatino/pplr8c.tfm
+OUTPUT Master_thesis_Reio_T.dvi
 INPUT c:/texlive/2016/texmf-dist/fonts/tfm/ptex-fonts/standard/tgoth10.tfm
 INPUT c:/texlive/2016/texmf-dist/fonts/tfm/ptex-fonts/standard/goth10.tfm
 INPUT c:/texlive/2016/texmf-dist/fonts/tfm/adobe/palatino/pplb7t.tfm
-OUTPUT Master_thesis_Reio_T.dvi
 INPUT c:/texlive/2016/texmf-dist/fonts/tfm/adobe/palatino/pplr7t.tfm
 INPUT c:/texlive/2016/texmf-dist/fonts/tfm/adobe/palatino/pplr7t.tfm
 INPUT c:/texlive/2016/texmf-dist/fonts/tfm/public/mathpazo/zplmr7m.tfm
