@@ -2,6 +2,10 @@ library(data.table)
 library(stargazer)
 library(lfe)
 library(rddensity)
+library(Hmisc)
+library(plm)
+library(xtable)
+
 install.packages("rdd", dependencies = T)
 install.packages("rddensity", dependencies = T)
 
@@ -12,6 +16,7 @@ help("shapiro.test")
 help("hist")
 help(package = "rdd")
 help(DCdensity)
+help(latex)
 
 rdd <- rddensity(AVG, c = 0.300)
 summary(rdd)
@@ -21,8 +26,26 @@ rdd$test
 rdd.250 <- rddensity(AVG, c = 0.250)
 rdd.250$test
 
+latex(m1$coefficients, m1$df.residual, file='', booktabs=T, dcolumn=T)
+m1$effects
+m1$rank
+m1$df.residual
+m1$assign
+m1$terms
+r1$bw
+latex(r1$bw, file = '', booktabs = T, dcolumn = T)
 
+xtable(m1)
+xtable(r1)
 
-
-#RDestimate(formula, data, subset = NULL, cutpoint = NULL, bw = NULL,kernel = 
-# "triangular", se.type = "HC1", cluster = NULL,verbose = FALSE, model = FALSE, frame = FALSE)
+#packages required
+install.packages("data.table", dependencies = T)
+install.packages("stargazer", dependencies = T)
+install.packages("lfe", dependencies = T)
+install.packages("rddensity", dependencies = T)
+install.packages("rdd", dependencies = T)
+install.packages("plm", dependencies = T)
+install.packages("Hmisc", dependencies = T)
+install.packages("", dependencies = T)
+install.packages("", dependencies = T)
+install.packages("", dependencies = T)

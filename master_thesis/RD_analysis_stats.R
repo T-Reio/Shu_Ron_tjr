@@ -4,14 +4,13 @@ library(rdd)
 library(rddensity)
 library(ggplot2)
 library(gridExtra)
-stats <- fread("C:/Users/T-Reio/Master_thesis/master_thesis/output/battingstats_since57.csv"
-               , header = T, sep = ",")
+
 stats <- subset(stats, stats$PA >= 200)
 stats.5SB <- subset(stats, stats$SB >= 5)
 AVG <- stats$AVG
 OBP <- stats$OBP
 HR <- stats$HR
-SB <- stats$SB
+SB <- stats.5SB$SB
 OPS <- stats$OPS
 HR <- as.numeric(HR)
 SB <- as.numeric(SB)
@@ -77,7 +76,7 @@ stats <- fread("C:/Users/T-Reio/Master_thesis/master_thesis/input/fstats_5718.cs
                     , header = T, sep = ",")
 stats <- subset(stats, stats$PA >= 200)
 stats <- subset(stats, stats$PA >= 90)
-stats <- subset(stats, stats$SB >= 5)
+stats.5SB <- subset(stats, stats$SB >= 5)
 
 stats <- subset(stats, stats$Season <= 1975)
 stats <- subset(stats, stats$Season >= 1976 & stats$Season <= 1994)
@@ -92,26 +91,35 @@ OBP <- (stats$H + stats$BB + stats$IBB + stats$HBP) / (stats$AB ++ stats$BB
                                                        + stats$IBB + stats$HBP + stats$SF)
 fWAR <- stats$WAR
 HR <- stats$HR
-SB <- stats$SB
+SB <- stats.5SB$SB
 RBI <- stats$RBI
 AVG <- stats$AVG
 OPS <- stats$SLG + stats$OBP
 PA <- stats$PA
 H <- stats$H
 
-DCdensity(AVG, 0.300, bin = 0.001, ext.out = T)
-title('Discontinuity in .300', xlab = 'Batting-Average', ylab = 'Density')
+DCdensity(AVG, 0.3, bin = 0.001, ext.out = T)
+DCdensity(AVG, 0.2995, ext.out = T)
+title('', xlab = 'Batting-Average', ylab = 'Density')
 rect(0.297, 4.3, 0.303, 14, col = 'red')
 DCdensity(AVG, 0.288, bin = 0.001, ext.out = T)
 
+DCdensity(OBP, 0.35, bin = 0.001, ext.out = T)
+title('', xlab = 'On-Base Persentage', ylab = 'Density')
 DCdensity(OBP, 0.3495, ext.out = T)
-DCdensity(OPS, 0.7, bin = 0.001, ext.out = T)
+DCdensity(OPS, 1, bin = 0.001, ext.out = T)
+title('', xlab = 'Batting-Average', ylab = 'Density')
 DCdensity(fWAR, 4.0, bin = 0.1)
-DCdensity(HR, 30, bin = 1, ext.out = T)
-DCdensity(SB, 10, bin = 1, ext.out = T)
-DCdensity(RBI, 120, bin = 1, ext.out = T)
+DCdensity(HR, 20, bin = 1, ext.out = T)
+title('', xlab = 'Homerun', ylab = 'Density')
+DCdensity(SB, 40, bin = 1, ext.out = T)
+title('', xlab = 'Stolen-Base', ylab = 'Density')
+DCdensity(RBI, 100, bin = 4, ext.out = T)
+title('', xlab = 'Runs Batted-In', ylab = 'Density')
 DCdensity(PA, 500, bin = 1, ext.out = T)
-DCdensity(H, 200, bin = 2, ext.out = T)
+title('', xlab = 'Plate-Appearance', ylab = 'Density')
+DCdensity(H, 200, bin = 1, ext.out = T)
+title('', xlab = 'Base-Hit', ylab = 'Density')
 
 summary(OPS)
 hist(fWAR, breaks = seq(-4, 13, 0.2))
