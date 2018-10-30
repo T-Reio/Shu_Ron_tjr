@@ -12,7 +12,12 @@
 {geometry}
 \begin{document}
 
+\section{Full-Sample at least 200PAs}
+
+
+
 \begin{table}[H]
+  \small
   \centering
   \begin{tabular}{lcccccc}\hline
     index & type & cutpoint & binsize & bandwidth & $\theta$ & $z$
@@ -39,56 +44,247 @@
       ***: $p<0.1\%$, **: $p<1\%$, *: $p<5\%$.
 
     Bandwidth is optimized following the method of Mcrary(2007).
-  \normalsize
   \caption{Test for Manipulation :leastPA $= 200$}
 \end{table}
 
-\begin{figure}[H]
-  \centering
-  \includegraphics[width = 10cm, height = 7cm]{graphs/AVG_300.png}
-  \caption{Discontinuity in AVG (at least 200PA)}
-  \label{AVG_300}
-\end{figure}
-\begin{figure}[H]
-  \centering
-  \includegraphics[width = 10cm, height = 7cm]{graphs/OBP_350.png}
-  \caption{OBP (at least 200PA)}
-  \label{OBP_350}
-\end{figure}
-\begin{figure}
-  \centering
-  \includegraphics[width = 10cm, height = 7cm]{graphs/HR_20.png}
-  \caption{HR (at least 200PA)}
-  \label{HR_20}
-\end{figure}
-\begin{figure}[H]
-  \centering
-  \includegraphics[width = 10cm, height = 7cm]{graphs/SB_30.png}
-  \caption{SB: cutpoint $=30$ (at least 5SB)}
-  \label{SB_30}
-\end{figure}
-\begin{figure}[H]
-  \centering
-  \includegraphics[width = 10cm, height = 7cm]{graphs/SB_40.png}
-  \caption{SB: cutpoint $=40$ (at least 5SB)}
-  \label{SB_40}
-\end{figure}
-\begin{figure}[H]
-  \centering
-  \includegraphics[width = 10cm, height = 7cm]{graphs/RBI_100.png}
-  \caption{RBI (at least 200PA)}
-  \label{RBI_100}
-\end{figure}
-\begin{figure}[H]
-  \centering
-  \includegraphics[width = 10cm, height = 7cm]{graphs/PA_500.png}
-  \caption{PA (at least 200PA)}
-  \label{PA_500}
-\end{figure}
-\begin{figure}[H]
-  \centering
-  \includegraphics[width = 10cm, height = 7cm]{graphs/H_200.png}
-  \caption{H (at least 200PA)}
-  \label{H_200}
-\end{figure}
+\newpage
+
+\begin{tabular}{cc}
+  \begin{minipage}[H]{0.4\textwidth}
+
+    \begin{figure}[H]
+      \centering
+      \includegraphics[keepaspectratio, scale = 0.5, angle = 90]
+      {graphs/AVG_300.png}
+      \caption{AVG (at least 200PA)}
+      \label{AVG_300}
+    \end{figure}
+  \end{minipage} &
+
+
+
+  \begin{minipage}[H]{0.4\textwidth}
+
+    \begin{figure}[H]
+      \centering
+      \includegraphics[keepaspectratio, scale = 0.5, angle = 90]
+      {graphs/OBP_350.png}
+      \caption{OBP (at least 200PA)}
+      \label{OBP_350}
+      \end{figure}
+   \end{minipage} \\
+   \begin{minipage}[H]{0.4\textwidth}
+    \begin{figure}[H]
+      \centering
+      \includegraphics[keepaspectratio, scale = 0.5, angle = 90]
+      {graphs/HR_20.png}
+      \caption{HR (at least 200PA)}
+      \label{HR_20}
+    \end{figure}
+   \end{minipage}  &
+
+   \begin{minipage}[H]{0.4\textwidth}
+
+    \begin{figure}[H]
+      \centering
+      \includegraphics[keepaspectratio, scale = 0.5, angle = 90]
+      {graphs/RBI_100.png}
+      \caption{RBI (at least 200PA)}
+      \label{RBI_100}
+    \end{figure}
+  \end{minipage}
+\end{tabular}
+
+\newpage
+
+\begin{tabular}{cc}
+  \begin{minipage}[H]{0.5\textwidth}
+    \begin{figure}[H]
+      \centering
+      \includegraphics[keepaspectratio, scale = 0.5, angle = 90]
+      {graphs/SB_30.png}
+      \caption{SB: cutpoint $=30$ (at least 5SB)}
+      \label{SB_30}
+    \end{figure}
+
+  \end{minipage} &
+  \begin{minipage}[H]{0.5\textwidth}
+    \begin{figure}[H]
+      \centering
+      \includegraphics[keepaspectratio, scale = 0.5, angle = 90]
+      {graphs/SB_40.png}
+      \caption{SB: cutpoint $=40$ (at least 5SB)}
+      \label{SB_40}
+    \end{figure}
+
+  \end{minipage}\\
+  \begin{minipage}[H]{0.5\textwidth}
+    \begin{figure}[H]
+      \centering
+      \includegraphics[keepaspectratio, scale = 0.5, angle = 90]
+      {graphs/PA_500.png}
+      \caption{PA (at least 200PA)}
+      \label{PA_500}
+    \end{figure}
+
+  \end{minipage}&
+  \begin{minipage}[H]{0.5\textwidth}
+    \begin{figure}[H]
+      \centering
+      \includegraphics[keepaspectratio, scale = 0.5, angle = 90]
+      {graphs/H_200.png}
+      \caption{H (at least 200PA)}
+      \label{H_200}
+    \end{figure}
+
+  \end{minipage}
+\end{tabular}
+
+\newpage
+
+\section{Monetary Incentive}
+
+\begin{landscape}
+  \begin{table}
+    \include{results/Sal_AVG_300_local}
+
+  \end{table}
+
+  \begin{table}
+    \include{results/dSal_AVG_300_local}
+
+  \end{table}
+
+  \begin{table}
+    \include{results/dSal_AVG_did_local}
+
+  \end{table}
+
+
+
+\end{landscape}
+
+\begin{landscape}
+  \begin{table}[H]
+    \small
+    \centering
+    \begin{tabular}{lccccccc}\hline
+      index,cutpoint & Other Control & bw type & bandwidth
+      & Observations & Estimate & Std. Error & $z$
+      \\ \hline \hline
+      AVG, .300 & No &LATE .300 & .036 & 4868 & .108 & .073 & 1.47 \\
+      & &Half-BW &  .018 & 2529 & .054 & .103 & .524 \\
+      & & Double-BW & .073 & 8097 & .072 & .057 & 1.261
+      \\ \cline{3-8}
+      & Yes & LATE & .042 & 5571 & .048 & .060 & .786 \\
+      & & Half-BW & .021 & 2885 & .038 & .084 & .448 \\
+      & & Double-BW & .085 & 8471 & .036 & 0.049 & .733
+      \\ \hline
+      HR, 20 & No & LATE & 3.09 & 1315 & -.010 & .190 & -.052 \\
+      & & Half-BW & 1.544 & 562 & .022 & .121 & .183 \\
+      & & Double-BW & 6.177 & 2582 & -.044 & 0.110 & -.402 \\ \cline{3-8}
+      & Yes & LATE & 3.10& 1307 & -.0215 & .151 & -.142 \\
+      & & Half-BW & 1.55 & 560 & 0.011 & 0.096 & .114 \\
+      & & Double-BW & 6.20 & 2558 & -.045 & .087 & -.519 \\ \hline
+      OBP, .350 & No &LATE & .078 & 8495 & -.008 & .048 & -.158 \\
+      & & Half-BW & .039 & 5992 & -.026 & .063 & -.409 \\
+      & & Double-BW & .157 & 8910 & .002 & .042 & .038 \\ \cline{3-8}
+      & Yes & LATE & .076 & 8368 & .010 & .042 & .249 \\
+      & & Half-BW & .038 & 5724 & -.010 & .055 & -.184 \\
+      & &Double-BW & .152 & 8865 & .010 & .0366 & .278 \\ \hline
+      SB, 30 & No & LATE & 3.827 & 282 & .578 & .351 & 1.648 \\
+      & &Half-BW & 1.913 & 134 & .557 & .251 & 2.225* \\
+      & &Double-BW & 7.654 & 629 & .486 & .210 & 2.313* \\ \cline{3-8}
+      & Yes & LATE & 3.829 & 282 & .361 & .288 & 1.254 \\
+      & & Half-BW & 1.915 & 134 & .314 & .212 & 1.481 \\
+      & & Double-BW & 7.658 & 629 & .333 & .167 & 1.991* \\ \hline
+    \end{tabular}
+    \footnotesize
+    \flushright
+    ***: $p<0.1\%$, **: $p<1\%$, *: $p<5\%$.
+
+    Bandwidth is optimized following the method of Mcrary(2007).
+    \caption{``RDDlike'' Test for Discontinuity}
+  \end{table}
+\end{landscape}
+
+\begin{landscape}
+  \begin{table}[H]
+    \small
+    \centering
+    \begin{tabular}{lccccccc}\hline
+      index,cutpoint & Other Control & bw type & bandwidth
+      & Observations & Estimate & Std. Error & $z$
+      \\ \hline \hline
+      AVG, .300 & No &LATE &.034 & 686 & -.115 & .143 & -.801 \\
+      & &Half-BW & .017 & 356 & -.215 & .209 & -1.027 \\
+      & &Double-BW & .068 & 1279 & -.084 & .111 & -.753
+      \\ \cline{3-8}
+      & Yes & LATE & .033 & 652 & -.145 & .146 & -.990\\
+      & &Half-BW & .017 & 326 & -.256 & .209 & -1.227 \\
+      & &Double-BW & .067 & 1238 & -.077 & .114 & -.680
+      \\ \hline
+      HR, 20 & No &LATE & 2.807 &153 & -0.6213 & .430 & -1.446\\
+      & &Half-BW & 1.404 & 96 & -.304 & .227 & -1.337\\
+      & &Double-BW & 5.615 & 324 & -.207 & 0.231 & -.896\\ \cline{3-8}
+      & Yes & LATE & 2.916 & 150 & -.2451 & .380 & -0.646 \\
+      & &Half-BW & 1.458 & 95 & -.233 & .199 & -1.170 \\
+      & &Double-BW & 5.831 & 311 & -.141 & .200 -.706 \\ \cline{3-8}
+      OBP, .350 & No &LATE & .043 & 1038 & .030 & .117 & .255 \\
+      & &Half-BW & .0213 & 575 & -.036 & .161 & -.227 \\
+      & &Double-BW & .085 & 1454 & .006 & .093 & \\ \cline{3-8}
+      & Yes & LATE & .04805 & 1131 & .042 & .105 & .397 \\
+      & &Half-BW & .024 & 631 & -.039 & .143 & -.271 \\
+      & &Double-BW & .096 & 1457 & .022 & .085 & .262 \\ \hline
+      SB, 30 & No &LATE & 4.449 & 41 & .104 & .639 & .162 \\
+      & & Half-BW &2.225 & 25 & -.576 & .900 & -.640 \\
+      & &Double-BW & 8.899 & 75 & .239 & .446 &.537 \\ \cline{3-8}
+      & Yes &LATE & 4.457 & 41 & -.118 & .518 & -.227 \\
+      & & Half-BW &2.228 & 25 & -1.252 & .696 & -1.800 \\
+      & &Double-BW & 8.913 & 75 &-.105 & .3614 & -.291 \\ \hline
+    \end{tabular}
+    \footnotesize
+    \flushright
+    ***: $p<0.1\%$, **: $p<1\%$, *: $p<5\%$.
+
+    Bandwidth is optimized following the method of Mcrary(2007).
+    \caption{Restricted Sample to Free Agency
+
+    ``RDDlike'' Test for Discontinuity}
+  \end{table}
+\end{landscape}
+
+\begin{landscape}
+  \begin{table}
+    \include{results/dSal_AVG_did_local_fa}
+
+  \end{table}
+\end{landscape}
+
+\section{Time-Series}
+
+\begin{landscape}
+  \begin{table}
+    \include{results/dSal_AVG_did_local_bfst}
+  \end{table}
+
+  \begin{table}
+    \include{results/dSal_AVG_did_local_stmb}
+  \end{table}
+
+  \begin{table}
+    \include{results/dSal_AVG_did_local_afmb}
+  \end{table}
+
+  \begin{table}
+    \include{results/dSal_AVG_didid_local}
+  \end{table}
+
+  \begin{table}
+    \include{results/dSal_AVG_didid_local_fa}
+  \end{table}
+\end{landscape}
+
+
+
 \end{document}

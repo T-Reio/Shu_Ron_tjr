@@ -12,8 +12,7 @@ stats <- subset(stats, stats$PA >= 90)
 stats <- subset(stats, stats$SB >= 5)
 
 #Sort with Eras
-stats <- subset(stats, stats$Season <= 1975)
-stats <- subset(stats, stats$Season >= 1976 & stats$Season <= 1994)
+stats <- subset(stats, stats$Season >= 1987 & stats$Season <= 1994)
 stats <- subset(stats, stats$Season >= 1995 & stats$Season <= 2003)
 stats <- subset(stats, stats$Season >= 2004)
 
@@ -25,8 +24,20 @@ stats <- subset(stats, stats$FA == 0)
 stats <- subset(stats, AVG < 0.320 & AVG >= 0.280)
 stats <- subset(stats, AVG < 0.310 & AVG >= 0.290)
 
-stats <- subset(stats, AVG < 0.3 & AVG >= 0.280)
-stats <- subset(stats, AVG < 0.320 & AVG >= 300)
+stats <- subset(stats, AVG < 0.320 & AVG >= 0.280)
+stats <- subset(stats, AVG < 0.310 & AVG >= 0.290)
+
+stats <- subset(stats, OBP < 0.370 & OBP >= 0.330)
+stats <- subset(stats, OBP < 0.360 & OBP >= 0.340)
+
+stats <- subset(stats, AVG < 0.320 & AVG >= 0.280)
+stats <- subset(stats, AVG < 0.310 & AVG >= 0.290)
+
+stats <- subset(stats, AVG < 0.320 & AVG >= 0.280)
+stats <- subset(stats, AVG < 0.310 & AVG >= 0.290)
+
+stats <- subset(stats, AVG < 0.320 & AVG >= 0.280)
+stats <- subset(stats, AVG < 0.310 & AVG >= 0.290)
 
 #Variables
 Sal_real <- stats$`AVG ANNUAL`
@@ -283,6 +294,29 @@ e8 <- felm(Sal_dev ~ AVG * AVG_300 * ERA + FLD + BsR + WPA + nWPA + FA | ID)
 e5 <- lm(Sal_dev ~ AVG * AVG_300 * ERA + FLD + BsR + AGE + AGE_sq + Clutch)
 e6 <- felm(Sal_dev ~ AVG * AVG_300 * ERA + FLD + BsR + AGE + AGE_sq + WPA + nWPA| POS)
 e7 <- felm(Sal_dev ~ AVG * AVG_300 * ERA + FLD + BsR + WPA + nWPA | ID)
+
+summary(e1)
+summary(e2)
+summary(e3)
+summary(e4)
+summary(e5)
+summary(e6)
+summary(e7)
+summary(e8)
+
+e1 <- lm(Sal_dev ~ BAT * AVG_300 * ERA)
+e2 <- lm(Sal_dev ~ BAT * AVG_300 * ERA + FLD + BsR)
+e3 <- lm(Sal_dev ~ BAT * AVG_300 * ERA + FLD + BsR + AGE + AGE_sq)
+e4 <- lm(Sal_dev ~ BAT * AVG_300 * ERA + FLD + BsR + AGE + AGE_sq + WPA + nWPA)
+
+e5 <- lm(Sal_dev ~ BAT * AVG_300 * ERA + FLD + BsR + AGE + AGE_sq + WPA + nWPA + FA)
+e6 <- lm(Sal_dev ~ BAT * AVG_300 * ERA + FLD + BsR + AGE + AGE_sq + Clutch + FA)
+e7 <- felm(Sal_dev ~ BAT * AVG_300 * ERA + FLD + BsR + AGE + AGE_sq + WPA + nWPA + FA | POS)
+e8 <- felm(Sal_dev ~ BAT * AVG_300 * ERA + FLD + BsR + WPA + nWPA + FA | ID)
+
+e5 <- lm(Sal_dev ~ BAT * AVG_300 * ERA + FLD + BsR + AGE + AGE_sq + Clutch)
+e6 <- felm(Sal_dev ~ BAT * AVG_300 * ERA + FLD + BsR + AGE + AGE_sq + WPA + nWPA| POS)
+e7 <- felm(Sal_dev ~ BAT * AVG_300 * ERA + FLD + BsR + WPA + nWPA | ID)
 
 summary(e1)
 summary(e2)

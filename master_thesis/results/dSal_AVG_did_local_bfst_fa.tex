@@ -1,0 +1,64 @@
+
+% Table created by stargazer v.5.2.2 by Marek Hlavac, Harvard University. E-mail: hlavac at fas.harvard.edu
+% Date and time: ‰Î, 10 30, 2018 - 22:22:25
+% Requires LaTeX packages: dcolumn 
+\begin{table}[H] \centering 
+  \caption{Restriced Sample to FA:Before Strike: DID around .300} 
+  \label{local_OLS_dSal_bfst_fa} 
+\tiny 
+\begin{tabular}{@{\extracolsep{5pt}}lD{.}{.}{-3} D{.}{.}{-3} D{.}{.}{-3} D{.}{.}{-3} D{.}{.}{-3} D{.}{.}{-3} D{.}{.}{-3} } 
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+ & \multicolumn{7}{c}{\textit{Dependent variable:}} \\ 
+\cline{2-8} 
+\\[-1.8ex] & \multicolumn{7}{c}{Sal\_dev} \\ 
+\\[-1.8ex] & \multicolumn{5}{c}{\textit{OLS}} & \multicolumn{2}{c}{\textit{felm}} \\ 
+\\[-1.8ex] & \multicolumn{1}{c}{(1)} & \multicolumn{1}{c}{(2)} & \multicolumn{1}{c}{(3)} & \multicolumn{1}{c}{(4)} & \multicolumn{1}{c}{(5)} & \multicolumn{1}{c}{(6)} & \multicolumn{1}{c}{(7)}\\ 
+\hline \\[-1.8ex] 
+ BAT & .028^{***} & .027^{***} & .027^{***} & .028^{***} & .028^{***} & -.001 & .045^{***} \\ 
+  & (.004) & (.004) & (.003) & (.004) & (.003) & (.007) & (.006) \\ 
+  & & & & & & & \\ 
+ AVG\_300 & .037 & .035 & -.140 & -.139 & -.148 & -.093 & -.192^{*} \\ 
+  & (.120) & (.120) & (.104) & (.104) & (.103) & (.139) & (.115) \\ 
+  & & & & & & & \\ 
+ FLD &  & -.003 & -.002 & -.002 & -.002 & -.006 & -.007 \\ 
+  &  & (.005) & (.004) & (.004) & (.004) & (.006) & (.005) \\ 
+  & & & & & & & \\ 
+ BsR &  & .064^{***} & .071^{***} & .071^{***} & .068^{***} & .028 & -.049^{***} \\ 
+  &  & (.019) & (.016) & (.017) & (.017) & (.028) & (.013) \\ 
+  & & & & & & & \\ 
+ AGE &  &  & .684^{***} & .685^{***} & .676^{***} &  &  \\ 
+  &  &  & (.095) & (.096) & (.095) &  &  \\ 
+  & & & & & & & \\ 
+ AGE\_sq &  &  & -.010^{***} & -.010^{***} & -.010^{***} &  &  \\ 
+  &  &  & (.002) & (.002) & (.002) &  &  \\ 
+  & & & & & & & \\ 
+ WPA &  &  &  & -4.127 &  & 24.990 & -6.500 \\ 
+  &  &  &  & (16.804) &  & (23.840) & (21.734) \\ 
+  & & & & & & & \\ 
+ nWPA &  &  &  & -1.834 &  & -41.819 & -35.581 \\ 
+  &  &  &  & (23.722) &  & (35.083) & (31.529) \\ 
+  & & & & & & & \\ 
+ Clutch &  &  &  &  & .060 &  &  \\ 
+  &  &  &  &  & (.038) &  &  \\ 
+  & & & & & & & \\ 
+ FA &  &  &  &  &  &  & .115 \\ 
+  &  &  &  &  &  &  & (.103) \\ 
+  & & & & & & & \\ 
+ BAT:AVG\_300 & .0001 & .001 & .006 & .006 & .006 & .013^{*} & -.004 \\ 
+  & (.006) & (.006) & (.005) & (.005) & (.005) & (.007) & (.005) \\ 
+  & & & & & & & \\ 
+ Constant & -.214^{***} & -.222^{***} & -11.588^{***} & -11.492^{***} & -11.472^{***} &  &  \\ 
+  & (.059) & (.059) & (1.389) & (1.477) & (1.389) &  &  \\ 
+  & & & & & & & \\ 
+\hline \\[-1.8ex] 
+Observations & \multicolumn{1}{c}{575} & \multicolumn{1}{c}{570} & \multicolumn{1}{c}{570} & \multicolumn{1}{c}{570} & \multicolumn{1}{c}{570} & \multicolumn{1}{c}{570} & \multicolumn{1}{c}{1,243} \\ 
+R$^{2}$ & \multicolumn{1}{c}{.164} & \multicolumn{1}{c}{.180} & \multicolumn{1}{c}{.396} & \multicolumn{1}{c}{.397} & \multicolumn{1}{c}{.399} & \multicolumn{1}{c}{.776} & \multicolumn{1}{c}{.693} \\ 
+Adjusted R$^{2}$ & \multicolumn{1}{c}{.159} & \multicolumn{1}{c}{.173} & \multicolumn{1}{c}{.389} & \multicolumn{1}{c}{.387} & \multicolumn{1}{c}{.391} & \multicolumn{1}{c}{.522} & \multicolumn{1}{c}{.457} \\ 
+Residual Std. Error & \multicolumn{1}{c}{.881 (df = 571)} & \multicolumn{1}{c}{.876 (df = 564)} & \multicolumn{1}{c}{.753 (df = 562)} & \multicolumn{1}{c}{.754 (df = 560)} & \multicolumn{1}{c}{.752 (df = 561)} & \multicolumn{1}{c}{.666 (df = 267)} & \multicolumn{1}{c}{.920 (df = 703)} \\ 
+F Statistic & \multicolumn{1}{c}{37.294$^{***}$ (df = 3; 571)} & \multicolumn{1}{c}{24.753$^{***}$ (df = 5; 564)} & \multicolumn{1}{c}{52.727$^{***}$ (df = 7; 562)} & \multicolumn{1}{c}{40.880$^{***}$ (df = 9; 560)} & \multicolumn{1}{c}{46.575$^{***}$ (df = 8; 561)} &  &  \\ 
+\hline 
+\hline \\[-1.8ex] 
+\textit{Note:}  & \multicolumn{7}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\ 
+\end{tabular} 
+\end{table} 

@@ -1,0 +1,69 @@
+
+% Table created by stargazer v.5.2.2 by Marek Hlavac, Harvard University. E-mail: hlavac at fas.harvard.edu
+% Date and time: ��, 10 30, 2018 - 22:26:57
+% Requires LaTeX packages: dcolumn
+\begin{table}[H] \centering
+  \caption{Restriced Sample to FA: DIDID around .300}
+  \label{local_dSal_AVG_didid_fa}
+\tiny
+\begin{tabular}{@{\extracolsep{5pt}}lD{.}{.}{-3} D{.}{.}{-3} D{.}{.}{-3} D{.}{.}{-3} D{.}{.}{-3} D{.}{.}{-3} }
+\\[-1.8ex]\hline
+\hline \\[-1.8ex]
+ & \multicolumn{6}{c}{\textit{Dependent variable:}} \\
+\cline{2-7}
+\\[-1.8ex] & \multicolumn{6}{c}{Sal\_dev} \\
+\\[-1.8ex] & \multicolumn{4}{c}{\textit{OLS}} & \multicolumn{2}{c}{\textit{felm}} \\
+\\[-1.8ex] & \multicolumn{1}{c}{(1)} & \multicolumn{1}{c}{(2)} & \multicolumn{1}{c}{(3)} & \multicolumn{1}{c}{(4)} & \multicolumn{1}{c}{(5)} & \multicolumn{1}{c}{(6)}\\
+\hline \\[-1.8ex]
+ AVG & 23.875^{*} & 24.393^{*} & 25.360^{*} & 14.790 & 14.239 & 8.195 \\
+  & (13.816) & (13.905) & (13.578) & (12.353) & (12.202) & (17.147) \\
+  & & & & & & \\
+ AVG\_300 & 8.159 & 8.720 & 9.326 & 2.811 & 1.112 & 6.010 \\
+  & (7.392) & (7.422) & (7.251) & (6.601) & (6.573) & (9.910) \\
+  & & & & & & \\
+ ERAbfst & -2.618 & .418 & .316 & -3.136 & -1.822 & .439 \\
+  & (10.309) & (10.530) & (10.277) & (9.311) & (9.134) & (12.800) \\
+  & & & & & & \\
+ ERAstmb & -1.602 & -1.883 & -1.861 & -3.176 & -1.610 & -12.919 \\
+  & (6.985) & (7.158) & (7.003) & (6.345) & (6.206) & (8.766) \\
+  & & & & & & \\
+ AVG:AVG\_300 & -27.092 & -28.951 & -31.130 & -9.822 & -4.047 & -20.401 \\
+  & (24.550) & (24.653) & (24.084) & (21.922) & (21.824) & (32.833) \\
+  & & & & & & \\
+ AVG:ERAbfst & 9.765 & -.783 & -.446 & 11.175 & 7.051 & .461 \\
+  & (35.609) & (36.391) & (35.516) & (32.175) & (31.565) & (44.134) \\
+  & & & & & & \\
+ AVG:ERAstmb & 5.353 & 6.298 & 6.149 & 11.138 & 6.042 & 46.063 \\
+  & (24.227) & (24.837) & (24.299) & (22.021) & (21.535) & (30.392) \\
+  & & & & & & \\
+ AVG\_300:ERAbfst & -4.366 & -7.547 & -9.003 & 3.208 & 4.161 & 7.172 \\
+  & (15.078) & (15.347) & (14.983) & (13.627) & (13.391) & (17.346) \\
+  & & & & & & \\
+ AVG\_300:ERAstmb & -.805 & -.501 & -.249 & 10.720 & 10.912 & 8.488 \\
+  & (11.395) & (11.638) & (11.375) & (10.369) & (10.154) & (14.870) \\
+  & & & & & & \\
+ AVG:AVG\_300:ERAbfst & 13.528 & 24.567 & 29.087 & -11.007 & -14.131 & -19.686 \\
+  & (50.459) & (51.399) & (50.177) & (45.626) & (44.832) & (58.300) \\
+  & & & & & & \\
+ AVG:AVG\_300:ERAstmb & 1.722 & .673 & .034 & -36.362 & -36.856 & -30.356 \\
+  & (38.073) & (38.905) & (38.024) & (34.656) & (33.934) & (49.788) \\
+  & & & & & & \\
+ Constant & -6.903^{*} & -7.045^{*} & -5.808 & -5.735 &  &  \\
+  & (3.989) & (4.015) & (5.036) & (4.598) &  &  \\
+  & & & & & & \\
+\hline \\[-1.8ex]
+Fixed Effect & & & & & Position & Individual \\ \hline
+Other Control \\
+FLD,BsR & & X & X & X & X & X\\
+AGE, AGE_sq & & & X & X & X & X\\
+WPA, nWPA &  &  &  & X & X & X\\ \hline
+Observations & \multicolumn{1}{c}{402} & \multicolumn{1}{c}{394} & \multicolumn{1}{c}{394} & \multicolumn{1}{c}{394} & \multicolumn{1}{c}{394} & \multicolumn{1}{c}{394} \\
+R$^{2}$ & \multicolumn{1}{c}{.045} & \multicolumn{1}{c}{.063} & \multicolumn{1}{c}{.112} & \multicolumn{1}{c}{.276} & \multicolumn{1}{c}{.333} & \multicolumn{1}{c}{.920} \\
+Adjusted R$^{2}$ & \multicolumn{1}{c}{.018} & \multicolumn{1}{c}{.031} & \multicolumn{1}{c}{.077} & \multicolumn{1}{c}{.244} & \multicolumn{1}{c}{.286} & \multicolumn{1}{c}{.667} \\
+Residual Std. Error & \multicolumn{1}{c}{.920 (df = 390)} & \multicolumn{1}{c}{.922 (df = 380)} & \multicolumn{1}{c}{.900 (df = 378)} & \multicolumn{1}{c}{.814 (df = 376)} & \multicolumn{1}{c}{.791 (df = 367)} & \multicolumn{1}{c}{.540 (df = 95)} \\
+F Statistic & \multicolumn{1}{c}{1.655$^{*}$ (df = 11; 390)} & \multicolumn{1}{c}{1.962$^{**}$ (df = 13; 380)} & \multicolumn{1}{c}{3.182$^{***}$ (df = 15; 378)} & \multicolumn{1}{c}{8.448$^{***}$ (df = 17; 376)} &  &  \\
+\hline
+\hline \\[-1.8ex]
+\textit{Note:}  & \multicolumn{6}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\
+\end{tabular}
+\end{table}

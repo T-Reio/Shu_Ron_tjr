@@ -17,6 +17,7 @@ help("hist")
 help(package = "rdd")
 help(DCdensity)
 help(latex)
+help("stargazer")
 
 rdd <- rddensity(AVG, c = 0.300)
 summary(rdd)
@@ -33,10 +34,16 @@ m1$df.residual
 m1$assign
 m1$terms
 r1$bw
-latex(r1$bw, file = '', booktabs = T, dcolumn = T)
+latex(r1$est, file = '', booktabs = T, dcolumn = T)
 
 xtable(m1)
-xtable(r1)
+latex(list(r1$est, r1$bw), file = '', booktabs = T, dcolumn = T)
+r1$ci
+
+stargazer(list(r1$est, r1$se), out = '')
+r1
+
+summary(r1)
 
 #packages required
 install.packages("data.table", dependencies = T)

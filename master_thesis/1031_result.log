@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (sjis) (TeX Live 2016/W32TeX) (preloaded format=platex 2017.6.25)  29 OCT 2018 22:11
+This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (sjis) (TeX Live 2016/W32TeX) (preloaded format=platex 2017.6.25)  30 OCT 2018 22:34
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -420,7 +420,7 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layouthoffset=\dimen184
 \Gm@layoutvoffset=\dimen185
 \Gm@dimlist=\toks36
-) (./1031_result.aux)
+) (./1031_result.aux (./results/Sal_AVG_300_local.aux) (./results/dSal_AVG_300_local.aux) (./results/dSal_AVG_did_local.aux) (./results/dSal_AVG_did_local_fa.aux) (./results/dSal_AVG_did_local_bfst.aux) (./results/dSal_AVG_did_local_stmb.aux) (./results/dSal_AVG_did_local_afmb.aux) (./results/dSal_AVG_didid_local.aux) (./results/dSal_AVG_didid_local_fa.aux))
 \openout1 = `1031_result.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
@@ -445,7 +445,8 @@ LaTeX Font Info:    Try loading font information for TS1+cmr on input line 13.
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 13.
- (I search kanjifont definition file: . . ) (I search font definition file: . . . . . . . . )
+
+(I search kanjifont definition file: . . ) (I search font definition file: . . . . . . . . )
 LaTeX Font Info:    Try loading font information for OT1+ppl on input line 13.
  (c:/texlive/2016/texmf-dist/tex/latex/psnfss/ot1ppl.fd
 File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
@@ -484,71 +485,281 @@ File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Try loading font information for OML+zplm on input line 17.
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <17.28> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 15.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <17.28> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 15.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <17.28> not available
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 15.
+LaTeX Font Info:    Try loading font information for OML+zplm on input line 22.
 (c:/texlive/2016/texmf-dist/tex/latex/psnfss/omlzplm.fd
 File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
 )
-LaTeX Font Info:    Try loading font information for OMS+zplm on input line 17.
+LaTeX Font Info:    Try loading font information for OMS+zplm on input line 22.
  (c:/texlive/2016/texmf-dist/tex/latex/psnfss/omszplm.fd
 File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
 )
-LaTeX Font Info:    Try loading font information for OMX+zplm on input line 17.
+LaTeX Font Info:    Try loading font information for OMX+zplm on input line 22.
  (c:/texlive/2016/texmf-dist/tex/latex/psnfss/omxzplm.fd
 File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
 )
-LaTeX Font Info:    Try loading font information for OT1+zplm on input line 17.
+LaTeX Font Info:    Try loading font information for OT1+zplm on input line 22.
  (c:/texlive/2016/texmf-dist/tex/latex/psnfss/ot1zplm.fd
 File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
 )
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 12.50409pt on input line 17.
+(Font)              scaled to size 11.40997pt on input line 22.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 9.37807pt on input line 17.
+(Font)              scaled to size 8.33606pt on input line 22.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 7.29405pt on input line 17.
+(Font)              scaled to size 6.25204pt on input line 22.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 12.50409pt on input line 17.
+(Font)              scaled to size 11.40997pt on input line 22.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 9.37807pt on input line 17.
+(Font)              scaled to size 8.33606pt on input line 22.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 7.29405pt on input line 17.
+(Font)              scaled to size 6.25204pt on input line 22.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 10.42007pt on input line 39.
+(Font)              scaled to size 10.42007pt on input line 44.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 7.91925pt on input line 39.
+(Font)              scaled to size 7.91925pt on input line 44.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 10.42007pt on input line 44.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 7.91925pt on input line 44.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 6.25204pt on input line 39.
+(Font)              scaled to size 12.50409pt on input line 47.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 9.37807pt on input line 47.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 7.29405pt on input line 47.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 10.42007pt on input line 39.
+(Font)              scaled to size 12.50409pt on input line 47.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 7.91925pt on input line 39.
+(Font)              scaled to size 9.37807pt on input line 47.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 6.25204pt on input line 39.
+(Font)              scaled to size 7.29405pt on input line 47.
+ [1
+
+]
 File: graphs/AVG_300.png Graphic file (type bmp)
  <graphs/AVG_300.png>
 File: graphs/OBP_350.png Graphic file (type bmp)
  <graphs/OBP_350.png>
 File: graphs/HR_20.png Graphic file (type bmp)
- <graphs/HR_20.png> [1
+ <graphs/HR_20.png>
+File: graphs/RBI_100.png Graphic file (type bmp)
+ <graphs/RBI_100.png>
+Overfull \vbox (36.35164pt too high) has occurred while \output is active []
 
-]
+ [2]
 File: graphs/SB_30.png Graphic file (type bmp)
  <graphs/SB_30.png>
 File: graphs/SB_40.png Graphic file (type bmp)
- <graphs/SB_40.png> [2]
-File: graphs/RBI_100.png Graphic file (type bmp)
- <graphs/RBI_100.png>
+ <graphs/SB_40.png>
 File: graphs/PA_500.png Graphic file (type bmp)
- <graphs/PA_500.png> [3]
+ <graphs/PA_500.png>
 File: graphs/H_200.png Graphic file (type bmp)
- <graphs/H_200.png> [4] [5] (./1031_result.aux) ) 
-Here is how much of TeX's memory you used:
- 12615 strings out of 493683
- 246243 string characters out of 6152642
- 287483 words of memory out of 5000000
- 15930 multiletter control sequences out of 15000+600000
- 21597 words of font info for 74 fonts, out of 8000000 for 9000
- 929 hyphenation exceptions out of 8191
- 55i,9n,54p,415b,300s stack positions out of 5000i,500n,10000p,200000b,80000s
+ <graphs/H_200.png>
+Overfull \hbox (41.6248pt too wide) in paragraph at lines 100--142
+[][] 
+ []
 
-Output written on 1031_result.dvi (5 pages, 4616 bytes).
+
+Overfull \vbox (1.34097pt too high) has occurred while \output is active []
+
+ [3] [4]
+\openout2 = `results/Sal_AVG_300_local.aux'.
+
+ (./results/Sal_AVG_300_local.tex
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 5.21004pt on input line 9.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 5.21004pt on input line 9.
+
+
+LaTeX Font Warning: Font shape `JT1/mc/m/it' undefined
+(Font)              using `JT1/mc/m/n' instead on input line 12.
+
+
+LaTeX Font Warning: Font shape `JY1/mc/m/it' undefined
+(Font)              using `JY1/mc/m/n' instead on input line 12.
+
+)
+\openout2 = `results/dSal_AVG_300_local.aux'.
+
+ (./results/dSal_AVG_300_local.tex)
+\openout2 = `results/dSal_AVG_did_local.aux'.
+
+ (./results/dSal_AVG_did_local.tex) [5
+
+
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Simple OLS around .300}}{5}}
+\newlabel{local_OLS_Sal}{{2}{5}}
+
+] [6
+
+
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Simple OLS around .300}}{6}}
+\newlabel{local_OLS_dSal}{{3}{6}}
+
+] [7
+
+
+\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces DID around .300}}{7}}
+\newlabel{local_dSal_AVG_did}{{4}{7}}
+
+] [8
+
+
+
+]
+Runaway argument?
+{\protect \numberline {\csname the\@captype \endcsname }{\ignorespaces \ETC.
+./1031_result.tex:253: Paragraph ended before \addcontentsline was complete.
+<to be read again> 
+                   \par 
+l.253     ``RDDlike'' Test for Discontinuity}
+                                             
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+./1031_result.tex:253: Extra }, or forgotten \endgroup.
+\@tempf ...me the#1\endcsname }{\ignorespaces #2}}
+                                                  \begingroup \@parboxrestor...
+l.253     ``RDDlike'' Test for Discontinuity}
+                                             
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./1031_result.tex:254: Extra }, or forgotten \endgroup.
+\@endfloatbox ...pagefalse \outer@nobreak \egroup 
+                                                  \color@endbox 
+l.254   \end{table}
+                   
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+[9
+
+
+]
+\openout2 = `results/dSal_AVG_did_local_fa.aux'.
+
+ (./results/dSal_AVG_did_local_fa.tex) [10
+
+
+\@writefile{lot}{\contentsline {table}{\numberline {7}{\ignorespaces Restriced Sample to FA: DID around .300}}{10}}
+\newlabel{local_dSal_AVG_did_fa}{{7}{10}}
+
+] [11
+
+
+
+]
+\openout2 = `results/dSal_AVG_did_local_bfst.aux'.
+
+ (./results/dSal_AVG_did_local_bfst.tex)
+\openout2 = `results/dSal_AVG_did_local_stmb.aux'.
+
+ (./results/dSal_AVG_did_local_stmb.tex)
+\openout2 = `results/dSal_AVG_did_local_afmb.aux'.
+
+ (./results/dSal_AVG_did_local_afmb.tex)
+\openout2 = `results/dSal_AVG_didid_local.aux'.
+
+ (./results/dSal_AVG_didid_local.tex
+./results/dSal_AVG_didid_local.tex:58: Missing $ inserted.
+<inserted text> 
+                $
+l.58 AGE, AGE_
+              sq & & & X & X & X & X & X\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./results/dSal_AVG_didid_local.tex:58: Missing $ inserted.
+<inserted text> 
+                $
+l.58 AGE, AGE_sq &
+                   & & X & X & X & X & X\\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+)
+\openout2 = `results/dSal_AVG_didid_local_fa.aux'.
+
+ (./results/dSal_AVG_didid_local_fa.tex
+./results/dSal_AVG_didid_local_fa.tex:58: Missing $ inserted.
+<inserted text> 
+                $
+l.58 AGE, AGE_
+              sq & & & X & X & X & X\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./results/dSal_AVG_didid_local_fa.tex:58: Missing $ inserted.
+<inserted text> 
+                $
+l.58 AGE, AGE_sq &
+                   & & X & X & X & X\\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+) [12
+
+
+\@writefile{lot}{\contentsline {table}{\numberline {8}{\ignorespaces Before Strike: DID around .300}}{12}}
+\newlabel{local_OLS_dSal_bfst}{{8}{12}}
+
+] [13
+
+
+\@writefile{lot}{\contentsline {table}{\numberline {9}{\ignorespaces After Strike to Moneyball: DID around .300}}{13}}
+\newlabel{local_OLS_dSal_stmb}{{9}{13}}
+
+] [14
+
+
+\@writefile{lot}{\contentsline {table}{\numberline {10}{\ignorespaces After Moneyball: DID around .300}}{14}}
+\newlabel{local_OLS_dSal_afmb}{{10}{14}}
+
+] [15
+
+
+\@writefile{lot}{\contentsline {table}{\numberline {11}{\ignorespaces DIDID around .300}}{15}}
+\newlabel{local_dSal_AVG_didid}{{11}{15}}
+
+] [16
+
+
+\@writefile{lot}{\contentsline {table}{\numberline {12}{\ignorespaces Restriced Sample to FA: DIDID around .300}}{16}}
+\newlabel{local_dSal_AVG_didid_fa}{{12}{16}}
+
+] (./1031_result.aux (./results/Sal_AVG_300_local.aux) (./results/dSal_AVG_300_local.aux) (./results/dSal_AVG_did_local.aux) (./results/dSal_AVG_did_local_fa.aux) (./results/dSal_AVG_did_local_bfst.aux) (./results/dSal_AVG_did_local_stmb.aux) (./results/dSal_AVG_did_local_afmb.aux) (./results/dSal_AVG_didid_local.aux) (./results/dSal_AVG_didid_local_fa.aux))
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 12733 strings out of 493683
+ 249158 string characters out of 6152642
+ 443949 words of memory out of 5000000
+ 15980 multiletter control sequences out of 15000+600000
+ 31559 words of font info for 106 fonts, out of 8000000 for 9000
+ 929 hyphenation exceptions out of 8191
+ 55i,18n,54p,415b,453s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+Output written on 1031_result.dvi (16 pages, 55492 bytes).

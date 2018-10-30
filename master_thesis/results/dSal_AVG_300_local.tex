@@ -1,0 +1,58 @@
+
+% Table created by stargazer v.5.2.2 by Marek Hlavac, Harvard University. E-mail: hlavac at fas.harvard.edu
+% Date and time: ‰Î, 10 30, 2018 - 16:33:31
+% Requires LaTeX packages: dcolumn 
+\begin{table}[H] \centering 
+  \caption{Simple OLS around .300} 
+  \label{local_OLS_dSal} 
+\tiny 
+\begin{tabular}{@{\extracolsep{5pt}}lD{.}{.}{-3} D{.}{.}{-3} D{.}{.}{-3} D{.}{.}{-3} D{.}{.}{-3} D{.}{.}{-3} D{.}{.}{-3} } 
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+ & \multicolumn{7}{c}{\textit{Dependent variable:}} \\ 
+\cline{2-8} 
+\\[-1.8ex] & \multicolumn{7}{c}{Sal\_dev} \\ 
+\\[-1.8ex] & \multicolumn{5}{c}{\textit{OLS}} & \multicolumn{2}{c}{\textit{felm}} \\ 
+\\[-1.8ex] & \multicolumn{1}{c}{(1)} & \multicolumn{1}{c}{(2)} & \multicolumn{1}{c}{(3)} & \multicolumn{1}{c}{(4)} & \multicolumn{1}{c}{(5)} & \multicolumn{1}{c}{(6)} & \multicolumn{1}{c}{(7)}\\ 
+\hline \\[-1.8ex] 
+ AVG & 22.563^{**} & 22.832^{**} & 21.508^{**} & 11.194 & 10.935 & 9.217 & 6.147 \\ 
+  & (11.192) & (11.243) & (9.764) & (9.186) & (9.171) & (9.151) & (12.618) \\ 
+  & & & & & & & \\ 
+ AVG\_300 & -.0004 & .001 & -.043 & -.031 & -.026 & -.006 & -.032 \\ 
+  & (.125) & (.126) & (.109) & (.102) & (.102) & (.102) & (.137) \\ 
+  & & & & & & & \\ 
+ FLD &  & -.003 & .003 & .004 & .004 & .005 & -.005 \\ 
+  &  & (.004) & (.003) & (.003) & (.003) & (.003) & (.005) \\ 
+  & & & & & & & \\ 
+ BsR &  & .001 & .021^{**} & .016^{*} & .017^{*} & .018^{*} & -.030^{**} \\ 
+  &  & (.010) & (.009) & (.009) & (.009) & (.009) & (.015) \\ 
+  & & & & & & & \\ 
+ AGE &  &  & 1.006^{***} & .958^{***} & .951^{***} & .951^{***} &  \\ 
+  &  &  & (.078) & (.073) & (.073) & (.073) &  \\ 
+  & & & & & & & \\ 
+ AGE\_sq &  &  & -.015^{***} & -.014^{***} & -.014^{***} & -.014^{***} &  \\ 
+  &  &  & (.001) & (.001) & (.001) & (.001) &  \\ 
+  & & & & & & & \\ 
+ WPA &  &  &  & 136.060^{***} & 133.556^{***} & 131.963^{***} & 55.080^{***} \\ 
+  &  &  &  & (10.429) & (10.463) & (10.958) & (19.215) \\ 
+  & & & & & & & \\ 
+ nWPA &  &  &  & -101.414^{***} & -100.274^{***} & -90.593^{***} & -118.407^{***} \\ 
+  &  &  &  & (18.034) & (18.009) & (18.272) & (29.456) \\ 
+  & & & & & & & \\ 
+ FA &  &  &  &  & -.190^{**} & -.194^{**} & .141 \\ 
+  &  &  &  &  & (.079) & (.079) & (.096) \\ 
+  & & & & & & & \\ 
+ Constant & -6.760^{**} & -6.841^{**} & -22.843^{***} & -19.988^{***} & -19.841^{***} &  &  \\ 
+  & (3.290) & (3.305) & (3.077) & (2.927) & (2.923) &  &  \\ 
+  & & & & & & & \\ 
+\hline \\[-1.8ex] 
+Observations & \multicolumn{1}{c}{1,400} & \multicolumn{1}{c}{1,394} & \multicolumn{1}{c}{1,394} & \multicolumn{1}{c}{1,394} & \multicolumn{1}{c}{1,394} & \multicolumn{1}{c}{1,394} & \multicolumn{1}{c}{1,394} \\ 
+R$^{2}$ & \multicolumn{1}{c}{.011} & \multicolumn{1}{c}{.012} & \multicolumn{1}{c}{.256} & \multicolumn{1}{c}{.347} & \multicolumn{1}{c}{.350} & \multicolumn{1}{c}{.361} & \multicolumn{1}{c}{.698} \\ 
+Adjusted R$^{2}$ & \multicolumn{1}{c}{.010} & \multicolumn{1}{c}{.009} & \multicolumn{1}{c}{.253} & \multicolumn{1}{c}{.344} & \multicolumn{1}{c}{.346} & \multicolumn{1}{c}{.352} & \multicolumn{1}{c}{.401} \\ 
+Residual Std. Error & \multicolumn{1}{c}{1.183 (df = 1397)} & \multicolumn{1}{c}{1.186 (df = 1389)} & \multicolumn{1}{c}{1.029 (df = 1387)} & \multicolumn{1}{c}{.965 (df = 1385)} & \multicolumn{1}{c}{.963 (df = 1384)} & \multicolumn{1}{c}{.959 (df = 1375)} & \multicolumn{1}{c}{.921 (df = 703)} \\ 
+F Statistic & \multicolumn{1}{c}{7.906$^{***}$ (df = 2; 1397)} & \multicolumn{1}{c}{4.167$^{***}$ (df = 4; 1389)} & \multicolumn{1}{c}{79.516$^{***}$ (df = 6; 1387)} & \multicolumn{1}{c}{92.130$^{***}$ (df = 8; 1385)} & \multicolumn{1}{c}{82.818$^{***}$ (df = 9; 1384)} &  &  \\ 
+\hline 
+\hline \\[-1.8ex] 
+\textit{Note:}  & \multicolumn{7}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\ 
+\end{tabular} 
+\end{table} 

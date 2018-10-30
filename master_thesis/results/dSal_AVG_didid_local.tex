@@ -1,0 +1,70 @@
+
+% Table created by stargazer v.5.2.2 by Marek Hlavac, Harvard University. E-mail: hlavac at fas.harvard.edu
+% Date and time: ��, 10 30, 2018 - 22:27:52
+% Requires LaTeX packages: dcolumn
+\begin{table}[H] \centering
+  \caption{DIDID around .300}
+  \label{local_dSal_AVG_didid}
+\tiny
+\begin{tabular}{@{\extracolsep{5pt}}lD{.}{.}{-3} D{.}{.}{-3} D{.}{.}{-3} D{.}{.}{-3} D{.}{.}{-3} D{.}{.}{-3} D{.}{.}{-3} }
+\\[-1.8ex]\hline
+\hline \\[-1.8ex]
+ & \multicolumn{7}{c}{\textit{Dependent variable:}} \\
+\cline{2-8}
+\\[-1.8ex] & \multicolumn{7}{c}{Sal\_dev} \\
+\\[-1.8ex] & \multicolumn{5}{c}{\textit{OLS}} & \multicolumn{2}{c}{\textit{felm}} \\
+\\[-1.8ex] & \multicolumn{1}{c}{(1)} & \multicolumn{1}{c}{(2)} & \multicolumn{1}{c}{(3)} & \multicolumn{1}{c}{(4)} & \multicolumn{1}{c}{(5)} & \multicolumn{1}{c}{(6)} & \multicolumn{1}{c}{(7)}\\
+\hline \\[-1.8ex]
+ AVG & .076 & .607 & -1.295 & -8.602 & -8.317 & -9.308 & -4.925 \\
+  & (7.022) & (7.054) & (6.117) & (5.825) & (5.798) & (5.784) & (6.974) \\
+  & & & & & & & \\
+ AVG\_300 & -4.535 & -4.301 & -5.030 & -4.725 & -4.633 & -4.648 & -2.307 \\
+  & (3.523) & (3.535) & (3.067) & (2.910) & (2.897) & (2.891) & (3.250) \\
+  & & & & & & & \\
+ ERAbfst & -4.032 & -4.374 & -5.457 & -4.508 & -4.749 & -4.991 & -8.151^{**} \\
+  & (3.836) & (3.862) & (3.348) & (3.179) & (3.165) & (3.155) & (3.897) \\
+  & & & & & & & \\
+ ERAstmb & -3.940 & -3.751 & -4.337 & -2.058 & -1.951 & -1.927 & -3.368 \\
+  & (3.351) & (3.370) & (2.923) & (2.781) & (2.769) & (2.760) & (3.165) \\
+  & & & & & & & \\
+ AVG:AVG\_300 & 15.621 & 14.833 & 17.123^{*} & 16.069^{*} & 15.748 & 15.836^{*} & 7.827 \\
+  & (11.722) & (11.763) & (10.204) & (9.682) & (9.637) & (9.619) & (10.834) \\
+  & & & & & & & \\
+ AVG:ERAbfst & 14.908 & 16.077 & 19.966^{*} & 16.494 & 17.264 & 18.148^{*} & 23.572^{*} \\
+  & (13.298) & (13.387) & (11.607) & (11.021) & (10.971) & (10.939) & (13.479) \\
+  & & & & & & & \\
+ AVG:ERAstmb & 13.768 & 13.108 & 14.806 & 6.972 & 6.576 & 6.531 & 8.879 \\
+  & (11.615) & (11.681) & (10.132) & (9.642) & (9.598) & (9.567) & (10.958) \\
+  & & & & & & & \\
+ AVG\_300:ERAbfst & 5.135 & 5.373 & 8.010 & 6.498 & 6.751 & 7.272 & 7.259 \\
+  & (6.314) & (6.341) & (5.500) & (5.221) & (5.197) & (5.183) & (6.066) \\
+  & & & & & & & \\
+ AVG\_300:ERAstmb & 2.736 & 2.601 & 2.403 & 1.397 & 1.609 & 1.503 & 1.177 \\
+  & (5.594) & (5.638) & (4.890) & (4.641) & (4.619) & (4.605) & (5.130) \\
+  & & & & & & & \\
+ AVG:AVG\_300:ERAbfst & -17.529 & -18.359 & -27.323 & -22.224 & -23.064 & -24.809 & -24.670 \\
+  & (21.039) & (21.132) & (18.327) & (17.399) & (17.319) & (17.271) & (20.256) \\
+  & & & & & & & \\
+ AVG:AVG\_300:ERAstmb & -9.488 & -8.995 & -8.291 & -4.688 & -5.314 & -4.969 & -4.463 \\
+  & (18.639) & (18.783) & (16.292) & (15.463) & (15.392) & (15.343) & (17.115) \\
+  & & & & & & & \\
+ Constant & -.233 & -.385 & -16.771^{***} & -14.515^{***} & -14.570^{***} &  &  \\
+  & (2.026) & (2.036) & (1.952) & (1.891) & (1.883) &  &  \\
+  & & & & & & & \\
+\hline \\[-1.8ex]
+Fixed Effect & & & & & & Position & Individual \\ \hline
+Other Control \\
+FLD,BsR & & X & X & X & X & X & X\\
+AGE, AGE_sq & & & X & X & X & X & X\\
+WPA, nWPA &  &  &  & X & X & X & X\\
+FA & & & & & X & X & X \\ \hline
+Observations & \multicolumn{1}{c}{2,758} & \multicolumn{1}{c}{2,743} & \multicolumn{1}{c}{2,743} & \multicolumn{1}{c}{2,743} & \multicolumn{1}{c}{2,743} & \multicolumn{1}{c}{2,743} & \multicolumn{1}{c}{2,743} \\
+R$^{2}$ & \multicolumn{1}{c}{.028} & \multicolumn{1}{c}{.028} & \multicolumn{1}{c}{.270} & \multicolumn{1}{c}{.344} & \multicolumn{1}{c}{.350} & \multicolumn{1}{c}{.357} & \multicolumn{1}{c}{.641} \\
+Adjusted R$^{2}$ & \multicolumn{1}{c}{.024} & \multicolumn{1}{c}{.024} & \multicolumn{1}{c}{.266} & \multicolumn{1}{c}{.340} & \multicolumn{1}{c}{.346} & \multicolumn{1}{c}{.351} & \multicolumn{1}{c}{.438} \\
+Residual Std. Error & \multicolumn{1}{c}{1.160 (df = 2746)} & \multicolumn{1}{c}{1.163 (df = 2729)} & \multicolumn{1}{c}{1.008 (df = 2727)} & \multicolumn{1}{c}{.956 (df = 2725)} & \multicolumn{1}{c}{.952 (df = 2724)} & \multicolumn{1}{c}{.948 (df = 2715)} & \multicolumn{1}{c}{.882 (df = 1753)} \\
+F Statistic & \multicolumn{1}{c}{7.213$^{***}$ (df = 11; 2746)} & \multicolumn{1}{c}{6.154$^{***}$ (df = 13; 2729)} & \multicolumn{1}{c}{67.360$^{***}$ (df = 15; 2727)} & \multicolumn{1}{c}{84.119$^{***}$ (df = 17; 2725)} & \multicolumn{1}{c}{81.638$^{***}$ (df = 18; 2724)} &  &  \\
+\hline
+\hline \\[-1.8ex]
+\textit{Note:}  & \multicolumn{7}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\
+\end{tabular}
+\end{table}
