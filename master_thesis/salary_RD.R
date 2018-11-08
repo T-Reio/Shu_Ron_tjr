@@ -3,7 +3,7 @@ library(lfe)
 library(rdd)
 library(rddensity)
 
-stats <- fread("C:/Users/T-Reio/Master_thesis/master_thesis/output/stats_sal_fa_revised.csv",
+stats <- fread("C:/Users/easyu/Master_thesis/master_thesis/output/stats_sal_fa_revised.csv",
                header = T, sep = ",")
 
 #Common Sort

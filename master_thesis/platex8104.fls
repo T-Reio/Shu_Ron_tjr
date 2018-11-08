@@ -1,0 +1,4 @@
+PWD C:/Users/easyu/Master_thesis/master_thesis
+INPUT c:/texlive/2018/texmf.cnf
+INPUT c:/texlive/2018/texmf-var/web2c/eptex/platex.fmt
+INPUT 1031_result.tex

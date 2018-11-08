@@ -1,181 +1,212 @@
-This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (sjis) (TeX Live 2016/W32TeX) (preloaded format=platex 2017.6.25)  30 OCT 2018 22:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.11.1)  2 NOV 2018 13:28
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**./1031_result.tex
+**1031_result.tex
 (./1031_result.tex
-pLaTeX2e <2016/11/29> (based on LaTeX2e <2016/03/31> patch level 3)
-Babel <3.9r> and hyphenation patterns for 83 language(s) loaded.
-(c:/texlive/2016/texmf-dist/tex/latex/base/article.cls
+LaTeX2e <2018-04-01> patch level 2
+Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
+(c:/texlive/2018/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
-(c:/texlive/2016/texmf-dist/tex/latex/base/size12.clo
+(c:/texlive/2018/texmf-dist/tex/latex/base/size12.clo
 File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
-\c@part=\count82
-\c@section=\count83
-\c@subsection=\count84
-\c@subsubsection=\count85
-\c@paragraph=\count86
-\c@subparagraph=\count87
-\c@figure=\count88
-\c@table=\count89
+\c@part=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
-\bibindent=\dimen118
-) (c:/texlive/2016/texmf-dist/tex/latex/psnfss/mathpazo.sty
+\bibindent=\dimen102
+)
+(c:/texlive/2018/texmf-dist/tex/latex/psnfss/mathpazo.sty
 Package: mathpazo 2005/04/12 PSNFSS-v9.2a Palatino w/ Pazo Math (D.Puga, WaS) 
 \symupright=\mathgroup4
-) (c:/texlive/2016/texmf-dist/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2016/06/28 v2.15d AMS math features
+)
+(c:/texlive/2018/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2017/09/02 v2.17a AMS math features
 \@mathmargin=\skip43
 
 For additional information on amsmath, use the `?' option.
-(c:/texlive/2016/texmf-dist/tex/latex/amsmath/amstext.sty
+(c:/texlive/2018/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01 AMS text
- (c:/texlive/2016/texmf-dist/tex/latex/amsmath/amsgen.sty
+
+(c:/texlive/2018/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks15
-\ex@=\dimen119
-)) (c:/texlive/2016/texmf-dist/tex/latex/amsmath/amsbsy.sty
+\@emptytoks=\toks14
+\ex@=\dimen103
+))
+(c:/texlive/2018/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen120
-) (c:/texlive/2016/texmf-dist/tex/latex/amsmath/amsopn.sty
+\pmbraise@=\dimen104
+)
+(c:/texlive/2018/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count90
-LaTeX Info: Redefining \frac on input line 199.
-\uproot@=\count91
-\leftroot@=\count92
-LaTeX Info: Redefining \overline on input line 297.
-\classnum@=\count93
-\DOTSCASE@=\count94
-LaTeX Info: Redefining \ldots on input line 394.
-LaTeX Info: Redefining \dots on input line 397.
-LaTeX Info: Redefining \cdots on input line 518.
-\Mathstrutbox@=\box41
-\strutbox@=\box42
-\big@size=\dimen121
-LaTeX Font Info:    Redeclaring font encoding OML on input line 634.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 635.
-\macc@depth=\count95
-\c@MaxMatrixCols=\count96
+\inf@bad=\count88
+LaTeX Info: Redefining \frac on input line 213.
+\uproot@=\count89
+\leftroot@=\count90
+LaTeX Info: Redefining \overline on input line 375.
+\classnum@=\count91
+\DOTSCASE@=\count92
+LaTeX Info: Redefining \ldots on input line 472.
+LaTeX Info: Redefining \dots on input line 475.
+LaTeX Info: Redefining \cdots on input line 596.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen105
+LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
+\macc@depth=\count93
+\c@MaxMatrixCols=\count94
 \dotsspace@=\muskip10
-\c@parentequation=\count97
-\dspbrk@lvl=\count98
-\tag@help=\toks16
-\row@=\count99
-\column@=\count100
-\maxfields@=\count101
-\andhelp@=\toks17
-\eqnshift@=\dimen122
-\alignsep@=\dimen123
-\tagshift@=\dimen124
-\tagwidth@=\dimen125
-\totwidth@=\dimen126
-\lineht@=\dimen127
-\@envbody=\toks18
+\c@parentequation=\count95
+\dspbrk@lvl=\count96
+\tag@help=\toks15
+\row@=\count97
+\column@=\count98
+\maxfields@=\count99
+\andhelp@=\toks16
+\eqnshift@=\dimen106
+\alignsep@=\dimen107
+\tagshift@=\dimen108
+\tagwidth@=\dimen109
+\totwidth@=\dimen110
+\lineht@=\dimen111
+\@envbody=\toks17
 \multlinegap=\skip44
 \multlinetaggap=\skip45
-\mathdisplay@stack=\toks19
-LaTeX Info: Redefining \[ on input line 2739.
-LaTeX Info: Redefining \] on input line 2740.
-) (c:/texlive/2016/texmf-dist/tex/latex/amsfonts/amssymb.sty
+\mathdisplay@stack=\toks18
+LaTeX Info: Redefining \[ on input line 2817.
+LaTeX Info: Redefining \] on input line 2818.
+)
+(c:/texlive/2018/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
- (c:/texlive/2016/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+
+(c:/texlive/2018/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup5
 \symAMSb=\mathgroup6
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-)) (c:/texlive/2016/texmf-dist/tex/latex/tools/array.sty
-Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
-\col@sep=\dimen128
-\extrarowheight=\dimen129
-\NC@list=\toks20
+))
+(c:/texlive/2018/texmf-dist/tex/latex/tools/array.sty
+Package: array 2018/04/07 v2.4g Tabular extension package (FMi)
+\col@sep=\dimen112
+\ar@mcellbox=\box28
+\extrarowheight=\dimen113
+\NC@list=\toks19
 \extratabsurround=\skip46
 \backup@length=\skip47
-) (c:/texlive/2016/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
- (c:/texlive/2016/texmf-dist/tex/latex/graphics/keyval.sty
+\ar@cellbox=\box29
+)
+(c:/texlive/2018/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+
+(c:/texlive/2018/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks21
-) (c:/texlive/2016/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2016/07/10 v1.0t Standard LaTeX Graphics (DPC,SPQR)
- (c:/texlive/2016/texmf-dist/tex/latex/graphics/trig.sty
+\KV@toks@=\toks20
+)
+(c:/texlive/2018/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+
+(c:/texlive/2018/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
-) (c:/texlive/2016/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+)
+(c:/texlive/2018/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: dvipdfmx.def on input line 99.
- (c:/texlive/2016/texmf-dist/tex/latex/graphics-def/dvipdfmx.def
-File: dvipdfmx.def 2016/07/11 v4.12 LaTeX color/graphics driver for dvipdfmx (L3/ChoF)
+
+(c:/texlive/2018/texmf-dist/tex/latex/graphics-def/dvipdfmx.def
+File: dvipdfmx.def 2017/06/24 v5.0g Graphics/color driver for dvipdfmx
 ))
-\Gin@req@height=\dimen130
-\Gin@req@width=\dimen131
-) (c:/texlive/2016/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (c:/texlive/2016/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty (c:/texlive/2016/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
-(c:/texlive/2016/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
-\pgfutil@everybye=\toks22
-\pgfutil@tempdima=\dimen132
-\pgfutil@tempdimb=\dimen133
- (c:/texlive/2016/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.tex)) (c:/texlive/2016/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
-\pgfutil@abb=\box43
- (c:/texlive/2016/texmf-dist/tex/latex/ms/everyshi.sty
+\Gin@req@height=\dimen114
+\Gin@req@width=\dimen115
+)
+(c:/texlive/2018/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+(c:/texlive/2018/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+(c:/texlive/2018/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks21
+\pgfutil@tempdima=\dimen116
+\pgfutil@tempdimb=\dimen117
+
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.tex)
+) (c:/texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box30
+
+(c:/texlive/2018/texmf-dist/tex/latex/ms/everyshi.sty
 Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
-)) (c:/texlive/2016/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+))
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
 Package: pgfrcs 2015/08/07 v3.0.1a (rcs-revision 1.31)
 ))
 Package: pgf 2015/08/07 v3.0.1a (rcs-revision 1.15)
- (c:/texlive/2016/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty (c:/texlive/2016/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty (c:/texlive/2016/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+
+(c:/texlive/2018/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+(c:/texlive/2018/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
 Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
- (c:/texlive/2016/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
-\pgfkeys@pathtoks=\toks23
-\pgfkeys@temptoks=\toks24
- (c:/texlive/2016/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex
-\pgfkeys@tmptoks=\toks25
+
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks22
+\pgfkeys@temptoks=\toks23
+
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex
+\pgfkeys@tmptoks=\toks24
 ))
-\pgf@x=\dimen134
-\pgf@y=\dimen135
-\pgf@xa=\dimen136
-\pgf@ya=\dimen137
-\pgf@xb=\dimen138
-\pgf@yb=\dimen139
-\pgf@xc=\dimen140
-\pgf@yc=\dimen141
+\pgf@x=\dimen118
+\pgf@y=\dimen119
+\pgf@xa=\dimen120
+\pgf@ya=\dimen121
+\pgf@xb=\dimen122
+\pgf@yb=\dimen123
+\pgf@xc=\dimen124
+\pgf@yc=\dimen125
 \w@pgf@writea=\write3
 \r@pgf@reada=\read1
-\c@pgf@counta=\count102
-\c@pgf@countb=\count103
-\c@pgf@countc=\count104
-\c@pgf@countd=\count105
-\t@pgf@toka=\toks26
-\t@pgf@tokb=\toks27
-\t@pgf@tokc=\toks28
- (c:/texlive/2016/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+\c@pgf@counta=\count100
+\c@pgf@countb=\count101
+\c@pgf@countc=\count102
+\c@pgf@countd=\count103
+\t@pgf@toka=\toks25
+\t@pgf@tokb=\toks26
+\t@pgf@tokc=\toks27
+ (c:/texlive/2018/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
 )
 Driver file for pgf: pgfsys-dvipdfmx.def
- (c:/texlive/2016/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-dvipdfmx.def
+
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-dvipdfmx.def
 File: pgfsys-dvipdfmx.def 2014/07/09  (rcs-revision 1.14)
- (c:/texlive/2016/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
+
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
 File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
 )
-\pgfsys@objnum=\count106
+\pgfsys@objnum=\count104
 ))
-(c:/texlive/2016/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
-\pgfsyssoftpath@smallbuffer@items=\count107
-\pgfsyssoftpath@bigbuffer@items=\count108
-) (c:/texlive/2016/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
+\pgfsyssoftpath@smallbuffer@items=\count105
+\pgfsyssoftpath@bigbuffer@items=\count106
+)
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
 File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
-)) (c:/texlive/2016/texmf-dist/tex/latex/xcolor/xcolor.sty
+)) (c:/texlive/2018/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
- (c:/texlive/2016/texmf-dist/tex/latex/graphics-cfg/color.cfg
+
+(c:/texlive/2018/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: dvipdfmx.def on input line 225.
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
-Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
 Package xcolor Info: Model `RGB' extended on input line 1364.
 Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
 Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
@@ -183,133 +214,193 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
-) (c:/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
-Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
- (c:/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex (c:/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex (c:/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex) (c:/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
-\pgfmath@dimen=\dimen142
-\pgfmath@count=\count109
-\pgfmath@box=\box44
-\pgfmath@toks=\toks29
-\pgfmath@stack@operand=\toks30
-\pgfmath@stack@operation=\toks31
-) (c:/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex (c:/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex) (c:/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex) (c:/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex)
-(c:/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex) (c:/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex) (c:/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex) (c:/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex) (c:/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex))) (c:/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count110
-)) (c:/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
-File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
-\pgf@picminx=\dimen143
-\pgf@picmaxx=\dimen144
-\pgf@picminy=\dimen145
-\pgf@picmaxy=\dimen146
-\pgf@pathminx=\dimen147
-\pgf@pathmaxx=\dimen148
-\pgf@pathminy=\dimen149
-\pgf@pathmaxy=\dimen150
-\pgf@xx=\dimen151
-\pgf@xy=\dimen152
-\pgf@yx=\dimen153
-\pgf@yy=\dimen154
-\pgf@zx=\dimen155
-\pgf@zy=\dimen156
-) (c:/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
-File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
-\pgf@path@lastx=\dimen157
-\pgf@path@lasty=\dimen158
-) (c:/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
-File: pgfcorepathusage.code.tex 2014/11/02  (rcs-revision 1.24)
-\pgf@shorten@end@additional=\dimen159
-\pgf@shorten@start@additional=\dimen160
-) (c:/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
-File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
-\pgfpic=\box45
-\pgf@hbox=\box46
-\pgf@layerbox@main=\box47
-\pgf@picture@serial@count=\count111
-) (c:/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
-File: pgfcoregraphicstate.code.tex 2014/11/02  (rcs-revision 1.12)
-\pgflinewidth=\dimen161
-) (c:/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex
-File: pgfcoretransformations.code.tex 2015/08/07  (rcs-revision 1.20)
-\pgf@pt@x=\dimen162
-\pgf@pt@y=\dimen163
-\pgf@pt@temp=\dimen164
 )
-(c:/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
+
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen126
+\pgfmath@count=\count107
+\pgfmath@box=\box31
+\pgfmath@toks=\toks28
+\pgfmath@stack@operand=\toks29
+\pgfmath@stack@operation=\toks30
+)
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.te
+x)
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric
+.code.tex)
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.t
+ex)
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.co
+de.tex)
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex
+)
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.te
+x)
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex
+)
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithm
+etics.code.tex)))
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count108
+))
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
+File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
+\pgf@picminx=\dimen127
+\pgf@picmaxx=\dimen128
+\pgf@picminy=\dimen129
+\pgf@picmaxy=\dimen130
+\pgf@pathminx=\dimen131
+\pgf@pathmaxx=\dimen132
+\pgf@pathminy=\dimen133
+\pgf@pathmaxy=\dimen134
+\pgf@xx=\dimen135
+\pgf@xy=\dimen136
+\pgf@yx=\dimen137
+\pgf@yy=\dimen138
+\pgf@zx=\dimen139
+\pgf@zy=\dimen140
+)
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.cod
+e.tex
+File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
+\pgf@path@lastx=\dimen141
+\pgf@path@lasty=\dimen142
+)
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.te
+x
+File: pgfcorepathusage.code.tex 2014/11/02  (rcs-revision 1.24)
+\pgf@shorten@end@additional=\dimen143
+\pgf@shorten@start@additional=\dimen144
+)
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
+File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
+\pgfpic=\box32
+\pgf@hbox=\box33
+\pgf@layerbox@main=\box34
+\pgf@picture@serial@count=\count109
+)
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code
+.tex
+File: pgfcoregraphicstate.code.tex 2014/11/02  (rcs-revision 1.12)
+\pgflinewidth=\dimen145
+)
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.c
+ode.tex
+File: pgfcoretransformations.code.tex 2015/08/07  (rcs-revision 1.20)
+\pgf@pt@x=\dimen146
+\pgf@pt@y=\dimen147
+\pgf@pt@temp=\dimen148
+)
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
 File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
-) (c:/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
+)
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
 File: pgfcoreobjects.code.tex 2006/10/11  (rcs-revision 1.2)
-) (c:/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.tex
+)
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.co
+de.tex
 File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
-) (c:/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
+)
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
 File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
-\pgfarrowsep=\dimen165
-) (c:/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+\pgfarrowsep=\dimen149
+)
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
-\pgf@max=\dimen166
-\pgf@sys@shading@range@num=\count112
-) (c:/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+\pgf@max=\dimen150
+\pgf@sys@shading@range@num=\count110
+)
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
 File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
- (c:/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
+
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
 File: pgfcoreexternal.code.tex 2014/07/09  (rcs-revision 1.21)
-\pgfexternal@startupbox=\box48
-)) (c:/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
+\pgfexternal@startupbox=\box35
+))
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
 File: pgfcorelayers.code.tex 2013/07/18  (rcs-revision 1.7)
-) (c:/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
+)
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code
+.tex
 File: pgfcoretransparency.code.tex 2013/09/30  (rcs-revision 1.5)
-) (c:/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
+)
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
 File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
-))) (c:/texlive/2016/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+)))
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
 File: pgfmoduleshapes.code.tex 2014/03/21  (rcs-revision 1.35)
-\pgfnodeparttextbox=\box49
-) (c:/texlive/2016/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+\pgfnodeparttextbox=\box36
+)
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
 File: pgfmoduleplot.code.tex 2015/08/03  (rcs-revision 1.13)
 )
-(c:/texlive/2016/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
+(c:/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.st
+y
 Package: pgfcomp-version-0-65 2007/07/03 v3.0.1a (rcs-revision 1.7)
-\pgf@nodesepstart=\dimen167
-\pgf@nodesepend=\dimen168
-) (c:/texlive/2016/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
+\pgf@nodesepstart=\dimen151
+\pgf@nodesepend=\dimen152
+)
+(c:/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.st
+y
 Package: pgfcomp-version-1-18 2007/07/23 v3.0.1a (rcs-revision 1.1)
-)) (c:/texlive/2016/texmf-dist/tex/latex/pgf/utilities/pgffor.sty (c:/texlive/2016/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty (c:/texlive/2016/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)) (c:/texlive/2016/texmf-dist/tex/latex/pgf/math/pgfmath.sty (c:/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)) (c:/texlive/2016/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+)) (c:/texlive/2018/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(c:/texlive/2018/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex))
+(c:/texlive/2018/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
 Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
- (c:/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
-\pgffor@iter=\dimen169
-\pgffor@skip=\dimen170
-\pgffor@stack=\toks32
-\pgffor@toks=\toks33
-)) (c:/texlive/2016/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
+\pgffor@iter=\dimen153
+\pgffor@skip=\dimen154
+\pgffor@stack=\toks31
+\pgffor@toks=\toks32
+))
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
 Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
- (c:/texlive/2016/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
+
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.co
+de.tex
 File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
-\pgf@plot@mark@count=\count113
-\pgfplotmarksize=\dimen171
+\pgf@plot@mark@count=\count111
+\pgfplotmarksize=\dimen155
 )
-\tikz@lastx=\dimen172
-\tikz@lasty=\dimen173
-\tikz@lastxsaved=\dimen174
-\tikz@lastysaved=\dimen175
-\tikzleveldistance=\dimen176
-\tikzsiblingdistance=\dimen177
-\tikz@figbox=\box50
-\tikz@figbox@bg=\box51
-\tikz@tempbox=\box52
-\tikz@tempbox@bg=\box53
-\tikztreelevel=\count114
-\tikznumberofchildren=\count115
-\tikznumberofcurrentchild=\count116
-\tikz@fig@count=\count117
- (c:/texlive/2016/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+\tikz@lastx=\dimen156
+\tikz@lasty=\dimen157
+\tikz@lastxsaved=\dimen158
+\tikz@lastysaved=\dimen159
+\tikzleveldistance=\dimen160
+\tikzsiblingdistance=\dimen161
+\tikz@figbox=\box37
+\tikz@figbox@bg=\box38
+\tikz@tempbox=\box39
+\tikz@tempbox@bg=\box40
+\tikztreelevel=\count112
+\tikznumberofchildren=\count113
+\tikznumberofcurrentchild=\count114
+\tikz@fig@count=\count115
+
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
 File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
-\pgfmatrixcurrentrow=\count118
-\pgfmatrixcurrentcolumn=\count119
-\pgf@matrix@numberofcolumns=\count120
+\pgfmatrixcurrentrow=\count116
+\pgfmatrixcurrentcolumn=\count117
+\pgf@matrix@numberofcolumns=\count118
 )
-\tikz@expandcount=\count121
- (c:/texlive/2016/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
+\tikz@expandcount=\count119
+
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+brarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
 )))
-(c:/texlive/2016/texmf-dist/tex/latex/base/textcomp.sty
-Package: textcomp 2016/06/19 v1.99m Standard LaTeX package
+(c:/texlive/2018/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2017/04/05 v2.0i Standard LaTeX package
 Package textcomp Info: Sub-encoding information:
 (textcomp)               5 = only ISO-Adobe without \textcurrency
 (textcomp)               4 = 5 + \texteuro
@@ -322,9 +413,85 @@ Package textcomp Info: Sub-encoding information:
 (textcomp)             Family '?' is the default used for unknown fonts.
 (textcomp)             See the documentation for details.
 Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 79.
- (c:/texlive/2016/texmf-dist/tex/latex/base/ts1enc.def
+
+(c:/texlive/2018/texmf-dist/tex/latex/base/ts1enc.def
 File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
-)
+Now handling font encoding TS1 ...
+... processing UTF-8 mapping file for font encoding TS1
+
+(c:/texlive/2018/texmf-dist/tex/latex/base/ts1enc.dfu
+File: ts1enc.dfu 2018/04/05 v1.2c UTF-8 support for inputenc
+   defining Unicode char U+00A2 (decimal 162)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00A4 (decimal 164)
+   defining Unicode char U+00A5 (decimal 165)
+   defining Unicode char U+00A6 (decimal 166)
+   defining Unicode char U+00A7 (decimal 167)
+   defining Unicode char U+00A8 (decimal 168)
+   defining Unicode char U+00A9 (decimal 169)
+   defining Unicode char U+00AA (decimal 170)
+   defining Unicode char U+00AC (decimal 172)
+   defining Unicode char U+00AE (decimal 174)
+   defining Unicode char U+00AF (decimal 175)
+   defining Unicode char U+00B0 (decimal 176)
+   defining Unicode char U+00B1 (decimal 177)
+   defining Unicode char U+00B2 (decimal 178)
+   defining Unicode char U+00B3 (decimal 179)
+   defining Unicode char U+00B4 (decimal 180)
+   defining Unicode char U+00B5 (decimal 181)
+   defining Unicode char U+00B6 (decimal 182)
+   defining Unicode char U+00B7 (decimal 183)
+   defining Unicode char U+00B9 (decimal 185)
+   defining Unicode char U+00BA (decimal 186)
+   defining Unicode char U+00BC (decimal 188)
+   defining Unicode char U+00BD (decimal 189)
+   defining Unicode char U+00BE (decimal 190)
+   defining Unicode char U+00D7 (decimal 215)
+   defining Unicode char U+00F7 (decimal 247)
+   defining Unicode char U+0192 (decimal 402)
+   defining Unicode char U+02C7 (decimal 711)
+   defining Unicode char U+02D8 (decimal 728)
+   defining Unicode char U+02DD (decimal 733)
+   defining Unicode char U+0E3F (decimal 3647)
+   defining Unicode char U+2016 (decimal 8214)
+   defining Unicode char U+2020 (decimal 8224)
+   defining Unicode char U+2021 (decimal 8225)
+   defining Unicode char U+2022 (decimal 8226)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2031 (decimal 8241)
+   defining Unicode char U+203B (decimal 8251)
+   defining Unicode char U+203D (decimal 8253)
+   defining Unicode char U+2044 (decimal 8260)
+   defining Unicode char U+204E (decimal 8270)
+   defining Unicode char U+2052 (decimal 8274)
+   defining Unicode char U+20A1 (decimal 8353)
+   defining Unicode char U+20A4 (decimal 8356)
+   defining Unicode char U+20A6 (decimal 8358)
+   defining Unicode char U+20A9 (decimal 8361)
+   defining Unicode char U+20AB (decimal 8363)
+   defining Unicode char U+20AC (decimal 8364)
+   defining Unicode char U+20B1 (decimal 8369)
+   defining Unicode char U+2103 (decimal 8451)
+   defining Unicode char U+2116 (decimal 8470)
+   defining Unicode char U+2117 (decimal 8471)
+   defining Unicode char U+211E (decimal 8478)
+   defining Unicode char U+2120 (decimal 8480)
+   defining Unicode char U+2122 (decimal 8482)
+   defining Unicode char U+2126 (decimal 8486)
+   defining Unicode char U+2127 (decimal 8487)
+   defining Unicode char U+212E (decimal 8494)
+   defining Unicode char U+2190 (decimal 8592)
+   defining Unicode char U+2191 (decimal 8593)
+   defining Unicode char U+2192 (decimal 8594)
+   defining Unicode char U+2193 (decimal 8595)
+   defining Unicode char U+2329 (decimal 9001)
+   defining Unicode char U+232A (decimal 9002)
+   defining Unicode char U+2422 (decimal 9250)
+   defining Unicode char U+25E6 (decimal 9702)
+   defining Unicode char U+25EF (decimal 9711)
+   defining Unicode char U+266A (decimal 9834)
+   defining Unicode char U+FEFF (decimal 65279)
+))
 LaTeX Info: Redefining \oldstylenums on input line 334.
 Package textcomp Info: Setting cmr sub-encoding to TS1/0 on input line 349.
 Package textcomp Info: Setting cmss sub-encoding to TS1/0 on input line 350.
@@ -350,6 +517,7 @@ Package textcomp Info: Setting ul9 sub-encoding to TS1/4 on input line 369.
 Package textcomp Info: Setting augie sub-encoding to TS1/5 on input line 370.
 Package textcomp Info: Setting dayrom sub-encoding to TS1/3 on input line 371.
 Package textcomp Info: Setting dayroms sub-encoding to TS1/3 on input line 372.
+
 Package textcomp Info: Setting pxr sub-encoding to TS1/0 on input line 373.
 Package textcomp Info: Setting pxss sub-encoding to TS1/0 on input line 374.
 Package textcomp Info: Setting pxtt sub-encoding to TS1/0 on input line 375.
@@ -387,40 +555,53 @@ Package textcomp Info: Setting pplx sub-encoding to TS1/3 on input line 406.
 Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 407.
 Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 408.
 Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
-) (c:/texlive/2016/texmf-dist/tex/latex/tools/dcolumn.sty
+)
+(c:/texlive/2018/texmf-dist/tex/latex/tools/dcolumn.sty
 Package: dcolumn 2014/10/28 v1.06 decimal alignment package (DPC)
-) (c:/texlive/2016/texmf-dist/tex/latex/here/here.sty) (c:/texlive/2016/texmf-dist/tex/latex/float/float.sty
+)
+(c:/texlive/2018/texmf-dist/tex/latex/here/here.sty)
+(c:/texlive/2018/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count122
-\float@exts=\toks34
-\float@box=\box54
-\@float@everytoks=\toks35
-\@floatcapt=\box55
-) (c:/texlive/2016/texmf-dist/tex/latex/graphics/lscape.sty
+\c@float@type=\count120
+\float@exts=\toks33
+\float@box=\box41
+\@float@everytoks=\toks34
+\@floatcapt=\box42
+)
+(c:/texlive/2018/texmf-dist/tex/latex/graphics/lscape.sty
 Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
-) (c:/texlive/2016/texmf-dist/tex/latex/geometry/geometry.sty
-Package: geometry 2010/09/12 v5.6 Page Geometry
- (c:/texlive/2016/texmf-dist/tex/generic/oberdiek/ifpdf.sty
-Package: ifpdf 2016/05/14 v3.1 Provides the ifpdf switch
-) (c:/texlive/2016/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+)
+(c:/texlive/2018/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2018/03/24 v5.7 Page Geometry
+
+(c:/texlive/2018/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+)
+(c:/texlive/2018/texmf-dist/tex/generic/oberdiek/ifvtex.sty
 Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
-) (c:/texlive/2016/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+)
+(c:/texlive/2018/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-\Gm@cnth=\count123
-\Gm@cntv=\count124
-\c@Gm@tempcnt=\count125
-\Gm@bindingoffset=\dimen178
-\Gm@wd@mp=\dimen179
-\Gm@odd@mp=\dimen180
-\Gm@even@mp=\dimen181
-\Gm@layoutwidth=\dimen182
-\Gm@layoutheight=\dimen183
-\Gm@layouthoffset=\dimen184
-\Gm@layoutvoffset=\dimen185
-\Gm@dimlist=\toks36
-) (./1031_result.aux (./results/Sal_AVG_300_local.aux) (./results/dSal_AVG_300_local.aux) (./results/dSal_AVG_did_local.aux) (./results/dSal_AVG_did_local_fa.aux) (./results/dSal_AVG_did_local_bfst.aux) (./results/dSal_AVG_did_local_stmb.aux) (./results/dSal_AVG_did_local_afmb.aux) (./results/dSal_AVG_didid_local.aux) (./results/dSal_AVG_didid_local_fa.aux))
+\Gm@cnth=\count121
+\Gm@cntv=\count122
+\c@Gm@tempcnt=\count123
+\Gm@bindingoffset=\dimen162
+\Gm@wd@mp=\dimen163
+\Gm@odd@mp=\dimen164
+\Gm@even@mp=\dimen165
+\Gm@layoutwidth=\dimen166
+\Gm@layoutheight=\dimen167
+\Gm@layouthoffset=\dimen168
+\Gm@layoutvoffset=\dimen169
+\Gm@dimlist=\toks35
+)
+(./1031_result.aux (./results/Sal_AVG_300_local.aux)
+(./results/dSal_AVG_300_local.aux) (./results/dSal_AVG_did_local.aux)
+(./results/dSal_AVG_did_local_fa.aux) (./results/dSal_AVG_did_local_bfst.aux)
+(./results/dSal_AVG_did_local_stmb.aux) (./results/dSal_AVG_did_local_afmb.aux)
+(./results/dSal_AVG_didid_local.aux) (./results/dSal_AVG_didid_local_fa.aux))
 \openout1 = `1031_result.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
@@ -435,26 +616,23 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
 LaTeX Font Info:    ... okay on input line 13.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
 LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 13.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 13.
- (c:/texlive/2016/texmf-dist/tex/latex/base/ts1cmr.fd
+
+(c:/texlive/2018/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 13.
-
-(I search kanjifont definition file: . . ) (I search font definition file: . . . . . . . . )
 LaTeX Font Info:    Try loading font information for OT1+ppl on input line 13.
- (c:/texlive/2016/texmf-dist/tex/latex/psnfss/ot1ppl.fd
+
+(c:/texlive/2018/texmf-dist/tex/latex/psnfss/ot1ppl.fd
 File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
-) ABD: EveryShipout initializing macros
+)
+ABD: EveryShipout initializing macros
 *geometry* driver: auto-detecting
-*geometry* detected driver: dvips
+*geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
-* driver: dvips
+* driver: pdftex
 * paper: <default>
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
@@ -485,90 +663,307 @@ File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <17.28> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 15.
-LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <17.28> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 15.
 LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <17.28> not available
 (Font)              Font shape `OT1/ppl/b/n' tried instead on input line 15.
-LaTeX Font Info:    Try loading font information for OML+zplm on input line 22.
-(c:/texlive/2016/texmf-dist/tex/latex/psnfss/omlzplm.fd
+LaTeX Font Info:    Try loading font information for TS1+ppl on input line 38.
+(c:/texlive/2018/texmf-dist/tex/latex/psnfss/ts1ppl.fd
+File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
+)
+LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 43.
+LaTeX Font Info:    Try loading font information for OML+zplm on input line 43.
+
+
+(c:/texlive/2018/texmf-dist/tex/latex/psnfss/omlzplm.fd
 File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
 )
-LaTeX Font Info:    Try loading font information for OMS+zplm on input line 22.
- (c:/texlive/2016/texmf-dist/tex/latex/psnfss/omszplm.fd
+LaTeX Font Info:    Try loading font information for OMS+zplm on input line 43.
+
+
+(c:/texlive/2018/texmf-dist/tex/latex/psnfss/omszplm.fd
 File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
 )
-LaTeX Font Info:    Try loading font information for OMX+zplm on input line 22.
- (c:/texlive/2016/texmf-dist/tex/latex/psnfss/omxzplm.fd
+LaTeX Font Info:    Try loading font information for OMX+zplm on input line 43.
+
+
+(c:/texlive/2018/texmf-dist/tex/latex/psnfss/omxzplm.fd
 File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
 )
-LaTeX Font Info:    Try loading font information for OT1+zplm on input line 22.
- (c:/texlive/2016/texmf-dist/tex/latex/psnfss/ot1zplm.fd
+LaTeX Font Info:    Try loading font information for OT1+zplm on input line 43.
+
+
+(c:/texlive/2018/texmf-dist/tex/latex/psnfss/ot1zplm.fd
 File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
 )
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 11.40997pt on input line 22.
+(Font)              scaled to size 12.50409pt on input line 43.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 8.33606pt on input line 22.
+(Font)              scaled to size 9.37807pt on input line 43.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 6.25204pt on input line 22.
+(Font)              scaled to size 7.29405pt on input line 43.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 11.40997pt on input line 22.
+(Font)              scaled to size 12.50409pt on input line 43.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 8.33606pt on input line 22.
+(Font)              scaled to size 9.37807pt on input line 43.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 6.25204pt on input line 22.
-LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 10.42007pt on input line 44.
-LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 7.91925pt on input line 44.
-LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 10.42007pt on input line 44.
-LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 7.91925pt on input line 44.
-LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 12.50409pt on input line 47.
-LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 9.37807pt on input line 47.
-LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 7.29405pt on input line 47.
-LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 12.50409pt on input line 47.
-LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 9.37807pt on input line 47.
-LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 7.29405pt on input line 47.
- [1
+(Font)              scaled to size 7.29405pt on input line 43.
 
+
+./1031_result.tex:53: LaTeX Error: \begin{document} ended by \end{itemize}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.53 \end{itemize}
+                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./1031_result.tex:53: Extra \endgroup.
+<recently read> \endgroup 
+                          
+l.53 \end{itemize}
+                  
+Things are pretty mixed up, but I think the worst is over.
+
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 11.40997pt on input line 59.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 8.33606pt on input line 59.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 6.25204pt on input line 59.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 11.40997pt on input line 59.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 8.33606pt on input line 59.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 6.25204pt on input line 59.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 10.42007pt on input line 81.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 7.91925pt on input line 81.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 10.42007pt on input line 81.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 7.91925pt on input line 81.
+[1
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color pop
+
+Non-PDF special ignored!
+<special> color push gray 0
+{c:/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color pop
 ]
 File: graphs/AVG_300.png Graphic file (type bmp)
- <graphs/AVG_300.png>
+<graphs/AVG_300.png>
 File: graphs/OBP_350.png Graphic file (type bmp)
- <graphs/OBP_350.png>
+<graphs/OBP_350.png>
 File: graphs/HR_20.png Graphic file (type bmp)
- <graphs/HR_20.png>
+<graphs/HR_20.png>
 File: graphs/RBI_100.png Graphic file (type bmp)
- <graphs/RBI_100.png>
+<graphs/RBI_100.png>
+
 Overfull \vbox (36.35164pt too high) has occurred while \output is active []
 
- [2]
+
+[2
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color pop
+]
 File: graphs/SB_30.png Graphic file (type bmp)
- <graphs/SB_30.png>
+<graphs/SB_30.png>
 File: graphs/SB_40.png Graphic file (type bmp)
- <graphs/SB_40.png>
+<graphs/SB_40.png>
 File: graphs/PA_500.png Graphic file (type bmp)
- <graphs/PA_500.png>
+<graphs/PA_500.png>
 File: graphs/H_200.png Graphic file (type bmp)
- <graphs/H_200.png>
-Overfull \hbox (41.6248pt too wide) in paragraph at lines 100--142
+<graphs/H_200.png>
+
+Overfull \hbox (41.6248pt too wide) in paragraph at lines 137--179
 [][] 
  []
 
 
 Overfull \vbox (1.34097pt too high) has occurred while \output is active []
 
- [3] [4]
+
+[3
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color pop
+] [4
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color pop
+]
 \openout2 = `results/Sal_AVG_300_local.aux'.
 
  (./results/Sal_AVG_300_local.tex
@@ -576,59 +971,137 @@ LaTeX Font Info:    Font shape `U/msa/m/n' will be
 (Font)              scaled to size 5.21004pt on input line 9.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
 (Font)              scaled to size 5.21004pt on input line 9.
-
-
-LaTeX Font Warning: Font shape `JT1/mc/m/it' undefined
-(Font)              using `JT1/mc/m/n' instead on input line 12.
-
-
-LaTeX Font Warning: Font shape `JY1/mc/m/it' undefined
-(Font)              using `JY1/mc/m/n' instead on input line 12.
-
 )
 \openout2 = `results/dSal_AVG_300_local.aux'.
 
  (./results/dSal_AVG_300_local.tex)
 \openout2 = `results/dSal_AVG_did_local.aux'.
 
- (./results/dSal_AVG_did_local.tex) [5
 
+(./results/dSal_AVG_did_local.tex) [5
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color push gray 0
 
-\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Simple OLS around .300}}{5}}
+Non-PDF special ignored!
+<special> color push gray 0
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Simple OLS
+ around .300}}{5}}
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color pop
 \newlabel{local_OLS_Sal}{{2}{5}}
+Non-PDF special ignored!
+<special> color pop
 
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color pop
 ] [6
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color push gray 0
 
-
-\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Simple OLS around .300}}{6}}
+Non-PDF special ignored!
+<special> color push gray 0
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Simple OLS
+ around .300}}{6}}
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color pop
 \newlabel{local_OLS_dSal}{{3}{6}}
+Non-PDF special ignored!
+<special> color pop
 
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color pop
 ] [7
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color push gray 0
 
-
-\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces DID around .300}}{7}}
+Non-PDF special ignored!
+<special> color push gray 0
+\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces DID around
+ .300}}{7}}
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color pop
 \newlabel{local_dSal_AVG_did}{{4}{7}}
+Non-PDF special ignored!
+<special> color pop
 
-] [8
-
-
-
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color pop
 ]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `!tbp') on input line 228.
+
+[8
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color pop
+]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `!tbp') on input line 273.
+
 Runaway argument?
 {\protect \numberline {\csname the\@captype \endcsname }{\ignorespaces \ETC.
-./1031_result.tex:253: Paragraph ended before \addcontentsline was complete.
+./1031_result.tex:315: Paragraph ended before \addcontentsline was complete.
 <to be read again> 
                    \par 
-l.253     ``RDDlike'' Test for Discontinuity}
+l.315     ``RDDlike'' Test for Discontinuity}
                                              
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
-./1031_result.tex:253: Extra }, or forgotten \endgroup.
+./1031_result.tex:315: Extra }, or forgotten \endgroup.
 \@tempf ...me the#1\endcsname }{\ignorespaces #2}}
                                                   \begingroup \@parboxrestor...
-l.253     ``RDDlike'' Test for Discontinuity}
+l.315     ``RDDlike'' Test for Discontinuity}
                                              
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -636,10 +1109,10 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-./1031_result.tex:254: Extra }, or forgotten \endgroup.
+./1031_result.tex:316: Extra }, or forgotten \endgroup.
 \@endfloatbox ...pagefalse \outer@nobreak \egroup 
                                                   \color@endbox 
-l.254   \end{table}
+l.316   \end{table}
                    
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -648,34 +1121,154 @@ the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
 [9
-
-
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color pop
 ]
 \openout2 = `results/dSal_AVG_did_local_fa.aux'.
 
  (./results/dSal_AVG_did_local_fa.tex) [10
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color push gray 0
 
-
-\@writefile{lot}{\contentsline {table}{\numberline {7}{\ignorespaces Restriced Sample to FA: DID around .300}}{10}}
+Non-PDF special ignored!
+<special> color push gray 0
+\@writefile{lot}{\contentsline {table}{\numberline {7}{\ignorespaces Restriced 
+Sample to FA: DID around .300}}{10}}
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color pop
 \newlabel{local_dSal_AVG_did_fa}{{7}{10}}
+Non-PDF special ignored!
+<special> color pop
 
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color pop
 ] [11
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color pop
 
 
 
+
+
+
+
+
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color pop
 ]
 \openout2 = `results/dSal_AVG_did_local_bfst.aux'.
 
  (./results/dSal_AVG_did_local_bfst.tex)
 \openout2 = `results/dSal_AVG_did_local_stmb.aux'.
 
- (./results/dSal_AVG_did_local_stmb.tex)
+
+(./results/dSal_AVG_did_local_stmb.tex)
 \openout2 = `results/dSal_AVG_did_local_afmb.aux'.
 
  (./results/dSal_AVG_did_local_afmb.tex)
 \openout2 = `results/dSal_AVG_didid_local.aux'.
 
- (./results/dSal_AVG_didid_local.tex
+(./results/dSal_AVG_didid_local.tex
 ./results/dSal_AVG_didid_local.tex:58: Missing $ inserted.
 <inserted text> 
                 $
@@ -719,47 +1312,160 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 ) [12
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color push gray 0
 
-
-\@writefile{lot}{\contentsline {table}{\numberline {8}{\ignorespaces Before Strike: DID around .300}}{12}}
+Non-PDF special ignored!
+<special> color push gray 0
+\@writefile{lot}{\contentsline {table}{\numberline {8}{\ignorespaces Before Str
+ike: DID around .300}}{12}}
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color pop
 \newlabel{local_OLS_dSal_bfst}{{8}{12}}
+Non-PDF special ignored!
+<special> color pop
 
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color pop
 ] [13
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color push gray 0
 
-
-\@writefile{lot}{\contentsline {table}{\numberline {9}{\ignorespaces After Strike to Moneyball: DID around .300}}{13}}
+Non-PDF special ignored!
+<special> color push gray 0
+\@writefile{lot}{\contentsline {table}{\numberline {9}{\ignorespaces After Stri
+ke to Moneyball: DID around .300}}{13}}
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color pop
 \newlabel{local_OLS_dSal_stmb}{{9}{13}}
+Non-PDF special ignored!
+<special> color pop
 
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color pop
 ] [14
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color push gray 0
 
-
-\@writefile{lot}{\contentsline {table}{\numberline {10}{\ignorespaces After Moneyball: DID around .300}}{14}}
+Non-PDF special ignored!
+<special> color push gray 0
+\@writefile{lot}{\contentsline {table}{\numberline {10}{\ignorespaces After Mon
+eyball: DID around .300}}{14}}
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color pop
 \newlabel{local_OLS_dSal_afmb}{{10}{14}}
+Non-PDF special ignored!
+<special> color pop
 
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color pop
 ] [15
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color push gray 0
 
-
-\@writefile{lot}{\contentsline {table}{\numberline {11}{\ignorespaces DIDID around .300}}{15}}
+Non-PDF special ignored!
+<special> color push gray 0
+\@writefile{lot}{\contentsline {table}{\numberline {11}{\ignorespaces DIDID aro
+und .300}}{15}}
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color pop
 \newlabel{local_dSal_AVG_didid}{{11}{15}}
+Non-PDF special ignored!
+<special> color pop
 
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color pop
 ] [16
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color push gray 0
 
-
-\@writefile{lot}{\contentsline {table}{\numberline {12}{\ignorespaces Restriced Sample to FA: DIDID around .300}}{16}}
+Non-PDF special ignored!
+<special> color push gray 0
+\@writefile{lot}{\contentsline {table}{\numberline {12}{\ignorespaces Restriced
+ Sample to FA: DIDID around .300}}{16}}
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color pop
 \newlabel{local_dSal_AVG_didid_fa}{{12}{16}}
+Non-PDF special ignored!
+<special> color pop
 
-] (./1031_result.aux (./results/Sal_AVG_300_local.aux) (./results/dSal_AVG_300_local.aux) (./results/dSal_AVG_did_local.aux) (./results/dSal_AVG_did_local_fa.aux) (./results/dSal_AVG_did_local_bfst.aux) (./results/dSal_AVG_did_local_stmb.aux) (./results/dSal_AVG_did_local_afmb.aux) (./results/dSal_AVG_didid_local.aux) (./results/dSal_AVG_didid_local_fa.aux))
-
-LaTeX Font Warning: Some font shapes were not available, defaults substituted.
-
- ) 
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color pop
+] (./1031_result.aux (./results/Sal_AVG_300_local.aux)
+(./results/dSal_AVG_300_local.aux) (./results/dSal_AVG_did_local.aux)
+(./results/dSal_AVG_did_local_fa.aux) (./results/dSal_AVG_did_local_bfst.aux)
+(./results/dSal_AVG_did_local_stmb.aux) (./results/dSal_AVG_did_local_afmb.aux)
+(./results/dSal_AVG_didid_local.aux) (./results/dSal_AVG_didid_local_fa.aux)) )
+ 
 Here is how much of TeX's memory you used:
- 12733 strings out of 493683
- 249158 string characters out of 6152642
- 443949 words of memory out of 5000000
- 15980 multiletter control sequences out of 15000+600000
- 31559 words of font info for 106 fonts, out of 8000000 for 9000
- 929 hyphenation exceptions out of 8191
- 55i,18n,54p,415b,453s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 12841 strings out of 492649
+ 250183 string characters out of 6133384
+ 432805 words of memory out of 5000000
+ 16378 multiletter control sequences out of 15000+600000
+ 39793 words of font info for 113 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 55i,18n,54p,413b,401s stack positions out of 5000i,500n,10000p,200000b,80000s
+{c:/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2018/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2018/texmf-dist/font
+s/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmsy10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/math
+pazo/fplmri.pfb><c:/texlive/2018/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb
+><c:/texlive/2018/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb><c:/texlive/20
+18/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on 1031_result.pdf (16 pages, 106693 bytes).
+PDF statistics:
+ 85 PDF objects out of 1000 (max. 8388607)
+ 59 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
-Output written on 1031_result.dvi (16 pages, 55492 bytes).

@@ -14,6 +14,43 @@
 
 \section{Full-Sample at least 200PAs}
 
+Flow of the research
+
+\begin{enumerate}
+  \item Specify the player's behavior related to reference dependence:
+
+  McCrary(2007)'s manipulation test
+
+  \item Check whether there exists monetary incentive to manipulate their
+  index:
+
+  Sharp RDD `like' method
+
+  -- If there exists manipulation in fact, then RDD approach can be
+  invalid.
+
+  \item Time-Series analysis
+
+  \item Discussion: design the contract
+\end{enumerate}
+
+\begin{itemize}
+  \item Panel Data from \textit{fangraphs, Baseball References}, and
+  \textit{USA TODAY}.
+
+  \item Play Stats
+  \begin{itemize}
+    \item Season stats from 1957 to 2018 ($N=54469$)
+
+    \item \# with at least 200 Plate appearances = 18143
+
+    \item \# with at least 5 stolen-bases = 8927
+
+  \end{itemize}
+
+
+  \end{itemize}
+\end{itemize}
 
 
 \begin{table}[H]
@@ -144,6 +181,29 @@
 
 \section{Monetary Incentive}
 
+\begin{itemize}
+
+  \item Stats-Salary Data
+  \begin{itemize}
+    \item Season stats with information about the contract of the
+    next season: salary, and possession of the free agency, MLB service
+    year, only for position players.
+
+    \item data range: 1987 to 2017 ($N=13226$)
+
+    \item \# with at least 200 plate appearances = 8915
+
+    \item \# with the right of free agency = 1502
+
+    \item \# around the .300 of batting-average = 2758
+
+    \item \# among them, with free agency = 402
+  \end{itemize}
+
+  \item In the analysis, I use deviation of the log-annual salary instead
+  of the absolute value of log-salary (need robustness check).
+\end{itemize}
+
 \begin{landscape}
   \begin{table}
     \include{results/Sal_AVG_300_local}
@@ -165,7 +225,7 @@
 \end{landscape}
 
 \begin{landscape}
-  \begin{table}[H]
+  \begin{table}[!]
     \small
     \centering
     \begin{tabular}{lccccccc}\hline
@@ -203,13 +263,14 @@
     \flushright
     ***: $p<0.1\%$, **: $p<1\%$, *: $p<5\%$.
 
-    Bandwidth is optimized following the method of Mcrary(2007).
+    Bandwidth is optimized following the method of
+    Imbens-Kalyanaraman.
     \caption{``RDDlike'' Test for Discontinuity}
   \end{table}
 \end{landscape}
 
 \begin{landscape}
-  \begin{table}[H]
+  \begin{table}[!]
     \small
     \centering
     \begin{tabular}{lccccccc}\hline
@@ -247,7 +308,8 @@
     \flushright
     ***: $p<0.1\%$, **: $p<1\%$, *: $p<5\%$.
 
-    Bandwidth is optimized following the method of Mcrary(2007).
+    Bandwidth is optimized following the method of
+    Imbens-Kalyanaraman.
     \caption{Restricted Sample to Free Agency
 
     ``RDDlike'' Test for Discontinuity}
@@ -262,6 +324,51 @@
 \end{landscape}
 
 \section{Time-Series}
+
+\begin{itemize}
+  \item dintinguishing era
+  \begin{enumerate}
+    \item Before Strike 1987 - 1994
+
+    \begin{itemize}
+      \item \#200PA = 2121
+
+      \item \# around .300 = 575
+
+      \item \#FA = 279
+
+      \item \# around .300 = 54
+    \end{itemize}
+
+    \item From Strike to Moneyball 1995 - 2003
+
+    \begin{itemize}
+      \item \#200PA = 2668
+
+      \item \# around .300 = 938
+
+      \item \#FA = 2092
+
+      \item \# around .300 = 462
+    \end{itemize}
+
+    \item After Moneyball 2004 - 2017
+
+    \begin{itemize}
+      \item \#200PA = 4126
+
+      \item \# around .300 = 1245
+
+      \item \#FA = 1023 (Contract yrs gets longer?)
+
+      \item \# around .300 = 219
+
+    \end{itemize}
+
+
+    \item (After Flyball Rebolution?)
+  \end{enumerate}
+\end{itemize}
 
 \begin{landscape}
   \begin{table}
@@ -284,7 +391,5 @@
     \include{results/dSal_AVG_didid_local_fa}
   \end{table}
 \end{landscape}
-
-
 
 \end{document}
