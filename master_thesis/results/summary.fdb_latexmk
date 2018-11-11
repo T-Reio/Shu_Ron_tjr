@@ -1,0 +1,13 @@
+# Fdb version 3
+["dvipdf"] 0 "summary.dvi" "summary.pdf" "summary" 0
+  "summary.dvi" 0 -1 0 "latex"
+  (generated)
+  "summary.pdf"
+["latex"] 1541729151 "summary.tex" "summary.dvi" "summary" 1541729152
+  "c:/texlive/2018/texmf-var/web2c/eptex/platex.fmt" 1541083882 4472184 3331907170f2ede6ea63f6d37904ddf3 ""
+  "c:/texlive/2018/texmf.cnf" 1541083614 673 2e5aa3ac564c6f70f54d6752d765c05d ""
+  "summary.aux" 1541728985 488 48161348db42654c9340cc892cb395cf ""
+  "summary.tex" 1541728963 1243 30d3d98e4af6ed5ae63cf814da6bd059 ""
+  (generated)
+  "summary.log"
+  "summary.dvi"

@@ -47,7 +47,7 @@ MLB position players seems to have some reference points, about their batting pe
 
 Confirming this, then I made examinations to answer the question, ``Is this observed manipulation truly driven by the reference dependence of the players?'' It is true that there exists bunching just above the possible reference points, but it is not sufficient yet, since team managers assign some incentives for the players to adjust their aspiration level to meet those points. I applied regression analysis using the data of the players` salary, and revealed that there does not exists such an incentive for them: Observed behavior is actually the reference dependence of the players. I also consulted other methodologies and evidences to confirm these ways also drew essentialy same results. Furtheremore, I submit other probability that is not confirmed due to lack of data, then conclude the paper.
 
-This paper proceed as follows. In the Section 2, I review some literature and verify the standpoint of my paper. Section 3 presents theoretial framework and empirical way to specification, and make some conjecture. Section 4 describes the data I availed. Section 5 show the results of the analysis. Discussion about some alternative interpretation and non-statistical data are included in Section 6. Finally, Section 7 concludes the paper.
+This paper proceed as follows. In the Section 2, I review some literature and verify the standpoint of my paper. Section 3 describes the data I availed. Section 4 presents theoretial framework and empirical way to specification, and make some conjecture.  Section 5 show the results of the analysis. Discussion about some alternative interpretation and non-statistical data are included in Section 6. Finally, Section 7 concludes the paper.
 
 \section{Literature Review}
 
@@ -141,15 +141,17 @@ In considering rate indexes, we have to restrict the sample to the batters with 
 
 Play stats are tagged by players` ID and season, including batting indexes tested bunching: batting-average, on-base percentage, base-hits, stolen-base, homerun, runs-batted-in, and plate appearances. Moreover,  for the analysis of monetary incentives, I collected other indexes that control the performance: slugging-average, OPS, fWAR, BATTING, FIELDING, BaseRun, and WPA. Salary data includes annual salary at the year: for the players with plural-year contract, it is calculated by deviding total payment of the contract by the years. It also contains the player-specific charactaristics: age, position (catcher, firstbaseman, ... right fielder), team they signed, and possession of the right of free agency.
 
-The summery statistics are descripted in
+The summery statistics are descripted in Table 1 and Table \ref{sum_B}.
 
-\begin{table}
+\begin{table}[H]
   \include{results/summary}
 \end{table}
 
-\begin{table}
+\leftskip = -15pt
+\begin{table}[H]
   \input{results/summary_B}
 \end{table}
+\leftskip = 0pt
 
 \section{Theoretical Frameworks and Way of Specification}
 
@@ -168,6 +170,7 @@ Anyway, the important assumption is that players evaluate their performance inde
 This form of utility function is discontinuous at the reference point $r$.
 
 In my paper, it is not determined who has such a utility function. At least one of the these two agents: players and managers has reference dependent feature in their utility, which leads them to assumed behavior. Players pay attention to if each index are above the reference points.
+
 
 
  \subsection{Empirical Method}
@@ -193,7 +196,9 @@ In my paper, it is not determined who has such a utility function. At least one 
   + \beta_2 Z_{it}
   \]
 
-  For each player $i$ in the season $t$, $w_{it}$ is log annual salary in next season $t+1$. $X_{it}$ and $Z_{it}$ are the value of performance statistics (batting-average, on-base percentage,\ldots) and other player-specific characters (age, team he signed, position,\ldots), respectively. $\text{ABOVE}_{it}$ is a dummy variable that takes 1 if the player achieves their reference point, and 0 if the failed to do so. I also introduce interaction term of $X_{it}$ and $\text{ABOVE}_{it}$. Age term is introduce as quadratic form.
+  For each player $i$ in the season $t$, $w_{it}$ is log annual salary in next season $t+1$. $X_{it}$ and $Z_{it}$ are the value of performance index (batting-average, on-base percentage,\ldots) and other player-specific characters (age, team he signed, position,\ldots), respectively. $\text{ABOVE}_{it}$ is an indicator of the achievement of their goals for the index. That is, if he finished his season with a certain index with above the possible reference point, it takes 1, and otherwise 0. This is the variable in interest. As well as OLS, team, position, or individual fixed effect model estimation was also conducted.
+
+  Also, to check the robustness of my analysis, I tried alternative methodology: include interaction term, and methodology of regression discontinuity design. Interaction term analysis include that of $X_{it}$ and $\text{ABOVE}_{it}$, the coefficient of which indicates additional return on their achievement. RDD method is simple sharp RDD method: local linear regression around the possible reference point as the cutoff, where the bandiwidth was selected according to the polynominal approximation (Imbens, Guido and Kalyanaraman, 2009). As I mentioned above, RDD can be invalid when individuals can manipulate the running variable, so this may not appropreate in this analysis since I confirm there exists manipulation in the running variable: performance index. However, as I show below, this analysis found no evidence of discontinuous design of contract. Therefore, I apply this result as a complimental evidence of my research.
 
 \section{Result}
 \subsection{Excess Mass Around The Reference Point}
@@ -218,9 +223,21 @@ Skilled players usually get contracts with plural-year package.
 
 My paper used data from wide range of time: 62 years for bunching, 31 years for monetary incentives. Through such a long time, techniques of the players or the quality of instruments must have evolved, which leads to change in mean or the standard value of the indexes. Also, it is natural to think there may have been a lot of change in the design of the contract they agreed. Here I consider time-variable elements in my analysis. specifically, there are two main possible effect that changes the contract design: one is the relative market power of the players, and another is change in relative importance of each performance index.
 
-Relative market power has direct relation to the contract. Before the system of free agency was introduced, players are forbidden to move to other teams without permission by the team they belong to. `94 strike by the Players Association of Major League Baseball, against the team owners to request improvement of their treatment, also may have great influence on their contracts.
+Relative market power has direct relation to the contract. Before the system of free agency was introduced, players are forbidden to move to other teams without permission by the team they belong to. `94 strike by the Players Association of Major League Baseball, against the team owners to request improvement of their treatment, also may have great influence on their contracts (See Appendix about the specific information about free agency and Strike).
 
-Relative importance means the
+Relative importance captures the change in evaluation of each index. Through the history of baseball, there have been invented a lot of indexes that measures the performance/ability of the player, and it has been argued which index is the best to evaluate them. One of the most important revoution was the publication of \textit{'Moneyball'}(2003), written by Michael Lewis. In this book, he described that batting-average is not as appropreate measure: there is more close correlation with total runs the team earns in the season in on-base percentage. In practice, Oakland Athletics applied strategy to form the menber of the team, and won the playoff. This story was widely spread and changed the sense of view about the baseball index. Then, one possible question occurs: ``Does the tendency of manipulation/discoutinuous contract design also change through the history of baseball?''
+
+In this analysis, I replicate the methodologies conducted in the previous sections, but sorting the sample into periods below:
+
+\begin{enumerate}
+  \item Before Free Agency (1957 - 1975)
+
+  \item After Free Agency and Before Strike (1986 - 1994)
+
+  \item After Strike and Before \textit{Moneyball} (1995 - 2003)
+
+  \item After \textit{Moneyball} (2004 - 2017)
+\end{enumerate}
 
 \subsection{Possibility of Manipulation}
 
@@ -234,6 +251,9 @@ This paper
 \small
 
 To measure batter's performance, I use some \textit{SABR Metrics}'s statistics. \textit{SABR} is short for \textit{Society of American Baseball Research}, an American organization of analysing baseball. They try to evaluate players in more ``efficient '' way,  or by statistics with more close correlation with the expected wins the team obtain.
+
+\subsection{Important Events Related to Section 6.4}
+
 
 \section{References}
 \small
