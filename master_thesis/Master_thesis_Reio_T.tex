@@ -181,9 +181,15 @@ In my paper, it is not determined who has such a utility function. At least one 
 
   However, there is an important assumption for this specification to be valid (Lee and Lemieux, 2010): continuity of the running variable around the threshold. In other words, individuals must not be able to manipulate the running variable so as to be above the cutpoint. This is because if there exists manipulation, then there occurs selection bias problem, that those who try to be assigned the treatment can adjust their running variable. Therefore, there are some empirical way to test the manipulation of a variable, which is the very method I apply in my analysis.
 
-  One of the widespread methods for this specification is  McCrary(2008)'s.
+  One of the frequently applied methods for this specification is  McCrary(2008)'s local linear density estimation. I avail this to my specification of bunching.
 
+  This estimation of the manipulation at the cutoff point $c$, proceeds in two steps: undersmoothing histograms and local linear smoothing. Undersmoothing means to determine the binsize $b$ of the running variable: in this paper, the index argued.
 
+  \[
+  g(R_i) = \left \lfloor \dfrac{R_i - c}{b} \right \rfloor b
+  + \dfrac{b}{2} + c \in \left \{ \ldots, c-5\dfrac{b}{2},  c-3\dfrac{b}{2}, c-\dfrac{b}{2}, c+\dfrac{b}{2}, c+3\dfrac{b}{2}, c+5\dfrac{b}{2}, \ldots \right \}
+  \]
+  where $\lfloor a \rfloor$ denotes the greatest integer less than $a$.
 
   \subsubsection{Monetary Incentive}
 
@@ -201,9 +207,21 @@ In my paper, it is not determined who has such a utility function. At least one 
 \section{Result}
 \subsection{Excess Mass Around The Reference Point}
 
+First, I show the results that verifies bunching. Table %\ref{}
+includes the summary of McCrary (2008)'s manipulation tests about the performance indexes that say there is some manipulation occurs. Consistent with Pope and Simonsohn (2011), there actually occurs excess mass around .300 of batting-average. Also, manipulation were also observed in some of other numbers of other indexes: .350 of on-base percentage, 20 of homeruns, 100 of runs-batted-in, 30 and 40 of stolen-bases, and 200 of base-hits. Table %\ref{}
+shows parts of results that denies the existance of excess mass.
+
+For batting-average, extending sample size from Pope and Simonsohn (2011) yields similar results: Players manipulate their batting-average. Also, there were no other similar bunching points, even though it is a round number, .200, .250, or .350. The results are robust to changing the binsize of frequency.
+
+On-base percentage, on the other hand, showed similar tendency in .350. Pope and Simonsohn (2011) reported that they are less likely to get base-on-balls when facing marginal range of batting-average and so they feel of more importance in batting-average than on-base percentage. However, when they face marginal point of on-base percentage, they may try to get more base-on-balls in order to achieve .350.
+
+Bunching also occurs in cumulative indexes. As same as batting-average and on-base percentages, however, such manipulation was observed in only limited numbers: not all the round numbers.
+
 \subsection{Existance of Monetary Incentive}
 
 \section{Alternative Interpretation and Some Evidence}
+
+In section 5, my analysis said that there in fact exists manipulation in some of the batting indexes, but no evidence observed in their contracts, which supports the assumption these observations are driven by the reference dependence of the players themselves. Here I consider some possible alternative and additional discussion about my result.
 
 \subsection{Incentivised Contract}
 
@@ -237,7 +255,9 @@ In this analysis, I replicate the methodologies conducted in the previous sectio
   \item After \textit{Moneyball} (2004 - 2017)
 \end{enumerate}
 
-\subsection{Possibility of Manipulation}
+
+
+\subsection{Across Indexes: Priority of Manipulation}
 
 \section{Conclusion}
 
