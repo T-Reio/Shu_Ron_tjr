@@ -241,6 +241,7 @@ INPUT c:/texlive/2018/texmf-dist/fonts/tfm/ptex-fonts/standard/min9.tfm
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/ptex-fonts/standard/tmin8.tfm
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/ptex-fonts/standard/min8.tfm
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/palatino/pplri7t.tfm
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/palatino/pplb7t.tfm
 OUTPUT results/summary.aux
 INPUT results/summary.tex
 INPUT results/summary.tex
@@ -263,7 +264,27 @@ INPUT results/summary_B.tex
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/ptex-fonts/standard/tgoth10.tfm
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/ptex-fonts/standard/goth10.tfm
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/palatino/pplb7t.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/palatino/pplb7t.tfm
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/mathpazo/zplmr7m.tfm
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/mathpazo/zplmr7y.tfm
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/mathpazo/zplmr7v.tfm
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/mathpazo/zplmr7t.tfm
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/palatino/pplr7t.tfm
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/mathpazo/zplmr7m.tfm
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/mathpazo/zplmr7y.tfm
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/mathpazo/zplmr7v.tfm
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/mathpazo/zplmr7t.tfm
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT graphs/hist_AVG_all.png
+INPUT extractbb -B cropbox -O graphs/hist_AVG_all.png
+INPUT graphs/AVG_300.png
+INPUT extractbb -B cropbox -O graphs/AVG_300.png
+INPUT graphs/hist_OBP_all.png
+INPUT extractbb -B cropbox -O graphs/hist_OBP_all.png
+INPUT graphs/OBP_350.png
+INPUT extractbb -B cropbox -O graphs/OBP_350.png
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/palatino/pplr8c.tfm
 INPUT Master_thesis_Reio_T.aux
 INPUT results/summary.aux

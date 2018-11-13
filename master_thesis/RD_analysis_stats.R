@@ -39,7 +39,9 @@ OPS <- stats$SLG + stats$OBP
 PA <- stats$PA
 H <- stats$H
 
-DCdensity(AVG, 0.3, bin = 0.005, ext.out = T)
+
+
+DCdensity(AVG, 0.3, bin = 0.001, ext.out = T)
 DCdensity(AVG, 0.2995, ext.out = T)
 title('', xlab = 'Batting-Average', ylab = 'Density')
 rect(0.297, 4.3, 0.303, 14, col = 'red')

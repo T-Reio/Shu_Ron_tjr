@@ -141,14 +141,14 @@ In considering rate indexes, we have to restrict the sample to the batters with 
 
 Play stats are tagged by players` ID and season, including batting indexes tested bunching: batting-average, on-base percentage, base-hits, stolen-base, homerun, runs-batted-in, and plate appearances. Moreover,  for the analysis of monetary incentives, I collected other indexes that control the performance: slugging-average, OPS, fWAR, BATTING, FIELDING, BaseRun, and WPA. Salary data includes annual salary at the year: for the players with plural-year contract, it is calculated by deviding total payment of the contract by the years. It also contains the player-specific charactaristics: age, position (catcher, firstbaseman, ... right fielder), team they signed, and possession of the right of free agency.
 
-The summery statistics are descripted in Table 1 and Table \ref{sum_B}.
+The summery statistics are descripted in Table \ref{sum_A} and Table \ref{sum_B}.
 
-\begin{table}[H]
+\begin{table}
   \include{results/summary}
 \end{table}
 
 \leftskip = -15pt
-\begin{table}[H]
+\begin{table}
   \input{results/summary_B}
 \end{table}
 \leftskip = 0pt
@@ -189,7 +189,7 @@ In my paper, it is not determined who has such a utility function. At least one 
   g(R_i) = \left \lfloor \dfrac{R_i - c}{b} \right \rfloor b
   + \dfrac{b}{2} + c \in \left \{ \ldots, c-5\dfrac{b}{2},  c-3\dfrac{b}{2}, c-\dfrac{b}{2}, c+\dfrac{b}{2}, c+3\dfrac{b}{2}, c+5\dfrac{b}{2}, \ldots \right \}
   \]
-  where $\lfloor a \rfloor$ denotes the greatest integer less than $a$.
+  where $\lfloor a \rfloor$ denotes the greatest integer less than $a$, and $g(R_i)$ stands for the height, or frequency of each bin. Then, we make local approximation above and below $c$, the possible value of reference dependence point. Bandwidth is calculated to minimize the estimation error. Then, we estimate the frequency at the cutoff point, $\Hat{f}(r)$, by fitting the estimated density function below and above the cutoff, $\hat{f}^+$ and $\hat{f}^-$, respectively. Finally, we take the difference between $\ln \hat{f}^+$ and $\ln \hat{f}^-$ to calculate the statistics $\theta$. With $\theta$ and its estimator of standard deviation, $t$-tests can be condtructed to specifying manipulation.
 
   \subsubsection{Monetary Incentive}
 
@@ -207,15 +207,81 @@ In my paper, it is not determined who has such a utility function. At least one 
 \section{Result}
 \subsection{Excess Mass Around The Reference Point}
 
-First, I show the results that verifies bunching. Table %\ref{}
-includes the summary of McCrary (2008)'s manipulation tests about the performance indexes that say there is some manipulation occurs. Consistent with Pope and Simonsohn (2011), there actually occurs excess mass around .300 of batting-average. Also, manipulation were also observed in some of other numbers of other indexes: .350 of on-base percentage, 20 of homeruns, 100 of runs-batted-in, 30 and 40 of stolen-bases, and 200 of base-hits. Table %\ref{}
+First, I show the results that verifies bunching. Table \ref{Bunch-True} includes the summary of McCrary (2008)'s manipulation tests about the performance indexes that say there is some manipulation occurs. Consistent with Pope and Simonsohn (2011), there actually occurs excess mass around .300 of batting-average. Also, manipulation were also observed in some of other numbers of other indexes: .350 of on-base percentage, 20 of homeruns, 100 of runs-batted-in, 30 and 40 of stolen-bases, and 200 of base-hits. Table %\ref{}
 shows parts of results that denies the existance of excess mass.
 
-For batting-average, extending sample size from Pope and Simonsohn (2011) yields similar results: Players manipulate their batting-average. Also, there were no other similar bunching points, even though it is a round number, .200, .250, or .350. The results are robust to changing the binsize of frequency.
+\begin{table}
+  \small
+  \centering
+  \begin{tabular}{lcccccc}\hline
+    index & type & cutpoint & binsize & bandwidth & $\theta$ & $z$
+    \\ \hline \hline
+    AVG & rate & .300 & .001 & .019 &  .499 & 7.442*** \\
+    & & & & & (0.067) & \\
+    OBP & rate & .350 & .001 & .024 &  .139 & 2.854** \\
+    & & & & & (0.049) &  \\
+    HR & cumulative & 20 & 1 & 5.309 & .259 & 3.465*** \\
+    & & & & & (.075)  & \\
+    RBI & cumulative & 100 & 4 & 15.423 & .311 & 3.295*** \\
+    & & & & & (0.094) & \\
+    SB & cumulative & 30 & 1 & 10.000 & .529 & 4.274*** \\
+    & & & & & (.124) & \\
+    & & 40 & 1 & 11.505 & .481 & 2.764** \\
+    & & & & & (.174) & \\
+    PA & cumulative & 500 & 1 & 0.003 & .160 & 2.515* \\
+    & & & & &(.063) & \\
+    H & cumulative & 200 & 1 & 18.922 & .453 & 2.547 * \\
+    & & & & & (.178) & \\ \hline \hline
+  \end{tabular}
+  \footnotesize
+  \flushright
+      ***: $p<0.1\%$, **: $p<1\%$, *: $p<5\%$.
 
-On-base percentage, on the other hand, showed similar tendency in .350. Pope and Simonsohn (2011) reported that they are less likely to get base-on-balls when facing marginal range of batting-average and so they feel of more importance in batting-average than on-base percentage. However, when they face marginal point of on-base percentage, they may try to get more base-on-balls in order to achieve .350.
+    Bandwidth is optimized following the method of Mcrary(2007).
+  \caption{Test for Manipulation :leastPA $= 200$}
+  \label{Bunch-True}
+\end{table}
 
-Bunching also occurs in cumulative indexes. As same as batting-average and on-base percentages, however, such manipulation was observed in only limited numbers: not all the round numbers.
+For batting-average, extending sample size from Pope and Simonsohn (2011) yields similar results: Players manipulate their batting-average. The difference between the estimated frequency according to the approximation below .300 and that of above .300 was significant at .1\% ($z=7.442$) level. Also, there were no other similar bunching points, even though it is a round number, .200, .250, or .350. The results are robust to changing the binsize of frequency.
+
+On-base percentage, on the other hand, showed similar tendency in .350, although the significance level was $z=2.854$ (significant at 5\% level). Pope and Simonsohn (2011) reported that they are less likely to get base-on-balls when facing marginal range of batting-average and so they feel of more importance in batting-average than on-base percentage. However, when they face marginal point of on-base percentage, they may try to get more base-on-balls in order to achieve .350.
+
+Bunching also occurs in cumulative indexes. Cumulative ones are irreversible, and so players may feel these indexes are easier to manipulate. As same as batting-average and on-base percentages, however, such manipulation was observed in only limited numbers: not all the round numbers. For Homerun ($z=3.465, p < 0.1\%$), bunching occurred only in 20: there may be diminishing sensitivity: 20 is located on above the 75 percentiles of the whole Sample A. Also, stolen-base and base-hit have shown bunching, at 30 ($z=4.274, p < 0.1\%$) and 40 ($z=2.764, p < 1\%$) of stolen-base and 200 in base-hit ($z=2.547, p < 5\%$). Stealing-bases are skill that are talented to limited number of the players, but succeeds with the prpbability of 60 to alomost 100 \%, so those who are evaluated by their number of stolen-bases, it may certain may be accessible number to manipulate. Base-hit is manipulated by similar to batting-average, but for this index, as same as other cumulative ones, it cannot be valid to be replaced in the last plate-appearance, which lower the confidence level of the $z$-statistics. And surprisingly such manipulation occurs in runs-batted-in. Compared to other indexes, runs-batted-in is harder to manipulate, since the number of that depends on the performance of his teammates, and the can earn at most 4 runs at a single plate-appearance. As in Table \ref{Bunch-True}, the test said that there occurs the evidence in plate-appearances. However, it may insufficient because the optimized bandwidth was smaller than one, even though the number of PAs takes only integers. Setting bandwidth larger than 1, then the result went insignificant.
+
+\begin{figure}[H]
+
+  \begin{tabular}{cc}
+    \begin{minipage}{.5\textwidth}
+      \includegraphics[keepaspectratio, scale = 0.5, angle=90]{graphs/hist_AVG_all.png}
+      \caption{Histgram of Batting-Average}
+      \label{hist_AVG}
+    \end{minipage} &
+
+    \begin{minipage}{.5\textwidth}
+      \includegraphics[keepaspectratio, scale = 0.65, angle = 90]{graphs/AVG_300.png}
+      \caption{}
+      \label{}
+    \end{minipage}
+  \end{tabular}
+\end{figure}
+
+
+\begin{figure}[H]
+  \begin{tabular}{cc}
+    \begin{minipage}{.5\textwidth}
+      \includegraphics[keepaspectratio, scale = 0.5, angle=90]{graphs/hist_OBP_all.png}
+      \caption{Histgram of On-Base Percentage}
+      \label{hist_OBP}
+    \end{minipage} &
+
+    \begin{minipage}{.5\textwidth}
+      \includegraphics[keepaspectratio, scale = 0.5, angle = 90]{graphs/OBP_350.png}
+      \caption{}
+      \label{}
+
+    \end{minipage}
+  \end{tabular}
+\end{figure}
 
 \subsection{Existance of Monetary Incentive}
 

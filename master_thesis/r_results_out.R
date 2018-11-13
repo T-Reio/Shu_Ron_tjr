@@ -1,10 +1,12 @@
-png("C:/Users/T-Reio/Master_thesis/master_thesis/graphs/hist_AVG_all.png", width = 700, height = 500)
-hist(AVG, breaks=seq(0.12,0.4,0.001), main = "Batting-Average")
+png("C:/Users/easyu/Master_thesis/master_thesis/graphs/hist_AVG_all.png", width = 700, height = 500)
+hist(AVG, breaks=seq(0.12,0.4,0.001), main = "")
 dev.off()
 
-png("C:/Users/T-Reio/Master_thesis/master_thesis/graphs/hist_OBP_all.png", width = 700, height = 500)
-hist(OBP, breaks = seq(0.15, 0.65, 0.001), main = "On-Base Percentage")
+png("C:/Users/easyu/Master_thesis/master_thesis/graphs/hist_OBP_all.png", width = 700, height = 500)
+hist(OBP, breaks = seq(0.15, 0.69, 0.001), main = "")
 dev.off()
+
+summary(OBP)
 
 png("C:/Users/T-Reio/Master_thesis/master_thesis/graphs/hist_HR_all.png", width = 700, height = 500)
 hist(HR, breaks = seq(0,75,1), main = "Homeruns")
