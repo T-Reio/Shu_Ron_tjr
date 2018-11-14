@@ -32,7 +32,7 @@ OBP <- (stats$H + stats$BB + stats$IBB + stats$HBP) / (stats$AB ++ stats$BB
                                                        + stats$IBB + stats$HBP + stats$SF)
 fWAR <- stats$WAR
 HR <- stats$HR
-SB <- stats.5SB$SB
+SB <- stats$SB
 RBI <- stats$RBI
 AVG <- stats$AVG
 OPS <- stats$SLG + stats$OBP
@@ -41,7 +41,7 @@ H <- stats$H
 
 
 
-DCdensity(AVG, 0.3, bin = 0.001, ext.out = T)
+DCdensity(AVG, 0.25, bin = 0.001, ext.out = T)
 DCdensity(AVG, 0.2995, ext.out = T)
 title('', xlab = 'Batting-Average', ylab = 'Density')
 rect(0.297, 4.3, 0.303, 14, col = 'red')
@@ -56,11 +56,11 @@ title('', xlab = 'Batting-Average', ylab = 'Density')
 DCdensity(fWAR, 4.0, bin = 0.1)
 DCdensity(HR, 20, bin = 1, ext.out = T)
 title('', xlab = 'Homerun', ylab = 'Density')
-DCdensity(SB, 40, bin = 1, ext.out = T)
+DCdensity(SB, 30, bin = 1, ext.out = T)
 title('', xlab = 'Stolen-Base', ylab = 'Density')
 DCdensity(RBI, 100, bin = 4, ext.out = T)
 title('', xlab = 'Runs Batted-In', ylab = 'Density')
-DCdensity(PA, 500, bin = 1, ext.out = T)
+DCdensity(PA, 500, bw = 2, bin = 1, ext.out = T)
 title('', xlab = 'Plate-Appearance', ylab = 'Density')
 DCdensity(H, 200, bin = 1, ext.out = T)
 title('', xlab = 'Base-Hit', ylab = 'Density')
