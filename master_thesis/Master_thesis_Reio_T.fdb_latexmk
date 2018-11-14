@@ -1,11 +1,11 @@
 # Fdb version 3
-["dvipdf"] 1542178906 "Master_thesis_Reio_T.dvi" "Master_thesis_Reio_T.pdf" "Master_thesis_Reio_T" 1542178910
-  "Master_thesis_Reio_T.dvi" 1542178906 96812 be9de4ba70f3341d5ad43b2023a8ca50 "latex"
+["dvipdf"] 1542184352 "Master_thesis_Reio_T.dvi" "Master_thesis_Reio_T.pdf" "Master_thesis_Reio_T" 1542184354
+  "Master_thesis_Reio_T.dvi" 1542184352 98136 e1071de95ca986fcef783967b5196942 "latex"
   (generated)
   "Master_thesis_Reio_T.pdf"
-["latex"] 1542178897 "Master_thesis_Reio_T.tex" "Master_thesis_Reio_T.dvi" "Master_thesis_Reio_T" 1542178910
-  "Master_thesis_Reio_T.aux" 1542178906 3515 0606bb89cf3a7f178cd0a0db9f21db46 ""
-  "Master_thesis_Reio_T.tex" 1542178896 38088 58ef27118f8fc24d0e3a23ec587e57cc ""
+["latex"] 1542184344 "Master_thesis_Reio_T.tex" "Master_thesis_Reio_T.dvi" "Master_thesis_Reio_T" 1542184354
+  "Master_thesis_Reio_T.aux" 1542184352 3522 9abab04eb25c83ef501e33209acb38ed ""
+  "Master_thesis_Reio_T.tex" 1542184328 38140 3965f5cd631e73880a37f3a62de775dd ""
   "c:/texlive/2018/texmf-dist/fonts/map/fontname/texfonts.map" 1541079023 3332 103109f5612ad95229751940c61aada0 ""
   "c:/texlive/2018/texmf-dist/fonts/tfm/adobe/palatino/pplb7t.tfm" 1541081124 1616 371d1ee60c04b008c8fd760060cd34f1 ""
   "c:/texlive/2018/texmf-dist/fonts/tfm/adobe/palatino/pplr7t.tfm" 1541081124 1804 7b5f73028f6509167f47ace9d69509ed ""
@@ -124,6 +124,7 @@
   "c:/texlive/2018/texmf-dist/tex/latex/psnfss/ot1zplm.fd" 1541081506 436 5e7baa1a259bab50a2bdffad6426f38c ""
   "c:/texlive/2018/texmf-dist/tex/latex/psnfss/t1ppl.fd" 1541081506 774 5747d3f33ec2f7c4881c94e931a130b1 ""
   "c:/texlive/2018/texmf-dist/tex/latex/psnfss/ts1ppl.fd" 1541081506 619 35f1cf70bf09b6e2d22ee0902cfb1a8b ""
+  "c:/texlive/2018/texmf-dist/tex/latex/setspace/setspace.sty" 1541082085 22913 a27d7908fc6f0385466454a966a316eb ""
   "c:/texlive/2018/texmf-dist/tex/latex/tools/array.sty" 1541082923 13312 20cb94dd6e4c9ea3a77ebbd18724e5c4 ""
   "c:/texlive/2018/texmf-dist/tex/latex/tools/dcolumn.sty" 1541082923 2755 a95af7253bb47cb72ad0ac110a442c52 ""
   "c:/texlive/2018/texmf-dist/tex/latex/xcolor/xcolor.sty" 1541083381 55589 34128738f682d033422ca125f82e5d62 ""
@@ -139,11 +140,11 @@
   "graphs/OBP_350.png" 1541062633 6726 4d97291c6080f13c199622ac3b531288 ""
   "graphs/hist_AVG_all.png" 1542098569 4953 e28954ec7938c3971f1f97fac4f07a10 ""
   "graphs/hist_OBP_all.png" 1542098571 4023 dd892eea13f4937135d85aef29b9bd68 ""
-  "results/summary.aux" 1542178901 488 48161348db42654c9340cc892cb395cf ""
+  "results/summary.aux" 1542184347 488 16ee80d8fa15a0c3ae04aed1446baa52 ""
   "results/summary.tex" 1541729238 1245 34b91a9677d50d7f22850f3b9bc6facf ""
   "results/summary_B.tex" 1541728046 1897 264116fe17c034a58a82717c7b400af5 ""
   (generated)
   "Master_thesis_Reio_T.dvi"
   "Master_thesis_Reio_T.aux"
-  "results/summary.aux"
   "Master_thesis_Reio_T.log"
+  "results/summary.aux"
