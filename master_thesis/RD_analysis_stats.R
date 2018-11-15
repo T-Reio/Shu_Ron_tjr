@@ -47,8 +47,8 @@ title('', xlab = 'Batting-Average', ylab = 'Density')
 rect(0.297, 4.3, 0.303, 14, col = 'red')
 DCdensity(AVG, 0.288, bin = 0.001, ext.out = T)
 
-DCdensity(OBP, 0.45, bin = 0.001, ext.out = T)
-title('', xlab = 'On-Base Persentage', ylab = 'Density')
+DCdensity(OBP, 0.35, bin = 0.001, ext.out = T)
+title('', xlab = 'On-Base Percentage', ylab = 'Density')
 DCdensity(OBP, 0.3495, ext.out = T)
 
 DCdensity(OPS, 0.741, bin = 0.001, ext.out = T)
@@ -69,32 +69,9 @@ summary(OPS)
 hist(fWAR, breaks = seq(-4, 13, 0.2))
 hist(OPS, breaks = seq(0.38, 1.5, 0.001))
 
-count <- fread("C:/Users/easyu/Master_thesis/master_thesis/output/count_AVG.csv"
-               , header = T, sep = ",")
 
-freq <- count$'0'
-AVG <- count$AVG
-
-summary(AVG)
-
-count <- subset(count, count$AVG >= 0.251)
-
-count <- subset(count, count$AVG <= 0.299)
-count <- subset(count, count$AVG >= 0.300)
-
-freq <- count$'0'
-AVG <- count$AVG
-AVG <- stats$AVG
-
-est2 <- lm(freq ~ AVG)
-
-summary(est1)
-summary(est2)
-
-predict(est1, df.test)
-
-1520.45 + 0.3 * (-4730.59)
-495.166 + 0.3 * (-1371.246)
+f.HR <- as.factor(HR)
+summary(f.HR)
 
 statmode <- function(x) {
   names(which.max(table(x)))

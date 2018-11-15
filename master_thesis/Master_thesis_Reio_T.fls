@@ -289,6 +289,14 @@ INPUT graphs/hist_OBP_all.png
 INPUT extractbb -B cropbox -O graphs/hist_OBP_all.png
 INPUT graphs/OBP_350.png
 INPUT extractbb -B cropbox -O graphs/OBP_350.png
+INPUT graphs/hist_HR_all.png
+INPUT extractbb -B cropbox -O graphs/hist_HR_all.png
+INPUT graphs/HR_20.png
+INPUT extractbb -B cropbox -O graphs/HR_20.png
+INPUT graphs/hist_RBI_all.png
+INPUT extractbb -B cropbox -O graphs/hist_RBI_all.png
+INPUT graphs/RBI_100.png
+INPUT extractbb -B cropbox -O graphs/RBI_100.png
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/palatino/pplr8c.tfm
 INPUT Master_thesis_Reio_T.aux
 INPUT results/summary.aux

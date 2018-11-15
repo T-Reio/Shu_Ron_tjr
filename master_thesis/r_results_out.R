@@ -8,28 +8,28 @@ dev.off()
 
 summary(OBP)
 
-png("C:/Users/T-Reio/Master_thesis/master_thesis/graphs/hist_HR_all.png", width = 700, height = 500)
-hist(HR, breaks = seq(0,75,1), main = "Homeruns")
+png("C:/Users/easyu/Master_thesis/master_thesis/graphs/hist_HR_all.png", width = 700, height = 500)
+hist(HR, breaks = seq(0,75,1), main = "")
 dev.off()
 
 png("C:/Users/T-Reio/Master_thesis/master_thesis/graphs/hist_OPS_all.png", width = 700, height = 500)
 hist(OPS, breaks = seq(0.35,1.5,0.001), main = "OPS")
 dev.off()
 
-png("C:/Users/T-Reio/Master_thesis/master_thesis/graphs/hist_H_all.png", width = 700, height = 500)
-hist(H, breaks = seq(0,270,1), main = "Base-Hits")
+png("C:/Users/easyu/Master_thesis/master_thesis/graphs/hist_H_all.png", width = 700, height = 500)
+hist(H, breaks = seq(0,270,1), main = "")
 dev.off()
 
-png("C:/Users/T-Reio/Master_thesis/master_thesis/graphs/hist_RBI_all.png", width = 700, height = 500)
-hist(RBI, breaks = seq(0,170,1), main = "Runs-Batted-In")
+png("C:/Users/easyu/Master_thesis/master_thesis/graphs/hist_RBI_all.png", width = 700, height = 500)
+hist(RBI, breaks = seq(0,170,1), main = "")
 dev.off()
 
-png("C:/Users/T-Reio/Master_thesis/master_thesis/graphs/hist_SB_all.png", width = 700, height = 500)
-hist(SB, breaks = seq(0,130,1), main = "Stolen-Bases")
+png("C:/Users/easyu/Master_thesis/master_thesis/graphs/hist_SB_all.png", width = 700, height = 500)
+hist(SB, breaks = seq(0,130,1), main = "")
 dev.off()
 
-png("C:/Users/T-Reio/Master_thesis/master_thesis/graphs/hist_PA_all.png", width = 700, height = 500)
-hist(PA, breaks = seq(200,780,5), main = "Plate-Appearances")
+png("C:/Users/easyu/Master_thesis/master_thesis/graphs/hist_PA_all.png", width = 700, height = 500)
+hist(PA, breaks = seq(200,780,5), main = "")
 dev.off()
 
 fWAR <- stats$WAR
