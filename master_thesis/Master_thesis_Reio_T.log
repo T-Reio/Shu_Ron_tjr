@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.0-180226-2.6 (utf8.sjis) (TeX Live 2018/W32TeX) (preloaded format=platex 2018.11.1)  15 NOV 2018 23:02
+This is e-pTeX, Version 3.14159265-p3.8.0-180226-2.6 (utf8.sjis) (TeX Live 2018/W32TeX) (preloaded format=platex 2018.11.1)  16 NOV 2018 11:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -7,6 +7,18 @@ entering extended mode
 (./Master_thesis_Reio_T.tex
 pLaTeX2e <2018-04-01>+1 (based on LaTeX2e <2018-04-01> patch level 2)
 Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
+
+./Master_thesis_Reio_T.tex:1: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 H
+     H\documentclass[dvipdfmx, 12pt]{article}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 (c:/texlive/2018/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
 (c:/texlive/2018/texmf-dist/tex/latex/base/size12.clo
@@ -18,12 +30,17 @@ File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \c@subsubsection=\count86
 \c@paragraph=\count87
 \c@subparagraph=\count88
+
+Overfull \hbox (35.00003pt too wide) in paragraph at lines 1--274
+[]\OT1/cmr/m/n/10 HH
+ []
+
 \c@figure=\count89
 \c@table=\count90
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen118
-) (c:/texlive/2018/texmf-dist/tex/latex/psnfss/mathpazo.sty
+[1]) (c:/texlive/2018/texmf-dist/tex/latex/psnfss/mathpazo.sty
 Package: mathpazo 2005/04/12 PSNFSS-v9.2a Palatino w/ Pazo Math (D.Puga, WaS) 
 \symupright=\mathgroup4
 ) (c:/texlive/2018/texmf-dist/tex/latex/amsmath/amsmath.sty
@@ -497,7 +514,11 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layouthoffset=\dimen184
 \Gm@layoutvoffset=\dimen185
 \Gm@dimlist=\toks36
-) (./Master_thesis_Reio_T.aux (./results/summary.aux))
+) (./Master_thesis_Reio_T.aux (./results/summary.aux)
+
+LaTeX Warning: Label `hist_AVG' multiply defined.
+
+)
 \openout1 = `Master_thesis_Reio_T.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
@@ -607,9 +628,9 @@ LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <17.28> not available
 LaTeX Font Info:    Try loading font information for TS1+ppl on input line 37.
 (c:/texlive/2018/texmf-dist/tex/latex/psnfss/ts1ppl.fd
 File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
-) [1
+) [2
 
-] [2] [3]
+] [3] [4]
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
 (Font)              scaled to size 12.50409pt on input line 59.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
@@ -622,7 +643,7 @@ LaTeX Font Info:    Font shape `U/msb/m/n' will be
 (Font)              scaled to size 9.37807pt on input line 59.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
 (Font)              scaled to size 7.29405pt on input line 59.
- [4]
+ [5]
 Overfull \hbox (10.34476pt too wide) in paragraph at lines 110--112
 [][] 
  []
@@ -632,7 +653,7 @@ Overfull \hbox (6.42601pt too wide) in paragraph at lines 69--117
 [][] 
  []
 
-[5] [6] [7] [8]
+[6] [7] [8] [9]
 Overfull \hbox (1.20404pt too wide) in paragraph at lines 145--146
 []\OT1/ppl/m/n/12 Play stats are tagged by play-ers` ID and sea-son, in-clud-ing bat-ting in-dexes tested bunch-
  []
@@ -660,107 +681,120 @@ LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <14.4> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 161.
 LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <14.4> not available
 (Font)              Font shape `OT1/ppl/b/n' tried instead on input line 161.
- [9
+ [10
 
 
-\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Summary Statistics for Sample A}}{9}}
-\newlabel{sum_A}{{1}{9}}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Summary Statistics for Sample A}}{10}}
+\newlabel{sum_A}{{1}{10}}
 
-] [10]
+] [11]
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <12> not available
 (Font)              Font shape `JT1/gt/m/n' tried instead on input line 179.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 179.
 LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <12> not available
 (Font)              Font shape `OT1/ppl/b/n' tried instead on input line 179.
- [11] [12] [13] [14]
+ [12] [13] [14] [15]
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 11.40997pt on input line 220.
+(Font)              scaled to size 11.40997pt on input line 222.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 11.40997pt on input line 220.
+(Font)              scaled to size 11.40997pt on input line 222.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 7.91925pt on input line 244.
+(Font)              scaled to size 7.91925pt on input line 246.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 7.91925pt on input line 244.
- [15] [16
-
-
-]
+(Font)              scaled to size 7.91925pt on input line 246.
+ [16]
 File: graphs/hist_AVG_all.png Graphic file (type bmp)
 <graphs/hist_AVG_all.png>
 
-Overfull \hbox (115.29689pt too wide) in paragraph at lines 269--269
+Overfull \hbox (115.29689pt too wide) in paragraph at lines 263--263
 [][] 
  []
 
 File: graphs/AVG_300.png Graphic file (type bmp)
 <graphs/AVG_300.png>
 
-Overfull \hbox (74.71155pt too wide) in paragraph at lines 276--276
+Overfull \hbox (74.71155pt too wide) in paragraph at lines 270--270
 [][] 
  []
 
 File: graphs/AVG_250.png Graphic file (type bmp)
 <graphs/AVG_250.png>
 
-Overfull \hbox (74.71155pt too wide) in paragraph at lines 283--283
+Overfull \hbox (74.71155pt too wide) in paragraph at lines 277--277
 [][] 
  []
 
 File: graphs/hist_OBP_all.png Graphic file (type bmp)
 <graphs/hist_OBP_all.png>
-
-Overfull \hbox (115.29689pt too wide) in paragraph at lines 292--293
-[][] 
- []
-
 File: graphs/OBP_350.png Graphic file (type bmp)
 <graphs/OBP_350.png>
-
-Overfull \hbox (106.55867pt too wide) in paragraph at lines 298--299
-[][] 
- []
-
 File: graphs/hist_HR_all.png Graphic file (type bmp)
 <graphs/hist_HR_all.png>
-
-Overfull \hbox (115.29689pt too wide) in paragraph at lines 310--311
-[][] 
- []
-
 File: graphs/HR_20.png Graphic file (type bmp)
 <graphs/HR_20.png>
 
-Overfull \hbox (152.07211pt too wide) in paragraph at lines 316--317
+Overfull \hbox (2.8062pt too wide) in paragraph at lines 305--306
 [][] 
+ []
+
+
+Overfull \hbox (24.00002pt too wide) in paragraph at lines 284--311
+ [][] 
  []
 
 File: graphs/hist_RBI_all.png Graphic file (type bmp)
 <graphs/hist_RBI_all.png>
-
-Overfull \hbox (115.29689pt too wide) in paragraph at lines 328--329
-[][] 
- []
-
 File: graphs/RBI_100.png Graphic file (type bmp)
 <graphs/RBI_100.png>
+File: graphs/hist_H_all.png Graphic file (type bmp)
+<graphs/hist_H_all.png>
+File: graphs/H_200.png Graphic file (type bmp)
+<graphs/H_200.png>
 
-Overfull \hbox (106.55867pt too wide) in paragraph at lines 334--335
+Overfull \hbox (23.99998pt too wide) in paragraph at lines 315--342
+ [][] 
+ []
+
+File: graphs/hist_SB_all.png Graphic file (type bmp)
+<graphs/hist_SB_all.png>
+
+Overfull \hbox (115.29689pt too wide) in paragraph at lines 353--353
 [][] 
  []
 
-[17] [18] [19] [20] [21] [22] [23] [24] (./Master_thesis_Reio_T.aux (./results/summary.aux))
+File: graphs/SB_30.png Graphic file (type bmp)
+<graphs/SB_30.png>
+
+Overfull \hbox (109.72221pt too wide) in paragraph at lines 360--360
+[][] 
+ []
+
+File: graphs/SB_40.png Graphic file (type bmp)
+<graphs/SB_40.png>
+
+Overfull \hbox (74.71155pt too wide) in paragraph at lines 367--367
+[][] 
+ []
+
+[17
+
+
+] [18] [19] [20] [21] [22] [23] [24] [25] (./Master_thesis_Reio_T.aux (./results/summary.aux))
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
+
+LaTeX Warning: There were multiply-defined labels.
+
  ) 
 Here is how much of TeX's memory you used:
- 14200 strings out of 493281
- 277970 string characters out of 6148126
- 359219 words of memory out of 5000000
- 17852 multiletter control sequences out of 15000+600000
+ 14219 strings out of 493281
+ 278328 string characters out of 6148126
+ 359380 words of memory out of 5000000
+ 17866 multiletter control sequences out of 15000+600000
  37931 words of font info for 127 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
  55i,18n,54p,1738b,807s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on Master_thesis_Reio_T.dvi (24 pages, 101668 bytes).
+Output written on Master_thesis_Reio_T.dvi (25 pages, 103416 bytes).

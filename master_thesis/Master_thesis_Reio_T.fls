@@ -9,6 +9,7 @@ INPUT c:/texlive/2018/texmf-dist/tex/latex/base/size12.clo
 INPUT c:/texlive/2018/texmf-dist/tex/latex/base/size12.clo
 INPUT c:/texlive/2018/texmf-dist/fonts/map/fontname/texfonts.map
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
+OUTPUT Master_thesis_Reio_T.dvi
 INPUT c:/texlive/2018/texmf-dist/tex/latex/psnfss/mathpazo.sty
 INPUT c:/texlive/2018/texmf-dist/tex/latex/psnfss/mathpazo.sty
 INPUT c:/texlive/2018/texmf-dist/tex/latex/amsmath/amsmath.sty
@@ -217,7 +218,6 @@ INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/palatino/pplb7t.tfm
 INPUT c:/texlive/2018/texmf-dist/tex/latex/psnfss/ts1ppl.fd
 INPUT c:/texlive/2018/texmf-dist/tex/latex/psnfss/ts1ppl.fd
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/palatino/pplr8c.tfm
-OUTPUT Master_thesis_Reio_T.dvi
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/palatino/pplr7t.tfm
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/palatino/pplr7t.tfm
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/mathpazo/zplmr7m.tfm
@@ -297,6 +297,16 @@ INPUT graphs/hist_RBI_all.png
 INPUT extractbb -B cropbox -O graphs/hist_RBI_all.png
 INPUT graphs/RBI_100.png
 INPUT extractbb -B cropbox -O graphs/RBI_100.png
+INPUT graphs/hist_H_all.png
+INPUT extractbb -B cropbox -O graphs/hist_H_all.png
+INPUT graphs/H_200.png
+INPUT extractbb -B cropbox -O graphs/H_200.png
+INPUT graphs/hist_SB_all.png
+INPUT extractbb -B cropbox -O graphs/hist_SB_all.png
+INPUT graphs/SB_30.png
+INPUT extractbb -B cropbox -O graphs/SB_30.png
+INPUT graphs/SB_40.png
+INPUT extractbb -B cropbox -O graphs/SB_40.png
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/palatino/pplr8c.tfm
 INPUT Master_thesis_Reio_T.aux
 INPUT results/summary.aux

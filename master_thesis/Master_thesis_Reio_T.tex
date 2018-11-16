@@ -1,4 +1,4 @@
-\documentclass[dvipdfmx, 12pt]{article}
+HH\documentclass[dvipdfmx, 12pt]{article}
 \usepackage{mathpazo}
 \usepackage{amsmath,amssymb}
 \usepackage{array}
@@ -196,7 +196,7 @@ In my paper, it is not determined who has such a utility function. At least one 
 
   \subsubsection{Monetary Incentive}
 
-  Then, I examine the existance of the monetary incentive by regression analysis. The primitive model to check this is below:
+  Then, I examine the existance of the monetary incentive by regression analysis. We pay attention to whether for players around the posible reference point, it is worth manipulating their indexes or not, so in each analysis, we restrict our sample to the players there. The primitive model to check this is below:
 
   \[
   w_{it} = \beta_0 X_{it} + \beta_1 \text{ABOVE}_{it}
@@ -205,7 +205,9 @@ In my paper, it is not determined who has such a utility function. At least one 
 
   For each player $i$ in the season $t$, $w_{it}$ is log annual salary in next season $t+1$. $X_{it}$ and $Z_{it}$ are the value of performance index (batting-average, on-base percentage,\ldots) and other player-specific characters (age, team he signed, position,\ldots), respectively. $\text{ABOVE}_{it}$ is an indicator of the achievement of their goals for the index. That is, if he finished his season with a certain index with above the possible reference point, it takes 1, and otherwise 0. This is the variable in interest. As well as OLS, team, position, or individual fixed effect model estimation was also conducted.
 
-  Also, to check the robustness of my analysis, I tried alternative methodology: include interaction term, and methodology of regression discontinuity design. Interaction term analysis include that of $X_{it}$ and $\text{ABOVE}_{it}$, the coefficient of which indicates additional return on their achievement. RDD method is simple sharp RDD method: local linear regression around the possible reference point as the cutoff, where the bandiwidth was selected according to the polynominal approximation (Imbens, Guido and Kalyanaraman, 2009). As I mentioned above, RDD can be invalid when individuals can manipulate the running variable, so this may not appropreate in this analysis since I confirm there exists manipulation in the running variable: performance index. However, as I show below, this analysis found no evidence of discontinuous design of contract. Therefore, I apply this result as a complimental evidence of my research.
+  Also, to check the robustness of my analysis, I tried alternative methodology: include interaction term, and methodology of regression discontinuity design. Interaction term analysis include that of $X_{it}$ and $\text{ABOVE}_{it}$, the coefficient of which indicates additional return on their achievement.
+
+  To restrict sample around sample, it is ad hoc way to choose the range of players in the sample. We therefore also employ simple RDD method: local linear regression around the possible reference point as the cutoff, where the bandiwidth was selected according to the polynominal approximation (Imbens, Guido and Kalyanaraman, 2009). As I mentioned above, RDD can be invalid when individuals can manipulate the running variable, so this may not appropreate in this analysis since I confirm there exists manipulation in the running variable: performance index. However, as I show below, this analysis found no evidence of discontinuous design of contract. Therefore, I apply this result as a complimental evidence of my research.
 
 \section{Result}
 \subsection{Excess Mass Around The Reference Point}
@@ -249,14 +251,6 @@ shows parts of results that denies the existance of excess mass.
   \end{table}
 \end{landscape}
 
-For batting-average, extending sample size from Pope and Simonsohn (2011) yields similar results: Players manipulate their batting-average. The difference between the estimated frequency according to the approximation below .300 and that of above .300 was significant at .1\% ($z=7.442$) level. In addition, bunching occurs also in .250 ($z = 5.061$, p < 0.1\%). This is inconsistent with Pope and Simonsohn (2011), in that there was no bunching observed in any other round numbers of batting-average, so it can be related to that the sample size is extended to further old ages. I specificadlly analyzed this in Section 6.4. Furthermore, changing binsize yields similar results.
-
-On-base percentage, on the other hand, showed similar tendency in .350, although the significance level was $z=2.854$ (significant at 5\% level). Pope and Simonsohn (2011) reported that they are less likely to get base-on-balls when facing marginal range of batting-average and so they feel of more importance in batting-average than on-base percentage. However, when they face marginal point of on-base percentage, they may try to get more base-on-balls in order to achieve .350.
-
-Bunching also occurs in cumulative indexes. Cumulative ones are irreversible, and so players may feel these indexes are easier to manipulate. As same as batting-average and on-base percentages, however, such manipulation was observed in only limited numbers: not all the round numbers. For Homerun ($z=3.465, p < 0.1\%$), bunching occurred only in 20: there may be diminishing sensitivity: 20 is located on above the 75 percentiles of the whole Sample A. Also, stolen-base and base-hit have shown bunching, at 30 ($z=4.274, p < 0.1\%$) and 40 ($z=2.764, p < 1\%$) of stolen-base and 200 in base-hit ($z=2.547, p < 5\%$). Stealing-bases are skill that are talented to limited number of the players, but succeeds with the prpbability of 60\% to alomost 100\%, so those who are evaluated by their number of stolen-bases, it may certain be relatively accessible number to manipulate. Base-hit is manipulated by similar to batting-average, but for this index, as same as other cumulative ones, it cannot be valid to be replaced in the last plate-appearance, which seems to lower the confidence level of the $z$-statistics. And surprisingly such manipulation occurs also in runs-batted-in. Compared to other indexes, runs-batted-in is harder to manipulate, since the number of that depends on the performance of his teammates, and the number they can earn at a single plate-appearance varies from 1 to 4. As in Table \ref{Bunch-True}, the test said that there occurs the evidence in plate-appearances. However, it may insufficient because the optimized bandwidth was smaller than one, even though the number of PAs takes only integers. Setting bandwidth larger than 1, then the result went insignificant.
-
-Similar to the rate indexes, there occur manipuation in only some parts of round numbers. That is, it should be considered that the reference points are not determined only because they are round numbers as Pope and Simonsohn (2011) argued. The possible numbers of reference points found in this section are kinds of well-known indicators of the skill of the players. That is, the nature of the reference points are likely to be close to ``per'' in Pope and Schweizer (2011) rather than round numbers; or well, these numbers are monetarily incentivised goals by the team managers. So next, I examine whther there is any monetary bonus in their contract.
-
 \begin{figure}
   \centering
   \begin{tabular}{ccc}
@@ -265,7 +259,7 @@ Similar to the rate indexes, there occur manipuation in only some parts of round
       \includegraphics[keepaspectratio, scale = 0.5, angle=0]{graphs/hist_AVG_all.png}
       \caption{Histgram of Batting-Average}
       \label{hist_AVG}
-      \end{minipage}
+    \end{minipage}
     } \\
     \multicolumn{1}{l}{
     \begin{minipage}{.4\textwidth}
@@ -278,7 +272,7 @@ Similar to the rate indexes, there occur manipuation in only some parts of round
     \begin{minipage}{.4\textwidth}
       \includegraphics[keepaspectratio, scale = 0.5, angle = 0]{graphs/AVG_250.png}
       \caption{Discontinuity at .250 of AVG}
-      \label{DCdensity_AVG_259}
+      \label{DCdensity_AVG_250}
     \end{minipage}
     }
   \end{tabular}
@@ -287,57 +281,101 @@ Similar to the rate indexes, there occur manipuation in only some parts of round
 
 \begin{figure}
   \centering
-  \begin{tabular}{c}
+  \begin{tabular}{lr}
     \begin{minipage}{.5\textwidth}
-      \includegraphics[keepaspectratio, scale = 0.5, angle=0]{graphs/hist_OBP_all.png}
+      \includegraphics[keepaspectratio, scale = 0.3, angle=0]{graphs/hist_OBP_all.png}
       \caption{Histgram of On-Base Percentage}
       \label{hist_OBP}
-    \end{minipage} \\
+    \end{minipage} &
 
     \begin{minipage}{.5\textwidth}
-      \includegraphics[keepaspectratio, scale = 0.65, angle = 0]{graphs/OBP_350.png}
+      \includegraphics[keepaspectratio, scale = 0.4, angle = 0]{graphs/OBP_350.png}
       \caption{Discontinuity at .350 of OBP}
       \label{DCdensity_OBP_350}
 
-    \end{minipage}
-  \end{tabular}
-\end{figure}
+      \end{minipage} \\
 
-\begin{figure}
-  \centering
-  \begin{tabular}{c}
-    \begin{minipage}{.5\textwidth}
-      \includegraphics[keepaspectratio, scale = 0.5, angle=0]{graphs/hist_HR_all.png}
-      \caption{Histgram of Homerun}
-      \label{hist_HR}
-    \end{minipage} \\
+      \begin{minipage}{.5\textwidth}
+        \includegraphics[keepaspectratio, scale = 0.3, angle=0]{graphs/hist_HR_all.png}
+        \caption{Histgram of Homerun}
+        \label{hist_HR}
+        \end{minipage} &
 
-    \begin{minipage}{.5\textwidth}
-      \includegraphics[keepaspectratio, scale = 0.65, angle = 0]{graphs/HR_20.png}
-      \caption{Discontinuity at 20 of HR}
-      \label{DCdensity_HR_350}
+        \begin{minipage}{.5\textwidth}
+          \includegraphics[keepaspectratio, scale = 0.4, angle = 0]{graphs/HR_20.png}
+          \caption{Discontinuity at 20 of HR}
+          \label{DCdensity_HR}
 
-    \end{minipage}
-  \end{tabular}
-\end{figure}
+        \end{minipage}
+      \end{tabular}
+    \end{figure}
 
-\begin{figure}
-  \centering
-  \begin{tabular}{c}
-    \begin{minipage}{.5\textwidth}
-      \includegraphics[keepaspectratio, scale = 0.5, angle=0]{graphs/hist_RBI_all.png}
-      \caption{Histgram of Runs-Batted-In}
-      \label{hist_RBI}
-    \end{minipage} \\
+    \begin{figure}
+      \centering
+      \begin{tabular}{cc}
+        \begin{minipage}{.5\textwidth}
+          \includegraphics[keepaspectratio, scale = 0.3, angle=0]{graphs/hist_RBI_all.png}
+          \caption{Histgram of Runs-Batted-In}
+          \label{hist_RBI}
+          \end{minipage} &
 
-    \begin{minipage}{.5\textwidth}
-      \includegraphics[keepaspectratio, scale = 0.65, angle = 0]{graphs/RBI_100.png}
-      \caption{Discontinuity at 100 of RBI}
-      \label{DCdensity_RBI_100}
+          \begin{minipage}{.5\textwidth}
+            \includegraphics[keepaspectratio, scale = 0.4, angle = 0]{graphs/RBI_100.png}
+            \caption{Discontinuity at 100 of RBI}
+            \label{DCdensity_RBI_100}
 
-    \end{minipage}
-  \end{tabular}
-\end{figure}
+          \end{minipage} \\
+
+          \begin{minipage}{.5\textwidth}
+              \includegraphics[keepaspectratio, scale = 0.3, angle=0]{graphs/hist_H_all.png}
+              \caption{Histgram of Base-Hit}
+              \label{hist_H}
+          \end{minipage} &
+
+          \begin{minipage}{.5\textwidth}
+            \includegraphics[keepaspectratio, scale = 0.4, angle = 0]{graphs/H_200.png}
+            \caption{Discontinuity at 200 of Base-Hit}
+            \label{DCdensity_H_200}
+
+          \end{minipage}
+        \end{tabular}
+      \end{figure}
+
+      \begin{figure}
+        \centering
+        \begin{tabular}{ccc}
+          \multicolumn{2}{c}{
+          \begin{minipage}{.5\textwidth}
+            \includegraphics[keepaspectratio, scale = 0.5, angle=0]{graphs/hist_SB_all.png}
+            \caption{Histgram of Stolen-Base}
+            \label{hist_AVG}
+          \end{minipage}
+          } \\
+          \multicolumn{1}{l}{
+          \begin{minipage}{.4\textwidth}
+            \includegraphics[keepaspectratio, scale = 0.5, angle = 0]{graphs/SB_30.png}
+            \caption{Discontinuity at .300 of AVG}
+            \label{DCdensity_SB_30}
+          \end{minipage}
+          } & &
+          \multicolumn{1}{r}{
+          \begin{minipage}{.4\textwidth}
+            \includegraphics[keepaspectratio, scale = 0.5, angle = 0]{graphs/SB_40.png}
+            \caption{Discontinuity at .250 of AVG}
+            \label{DCdensity_SB_40}
+          \end{minipage}
+          }
+        \end{tabular}
+      \end{figure}
+
+For batting-average, extending sample size from Pope and Simonsohn (2011) yields similar results: Players manipulate their batting-average. The difference between the estimated frequency according to the approximation below .300 and that of above .300 was significant at .1\% ($z=7.442$) level. In addition, bunching occurs also in .250 ($z = 5.061$, p < 0.1\%). This is inconsistent with Pope and Simonsohn (2011), in that there was no bunching observed in any other round numbers of batting-average, so it can be related to that the sample size is extended to further old ages. I specificadlly analyzed this in Section 6.4. Furthermore, changing binsize yields similar results.
+
+On-base percentage, on the other hand, showed similar tendency in .350, although the significance level was $z=2.854$ (significant at 5\% level). Pope and Simonsohn (2011) reported that they are less likely to get base-on-balls when facing marginal range of batting-average and so they feel of more importance in batting-average than on-base percentage. However, when they face marginal point of on-base percentage, they may try to get more base-on-balls in order to achieve .350.
+
+Bunching also occurs in cumulative indexes. Cumulative ones are irreversible, and so players may feel these indexes are easier to manipulate. As same as batting-average and on-base percentages, however, such manipulation was observed in only limited numbers: not all the round numbers. For Homerun ($z=3.465, p < 0.1\%$), bunching occurred only in 20: there may be diminishing sensitivity: 20 is located on above the 75 percentiles of the whole Sample A. Also, stolen-base and base-hit have shown bunching, at 30 ($z=4.274, p < 0.1\%$) and 40 ($z=2.764, p < 1\%$) of stolen-base and 200 in base-hit ($z=2.547, p < 5\%$). Stealing-bases are skill that are talented to limited number of the players, but succeeds with the prpbability of 60\% to alomost 100\%, so those who are evaluated by their number of stolen-bases, it may certain be relatively accessible number to manipulate. Base-hit is manipulated by similar to batting-average, but for this index, as same as other cumulative ones, it cannot be valid to be replaced in the last plate-appearance, which seems to lower the confidence level of the $z$-statistics. And surprisingly such manipulation occurs also in runs-batted-in. Compared to other indexes, runs-batted-in is harder to manipulate, since the number of that depends on the performance of his teammates, and the number they can earn at a single plate-appearance varies from 1 to 4. As in Table \ref{Bunch-True}, the test said that there occurs the evidence in plate-appearances. However, it may insufficient because the optimized bandwidth was smaller than one, even though the number of PAs takes only integers. Setting bandwidth larger than 1, then the result went insignificant.
+
+Similar to the rate indexes, there occur manipuation in only some parts of round numbers. That is, it should be considered that the reference points are not determined only because they are round numbers as Pope and Simonsohn (2011) argued. The possible numbers of reference points found in this section are kinds of well-known indicators of the skill of the players. That is, the nature of the reference points are likely to be close to ``per'' in Pope and Schweizer (2011) rather than round numbers; or well, these numbers are monetarily incentivised goals by the team managers. So next, I examine whther there is any monetary bonus in their contract.
+
 
 \subsection{Existance of Monetary Incentive}
 
