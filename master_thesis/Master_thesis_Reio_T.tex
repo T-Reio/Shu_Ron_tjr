@@ -1,4 +1,4 @@
-HH\documentclass[dvipdfmx, 12pt]{article}
+\documentclass[dvipdfmx, 12pt]{article}
 \usepackage{mathpazo}
 \usepackage{amsmath,amssymb}
 \usepackage{array}
@@ -196,18 +196,21 @@ In my paper, it is not determined who has such a utility function. At least one 
 
   \subsubsection{Monetary Incentive}
 
-  Then, I examine the existance of the monetary incentive by regression analysis. We pay attention to whether for players around the posible reference point, it is worth manipulating their indexes or not, so in each analysis, we restrict our sample to the players there. The primitive model to check this is below:
-
+  Then, We examine the existance of the monetary incentive. We employ the method of sharp regression discontinuity design (RDD): local linear regression around the possible reference point as the cutoff.
   \[
   w_{it} = \beta_0 X_{it} + \beta_1 \text{ABOVE}_{it}
   + \beta_2 Z_{it}
   \]
-
   For each player $i$ in the season $t$, $w_{it}$ is log annual salary in next season $t+1$. $X_{it}$ and $Z_{it}$ are the value of performance index (batting-average, on-base percentage,\ldots) and other player-specific characters (age, team he signed, position,\ldots), respectively. $\text{ABOVE}_{it}$ is an indicator of the achievement of their goals for the index. That is, if he finished his season with a certain index with above the possible reference point, it takes 1, and otherwise 0. This is the variable in interest. As well as OLS, team, position, or individual fixed effect model estimation was also conducted.
+
+  where the bandiwidth was selected according to the polynominal approximation (Imbens, Guido and Kalyanaraman, 2009). As I mentioned above, RDD can be invalid when individuals can manipulate the running variable, so this may not appropreate in this analysis since I confirm there exists manipulation in the running variable: performance index. However, as I show below, this analysis found no evidence of discontinuous design of contract. Therefore, I apply this result as a complimental evidence of my research.
+  We pay attention to whether for players around the posible reference point, it is worth manipulating their indexes or not, so in each analysis, we restrict our sample to the players there. The primitive model to check this is below:
+
+
 
   Also, to check the robustness of my analysis, I tried alternative methodology: include interaction term, and methodology of regression discontinuity design. Interaction term analysis include that of $X_{it}$ and $\text{ABOVE}_{it}$, the coefficient of which indicates additional return on their achievement.
 
-  To restrict sample around sample, it is ad hoc way to choose the range of players in the sample. We therefore also employ simple RDD method: local linear regression around the possible reference point as the cutoff, where the bandiwidth was selected according to the polynominal approximation (Imbens, Guido and Kalyanaraman, 2009). As I mentioned above, RDD can be invalid when individuals can manipulate the running variable, so this may not appropreate in this analysis since I confirm there exists manipulation in the running variable: performance index. However, as I show below, this analysis found no evidence of discontinuous design of contract. Therefore, I apply this result as a complimental evidence of my research.
+  To restrict sample around sample, it is ad hoc way to choose the range of players in the sample.
 
 \section{Result}
 \subsection{Excess Mass Around The Reference Point}
@@ -215,41 +218,40 @@ In my paper, it is not determined who has such a utility function. At least one 
 First, I show the results that verifies bunching. Table \ref{Bunch-True} includes the summary of McCrary (2008)'s manipulation tests about the performance indexes that say there is some manipulation occurs. Consistent with Pope and Simonsohn (2011), there actually occurs excess mass around .300, and .250 of batting-average. Also, manipulation were also observed in some of other numbers of other indexes: .350 of on-base percentage, 20 of homeruns, 100 of runs-batted-in, 30 and 40 of stolen-bases, and 200 of base-hits. Table %\ref{}
 shows parts of results that denies the existance of excess mass.
 
-\begin{landscape}
-  \begin{table}
-    \small
-    \centering
-    \begin{tabular}{lcccccc}\hline
-      index & type & cutpoint & binsize & bandwidth & $\theta$ & $z$
-      \\ \hline \hline
-      AVG & rate & .300 & .001 & .019 &  .499 & 7.442*** \\
-      & & & & & (0.067) & \\
-      & & .250 & .001 & .024 & .212 & 5.061*** \\
-      & & & & & (.042) & \\
-      OBP & rate & .350 & .001 & .024 &  .139 & 2.854** \\
-      & & & & & (0.049) &  \\
-      HR & cumulative & 20 & 1 & 5.309 & .259 & 3.465*** \\
-      & & & & & (.075)  & \\
-      RBI & cumulative & 100 & 4 & 15.423 & .311 & 3.295*** \\
-      & & & & & (0.094) & \\
-      SB & cumulative & 30 & 1 & 10.000 & .529 & 4.274*** \\
-      & & & & & (.124) & \\
-      & & 40 & 1 & 11.505 & .481 & 2.764** \\
-      & & & & & (.174) & \\
-      PA & cumulative & 500 & 1 & 0.003 & .160 & 2.515* \\
-      & & & & &(.063) & \\
-      H & cumulative & 200 & 1 & 18.922 & .453 & 2.547 * \\
-      & & & & & (.178) & \\ \hline \hline
-    \end{tabular}
-    \footnotesize
-
+\begin{table}
+  \tiny
+  \centering
+  \begin{tabular}{lcccccc}\hline
+    index & type & cutpoint & binsize & bandwidth & $\theta$ & $z$
+    \\ \hline \hline
+    AVG & rate & .300 & .001 & .019 &  .499 & 7.442*** \\
+    & & & & & (0.067) & \\
+    & & .250 & .001 & .024 & .212 & 5.061*** \\
+    & & & & & (.042) & \\
+    OBP & rate & .350 & .001 & .024 &  .139 & 2.854** \\
+    & & & & & (0.049) &  \\
+    HR & cumulative & 20 & 1 & 5.309 & .259 & 3.465*** \\
+    & & & & & (.075)  & \\
+    RBI & cumulative & 100 & 4 & 15.423 & .311 & 3.295*** \\
+    & & & & & (0.094) & \\
+    SB & cumulative & 30 & 1 & 10.000 & .529 & 4.274*** \\
+    & & & & & (.124) & \\
+    & & 40 & 1 & 11.505 & .481 & 2.764** \\
+    & & & & & (.174) & \\
+    PA & cumulative & 500 & 1 & 0.003 & .160 & 2.515* \\
+    & & & & &(.063) & \\
+    H & cumulative & 200 & 1 & 18.922 & .453 & 2.547 * \\
+    & & & & & (.178) & \\ \hline \hline
+    Note & \multicolumn{6}{r}{
     ***: $p<0.1\%$, **: $p<1\%$, *: $p<5\%$.
-
+    }\\
+    \multicolumn{7}{r}{
     Bandwidth is optimized following the method of McCrary(2008).
-    \caption{Test for Manipulation, leastPA $= 200$}
-    \label{Bunch-True}
-  \end{table}
-\end{landscape}
+    }
+  \end{tabular}
+  \caption{Test for Manipulation, leastPA $= 200$}
+  \label{Bunch-True}
+\end{table}
 
 \begin{figure}
   \centering
@@ -258,7 +260,7 @@ shows parts of results that denies the existance of excess mass.
     \begin{minipage}{.5\textwidth}
       \includegraphics[keepaspectratio, scale = 0.5, angle=0]{graphs/hist_AVG_all.png}
       \caption{Histgram of Batting-Average}
-      \label{hist_AVG}
+      \label{}
     \end{minipage}
     } \\
     \multicolumn{1}{l}{
@@ -348,7 +350,7 @@ shows parts of results that denies the existance of excess mass.
           \begin{minipage}{.5\textwidth}
             \includegraphics[keepaspectratio, scale = 0.5, angle=0]{graphs/hist_SB_all.png}
             \caption{Histgram of Stolen-Base}
-            \label{hist_AVG}
+            \label{hist_SB}
           \end{minipage}
           } \\
           \multicolumn{1}{l}{
@@ -378,6 +380,173 @@ Similar to the rate indexes, there occur manipuation in only some parts of round
 
 
 \subsection{Existance of Monetary Incentive}
+
+\begin{table}[!]
+  \caption{RDD Test for Discontinuity}
+  \label{RDD_A}
+  \tiny
+  \centering
+  \begin{tabular}{lccccccc}\hline
+    index,cutpoint & Other Control & bw type & bandwidth
+    & Observations & Estimate & Std. Error & $z$
+    \\ \hline \hline
+    AVG, .300 & No &LATE & .084 & 8514 & .047 & .061 & .773 \\
+    & &Half-BW &  .042 & 5599 & .088 & .075 & 1.174 \\
+    & & Double-BW & .170 & 8915  & .067 & .056 & 1.184 \\ \cline{3-8}
+
+    & Yes &LATE & .045 & 5930 & .034 & .056 & .615 \\
+    & &Half-BW &  .023 & 3005 & .061 & .077 & .788 \\
+    & & Double-BW & .090 & 8605  & .016 & .045 & .354 \\ \hline
+
+    AVG, .250 & No &LATE & .036 & 6110 & .019 & .068 & .286 \\
+    & &Half-BW &  .018 & 3496 & .015 & .092 & .161 \\
+    & & Double-BW & .072 & 8539  & .034 & .054 & .636 \\ \cline{3-8}
+
+    & Yes &LATE & .048 & 7271 & .070 & .052 & 1.340 \\
+    & &Half-BW &  .024 & 4402 & .066 & .069 & .953 \\
+    & & Double-BW & .096 & 8810  & .075 & .044 & 1.713 \\ \hline
+
+    HR, 20 & No & LATE & 3.32 & 1315 & .071 & .175 & .406 \\
+    & & Half-BW & 1.66 & 562 & .073 & .127 & .576 \\
+    & & Double-BW & 6.64 & 2582 & -.004 & .109 & -.034 \\ \cline{3-8}
+
+    & Yes & LATE & 3.30 & 1307 & -.002 & .141 & -.015\\
+    & & Half-BW &1.65 & 560 & .030 & .102 & .299 \\
+    & & Double-BW & 6.61 & 2558 & -.032 & .088 & -.364 \\ \hline
+
+    OBP, .350 & No &LATE & .044 & 6440 & -.038 & .065 & -.592 \\
+    & & Half-BW & .021 & 3542 & -.076 & .089 & -.849 \\
+    & & Double-BW & .087 & 8656 & -.029 & .051 & -.570 \\ \cline{3-8}
+
+    & Yes & LATE & .045 & 6525 & -.013 & .049 & -.272 \\
+    & & Half-BW & .022 & 3673 & -.055 & .069 & -.807 \\
+    & &Double-BW & .089 & 8637 & .004 & .039 & .107 \\ \hline
+
+    RBI, 100 & No & LATE & 4.08 & 393 & .072 & .289 & .250 \\
+    & &Half-BW & 2.04 & 228 & .282 & .400 & .707 \\
+    & &Double-BW & 8.16 & 714 & .008 & .185 & .043 \\ \cline{3-8}
+
+    & Yes & LATE & 4.04 & 390 & .018 & .209 & .086 \\
+    & & Half-BW & 2.02 & 227 & -.042 & .324 & .130 \\
+    & & Double-BW & 8.07 & 708 & .056 & .127 & .435 \\ \hline
+
+    SB, 30 & No & LATE & 3.39 & 282 & .962 & .372 & 2.585** \\
+    & &Half-BW & 1.70 & 134 & .920 & .263 & 3.492*** \\
+    & &Double-BW & 8.16 & 714 & .008 & .185 & 2.941** \\ \cline{3-8}
+
+    & Yes & LATE & 3.40 & 282 & .379 & .297 & 1.271 \\
+    & & Half-BW & 1.70 & 134 & .290 & .249 & 1.163 \\
+    & & Double-BW & 6.79 & 533 & .408 & .180 & 2.260* \\ \hline
+
+    SB, 40 & No & LATE & 3.16 & 134 & -1.276 & .453 & -2.818** \\
+    & &Half-BW & 1.58 & 56 & -.736 & .383 & -1.924 \\
+    & &Double-BW & 6.32 & 245 & -.712 & .313 & -2.274* \\ \cline{3-8}
+
+    & Yes & LATE & 3.16 & 134 & -.346 & .396 & -.875 \\
+    & & Half-BW & 1.58 & 56 & -.313 & .429 & -.730 \\
+    & & Double-BW & 6.33 & 245 & -.115 & .244 & -.472 \\ \hline
+
+    Note: & \multicolumn{7}{r}{***: $p<0.1\%$, **: $p<1\%$, *: $p<5\%$.} \\
+    & \multicolumn{7}{r}{Bandwidth is optimized following the method of Imbens-Kalyanaraman.}
+  \end{tabular}
+\end{table}
+
+\begin{landscape}
+  \begin{table}
+    \input{results/Sal_AVG300_A.tex}
+  \end{table}
+\end{landscape}
+
+\begin{landscape}
+  \begin{table}
+    \input{results/Sal_AVG250_A.tex}
+  \end{table}
+\end{landscape}
+
+\begin{landscape}
+  \begin{table}
+    \input{results/Sal_OBP350_A.tex}
+  \end{table}
+\end{landscape}
+
+
+\begin{landscape}
+  \begin{table}
+    \input{results/Sal_HR20_A.tex}
+  \end{table}
+\end{landscape}
+
+\begin{landscape}
+  \begin{table}
+    \input{results/Sal_SB30_A.tex}
+  \end{table}
+\end{landscape}
+
+\begin{landscape}
+  \begin{table}
+    \input{results/Sal_SB40_A.tex}
+  \end{table}
+\end{landscape}
+
+\begin{landscape}
+  \begin{table}
+    \input{results/Sal_RBI100_A.tex}
+  \end{table}
+\end{landscape}
+
+\begin{table}[!]
+  \caption{RDD Test for Discontinuity}
+  \label{RDD_A}
+  \tiny
+  \centering
+  \begin{tabular}{lccccccc}\hline
+    index,cutpoint & Other Control & bw type & bandwidth
+    & Observations & Estimate & Std. Error & $z$
+    \\ \hline \hline
+    AVG, .300 & No &LATE & .025 & 503 & -.175 & .197 & -.888 \\
+    & &Half-BW &  .013 & 252 & -.307 & .302 & -1.016 \\
+    & & Double-BW & .052 & 1043  & -.180 & .141 & -1.271 \\ \cline{3-8}
+
+    & Yes &LATE & .026 & 509 & -.253 & .138 & -1.832 \\
+    & &Half-BW &  .013 & 266 & -.209 & .212 & -.986 \\
+    & & Double-BW & .052 & 1038  & .199 & .102 & -1.938 \\ \hline
+
+    AVG, .250 & No &LATE & .056 & 1366 & .074 & .102 & .721 \\
+    & &Half-BW & .028 & 910 & .147 & .133 & 1.099 \\
+    & & Double-BW & .114 & 1501  & .067 & .090 & .735 \\ \cline{3-8}
+
+    & Yes &LATE & .058 & 1367 & .084 & .082 & 1.020 \\
+    & &Half-BW & .029 & 923 & .149 & .107 & .398 \\
+    & & Double-BW & .117 & 1480  & .070 & .072 & .964 \\ \hline
+
+    HR, 20 & No & LATE & 3.48 & 211 & -.302 & .300 & -1.007 \\
+    & & Half-BW & 1.74 & 96 & -.123 & .226 & -.543 \\
+    & & Double-BW & 6.96 & 387 & .045 & .203 & .224 \\ \cline{3-8}
+
+    & Yes & LATE & 3.50  & 206 & -.273 & .296 & -.924\\
+    & & Half-BW & 1.75 & 95 & -.156 & .278 & -.560 \\
+    & & Double-BW & 7.00 & 439 & -.098 & .174 & -.565 \\ \hline
+
+    OBP, .350 & No &LATE & .045 & 1103 & .034 & .129 & .262 \\
+    & & Half-BW & .023 & 597 & -.106 & .172 & -.620 \\
+    & & Double-BW & .092 & 1469 & .024 & .105 & .225 \\ \cline{3-8}
+
+    & Yes & LATE & .043 & 1044 & .021 & .107 & .196 \\
+    & & Half-BW & .021 & 566 & -.085 & .153 & -.558 \\
+    & &Double-BW & .086 & 1435 & .016 & .084 & .194 \\ \hline
+
+    RBI, 100 & No & LATE & 4.90 & 50 & -.100 & .559 & -.179 \\
+    & &Half-BW & 2.45 & 30 & -.095 & .949 & -.101 \\
+    & &Double-BW & 9.80 & 102 & .256 & .333 & .770 \\ \cline{3-8}
+
+    & Yes & LATE & 4.93 & 49 & .195 & .433 & .449 \\
+    & & Half-BW & 2.46 & 30 & -1.360 & 1.295 & -1.050 \\
+    & & Double-BW & 9.86 & 100 & .398 & .160 & 2.481* \\ \hline
+
+    Note: & \multicolumn{7}{r}{***: $p<0.1\%$, **: $p<1\%$, *: $p<5\%$.} \\
+    & \multicolumn{7}{r}{Bandwidth is optimized following the method of Imbens-Kalyanaraman.}
+  \end{tabular}
+\end{table}
 
 \section{Alternative Interpretation and Some Evidence}
 

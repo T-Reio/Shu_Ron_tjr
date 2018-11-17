@@ -142,10 +142,10 @@ r1 <- RDestimate(Sal ~ AVG, cutpoint = 0.3, se.type = "HC2")
 r2 <- RDestimate(Sal ~ AVG | FLD + BsR, cutpoint = 0.3, se.type = "HC2")
 r3 <- RDestimate(Sal ~ AVG | FLD + BsR + AGE + AGE_sq , cutpoint = 0.3, se.type = "HC2")
 r4 <- RDestimate(Sal ~ AVG | FLD + BsR + AGE + AGE_sq + WPA + nWPA ,
-                 cutpoint = 0.3, se.type = "HC2")
+                 cutpoint = 0.25, se.type = "HC2")
 
 r5 <- RDestimate(Sal ~ AVG | FLD + BsR + AGE + AGE_sq + WPA + nWPA + FA,
-                 cutpoint = 0.3, se.type = "HC2")
+                 cutpoint = 0.25, se.type = "HC2")
 r6 <- RDestimate(Sal ~ AVG | FLD + BsR + AGE + AGE_sq + Clutch + FA,
                  cutpoint = 0.3, se.type = "HC2")
 

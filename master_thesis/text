@@ -1,4 +1,58 @@
-fWAR
-Fixed effect & - & - & Team & Individual & Individual, Team & Team \\
-Batting
-Fixed effect & - & - & Position & Position, Team & Individual,Position, Team & Position, Team \\
+
+% Table created by stargazer v.5.2.2 by Marek Hlavac, Harvard University. E-mail: hlavac at fas.harvard.edu
+% Date and time: ‹à, 11 16, 2018 - 15:45:07
+% Requires LaTeX packages: dcolumn 
+\begin{table}[H] \centering 
+  \caption{Simple OLS around .300} 
+  \label{local_OLS_dSal} 
+\tiny 
+\begin{tabular}{@{\extracolsep{5pt}}lD{.}{.}{-3} D{.}{.}{-3} D{.}{.}{-3} D{.}{.}{-3} D{.}{.}{-3} D{.}{.}{-3} D{.}{.}{-3} D{.}{.}{-3} } 
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+ & \multicolumn{8}{c}{\textit{Dependent variable:}} \\ 
+\cline{2-9} 
+\\[-1.8ex] & \multicolumn{8}{c}{Sal} \\ 
+\\[-1.8ex] & \multicolumn{5}{c}{\textit{OLS}} & \multicolumn{3}{c}{\textit{felm}} \\ 
+\\[-1.8ex] & \multicolumn{1}{c}{(1)} & \multicolumn{1}{c}{(2)} & \multicolumn{1}{c}{(3)} & \multicolumn{1}{c}{(4)} & \multicolumn{1}{c}{(5)} & \multicolumn{1}{c}{(6)} & \multicolumn{1}{c}{(7)} & \multicolumn{1}{c}{(8)}\\ 
+\hline \\[-1.8ex] 
+ Constant & 12.038^{***} & 11.948^{***} & -4.257^{**} & -.519 & -.508 &  &  &  \\ 
+  & (1.250) & (1.258) & (1.458) & (1.460) & (1.457) &  &  &  \\ 
+  & & & & & & & & \\ 
+ AVG & 8.472 & 8.781^{*} & 8.410^{*} & -.715 & -.673 & -1.660 & .723 & -.404 \\ 
+  & (4.333) & (4.359) & (3.901) & (3.826) & (3.820) & (3.771) & (4.566) & (3.846) \\ 
+  & & & & & & & & \\ 
+ AVG\_300 & .108 & .105 & .055 & .061 & .063 & .079 & -.019 & .115 \\ 
+  & (.096) & (.097) & (.087) & (.084) & (.084) & (.082) & (.097) & (.084) \\ 
+  & & & & & & & & \\ 
+ FLD &  & .001 & .006^{*} & .007^{**} & .007^{*} & .007^{**} & -.005 & .002 \\ 
+  &  & (.003) & (.003) & (.003) & (.003) & (.003) & (.004) & (.003) \\ 
+  & & & & & & & & \\ 
+ BsR &  & -.005 & .015^{*} & .003 & .004 & .002 & -.051^{***} & -.013 \\ 
+  &  & (.008) & (.007) & (.007) & (.007) & (.007) & (.011) & (.008) \\ 
+  & & & & & & & & \\ 
+ AGE &  &  & 1.004^{***} & .955^{***} & .950^{***} & .980^{***} &  &  \\ 
+  &  &  & (.064) & (.062) & (.062) & (.061) &  &  \\ 
+  & & & & & & & & \\ 
+ AGE\_sq &  &  & -.015^{***} & -.014^{***} & -.014^{***} & -.014^{***} &  &  \\ 
+  &  &  & (.001) & (.001) & (.001) & (.001) &  &  \\ 
+  & & & & & & & & \\ 
+\hline \\[-1.8ex] 
+WPA & \multicolumn{1}{c}{No} & \multicolumn{1}{c}{No} & \multicolumn{1}{c}{No} & \multicolumn{1}{c}{No} & \multicolumn{1}{c}{No} & \multicolumn{1}{c}{No} & \multicolumn{1}{c}{No} & \multicolumn{1}{c}{No} \\ 
+ & \multicolumn{1}{c}{No} & \multicolumn{1}{c}{No} & \multicolumn{1}{c}{No} & \multicolumn{1}{c}{No} & \multicolumn{1}{c}{No} & \multicolumn{1}{c}{No} & \multicolumn{1}{c}{No} & \multicolumn{1}{c}{No} \\ 
+FA dummy & \multicolumn{1}{c}{No} & \multicolumn{1}{c}{No} & \multicolumn{1}{c}{No} & \multicolumn{1}{c}{No} & \multicolumn{1}{c}{No} & \multicolumn{1}{c}{No} & \multicolumn{1}{c}{No} & \multicolumn{1}{c}{No} \\ 
+Season dummies & \multicolumn{1}{c}{No} & \multicolumn{1}{c}{No} & \multicolumn{1}{c}{No} & \multicolumn{1}{c}{No} & \multicolumn{1}{c}{No} & \multicolumn{1}{c}{No} & \multicolumn{1}{c}{No} & \multicolumn{1}{c}{No} \\ 
+\hline \\[-1.8ex] 
+Fixed effects &  &  &  &  &  & Position & Individual & Position \\ 
+WPA &  &  &  & X & X & X & X & X \\ 
+FA dummy &  &  &  &  & X & X & X & X \\ 
+Season dummies &  &  &  &  &  &  &  & X \\ 
+Observations & \multicolumn{1}{c}{2,758} & \multicolumn{1}{c}{2,743} & \multicolumn{1}{c}{2,743} & \multicolumn{1}{c}{2,743} & \multicolumn{1}{c}{2,743} & \multicolumn{1}{c}{2,743} & \multicolumn{1}{c}{2,743} & \multicolumn{1}{c}{2,743} \\ 
+R$^{2}$ & \multicolumn{1}{c}{.011} & \multicolumn{1}{c}{.012} & \multicolumn{1}{c}{.209} & \multicolumn{1}{c}{.262} & \multicolumn{1}{c}{.265} & \multicolumn{1}{c}{.289} & \multicolumn{1}{c}{.577} & \multicolumn{1}{c}{.278} \\ 
+Adjusted R$^{2}$ & \multicolumn{1}{c}{.011} & \multicolumn{1}{c}{.010} & \multicolumn{1}{c}{.207} & \multicolumn{1}{c}{.260} & \multicolumn{1}{c}{.263} & \multicolumn{1}{c}{.284} & \multicolumn{1}{c}{.341} & \multicolumn{1}{c}{.266} \\ 
+Residual Std. Error & \multicolumn{1}{c}{1.281 (df = 2755)} & \multicolumn{1}{c}{1.284 (df = 2738)} & \multicolumn{1}{c}{1.149 (df = 2736)} & \multicolumn{1}{c}{1.110 (df = 2734)} & \multicolumn{1}{c}{1.108 (df = 2733)} & \multicolumn{1}{c}{1.092 (df = 2724)} & \multicolumn{1}{c}{1.047 (df = 1762)} & \multicolumn{1}{c}{1.106 (df = 2696)} \\ 
+F Statistic & \multicolumn{1}{c}{15.833$^{***}$ (df = 2; 2755)} & \multicolumn{1}{c}{8.225$^{***}$ (df = 4; 2738)} & \multicolumn{1}{c}{120.647$^{***}$ (df = 6; 2736)} & \multicolumn{1}{c}{121.492$^{***}$ (df = 8; 2734)} & \multicolumn{1}{c}{109.467$^{***}$ (df = 9; 2733)} &  &  &  \\ 
+\hline 
+\hline \\[-1.8ex] 
+\textit{Note:}  & \multicolumn{8}{r}{$^{*}$p$<$0.05; $^{**}$p$<$0.01; $^{***}$p$<$0.001} \\ 
+\end{tabular} 
+\end{table} 

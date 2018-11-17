@@ -56,3 +56,79 @@ install.packages("Hmisc", dependencies = T)
 install.packages("", dependencies = T)
 install.packages("", dependencies = T)
 install.packages("", dependencies = T)
+
+library(data.table)
+library(lfe)
+library(rdd)
+library(rddensity)
+library(stargazer)
+
+stats <- fread("C:/Users/easyu/Master_thesis/master_thesis/output/stats_sal_fa_revised_B.csv",
+               header = T, sep = ",")
+stats <- subset(stats, stats$PA >= 200)
+stats <- subset(stats, OBP < 0.395 & OBP >= 0.305)
+Sal_real <- stats$`AVG ANNUAL`
+Sal <- stats$`Log AVG ANNUAL`
+Sal_dev <- stats$`Dev Log salary`
+AVG <- stats$AVG
+AGE <- stats$Age
+AGE_sq <- AGE^2
+fWAR <- stats$WAR
+G <- stats$G
+PA <- stats$PA
+WPA <- stats$`+WPA`/stats$PA
+nWPA <- -stats$`-WPA`/stats$PA
+Clutch <- stats$Clutch
+ID <- stats$playerid
+BAT <- stats$Bat
+FLD <- stats$Fld
+BsR <- stats$BsR
+POS <- stats$POS
+TEAM <- stats$TEAM_nextyr
+ERA <- stats$Era
+OBP <- stats$OBP
+HR <- stats$HR
+RBI <- stats$RBI
+SB <- stats$SB
+OPS <- stats$OPS
+H <- stats$H
+Yr <- as.factor(stats$Season)
+AVG_300 <- stats$AVG_300
+AVG_250 <- stats$AVG_250
+OBP_350 <- stats$OBP_350
+HR_20 <- stats$HR_20
+RBI_100 <- stats$RBI_100
+SB_30 <- stats$SB_30
+SB_40 <- stats$SB_40
+OPS_1000 <- stats$OPS_1000
+PA_500 <- stats$PA_500
+H_200 <- stats$H_200
+FA <- stats$FA
+
+d1 <- lm(Sal_dev ~ OBP * OBP_350)
+d2 <- lm(Sal_dev ~ OBP * OBP_350 + FLD + BsR)
+d3 <- lm(Sal_dev ~ OBP * OBP_350 + FLD + BsR + AGE + AGE_sq)
+d4 <- lm(Sal_dev ~ OBP * OBP_350 + FLD + BsR + AGE + AGE_sq + WPA + nWPA)
+d5 <- lm(Sal_dev ~ OBP * OBP_350 + FLD + BsR + AGE + AGE_sq + WPA + nWPA + FA)
+d6 <- felm(Sal_dev ~ OBP * OBP_350 + FLD + BsR + AGE + AGE_sq + WPA + nWPA + FA | POS)
+d7 <- felm(Sal_dev ~ OBP * OBP_350 + FLD + BsR + WPA + nWPA + FA | ID)
+d8 <- felm(Sal_dev ~ OBP * OBP_350 + FLD + BsR + WPA + nWPA + FA | POS)
+
+
+e1 <- lm(Sal_dev ~ BAT * OBP_350)
+e2 <- lm(Sal_dev ~ BAT * OBP_350 + FLD + BsR )
+e3 <- lm(Sal_dev ~ BAT * OBP_350 + FLD + BsR + AGE + AGE_sq )
+e4 <- lm(Sal_dev ~ BAT * OBP_350 + FLD + BsR + AGE + AGE_sq + WPA + nWPA)
+e5 <- lm(Sal_dev ~ BAT * OBP_350 + FLD + BsR + AGE + AGE_sq + WPA + nWPA + FA)
+e6 <- felm(Sal_dev ~ BAT * OBP_350 + FLD + BsR + AGE + AGE_sq + WPA + nWPA + FA | POS)
+e7 <- felm(Sal_dev ~ BAT * OBP_350 + FLD + BsR + WPA + nWPA + FA | ID)
+e8 <- felm(Sal_dev ~ BAT * OBP_350 + FLD + BsR + WPA + nWPA + FA | POS )
+
+summary(e1)
+summary(e2)
+summary(e3)
+summary(e4)
+summary(e5)
+summary(e6)
+summary(e7)
+summary(e8)
