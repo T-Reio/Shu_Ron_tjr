@@ -51,7 +51,10 @@ r2 <- RDestimate(Sal ~ OBP | FLD + BsR + AGE + AGE_sq + WPA + nWPA + FA + Yr,
 
 summary(r2)
 
-
+stats <- fread("C:/Users/easyu/Master_thesis/master_thesis/output/stats_sal_fa_revised.csv",
+               header = T, sep = ",")
+stats <- subset(stats, stats$PA >= 200)
+stats <- subset(stats, stats$Season <= 1994)
 stats <- subset(stats, stats$FA == 1)
 Sal_real <- stats$`AVG ANNUAL`
 Sal <- stats$`Log AVG ANNUAL`
@@ -90,8 +93,9 @@ summary(r2)
 
 r2 <- RDestimate(Sal ~ HR | FLD + BsR + AGE + AGE_sq + WPA + nWPA + Yr,
                  cutpoint = 20)
-summary(r1)
+
 summary(r2)
 
 r2 <- RDestimate(Sal ~ OBP | FLD + BsR + AGE + AGE_sq + WPA + nWPA + Yr,
                  cutpoint = 0.35)
+summary(r2)

@@ -504,7 +504,7 @@ Similar to the rate indexes, there occur manipuation in only some parts of round
 
 \begin{table}[!]
   \caption{RDD Test for Discontinuity}
-  \label{RDD_A}
+  \label{RDD_B}
   \tiny
   \centering
   \begin{tabular}{lccccccc}\hline
@@ -595,7 +595,13 @@ In this analysis, I replicate the methodologies conducted in the previous sectio
   \item After \textit{Moneyball} (2004 - 2017)
 \end{enumerate}
 
-Sample B does not include data from 1957 to 1986, so in the section of mondetary incentive, I conducted tests for only 3 parts except for ``Before Free Agency.''
+Sample B does not include data from 1957 to 1986, so in the section of mondetary incentive, We conducted tests for only three parts except for ``Before Free Agency.'' From here, we mention the three important batting indexes: batting-average, on-base percentage, and homerun.
+
+\subsubsection{Bunching}
+
+Table \ref{Mani-Era} shows the results of the McCrary (2008)'s manipulation tests, for each grouped samples. Compared to the full-sample analysis conducted in Section 5.1, we observed partly different results for each index.
+
+
 
 \begin{table}
   \centering
@@ -635,13 +641,13 @@ Sample B does not include data from 1957 to 1986, so in the section of mondetary
   \label{RDD_Era}
   \footnotesize
   \begin{tabular}{lcccccc} \hline
-    index, cutpoint & bw, type &  &'87-'93 & '94-2003 & 2004- &full sample \\ \hline \hline
+    index, cutpoint & bw, type &  &'87-'94 & '95-2003 & 2004- &full sample \\ \hline \hline
     AVG, .300 & LATE & bw & .024 & .042 & .030 & .045 \\
     &  & Obs. & 697 & 1806 & 1872 & 5930 \\
     &  & estimate & -.034 & .064 & .066 & .034 \\
     &  & & (.137) & (.092) & (.103) & (.056) \\
     & & $z$ & -.250 & .697 & .637 & .615 \\ \hline
-    AVG, .250 & LATE & bw & .036 & .075 & .048 \\
+    AVG, .250 & LATE & bw & .036 & .043 &.075 & .048 \\
     &  & Obs. & 1482 & 1806 & 3991 & 7271 \\
     &  & estimate & .154 & .064 & .076 & .070 \\
     &  & & (.084) & (.092) & (.060) & (.052) \\
@@ -659,10 +665,114 @@ Sample B does not include data from 1957 to 1986, so in the section of mondetary
     Note: & \multicolumn{6}{r}{***: $p<0.1\%$, **: $p<1\%$, *: $p<5\%$.} \\
     & \multicolumn{6}{r}{Bandwidth is optimized following the method of Imbens-Kalyanaraman.}
   \end{tabular}
-
 \end{table}
 
-\subsubsection{Bunching}
+\begin{table}
+  \centering
+  \caption{RDD for the Grouped Sample by Time, Only for FA Players}
+  \label{RDD_Era_FA}
+  \footnotesize
+  \begin{tabular}{lcccccc} \hline
+    index, cutpoint & bw, type &  &'87-'94 & '95-2003 & 2004- &full sample \\ \hline \hline
+    AVG, .300 & LATE & bw & .060 & .032 & .039 & .026 \\
+    &  & Obs. & 218 & 229 & 354 & 509 \\
+    &  & estimate & -.026 & -.309 & -.186 & -.253 \\
+    &  & & (.247) & (.182) & (.182) & (.138) \\
+    & & $z$ & -.108 & -1.700 &  -1.020 & -1.832 \\ \hline
+    AVG, .250 & LATE & bw & .018 & .023 & .078 & .058 \\
+    &  & Obs. & 123 & 227 & 716 & 1367 \\
+    &  & estimate & .425 & .293 & .047 & .084 \\
+    &  & & (.281) & (.230) & (.103) & (.082) \\
+    & & $z$ & 1.512 & 1.272 & -.448 & 1.020 \\ \hline
+    HR, 20 & LATE & bw & 5.35 & 3.504 & 3.566 & 3.50 \\
+    &  & Obs. & 47 & 70 & 102 & 206 \\
+    &  & estimate & .004 & -.701 & -.337 & -.273 \\
+    &  & & (.284) & (.492) & (.513) & (.296) \\
+    & & $z$ & -1.600 & -1.423 & -.657 & -.924 \\ \hline
+    OBP, .350 & LATE & bw & .034 & .042 & .031 & .043 \\
+    &  & Obs. & 154 & 344 & 395 & 1044 \\
+    &  & estimate & .080 & -.174 & .115 & .021 \\
+    &  & & (.291) & (.179) & (.188) & (.107) \\
+    & & $z$ & .276 & -.971 & .616 & .196 \\ \hline
+    Note: & \multicolumn{6}{r}{***: $p<0.1\%$, **: $p<1\%$, *: $p<5\%$.} \\
+    & \multicolumn{6}{r}{Bandwidth is optimized following the method of Imbens-Kalyanaraman.}
+  \end{tabular}
+\end{table}
+
+\begin{landscape}
+  \begin{table}
+    \input{results/Sal_AVG300_B.tex}
+  \end{table}
+\end{landscape}
+
+\begin{landscape}
+  \begin{table}
+    \input{results/Sal_AVG300_C.tex}
+  \end{table}
+\end{landscape}
+
+\begin{landscape}
+  \begin{table}
+    \input{results/Sal_AVG300_D.tex}
+  \end{table}
+\end{landscape}
+
+\begin{landscape}
+  \begin{table}
+    \input{results/Sal_AVG250_B.tex}
+  \end{table}
+\end{landscape}
+
+\begin{landscape}
+  \begin{table}
+    \input{results/Sal_AVG250_C.tex}
+  \end{table}
+\end{landscape}
+
+\begin{landscape}
+  \begin{table}
+    \input{results/Sal_AVG250_D.tex}
+  \end{table}
+\end{landscape}
+
+\begin{landscape}
+  \begin{table}
+    \input{results/Sal_OBP350_B.tex}
+  \end{table}
+\end{landscape}
+
+\begin{landscape}
+  \begin{table}
+    \input{results/Sal_OBP350_C.tex}
+  \end{table}
+\end{landscape}
+
+\begin{landscape}
+  \begin{table}
+    \input{results/Sal_OBP350_D.tex}
+  \end{table}
+\end{landscape}
+
+\begin{landscape}
+  \begin{table}
+    \input{results/Sal_HR20_B.tex}
+  \end{table}
+\end{landscape}
+
+\begin{landscape}
+  \begin{table}
+    \input{results/Sal_HR20_C.tex}
+  \end{table}
+\end{landscape}
+
+\begin{landscape}
+  \begin{table}
+    \input{results/Sal_HR20_D.tex}
+  \end{table}
+\end{landscape}
+
+
+
 
 
 

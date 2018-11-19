@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.0-180226-2.6 (utf8.sjis) (TeX Live 2018/W32TeX) (preloaded format=platex 2018.11.1)  18 NOV 2018 09:48
+This is e-pTeX, Version 3.14159265-p3.8.0-180226-2.6 (utf8.sjis) (TeX Live 2018/W32TeX) (preloaded format=platex 2018.11.1)  19 NOV 2018 20:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -562,15 +562,15 @@ File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(59.27655pt, 379.36708pt, 59.27655pt)
-* v-part:(T,H,B)=(59.27655pt, 573.79297pt, 71.13188pt)
+* h-part:(L,W,R)=(80.61612pt, 374.62494pt, 42.67912pt)
+* v-part:(T,H,B)=(125.6663pt, 327.20244pt, 251.33266pt)
 * \paperwidth=597.49146pt
 * \paperheight=845.03174pt
-* \textwidth=379.36708pt
-* \textheight=573.79297pt
-* \oddsidemargin=-12.99344pt
-* \evensidemargin=-12.99344pt
-* \topmargin=-43.9475pt
+* \textwidth=374.62494pt
+* \textheight=327.20244pt
+* \oddsidemargin=8.34613pt
+* \evensidemargin=8.34613pt
+* \topmargin=22.44226pt
 * \headheight=20.0pt
 * \headsep=10.95406pt
 * \topskip=12.76073pt
@@ -594,10 +594,10 @@ File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
 Here is how much of TeX's memory you used:
  12824 strings out of 493281
  248017 string characters out of 6148126
- 291577 words of memory out of 5000000
+ 292575 words of memory out of 5000000
  16522 multiletter control sequences out of 15000+600000
  8799 words of font info for 37 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
  55i,5n,54p,427b,181s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on shibodoki_kenkyushinchoku.dvi (1 page, 856 bytes).
+Output written on shibodoki_kenkyushinchoku.dvi (1 page, 1220 bytes).
