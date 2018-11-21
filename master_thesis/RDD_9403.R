@@ -51,7 +51,10 @@ r2 <- RDestimate(Sal ~ OBP | FLD + BsR + AGE + AGE_sq + WPA + nWPA + FA + Yr,
 
 summary(r2)
 
+r2 <- RDestimate(Sal ~ SB | FLD + BAT + AGE + AGE_sq + WPA + nWPA + Yr,
+                 cutpoint = 30)
 
+summary(r2)
 
 stats <- fread("C:/Users/easyu/Master_thesis/master_thesis/output/stats_sal_fa_revised.csv",
                header = T, sep = ",")

@@ -8,7 +8,6 @@
 \usepackage{dcolumn}
 \usepackage{here}
 \usepackage{lscape}
-\usepackage[doublespacing]{setspace}
 \usepackage[top=25truemm,bottom=30truemm,left=25truemm,right=25truemm]{geometry}
 \begin{document}
 
@@ -48,7 +47,7 @@ MLB position players seems to have some reference points, about their batting pe
 
 Our most important contribution is this: to conduct analysis that reveals the observed behavior to be in fact reference dependence. First, we tested if there is any evidence for the manipulation around the round numbers, by using McCrary (2008)'s method to test manipulation. not only .300 of batting average, both for other points of batting-average and other indexes, such as homerun or stolen-bases. Confirming this, then we made examinations to answer the question, ``Is this observed manipulation truly driven by the reference dependence of the players?'' We applied regression analysis using the data of the players` salary.
 
-Our paper found three important results. First, our examination for manipulation supported the previous study. There observed evidence to show there in fact exists seemingly reference point dependent behavior, where .300 of batting-average works as a reference point. Similar results were obtained about other round number of batting-average, and other batting indexes such as on-base percentage or homerun. Second, we found that there does not exists any monetary incentive for them: for their fixed part of the salary contract, they does not receive any additional payment by achieving their internal goals. This results confirmed that observed behavior is actually the reference dependence of the players. Furthermore, we complement our results, discussing some alternative interpretation about the form of monetary incentives: the part of incentivesed contract, and relation with contract length. And the third is that the indexes where players' reference dependence occurs vary through the history of the MLB: events that rotates how to design the contracts or evaluation about the importance of each performance index are likely to affects the behavior of the players.
+Our paper found three important results. First, our examination for manipulation supported the previous study. There observed evidence to show there in fact exists seemingly reference point dependent behavior, where .300 of batting-average works as a reference point. Similar results were obtained about other round number of batting-average, and other batting indexes such as on-base percentage or homerun. Second, we found that as a whole, there does not exists any monetary incentive for them: for their fixed part of the salary contract, they does not receive any additional payment by achieving their internal goals. This results confirmed that observed behavior is actually caused by the reference dependence of the players. Furthermore, we complement our results, discussing some alternative interpretation about the form of monetary incentives: the part of incentivesed contract, and relation with contract length. And the third is that the indexes where players' reference dependence occurs vary through the history of the MLB: events that rotates how to design the contracts or evaluation about the importance of each performance index are likely to affects the behavior of the players.
 
 This paper proceed as follows. In the Section 2, we review some literature and verify the standpoint of my paper. Section 3 describes the data we availed. Section 4 presents theoretial framework and empirical way to specification, and make some conjecture.  Section 5 show the results of the analysis. Discussion about some alternative interpretation and non-statistical data are included in Section 6. Finally, Section 7 concludes the paper.
 
@@ -215,8 +214,7 @@ In my paper, it is not determined who has such a utility function. At least one 
 \section{Result}
 \subsection{Excess Mass Around The Reference Point}
 
-First, I show the results that verifies bunching. Table \ref{Bunch-True} includes the summary of McCrary (2008)'s manipulation tests about the performance indexes that say there is some manipulation occurs. Consistent with Pope and Simonsohn (2011), there actually occurs excess mass around .300, and .250 of batting-average. Also, manipulation were also observed in some of other numbers of other indexes: .350 of on-base percentage, 20 of homeruns, 100 of runs-batted-in, 30 and 40 of stolen-bases, and 200 of base-hits. Table %\ref{}
-shows parts of results that denies the existance of excess mass.
+First, I show the results that verifies bunching. Table \ref{Bunch-True} includes the summary of McCrary (2008)'s manipulation tests about the performance indexes that say there is some manipulation occurs. Consistent with Pope and Simonsohn (2011), there actually occurs excess mass around .300, and .250 of batting-average. Also, manipulation were also observed in some of other numbers of other indexes: .350 of on-base percentage, 20 of homeruns, 100 of runs-batted-in, 30 and 40 of stolen-bases, and 200 of base-hits.
 
 \begin{table}
   \tiny
@@ -369,6 +367,8 @@ shows parts of results that denies the existance of excess mass.
           }
         \end{tabular}
       \end{figure}
+
+Table \ref{Bunch-True} shows parts of results that denies the existance of excess mass. For precise estimation of bunching, we set the binsizes of undersmoothing artificially: .001 for batting-average and on-base percentage, 1 for homerun, stolen-base, plate-apparance, and base-hit, and 4 for runs-batted-in. Batting-average and on-base percentage are usually shown by three decimal digits, rounding the fourth decimal digit, so strictly batters with .2995 of batting-average are taken as .300. Homerun, stolen-base, plate-appearance, and base-hit are indexes that takes integer and they earn one for each plate appearances or such a chance to manipulate. Runs-batted-in is also an integer-index, but they can get at most 4 at one plate-appearance, so we set it 4. To confirm the robustness of our results, we repeated this test with various binsize, but we yield essentialy same results. Bandwidths are optimized by calculation, followin
 
 For batting-average, extending sample size from Pope and Simonsohn (2011) yields similar results: Players manipulate their batting-average. The difference between the estimated frequency according to the approximation below .300 and that of above .300 was significant at .1\% ($z=7.442$) level. In addition, bunching occurs also in .250 ($z = 5.061$, p < 0.1\%). This is inconsistent with Pope and Simonsohn (2011), in that there was no bunching observed in any other round numbers of batting-average, so it can be related to that the sample size is extended to further old ages. I specificadlly analyzed this in Section 6.4. Furthermore, changing binsize yields similar results.
 
@@ -616,7 +616,7 @@ Table \ref{Mani-Era} shows the results of the McCrary (2008)'s manipulation test
     & $z$ & 3.934*** & 4.732*** & 2.393* & 3.376*** & 7.442*** \\ \hline
     AVG, .250 & bw & .028 & .028 & .032 & .027 & .024 \\
     & $\theta$ & .250 & .151 & .306 & .121 & .212 \\
-    & & (.080) & (.069) & (.094)& (.0760) & (.042) \\
+    & & (.080) & (.069) & (.094)& (.076) & (.042) \\
     & $z$ & 3.149** & 2.188* & 3.242** & 1.595 & 5.061*** \\ \hline
     OBP, .350 & bw & .031 & .030 & .036 & .030 & .024 \\
     & $\theta$ & .137 & .149 & -.035 & .137 & .139 \\
@@ -634,6 +634,16 @@ Table \ref{Mani-Era} shows the results of the McCrary (2008)'s manipulation test
     }
   \end{tabular}
 \end{table}
+
+
+
+
+
+
+
+\subsubsection{Monetary Incentive}
+
+Then, we
 
 \begin{table}
   \centering
@@ -772,27 +782,15 @@ Table \ref{Mani-Era} shows the results of the McCrary (2008)'s manipulation test
 \end{landscape}
 
 
-
-
-
-
-\subsubsection{Monetary Incentive}
-
-
-
-\subsection{Across Indexes: Priority of Manipulation}
-
 \section{Conclusion}
 
-So far, we have considered monetary incentives that exists behind the behavior that appears to be related to reference dependent preference. For the case of MLB, we conclude that there are not observed clear results that supports the the existance of monetary incentives, at least in the fixed part of their contracts. Players manipulate their own performance indexes to achieve their internal goals, even though they cannot receive any additional bonus by doing so. Our results indicate that professional sports players seem to have preferences that yield utility not only by the monetary rewards, but also by their own performance situationally. In many articles of analysis on professional sports, we have considered that the players' benefit consists only of the contract package itself, so it may support interpreting their decision making more prescicely by inroducing additional assumptions. For the team managers, on the other hand, our analyses help make better contract packages that attract the skilled players more, or search the player relatively underestimated, to get the players more ``efficiently.''
+So far, we have considered monetary incentives that exists behind the behavior that appears to be related to reference dependent preference. For the case of MLB, we conclude that there are not observed clear results that supports the the existance of monetary incentives, at least in the fixed part of their contracts. On the contrary in recent years, although the effects are limited to .250 of batting-average and 30 of stolen-bases, there turns up some possible evidences that supports the existance of monetary incentives. So to make better analysis in these indexes, we will require some following research. As we mentioned in Section 5 and 6, there are a lot of room for discussion.
 
-Also, we had better pay attention to the oppsite-side approach: whether there exists discontinuous design of the contracts that does not affect the players manipulation behavior.
+But as a whole, Players manipulate their own performance indexes to achieve their internal goals, even though they cannot receive any additional bonus by doing so. Our results indicate that professional sports players seem to have preferences that yield utility not only by the monetary rewards, but also by their own performance situationally. In many articles of analysis on professional sports, we have considered that the players' benefit consists only of the contract package itself, so it may support interpreting their decision making more prescicely by inroducing additional assumptions. For the team managers, on the other hand, our analyses help make better contract packages that attract the skilled players more, or search the player relatively underestimated, to get the players more ``efficiently.''Also, we had better pay attention to the oppsite-side approach: whether there exists discontinuous design of the contracts that does not affect the players manipulation behavior.
 
-To make better analysis, however, we will require some following research to us. As we mentioned in Section 5 and 6, there are a lot of room for discussion.
+Analyzing professional sports yields some important knowledge. Professional sports can generate outcomes both monetary ones, salary, and nonmonetary ones, performance. They can be appropreate empirical samples to compare the same situation with monetary reward and that with nonmonetary ones.In particular, when it comes to MLB, the performance indexes, nonmonetary outcomes, have been recorded for alomost 150 years, and thanks to the community of the fans, we can fairly compare players played in the different generations. As we used in this paper, rich information about their contracts is published. Also, there exists room for international comparision: Many countries around the world, Japan, Germany, Italy or Australia and so on, have their own professional leagues. Of course, there are a number of amateur players, those who does not receive any reward for their plays.
 
-As it comes to MLB, the performance indexes have been recorded since it started to be played, and thanks to the community of the fans, we can fairly compare players played in the different generations. Also, as we used in this paper, rich information about their contracts is published. In addition, settings of sports that have some big professional league can be appropreate subjects to exammine monetary versus nonmonetary situation. Therefore, it is worth continuing analysis about baseball, both for the sports itself and of course, economics. 
-
-
+To conclude our paper, we state that it is worth continuing analysis about baseball, both for the sports itself and economics.
 
 
 \section{Appendix}

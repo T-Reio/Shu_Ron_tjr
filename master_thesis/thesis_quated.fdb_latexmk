@@ -1,9 +1,9 @@
 # Fdb version 3
-["dvipdf"] 1541639526 "thesis_quated.dvi" "thesis_quated.pdf" "thesis_quated" 1541639527
-  "thesis_quated.dvi" 1541639525 61236 58cd99c1d7be3a94cd648af3a41eecc5 "latex"
+["dvipdf"] 1542772549 "thesis_quated.dvi" "thesis_quated.pdf" "thesis_quated" 1542772551
+  "thesis_quated.dvi" 1542772549 61780 4d8563247775bc6b47cbe0b8a80d4490 "latex"
   (generated)
   "thesis_quated.pdf"
-["latex"] 1541639522 "thesis_quated.tex" "thesis_quated.dvi" "thesis_quated" 1541639527
+["latex"] 1542772546 "thesis_quated.tex" "thesis_quated.dvi" "thesis_quated" 1542772551
   "c:/texlive/2018/texmf-dist/fonts/map/fontname/texfonts.map" 1541079023 3332 103109f5612ad95229751940c61aada0 ""
   "c:/texlive/2018/texmf-dist/fonts/tfm/adobe/palatino/pplb7t.tfm" 1541081124 1616 371d1ee60c04b008c8fd760060cd34f1 ""
   "c:/texlive/2018/texmf-dist/fonts/tfm/adobe/palatino/pplr7t.tfm" 1541081124 1804 7b5f73028f6509167f47ace9d69509ed ""
@@ -122,14 +122,15 @@
   "c:/texlive/2018/texmf-dist/tex/latex/psnfss/ot1zplm.fd" 1541081506 436 5e7baa1a259bab50a2bdffad6426f38c ""
   "c:/texlive/2018/texmf-dist/tex/latex/psnfss/t1ppl.fd" 1541081506 774 5747d3f33ec2f7c4881c94e931a130b1 ""
   "c:/texlive/2018/texmf-dist/tex/latex/psnfss/ts1ppl.fd" 1541081506 619 35f1cf70bf09b6e2d22ee0902cfb1a8b ""
+  "c:/texlive/2018/texmf-dist/tex/latex/setspace/setspace.sty" 1541082085 22913 a27d7908fc6f0385466454a966a316eb ""
   "c:/texlive/2018/texmf-dist/tex/latex/tools/array.sty" 1541082923 13312 20cb94dd6e4c9ea3a77ebbd18724e5c4 ""
   "c:/texlive/2018/texmf-dist/tex/latex/tools/dcolumn.sty" 1541082923 2755 a95af7253bb47cb72ad0ac110a442c52 ""
   "c:/texlive/2018/texmf-dist/tex/latex/xcolor/xcolor.sty" 1541083381 55589 34128738f682d033422ca125f82e5d62 ""
   "c:/texlive/2018/texmf-var/web2c/eptex/platex.fmt" 1541083882 4472184 3331907170f2ede6ea63f6d37904ddf3 ""
   "c:/texlive/2018/texmf.cnf" 1541083614 673 2e5aa3ac564c6f70f54d6752d765c05d ""
-  "thesis_quated.aux" 1541639525 550 8905988bc4f60e2ac1bad5d00e35a2c5 ""
-  "thesis_quated.tex" 1541639517 15202 48ba1f2902dad0e38e4d300809781f3d ""
+  "thesis_quated.aux" 1542772549 550 49eb18ef0a54243239f912609a712c27 ""
+  "thesis_quated.tex" 1542772541 15240 6daca9db85c1ebc1124b987aacb8c534 ""
   (generated)
   "thesis_quated.log"
-  "thesis_quated.aux"
   "thesis_quated.dvi"
+  "thesis_quated.aux"

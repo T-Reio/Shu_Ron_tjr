@@ -18,6 +18,7 @@ help(package = "rdd")
 help(DCdensity)
 help(latex)
 help("stargazer")
+help("lfe")
 
 rdd <- rddensity(AVG, c = 0.300)
 summary(rdd)

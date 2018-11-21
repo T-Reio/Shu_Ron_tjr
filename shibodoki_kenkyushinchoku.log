@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.0-180226-2.6 (utf8.sjis) (TeX Live 2018/W32TeX) (preloaded format=platex 2018.11.1)  19 NOV 2018 20:59
+This is e-pTeX, Version 3.14159265-p3.8.0-180226-2.6 (utf8.sjis) (TeX Live 2018/W32TeX) (preloaded format=platex 2018.11.1)  21 NOV 2018 19:37
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -500,8 +500,6 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@floatcapt=\box59
 ) (c:/texlive/2018/texmf-dist/tex/latex/graphics/lscape.sty
 Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
-) (c:/texlive/2018/texmf-dist/tex/latex/setspace/setspace.sty
-Package: setspace 2011/12/19 v6.7a set line spacing
 ) (c:/texlive/2018/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2018/03/24 v5.7 Page Geometry
  (c:/texlive/2018/texmf-dist/tex/generic/oberdiek/ifpdf.sty
@@ -527,30 +525,30 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 ) (./shibodoki_kenkyushinchoku.aux)
 \openout1 = `shibodoki_kenkyushinchoku.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 13.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 13.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 12.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 12.
  (c:/texlive/2018/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    ... okay on input line 12.
  (I search kanjifont definition file: . . ) (I search font definition file: . . . . . . . . )
-LaTeX Font Info:    Try loading font information for OT1+ppl on input line 13.
+LaTeX Font Info:    Try loading font information for OT1+ppl on input line 12.
  (c:/texlive/2018/texmf-dist/tex/latex/psnfss/ot1ppl.fd
 File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
 ) ABD: EveryShipout initializing macros
@@ -563,14 +561,14 @@ File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
 * h-part:(L,W,R)=(80.61612pt, 374.62494pt, 42.67912pt)
-* v-part:(T,H,B)=(125.6663pt, 327.20244pt, 251.33266pt)
+* v-part:(T,H,B)=(189.685pt, 452.8688pt, 61.6476pt)
 * \paperwidth=597.49146pt
 * \paperheight=845.03174pt
 * \textwidth=374.62494pt
-* \textheight=327.20244pt
+* \textheight=452.8688pt
 * \oddsidemargin=8.34613pt
 * \evensidemargin=8.34613pt
-* \topmargin=22.44226pt
+* \topmargin=86.46095pt
 * \headheight=20.0pt
 * \headsep=10.95406pt
 * \topskip=12.76073pt
@@ -592,12 +590,12 @@ File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
 
 ] (./shibodoki_kenkyushinchoku.aux) ) 
 Here is how much of TeX's memory you used:
- 12824 strings out of 493281
- 248017 string characters out of 6148126
- 292575 words of memory out of 5000000
- 16522 multiletter control sequences out of 15000+600000
+ 12790 strings out of 493281
+ 247428 string characters out of 6148126
+ 294265 words of memory out of 5000000
+ 16492 multiletter control sequences out of 15000+600000
  8799 words of font info for 37 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
- 55i,5n,54p,427b,181s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,5n,54p,996b,181s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on shibodoki_kenkyushinchoku.dvi (1 page, 1220 bytes).
+Output written on shibodoki_kenkyushinchoku.dvi (1 page, 4060 bytes).

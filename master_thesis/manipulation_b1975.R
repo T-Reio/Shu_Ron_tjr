@@ -80,6 +80,7 @@ AVG <- stats$H / stats$AB
 OBP <- (stats$H + stats$BB + stats$IBB + stats$HBP) / (stats$AB ++ stats$BB 
                                                        + stats$IBB + stats$HBP + stats$SF)
 HR <- stats$HR
+SB <- stats$SB
 
 DCdensity(AVG, 0.3, bin = 0.001, ext.out = T)
 title('', xlab = 'Batting-Average', ylab = 'Density')
@@ -92,3 +93,6 @@ title('', xlab = 'On-Base Percentage', ylab = 'Density')
 
 DCdensity(HR, 20, bin = 1, ext.out = T)
 title('', xlab = 'Homerun', ylab = 'Density')
+
+DCdensity(SB, 30, bin = 1, ext.out = T)
+title('', xlab = 'Stolen-Base', ylab = 'Density')

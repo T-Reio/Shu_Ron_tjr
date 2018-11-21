@@ -1,9 +1,9 @@
 # Fdb version 3
-["dvipdf"] 1542628776 "shibodoki_kenkyushinchoku.dvi" "shibodoki_kenkyushinchoku.pdf" "shibodoki_kenkyushinchoku" 1542628777
-  "shibodoki_kenkyushinchoku.dvi" 1542628775 1220 601c10f8fa00ded9a6703ef76cb9ccb3 "latex"
+["dvipdf"] 1542796674 "shibodoki_kenkyushinchoku.dvi" "shibodoki_kenkyushinchoku.pdf" "shibodoki_kenkyushinchoku" 1542796675
+  "shibodoki_kenkyushinchoku.dvi" 1542796673 4060 65c30d04a97dc23f4985e2ee294dcdc7 "latex"
   (generated)
   "shibodoki_kenkyushinchoku.pdf"
-["latex"] 1542628773 "shibodoki_kenkyushinchoku.tex" "shibodoki_kenkyushinchoku.dvi" "shibodoki_kenkyushinchoku" 1542628777
+["latex"] 1542796672 "shibodoki_kenkyushinchoku.tex" "shibodoki_kenkyushinchoku.dvi" "shibodoki_kenkyushinchoku" 1542796675
   "c:/texlive/2018/texmf-dist/fonts/map/fontname/texfonts.map" 1541079023 3332 103109f5612ad95229751940c61aada0 ""
   "c:/texlive/2018/texmf-dist/fonts/tfm/adobe/palatino/pplr7t.tfm" 1541081124 1804 7b5f73028f6509167f47ace9d69509ed ""
   "c:/texlive/2018/texmf-dist/fonts/tfm/ptex-fonts/jis/jis.tfm" 1541081721 468 53f854284f6afa6c36aaa2d1090ecc12 ""
@@ -101,7 +101,6 @@
   "c:/texlive/2018/texmf-dist/tex/latex/psnfss/ot1ppl.fd" 1541081506 961 06b773644d960aac68add40fcb596208 ""
   "c:/texlive/2018/texmf-dist/tex/latex/psnfss/t1ppl.fd" 1541081506 774 5747d3f33ec2f7c4881c94e931a130b1 ""
   "c:/texlive/2018/texmf-dist/tex/latex/psnfss/ts1ppl.fd" 1541081506 619 35f1cf70bf09b6e2d22ee0902cfb1a8b ""
-  "c:/texlive/2018/texmf-dist/tex/latex/setspace/setspace.sty" 1541082085 22913 a27d7908fc6f0385466454a966a316eb ""
   "c:/texlive/2018/texmf-dist/tex/latex/tools/array.sty" 1541082923 13312 20cb94dd6e4c9ea3a77ebbd18724e5c4 ""
   "c:/texlive/2018/texmf-dist/tex/latex/tools/dcolumn.sty" 1541082923 2755 a95af7253bb47cb72ad0ac110a442c52 ""
   "c:/texlive/2018/texmf-dist/tex/latex/xcolor/xcolor.sty" 1541083381 55589 34128738f682d033422ca125f82e5d62 ""
@@ -109,9 +108,9 @@
   "c:/texlive/2018/texmf-dist/tex/platex/jsclasses/jslogo.sty" 1541079774 6061 1242b5308ecb0db77c71c1ff6c687ace ""
   "c:/texlive/2018/texmf-var/web2c/eptex/platex.fmt" 1541083882 4472184 3331907170f2ede6ea63f6d37904ddf3 ""
   "c:/texlive/2018/texmf.cnf" 1541083614 673 2e5aa3ac564c6f70f54d6752d765c05d ""
-  "shibodoki_kenkyushinchoku.aux" 1542628775 8 a94a2480d3289e625eea47cd1b285758 ""
-  "shibodoki_kenkyushinchoku.tex" 1542628771 909 9088547727491ce4807e866f8bc89ccb ""
+  "shibodoki_kenkyushinchoku.aux" 1542796673 8 a94a2480d3289e625eea47cd1b285758 ""
+  "shibodoki_kenkyushinchoku.tex" 1542796670 2920 980f1a1da9241bf0f0ba311a79299ddc ""
   (generated)
   "shibodoki_kenkyushinchoku.log"
-  "shibodoki_kenkyushinchoku.aux"
   "shibodoki_kenkyushinchoku.dvi"
+  "shibodoki_kenkyushinchoku.aux"
