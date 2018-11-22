@@ -264,8 +264,12 @@ INPUT c:/texlive/2018/texmf-dist/fonts/tfm/ptex-fonts/standard/tgoth10.tfm
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/ptex-fonts/standard/goth10.tfm
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/palatino/pplb7t.tfm
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/palatino/pplb7t.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/ptex-fonts/standard/tmin6.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/ptex-fonts/standard/min6.tfm
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/mathpazo/zplmr7m.tfm
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/mathpazo/zplmr7y.tfm
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/mathpazo/zplmr7v.tfm
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/mathpazo/zplmr7t.tfm
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT graphs/hist_AVG_all.png
 INPUT extractbb -B cropbox -O graphs/hist_AVG_all.png
 INPUT graphs/AVG_300.png
@@ -294,8 +298,17 @@ INPUT graphs/SB_30.png
 INPUT extractbb -B cropbox -O graphs/SB_30.png
 INPUT graphs/SB_40.png
 INPUT extractbb -B cropbox -O graphs/SB_40.png
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/palatino/pplr7t.tfm
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/mathpazo/zplmr7m.tfm
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/mathpazo/zplmr7y.tfm
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/mathpazo/zplmr7v.tfm
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/mathpazo/zplmr7t.tfm
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT results/Sal_AVG300_A.tex
 INPUT results/Sal_AVG300_A.tex
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/ptex-fonts/standard/tmin6.tfm
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/ptex-fonts/standard/min6.tfm
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/palatino/pplri7t.tfm
 INPUT results/Sal_AVG250_A.tex
 INPUT results/Sal_AVG250_A.tex
@@ -309,13 +322,6 @@ INPUT results/Sal_SB40_A.tex
 INPUT results/Sal_SB40_A.tex
 INPUT results/Sal_RBI100_A.tex
 INPUT results/Sal_RBI100_A.tex
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/palatino/pplr7t.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/mathpazo/zplmr7m.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/mathpazo/zplmr7y.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/mathpazo/zplmr7v.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/mathpazo/zplmr7t.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT results/Sal_AVG300_B.tex
 INPUT results/Sal_AVG300_B.tex
 INPUT results/Sal_AVG300_C.tex

@@ -198,18 +198,15 @@ In my paper, it is not determined who has such a utility function. At least one 
   Then, We examine the existance of the monetary incentive. We employ the method of sharp regression discontinuity design (RDD): local linear regression around the possible reference point as the cutoff.
   \[
   w_{it} = \beta_0 X_{it} + \beta_1 \text{ABOVE}_{it}
-  + \beta_2 Z_{it}
   \]
-  For each player $i$ in the season $t$, $w_{it}$ is log annual salary in next season $t+1$. $X_{it}$ and $Z_{it}$ are the value of performance index (batting-average, on-base percentage,\ldots) and other player-specific characters (age, team he signed, position,\ldots), respectively. $\text{ABOVE}_{it}$ is an indicator of the achievement of their goals for the index. That is, if he finished his season with a certain index with above the possible reference point, it takes 1, and otherwise 0. This is the variable in interest. As well as OLS, team, position, or individual fixed effect model estimation was also conducted.
+  For each player $i$ in the season $t$, $w_{it}$ is loggarithm of their annual salary in next season $t+1$. $X_{it}$ are the value of performance index (batting-average, on-base percentage,\ldots). $\text{ABOVE}_{it}$ is an indicator of the achievement of their goals for the index. That is, if he finished his season with a certain index with above the possible reference point, it takes 1, and otherwise 0, so this is the variable of interest. The bandiwidths in each analysis were selected according to the optimization of Imbens, Guido and Kalyanaraman (2009), using polynominal approximation.
 
-  where the bandiwidth was selected according to the polynominal approximation (Imbens, Guido and Kalyanaraman, 2009). As I mentioned above, RDD can be invalid when individuals can manipulate the running variable, so this may not appropreate in this analysis since I confirm there exists manipulation in the running variable: performance index. However, as I show below, this analysis found no evidence of discontinuous design of contract. Therefore, I apply this result as a complimental evidence of my research.
-  We pay attention to whether for players around the posible reference point, it is worth manipulating their indexes or not, so in each analysis, we restrict our sample to the players there. The primitive model to check this is below:
+  Estimation was conducted in two ways: one only includes the index term and the dummy for achieving their goals in the model, while the other includes term $Z_{it}$, which consists other elements to affect their annual salary. Concretely, it includes player-specific characters (age, team he signed, position,\ldots), and other performance indexes that controls the aspects that covers the players' residual skill, where the performance index $X_{it}$ does not argues. For furthe explanation, please see Appendix.
 
+  As I mentioned above, usually this method is not applied in this kind of analysis, since RDD can be invalid when individuals can manipulate the running variable, because if they can intentionally control this variable, then anyone who know or want to receive treatment are to manipulate it and so observed sample can be biased. In this research, however, we are interested in the existance itself of the treatment: monetary incentive, so it does not matter if the players did know the (possible) reward or not. Therefore, we regard this way to specification appropreate one to our interests.
 
+  As well as OLS, team, position, or individual fixed effect model estimation was also conducted.
 
-  Also, to check the robustness of my analysis, I tried alternative methodology: include interaction term, and methodology of regression discontinuity design. Interaction term analysis include that of $X_{it}$ and $\text{ABOVE}_{it}$, the coefficient of which indicates additional return on their achievement.
-
-  To restrict sample around sample, it is ad hoc way to choose the range of players in the sample.
 
 \section{Result}
 \subsection{Excess Mass Around The Reference Point}
@@ -217,7 +214,7 @@ In my paper, it is not determined who has such a utility function. At least one 
 First, I show the results that verifies bunching. Table \ref{Bunch-True} includes the summary of McCrary (2008)'s manipulation tests about the performance indexes that say there is some manipulation occurs. Consistent with Pope and Simonsohn (2011), there actually occurs excess mass around .300, and .250 of batting-average. Also, manipulation were also observed in some of other numbers of other indexes: .350 of on-base percentage, 20 of homeruns, 100 of runs-batted-in, 30 and 40 of stolen-bases, and 200 of base-hits.
 
 \begin{table}
-  \tiny
+  \small
   \centering
   \begin{tabular}{lcccccc}\hline
     index & type & cutpoint & binsize & bandwidth & $\theta$ & $z$
@@ -381,10 +378,18 @@ Similar to the rate indexes, there occur manipuation in only some parts of round
 
 \subsection{Existance of Monetary Incentive}
 
+In Section 5.1, we found that there actually exits the player's manipulation for some of the representative indexes. Then in this section, we show whther they are led to aim these goals by their reference dependence, or by their design of the contracts with monetary incentive.
+
+Table \ref{RDD_A} describes the results of RDD analysis on loggarithm of their salary next year, with the cutpoint of each possible reference point. Column ``Other Control'' indicates if the model includes other varivales (other performance indexes, player's age, WPA and dummy for possession of the right of free agency). As a whole, there is no evidence that suports the existance of monetary incenive to make effort for their observed goals. There is no essential difference between the cumulative indexes and rate indexes.
+
+Also, to confirm the robustness of our analysis, we made regression analysis with an interaction term of $X_{it}$ and $\text{ABOVE}_{it}$, which considers the change in average return of the index in argument to their annual salary when the value of the index is above the cutoff point. Each model includes the players that are included in RDD analysis, or those who are located within the optimal bandwidths in RDD. Table \ref{AVG300_A} to \ref{SB40_A} show the results of this analysis for each possible reference points. Consistent with RDD, they give us no evidence of jump of their fixed rewards.
+
+
+
 \begin{table}[!]
   \caption{RDD Test for Monetary Incentives}
   \label{RDD_A}
-  \tiny
+  \footnotesize
   \centering
   \begin{tabular}{lccccccc}\hline
     index,cutpoint & Other Control & bw type & bandwidth
@@ -558,22 +563,26 @@ Similar to the rate indexes, there occur manipuation in only some parts of round
 
 \section{Alternative Interpretation and Some Evidence}
 
-In section 5, my analysis said that there in fact exists manipulation in some of the batting indexes, but no evidence observed in their contracts, which supports the assumption these observations are driven by the reference dependence of the players themselves. Here I consider some possible alternative and additional discussion about my result.
+In section 5, our analysis presented that there in fact exists manipulation in some of the batting indexes, but no evidence observed in their contracts, which supports the assumption these observations are driven by the reference dependence of the players themselves. Here we consider some possible alternative and additional discussion about our result.
 
 \subsection{Incentivised Contract}
 
-One most possible explanation that may interpret my result is the incentivised design of the contract. So far, I checked monetary incentive for the player, analyzing only the fixed parts of the contract. However, players often sign contracts with additional bonus according to their performances. Even though the results in Section 5.2 did not support the existance of incentives in fixed salary, it may occurs as this addition rewards. Here I present that this story is hard to be applied, showing the specific contracts of the some players.
+One most possible explanation that may interpret our result is the incentivised design of the contract. So far, I checked monetary incentive for the player, analyzing only the fixed parts of the contract. However, players often sign contracts with additional bonus according to their performances. Even though the results in Section 5.2 did not support the existance of incentives in fixed salary, it may occurs as this addition rewards. Here I present that this story is hard to be applied, showing the specific contracts of the some players.
 
 Table %\ref
 shows the specific conents of the MLB position players' contracts with incentivised bonus. It is clear that there is no conditions which pay additional salary depending on whether he reaches certain round numbers of their performance indexes, except for plate-appearances.
 
-\subsection{Misunderstanding by the Players}
-
-Misunderstandings by the player is also a possible way to interpret the results.
-
 \subsection{Contract Length}
 
-Skilled players usually get contracts with plural-year package.
+Skilled players often sign contracts with plural-year duration. This is related to why we supplied analysis with the sample of players who had the right of free agency. Furthermore, we should also take care of their contract length, that is, until when the players are insured to play for the team they signed, because it can be some substitution for the additional monetary bonus.
+
+Krautmann \& Oppenheimer(2002) conducted research about this point. They used the salary dataset of MLB from 1990 to 1994 seasons, and regressed log salary on an interaction term of the performance proxy and the contract years they signed.
+
+\[
+\ln(SAL_{it}) = \beta_1 + \beta_2 PERF_{it} + \beta_3 (PERF_{it} * LENGTH_{it})+ \beta_4 LENGTH_{it}
+\]
+
+The model is quated from Krautmann \& Oppenheimer(2002). According to their results, the coefficient of the interaction term, $\beta_3$, was estimated to be negative. In other words, the longer the contract years at once stretched, the less the return to their performance goes. This is caused, they claimed, by the player's risk-aversive preference that dislikes the risk of being fired. Introducing this to our model, it can be the case that those who achieved their goals are in fact receive additional bonus, but instead of getting higher basesalary, they choose to sign the contract with longer duration. For the team manager, it is profitable to propose such contracts, which may enable them to hold highly skilled players with relatively reasonable costs. These days, it is usual that players sign the plural-year package contracts with the right to opt-out: the player or the manager nullify the contract while it is under duration, for the players to get some better contract, or for the manager to modify the contract or release the player. So it might require more complicate model to describe this situation, but it helps us to consider these nonmonetary bonus.
 
 \subsection{By-Time Analysis}
 
@@ -795,10 +804,12 @@ To conclude our paper, we state that it is worth continuing analysis about baseb
 
 \section{Appendix}
 
-\subsection{Proxies for Performance}
+\subsection{Proxies for Performance: BATTING, FIELDING, and BaseRun}
 \small
 
-To measure batter's performance, I use some \textit{SABR Metrics}'s statistics. \textit{SABR} is short for \textit{Society of American Baseball Research}, an American organization of analysing baseball. They try to evaluate players in more ``efficient '' way,  or by statistics with more close correlation with the expected wins the team obtain.
+Baseball position players' skill is divided into three groups: batting, fielding and base-running.
+
+
 
 \subsection{Important Events Related to Section 6.4}
 
