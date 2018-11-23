@@ -274,6 +274,8 @@ INPUT c:/texlive/2018/texmf-dist/tex/latex/float/float.sty
 INPUT c:/texlive/2018/texmf-dist/tex/latex/float/float.sty
 INPUT c:/texlive/2018/texmf-dist/tex/latex/here/here.sty
 INPUT c:/texlive/2018/texmf-dist/tex/latex/here/here.sty
+INPUT c:/texlive/2018/texmf-dist/tex/latex/graphics/lscape.sty
+INPUT c:/texlive/2018/texmf-dist/tex/latex/graphics/lscape.sty
 INPUT Report_1214.aux
 INPUT Report_1214.aux
 OUTPUT Report_1214.aux

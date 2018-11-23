@@ -61,9 +61,9 @@ r2$est
 r2$se
 r2$z
 
-r1 <- RDestimate(Sal ~ H, cutpoint = 100, se.type = "HC2")
+r1 <- RDestimate(Sal ~ H, cutpoint = 200)
 r2 <- RDestimate(Sal ~ H | FLD + BsR + AGE + AGE_sq + WPA + nWPA + FA + Yr,
-                 cutpoint = 100, se.type = "HC2")
+                 cutpoint = 200)
 summary(r1)
 summary(r2)
 
@@ -142,13 +142,6 @@ r2 <- RDestimate(Sal ~ RBI | FLD + BsR + AGE + AGE_sq + WPA + nWPA + Yr,
 summary(r1)
 summary(r2)
 
-r1 <- RDestimate(Sal ~ H, cutpoint = 100)
-r2 <- RDestimate(Sal ~ H | FLD + BsR + AGE + AGE_sq + WPA + nWPA + Yr,
-                 cutpoint = 100)
-summary(r1)
-summary(r2)
-
-
 r1 <- RDestimate(Sal ~ SB, cutpoint = 30)
 r2 <- RDestimate(Sal ~ SB | FLD + BAT + AGE + AGE_sq + WPA + nWPA + Yr,
                  cutpoint = 30)
@@ -159,5 +152,11 @@ summary(r2)
 r1 <- RDestimate(Sal ~ SB, cutpoint = 40 )
 r2 <- RDestimate(Sal ~ SB | FLD + BAT + AGE + AGE_sq + WPA + nWPA + Yr,
                  cutpoint = 40)
+summary(r1)
+summary(r2)
+
+r1 <- RDestimate(Sal ~ H, cutpoint = 100)
+r2 <- RDestimate(Sal ~ H | FLD + BsR + AGE + AGE_sq + WPA + nWPA + Yr,
+                 cutpoint = 100)
 summary(r1)
 summary(r2)

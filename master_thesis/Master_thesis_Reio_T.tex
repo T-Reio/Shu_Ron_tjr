@@ -177,13 +177,13 @@ In my paper, it is not determined who has such a utility function. At least one 
 
   \subsubsection{Test for Bunching}
 
-  First, I test if there is observed any behavior that seems to be related to reference dependent preference. As I explained in the previous chpaters, the existance is verified by the observation of bunching, or excess mass around the possible reference point. To specify the excess mass, I apply the method of regression discontinuity design (RDD).
+  First, we test if there is observed any behavior that seems to be related to reference dependent preference. As we explained in the previous chpaters, the existance is verified by the observation of bunching, or excess mass around the possible reference point. To specify the excess mass, we apply the method of regression discontinuity design (RDD).
 
   RDD is a way to measure the effect of a treatment, such that whether the treatment is assigned or not depends on the threshold of a certain variable (called ``running variable''). Then, comparing the samples just above and just below the threshold is sufficient examination of the treatment, since they are in almost same states except for the existance of the treatment.
 
-  However, there is an important assumption for this specification to be valid (Lee and Lemieux, 2010): continuity of the running variable around the threshold. In other words, individuals must not be able to manipulate the running variable so as to be above the cutpoint. This is because if there exists manipulation, then there occurs selection bias problem, that those who try to be assigned the treatment can adjust their running variable. Therefore, there are some empirical way to test the manipulation of a variable, which is the very method I apply in my analysis.
+  However, there is an important assumption for this specification to be valid (Lee and Lemieux, 2010): continuity of the running variable around the threshold. In other words, individuals must not be able to manipulate the running variable so as to be above the cutpoint. This is because if there exists manipulation, then there occurs selection bias problem, that those who try to be assigned the treatment can adjust their running variable. Therefore, there are some empirical way to test the manipulation of a variable, which is the very method I apply in our analysis.
 
-  One of the frequently applied methods for this specification is  McCrary(2008)'s local linear density estimation. I avail this to my specification of bunching.
+  One of the frequently applied methods for this specification is  McCrary(2008)'s local linear density estimation. We avail this to our specification of bunching.
 
   This estimation of the manipulation at the cutoff point $c$, proceeds in two steps: undersmoothing histograms and local linear smoothing. Undersmoothing means to determine the binsize $b$ of the running variable: in this paper, the index argued.
 
@@ -201,9 +201,9 @@ In my paper, it is not determined who has such a utility function. At least one 
   \]
   For each player $i$ in the season $t$, $w_{it}$ is loggarithm of their annual salary in next season $t+1$. $X_{it}$ are the value of performance index (batting-average, on-base percentage,\ldots). $\text{ABOVE}_{it}$ is an indicator of the achievement of their goals for the index. That is, if he finished his season with a certain index with above the possible reference point, it takes 1, and otherwise 0, so this is the variable of interest. The bandiwidths in each analysis were selected according to the optimization of Imbens, Guido and Kalyanaraman (2009), using polynominal approximation.
 
-  Estimation was conducted in two ways: one only includes the index term and the dummy for achieving their goals in the model, while the other includes term $Z_{it}$, which consists other elements to affect their annual salary. Concretely, it includes player-specific characters (age, team he signed, position,\ldots), and other performance indexes that controls the aspects that covers the players' residual skill, where the performance index $X_{it}$ does not argues. For furthe explanation, please see Appendix.
+  Estimation was conducted in two ways: one only includes the index term and the dummy for achieving their goals in the model, while the other includes term $Z_{it}$, which consists other elements to affect their annual salary. Concretely, it includes player-specific characters (age, team he signed, position,\ldots), and other performance indexes that controls the aspects that covers the players' residual skill, where the performance index $X_{it}$ does not argues. For further explanation, please see Appendix.
 
-  As I mentioned above, usually this method is not applied in this kind of analysis, since RDD can be invalid when individuals can manipulate the running variable, because if they can intentionally control this variable, then anyone who know or want to receive treatment are to manipulate it and so observed sample can be biased. In this research, however, we are interested in the existance itself of the treatment: monetary incentive, so it does not matter if the players did know the (possible) reward or not. Therefore, we regard this way to specification appropreate one to our interests.
+  As we mentioned above, usually this method is not applied in this kind of analysis, since RDD can be invalid when individuals can manipulate the running variable, because if they can intentionally control this variable, then anyone who know or want to receive treatment are to manipulate it and so observed sample can be biased. In this research, however, we are interested in the existance itself of the treatment: monetary incentive, so it does not matter if the players did know the (possible) reward or not. Therefore, we regard this way to specification appropreate one to our interests.
 
   As well as OLS, team, position, or individual fixed effect model estimation was also conducted.
 
@@ -211,7 +211,7 @@ In my paper, it is not determined who has such a utility function. At least one 
 \section{Result}
 \subsection{Excess Mass Around The Reference Point}
 
-First, I show the results that verifies bunching. Table \ref{Bunch-True} includes the summary of McCrary (2008)'s manipulation tests about the performance indexes that say there is some manipulation occurs. Consistent with Pope and Simonsohn (2011), there actually occurs excess mass around .300, and .250 of batting-average. Also, manipulation were also observed in some of other numbers of other indexes: .350 of on-base percentage, 20 of homeruns, 100 of runs-batted-in, 30 and 40 of stolen-bases, and 200 of base-hits.
+In this section, we present our main results of analysis. First, we show the results that verifies bunching. Table \ref{Bunch-True} includes the summary of McCrary (2008)'s manipulation tests about the performance indexes that say there is some manipulation occurs. Consistent with Pope and Simonsohn (2011), there actually occurs excess mass around .300, and in addition .250 of batting-average. Also, manipulation were also observed in some of other numbers of other indexes: .350 of on-base percentage, 20 of homeruns, 100 of runs-batted-in, 30 and 40 of stolen-bases, and 200 of base-hits.
 
 \begin{table}
   \small
@@ -365,31 +365,36 @@ First, I show the results that verifies bunching. Table \ref{Bunch-True} include
         \end{tabular}
       \end{figure}
 
-Table \ref{Bunch-True} shows parts of results that denies the existance of excess mass. For precise estimation of bunching, we set the binsizes of undersmoothing artificially: .001 for batting-average and on-base percentage, 1 for homerun, stolen-base, plate-apparance, and base-hit, and 4 for runs-batted-in. Batting-average and on-base percentage are usually shown by three decimal digits, rounding the fourth decimal digit, so strictly batters with .2995 of batting-average are taken as .300. Homerun, stolen-base, plate-appearance, and base-hit are indexes that takes integer and they earn one for each plate appearances or such a chance to manipulate. Runs-batted-in is also an integer-index, but they can get at most 4 at one plate-appearance, so we set it 4. To confirm the robustness of our results, we repeated this test with various binsize, but we yield essentialy same results. Bandwidths are optimized by calculation, followin
+Table \ref{Bunch-True} shows parts of results that denies the existance of excess mass. For precise estimation of bunching, we set the binsizes of undersmoothing artificially: .001 for batting-average and on-base percentage, 1 for homerun (HR), stolen-base (SB), plate-apparance (PA), and base-hit (H), and 4 for runs-batted-in (RBI). Batting-average (AVG) and on-base percentage (OBP) are usually shown by three decimal digits, rounding the fourth decimal digit, so strictly batters with .2995 of batting-average are taken as .300. Homerun, stolen-base, plate-appearance, and base-hit are indexes that takes integer and they earn one for each plate appearances or such a chance to manipulate. Runs-batted-in is also an integer-index, but they can get at most 4 at one plate-appearance, so we set it 4. To confirm the robustness of our results, we repeated this test with various binsize, but we yield essentialy same results. Bandwidths are optimized by calculation, followin
 
-For batting-average, extending sample size from Pope and Simonsohn (2011) yields similar results: Players manipulate their batting-average. The difference between the estimated frequency according to the approximation below .300 and that of above .300 was significant at .1\% ($z=7.442$) level. In addition, bunching occurs also in .250 ($z = 5.061$, p < 0.1\%). This is inconsistent with Pope and Simonsohn (2011), in that there was no bunching observed in any other round numbers of batting-average, so it can be related to that the sample size is extended to further old ages. I specificadlly analyzed this in Section 6.4. Furthermore, changing binsize yields similar results.
+For batting-average, extending sample size from Pope and Simonsohn (2011) yields similar results: Players manipulate their batting-average. The difference between the estimated frequency according to the approximation below .300 and that of above .300 was significant at .1\% ($z=7.442$) level.
+
+In addition, bunching occurs also in .250 ($z = 5.061$, p < 0.1\%). It was not reported in Pope and Simonsohn (2011): for their sample, there was no bunching observed in any other round numbers of batting-average, so it can be related to that the sample size is extended to further old ages. We specifically analyzed this in Section 6.4. Changing binsize to .002 or .005 also yields similar results.
 
 On-base percentage, on the other hand, showed similar tendency in .350, although the significance level was $z=2.854$ (significant at 5\% level). Pope and Simonsohn (2011) reported that they are less likely to get base-on-balls when facing marginal range of batting-average and so they feel of more importance in batting-average than on-base percentage. However, when they face marginal point of on-base percentage, they may try to get more base-on-balls in order to achieve .350.
 
-Bunching also occurs in cumulative indexes. Cumulative ones are irreversible, and so players may feel these indexes are easier to manipulate. As same as batting-average and on-base percentages, however, such manipulation was observed in only limited numbers: not all the round numbers. For Homerun ($z=3.465, p < 0.1\%$), bunching occurred only in 20: there may be diminishing sensitivity: 20 is located on above the 75 percentiles of the whole Sample A. Also, stolen-base and base-hit have shown bunching, at 30 ($z=4.274, p < 0.1\%$) and 40 ($z=2.764, p < 1\%$) of stolen-base and 200 in base-hit ($z=2.547, p < 5\%$). Stealing-bases are skill that are talented to limited number of the players, but succeeds with the prpbability of 60\% to alomost 100\%, so those who are evaluated by their number of stolen-bases, it may certain be relatively accessible number to manipulate. Base-hit is manipulated by similar to batting-average, but for this index, as same as other cumulative ones, it cannot be valid to be replaced in the last plate-appearance, which seems to lower the confidence level of the $z$-statistics. And surprisingly such manipulation occurs also in runs-batted-in. Compared to other indexes, runs-batted-in is harder to manipulate, since the number of that depends on the performance of his teammates, and the number they can earn at a single plate-appearance varies from 1 to 4. As in Table \ref{Bunch-True}, the test said that there occurs the evidence in plate-appearances. However, it may insufficient because the optimized bandwidth was smaller than one, even though the number of PAs takes only integers. Setting bandwidth larger than 1, then the result went insignificant.
+Bunching also occurs in cumulative indexes. Cumulative ones are irreversible, and so players may feel these indexes are easier to manipulate. As same as batting-average and on-base percentages, however, such manipulation was observed in only limited numbers: not in all the round numbers. For Homerun, bunching occurred only in 20 ($z=3.465, p < 0.1\%$): there may be diminishing sensitivity: 20 is located on above the 75 percentiles of the whole Sample A. Also, stolen-base and base-hit have shown bunching, at 30 ($z=4.274, p < 0.1\%$) and 40 ($z=2.764, p < 1\%$) of stolen-base and 200 in base-hit ($z=2.547, p < 5\%$). Stealing-bases are skill that are talented to limited number of the players, but succeeds with the prpbability of 60\% to alomost 100\%, so those who are evaluated by their number of stolen-bases, it may certain be relatively accessible number to manipulate. 30 and 40 of stolen-bases are also far above the 75 percentiles of all the players.
 
-Similar to the rate indexes, there occur manipuation in only some parts of round numbers. That is, it should be considered that the reference points are not determined only because they are round numbers as Pope and Simonsohn (2011) argued. The possible numbers of reference points found in this section are kinds of well-known indicators of the skill of the players. That is, the nature of the reference points are likely to be close to ``per'' in Pope and Schweizer (2011) rather than round numbers; or well, these numbers are monetarily incentivised goals by the team managers. So next, I examine whther there is any monetary bonus in their contract.
+Base-hit is also manipulated, but the confidence level of the discontinuity was lower than that of batting-average ($z$ = 2.547, $p < 5\%$). Base-hit is a close index to batting-average, for both indexes increase by getting base-hits. It may because the number of base-hit is not regarded as important as batting-average (In most TV live on baseball, they introduce player with his batting-average, not the number of base-hits.) Furtheremore, it can be related that for cumulative indexes, it is not worth ``keeping'' indexes.
 
+And surprisingly such manipulation occurs also in runs-batted-in ($z$=3.295, $p$<0.1\%). Compared to other indexes, runs-batted-in is harder to manipulate, since the number of that depends on the performance of his teammates, and the number they can earn at a single plate-appearance varies from 1 to 4. As in Table \ref{Bunch-True}, the test said that there occurs the evidence in plate-appearances. However, it may insufficient because the optimized bandwidth was smaller than one, even though the number of PAs takes only integers. Setting bandwidth larger than 1, then the result went insignificant.
+
+Summarizing the results, there in fact exists manipulation of the batting indexes and they are possible reference point of the players. However, it occurs in only some parts of round numbers. In the case of marathon runners, Allen et al. (2016), there occured bunching in every round numbers of the goal time, although the size of discontinuity monotonically decreased. That is, it should be considered that the reference points are not determined only because they are round numbers as Pope and Simonsohn (2011) argued. That is, the nature of the reference points are likely to be close to ``per'' in Pope and Schweizer (2011) rather than round numbers; or well, these numbers are monetarily incentivised goals by the team managers. So next, I examine whether there is any monetary bonus in their contract.
 
 \subsection{Existance of Monetary Incentive}
 
 In Section 5.1, we found that there actually exits the player's manipulation for some of the representative indexes. Then in this section, we show whther they are led to aim these goals by their reference dependence, or by their design of the contracts with monetary incentive.
 
-Table \ref{RDD_A} describes the results of RDD analysis on loggarithm of their salary next year, with the cutpoint of each possible reference point. Column ``Other Control'' indicates if the model includes other varivales (other performance indexes, player's age, WPA and dummy for possession of the right of free agency). As a whole, there is no evidence that suports the existance of monetary incenive to make effort for their observed goals. There is no essential difference between the cumulative indexes and rate indexes.
+Table \ref{RDD_A} describes the results of RDD analysis on loggarithm of their salary next year, with the cutpoint of each possible reference point. Column ``Other Control'' indicates if the model includes other varivales (other performance indexes, player's age, WPA and dummy for possession of the right of free agency). ``bw type'' indicates the bandwidths used in the model: ``LATE'' includes the sample that are in the optimal bandwidth calculated by Imbens and Kalyyanaraman (), while ``Half-BW'' and ``Double-BW'' are using a half and a twice of the LATE bandwidth, respectively. As a whole, there is no evidence that suports the existance of monetary incenive to make effort for their observed goals. There is no essential difference between the cumulative indexes and rate indexes.
 
-Also, to confirm the robustness of our analysis, we made regression analysis with an interaction term of $X_{it}$ and $\text{ABOVE}_{it}$, which considers the change in average return of the index in argument to their annual salary when the value of the index is above the cutoff point. Each model includes the players that are included in RDD analysis, or those who are located within the optimal bandwidths in RDD. Table \ref{AVG300_A} to \ref{SB40_A} show the results of this analysis for each possible reference points. Consistent with RDD, they give us no evidence of jump of their fixed rewards.
+Also, to confirm the robustness of our analysis, we made regression analysis with an interaction term of $X_{it}$ and $\text{ABOVE}_{it}$, which considers the change in average return of the index in argument to their annual salary when the value of the index is above the cutoff point. Each model includes the players that are included in RDD analysis, or those who are located within the optimal bandwidths in RDD. Table \ref{AVG300_A} to \ref{SB40_A} show the results of this analysis for each possible reference points. Consistent with RDD, they give us no evidence of jump of their fixed rewards, except for stolen-bases.
 
 
 
 \begin{table}[!]
   \caption{RDD Test for Monetary Incentives}
   \label{RDD_A}
-  \footnotesize
+  \tiny
   \centering
   \begin{tabular}{lccccccc}\hline
     index,cutpoint & Other Control & bw type & bandwidth
@@ -435,13 +440,13 @@ Also, to confirm the robustness of our analysis, we made regression analysis wit
     & & Half-BW & 2.02 & 227 & -.042 & .324 & .130 \\
     & & Double-BW & 8.07 & 708 & .056 & .127 & .435 \\ \hline
 
-    H, 200 & No & LATE & 4.08 & 393 & .072 & .289 & .250 \\
-    & &Half-BW & 2.04 & 228 & .282 & .400 & .707 \\
-    & &Double-BW & 8.16 & 714 & .008 & .185 & .043 \\ \cline{3-8}
+    H, 200& No & LATE & 3.173 & 75 & -.786 & .396 & -1.985* \\
+    & & Half-BW & 1.587 & 35 & .386 & .271 & -1.421 \\
+    & & Double-BW & 6.347 & 137 & -.061 & .309 & -.199 \\ \cline{3-8}
 
-    & Yes & LATE & 4.04 & 390 & .018 & .209 & .086 \\
-    & & Half-BW & 2.02 & 227 & -.042 & .324 & .130 \\
-    & & Double-BW & 8.07 & 708 & .056 & .127 & .435 \\ \hline
+    & Yes & LATE & 3.175 & 75 & -.420 & 1.042 & -.403 \\
+    & & Half-BW & 1.587 & 35 & -4.779 & .576 & -8.288** \\
+    & & Double-BW & 6.349 & 137 & -.109 & .413 & -.265 \\ \hline
 
     SB, 30 & No & LATE & 3.39 & 282 & .962 & .372 & 2.585** \\
     & &Half-BW & 1.70 & 134 & .920 & .263 & 3.492*** \\
@@ -507,10 +512,22 @@ Also, to confirm the robustness of our analysis, we made regression analysis wit
   \end{table}
 \end{landscape}
 
+Here we consider each indexes respectively.
+
+First, for batting-average, RDD analysis denied the existance of any additional monetary bonus for achieving either .300 or .250. Although estimated jump at each cutoff points were positive, but their standard errors are large and so the difference were insignificant. The same results were obtained in the model with interaction terms: dummies for achieving their internal goals are all insignificant. That is, players with their batting-average around .250 and .300 make effort to meet them just above these numbers, even though there is no monetary reward to do so. These findings support the assumption that preferences of the players are reference dependent, even when evaluating nonmonetary outcomes.
+
+On-base percentage shows similar tendency. For this index, the estimated jump takes negative, although the estimator is insignificant. As is mentioned in Section 6, on-base percentage is considered as more important index: it is closer correlation with the winning-average of the team than batting-average. Thus, it can be the case that team managers evaluate on-base percentage more than batting-average and think of paying players with higher number more. However, our results are against this hypothesis.
+
+For the cumulative indexes, observed results are almost the same: 20 of homerun, 100 of runs-batted-in, and 200 base-hits does not discontinuously raise the players' salary. Homeruns produce at least one score to the team, and are take one of the most ``attractive'' aspects of baseball, so there may exists additional positive effect for the team: it may bring a lot of audience, which profits them by stadium fees. Nevertheless, discontinuous scheme of the salary was not observed. Regressions with the interaction term reported the same results.
+
+Stolen-base, however, shows different results. In RDD for the cutpoint of 30, including no other controls yields significant discontinuity in every bandwidth. Also, the results are consistent in some models of the interaction term. Compared to the other indexes, there were observed evidence that are for the monetary incentives. However, we do not regard them as sufficient support. First, for RDD, controling other player-specific charactarisitcs, their significancy level drastically goes down. Also, in interaction-term analysis, the estimated values are mixture of significant ones and not significant ones, and they fluctuate from .816 to 13.567. And finally, for 40 stolen-bases, the results of RDD estimation showed negative jump, inconsistent with that of 30, even though these results argue the same index. Thus, we conclude these results cannot support the counter hypothesis that denies discontinuity of the salary contracts, but either vice versa.
+
+One possible alternative interpretation is that there exits the players that sign the contracts that includes plural-year service. Such a player plays receive fixed salary regardless of their single-year performance. Thus, we conducted a supplimental analysis that restricts the sample to those who have the free-agency, which enables them to negotiate with any MLB or other professional baseball teams. These players cannot play for the MLB without signing a new contract, which always reflects his performance of the previous year. In the analysis above, we consider the possession of the right of free agency by adding the dummy variable that indicates whether he holds the right or not.
+
 \begin{table}[!]
-  \caption{RDD Test for Discontinuity}
+  \caption{RDD Test for Discontinuity, Only Including FA Players}
   \label{RDD_B}
-  \tiny
+  \footnotesize
   \centering
   \begin{tabular}{lccccccc}\hline
     index,cutpoint & Other Control & bw type & bandwidth
@@ -556,10 +573,25 @@ Also, to confirm the robustness of our analysis, we made regression analysis wit
     & & Half-BW & 2.46 & 30 & -1.360 & 1.295 & -1.050 \\
     & & Double-BW & 9.86 & 100 & .398 & .160 & 2.481* \\ \hline
 
+    H, 200& No & LATE & 4.498 & 107 & -.070 & .447 & -.156 \\
+    & & Half-BW & 2.249 & 61 & -.439 & .726 & -.605 \\
+    & & Double-BW & 8.996 & 218 & -.025 & .293 & -.086 \\ \cline{3-8}
+
+    & Yes & LATE & 4.512 & 106 & .649 & .355 & 1.824 \\
+    & & Half-BW & 2.256 & 61 & 1.084 & .963 & 1.125 \\
+    & & Double-BW & 9.024 & 240 & .264 & .243 & 1.087 \\ \hline
+
     Note: & \multicolumn{7}{r}{***: $p<0.1\%$, **: $p<1\%$, *: $p<5\%$.} \\
-    & \multicolumn{7}{r}{Bandwidth is optimized following the method of Imbens-Kalyanaraman.}
+    & \multicolumn{7}{r}{Bandwidth is optimized following the method of Imbens-Kalyanaraman.}　\\
+    & \multicolumn{7}{r}{
+    For stolen-bases, it cannot be calculated because of lack of samples.
+    }
   \end{tabular}
 \end{table}
+
+Table \ref{RDD_B} shows the results of RDD, with the restricted sample to free-agent players. This is consistent with the main results: there does not exist evidence that supports the additional reward at each cutoff points.
+
+In summary, we find that players does not have monetary incentives at their observed internal goals. That is, they adjust their effort level to make their performance indexes just above the reference points, because of their reference point dependent: discontinuous at the reference point preferences. In the next section, we consider other alternative explanations by conducting additional analysis, and empirical evidences. 
 
 \section{Alternative Interpretation and Some Evidence}
 
@@ -688,7 +720,7 @@ Then, we
 
 \begin{table}
   \centering
-  \caption{RDD for the Grouped Sample by Time, Only for FA Players}
+  \caption{RDD for the Grouped Sample by Time, Only Including FA Players}
   \label{RDD_Era_FA}
   \footnotesize
   \begin{tabular}{lcccccc} \hline
