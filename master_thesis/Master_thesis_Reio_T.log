@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.0-180226-2.6 (utf8.sjis) (TeX Live 2018/W32TeX) (preloaded format=platex 2018.11.1)  23 NOV 2018 20:41
+This is e-pTeX, Version 3.14159265-p3.8.0-180226-2.6 (utf8.sjis) (TeX Live 2018/W32TeX) (preloaded format=platex 2018.11.1)  24 NOV 2018 17:08
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -798,12 +798,24 @@ Overfull \hbox (18.15425pt too wide) in paragraph at lines 532--590
 
 
 
-] [26] [27] [28] [29] [30] (./results/Sal_AVG300_B.tex) [31] (./results/Sal_AVG300_C.tex) [32] (./results/Sal_AVG300_D.tex) [33] (./results/Sal_AVG250_B.tex) [34] (./results/Sal_AVG250_C.tex) [35] (./results/Sal_AVG250_D.tex
+] [26]
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <10.95> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 614.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <10.95> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 614.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <10.95> not available
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 614.
+ [27] [28] [29]
+Overfull \hbox (6.32813pt too wide) in paragraph at lines 673--674
+[]\OT1/ppl/m/n/12 Then, one pos-si-ble ques-tion oc-curs: ``Does the ten-dency of ma-nip-u-la-tion/discoutinuous
+ []
+
+[30] [31] [32] (./results/Sal_AVG300_B.tex) [33] (./results/Sal_AVG300_C.tex) [34] (./results/Sal_AVG300_D.tex) [35] (./results/Sal_AVG250_B.tex) [36] (./results/Sal_AVG250_C.tex) [37] (./results/Sal_AVG250_D.tex
 Overfull \hbox (4.11371pt too wide) in paragraph at lines 8--55
  [][] 
  []
 
-) [36] (./results/Sal_OBP350_B.tex) [37] (./results/Sal_OBP350_C.tex) [38] (./results/Sal_OBP350_D.tex) [39] (./results/Sal_HR20_B.tex) [40] (./results/Sal_HR20_C.tex) [41] (./results/Sal_HR20_D.tex) [42] [43
+) [38] (./results/Sal_OBP350_B.tex) [39] (./results/Sal_OBP350_C.tex) [40] (./results/Sal_OBP350_D.tex) [41] (./results/Sal_HR20_B.tex) [42] (./results/Sal_HR20_C.tex) [43] (./results/Sal_HR20_D.tex) [44] [45
 
 
 
@@ -828,18 +840,18 @@ Overfull \hbox (4.11371pt too wide) in paragraph at lines 8--55
 
 
 
-] [44] (./Master_thesis_Reio_T.aux (./results/summary.aux))
+] [46] (./Master_thesis_Reio_T.aux (./results/summary.aux))
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 14275 strings out of 493281
- 279196 string characters out of 6148126
- 362565 words of memory out of 5000000
- 17867 multiletter control sequences out of 15000+600000
- 38803 words of font info for 130 fonts, out of 8000000 for 9000
+ 14283 strings out of 493281
+ 279342 string characters out of 6148126
+ 362575 words of memory out of 5000000
+ 17875 multiletter control sequences out of 15000+600000
+ 39646 words of font info for 133 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
  55i,18n,54p,1672b,805s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on Master_thesis_Reio_T.dvi (44 pages, 205088 bytes).
+Output written on Master_thesis_Reio_T.dvi (46 pages, 209828 bytes).
