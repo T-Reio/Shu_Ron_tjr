@@ -6,7 +6,7 @@ library(rddensity)
 stats <- fread("C:/Users/easyu/Master_thesis/master_thesis/input/fstats_5718.csv"
                , header = T, sep = ",")
 stats <- subset(stats, stats$PA >= 200)
-stats_1 <- subset(stats, stats$Season <= 1975)
+stats_1 <- subset(stats, stats$Season <= 1974)
 stats_2 <- subset(stats, stats$Season >= 1976 & stats$Season <= 1994)
 stats_3 <- subset(stats, stats$Season >= 1995 & stats$Season <= 2003)
 stats_4 <- subset(stats, stats$Season >= 2004)
@@ -22,3 +22,6 @@ summary(AVG_1)
 summary(AVG_2)
 summary(AVG_3)
 summary(AVG_4)
+
+AVG_1 <- stats_1$H/stats_1$AB
+DCdensity(AVG_1, 0.3, bin = 0.001, ext.out = T)
