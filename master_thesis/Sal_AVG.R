@@ -267,3 +267,27 @@ stargazer(d1,d2,d3,d4,d5,d6,d7,d8,
                              "Position", "Individual","Position")
           )
 )
+
+d1 <- lm(Sal ~ BAT * AVG_300)
+d2 <- lm(Sal ~ BAT * AVG_300 + FLD + BsR + Yr)
+d3 <- lm(Sal ~ BAT * AVG_300 + FLD + BsR + AGE + AGE_sq + Yr)
+d4 <- lm(Sal ~ BAT * AVG_300 + FLD + BsR + AGE + AGE_sq + WPA + nWPA + Yr)
+d5 <- lm(Sal ~ BAT * AVG_300 + FLD + BsR + AGE + AGE_sq + WPA + nWPA + FA + Yr)
+d6 <- felm(Sal ~ BAT * AVG_300 + FLD + BsR + AGE + AGE_sq + WPA + nWPA + FA + Yr| POS)
+d7 <- felm(Sal ~ BAT * AVG_300 + FLD + BsR + WPA + nWPA + FA + Yr| ID)
+d8 <- felm(Sal ~ BAT * AVG_300 + FLD + BsR + WPA + nWPA + FA + Yr | POS)
+
+stargazer(d1,d2,d3,d4,d5,d6,d7,d8,
+          out = 'text',
+          title = 'Regression on Log-Salary, Including Interaction Term: around .300',
+          align = F, initial.zero = F,
+          intercept.bottom = FALSE, font.size = "tiny", label = "AVG300_D",
+          table.placement = "H", star.cutoffs = c(0.05, 0.01, 0.001),
+          omit = c("WPA", "nWPA", "FA", "Yr"),
+          add.lines = list(c("WPA", "","","","X","X","X","X","X"),
+                           c("FA dummy","","","","","X","X","X","X"),
+                           c("Season dummies","","X","X","X","X","X","X","X"),
+                           c("Fixed effects","","","","","",
+                             "Position", "Individual","Position")
+          )
+)

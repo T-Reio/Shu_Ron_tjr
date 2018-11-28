@@ -317,6 +317,9 @@ INPUT c:/texlive/2018/texmf-dist/fonts/tfm/ptex-fonts/standard/tmin10.tfm
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/ptex-fonts/jis/jis.tfm
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmss8.tfm
 OUTPUT Report_1214.dvi
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/ptex-fonts/standard/tmin10.tfm
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/ptex-fonts/jis/jis.tfm
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmss10.tfm
 OUTPUT Report_1214.nav
 OUTPUT Report_1214.toc
 OUTPUT Report_1214.snm
