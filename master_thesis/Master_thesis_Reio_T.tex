@@ -43,9 +43,9 @@ Dealing with reference dependence that occurs as some nonmanetary outcomes, ther
 
 MLB position players seems to have some reference points, about their batting performance indexes: .300 of batting average is one of the possible ones. Pope and Simonsohn (2011) have shown, that there exists bunching just above .300 of the distribution of this index. However, it might not be sufficient to prove that this is caused by reference point dependent utility function about their performance indexes: team managers may assign some monetary incentives for the players to adjust their aspiration level to meet those points, as we described in the example above.
 
-Our most important contribution is this: to conduct analysis that reveals the observed behavior to be in fact reference dependence. First, we tested if there is any evidence for the manipulation around the round numbers, by using McCrary (2008)'s method to test manipulation. not only .300 of batting average, both for other points of batting-average and other indexes, such as homerun or stolen-bases. Confirming this, then we made examinations to answer the question, ``Is this observed manipulation truly driven by the reference dependence of the players?'' We applied regression analysis using the data of the players` salary.
+Our most important contribution is this: to conduct analysis that reveals the observed behavior to be in fact reference dependence. First, we tested if there is any evidence for the manipulation of the performance indexes around the round numbers, by using McCrary (2008)'s method to test manipulation. We include analysis of not only .300 of batting average, but also other points of batting-average and other indexes, such as homerun or stolen-bases. Confirming this, then we made examinations to answer the question, ``Is this observed manipulation truly driven by the reference dependence of the players?'' We applied regression analysis using the data of the players` salary.
 
-Our paper found three important results. First, our examination for manipulation supported the previous study. There observed evidence to show there in fact exists seemingly reference point dependent behavior, where .300 of batting-average works as a reference point. Similar results were obtained about other round number of batting-average, and other batting indexes such as on-base percentage or homerun. Second, we found that as a whole, there does not exists any monetary incentive for them: for their fixed part of the salary contract, they does not receive any additional payment by achieving their internal goals. This results confirmed that observed behavior is actually caused by the reference dependence of the players. Furthermore, we complement our results, discussing some alternative interpretation about the form of monetary incentives: the part of incentivesed contract, and relation with contract length. And the third is that the indexes where players' reference dependence occurs vary through the history of the MLB: events that rotates how to design the contracts or evaluation about the importance of each performance index are likely to affects the behavior of the players.
+Our paper found three important results. First, our examination for manipulation supported the previous study. There observed evidence to show there in fact exists seemingly reference point dependent behavior, where .300 of batting-average works as a reference point. Similar results were obtained about other round number of batting-average, and other batting indexes such as on-base percentage or homerun. Second, we found that as a whole, there does not exists any monetary incentive for them: for their fixed part of the salary contract, they does not receive any additional payment by achieving their internal goals. This results confirmed that observed behavior is actually caused by the reference dependence of the players. Furthermore, we complement our results, discussing some alternative interpretation about the form of monetary incentives: the part of incentivesed contract, and relation with contract length. And the third, there exists serial changes about the players' index manipulation. Among them, .300 of batting-average has shown a consistent result.
 
 This paper proceed as follows. In the Section 2, we review some literature and verify the standpoint of my paper. Section 3 describes the data we availed. Section 4 presents theoretial framework and empirical way to specification, and make some conjecture.  Section 5 show the results of the analysis. Discussion about some alternative interpretation and non-statistical data are included in Section 6. Finally, Section 7 concludes the paper.
 
@@ -63,6 +63,8 @@ This paper proceed as follows. In the Section 2, we review some literature and v
 
   Diecidue and Van de Ven (2008)`s ``aspiration level'' model added discontinuity assumption: that is, a utility function that ``jumps'' at the reference point. When ther exists jump in their utility function, then individuals try to manipulate outcome level, paying addtional cost which was not accepted in the standard ``smooth'' form of utility function. As mentioned below, I exploit this assumption to my model in this paper.
 
+  Individuals with such reference-point dependent utility try to adjust their effort level so as to achieve their internal target, or reference point. There is a number of empirical literature that specifies the existence of reference dependence in the field or lab studies. Farber(2008) applied this model to the labor supply of New York cab drivers to show that as soon as they reached daily target sales, they considers to quit, even when they reached it early in each day. Jones(2018) made analysis on the system of American tax payment. He showed that individuals try to manipulate their real payment by substituting it by donation or other charitable action, and that especially when facing losses, they make more effort. This observation is also caused loss-aversion, with the reference point of zero-payment threshold.
+
   \begin{tabular}{ccc}
     \begin{minipage}[H]{0.3\textwidth}
       \begin{figure}[H]
@@ -78,54 +80,53 @@ This paper proceed as follows. In the Section 2, we review some literature and v
         \caption{primitive gain-loss function}
         \label{gain-loss}
       \end{figure}
-    \end{minipage} &
-    \begin{minipage}[H]{0.3\textwidth}
-      \begin{figure}[H]
-        \begin{tikzpicture}
-          [domain = -2:2, samples = 200, >= stealth]
-          \draw[->] (-2,0) -- (2,0) node[right]{$x$};
-          \draw[->] (0,-2) -- (0,2) node[above]{$u(x)$};
-          \draw plot[domain = 0:1.7] (\x, {sqrt( \x)});
-          \draw plot[domain = -1.7:0] (\x, {-sqrt(2 * - \x)});
-          \draw (0,0) node [below right] {$r$};
-        \end{tikzpicture}
-        \scriptsize
-        \caption{diminishing sensitivity}
-        \label{dim-sen}
-      \end{figure}
-    \end{minipage}&
-    \begin{minipage}[H]{0.3\textwidth}
-      \begin{figure}[H]
-        \begin{tikzpicture}[domain = 0:4, samples = 200, >= stealth]
-          \draw[->](-0.5, 0) -- (4.2, 0) node[right]{$x$};
-          \draw[->](0, -0.5) -- (0, 3.7) node[above]{$u(x)$};
-          \draw[-](2.2, -0.1) -- (2.2, 0.1);
-          \draw[domain=0:2.2,samples=200,>=stealth] plot (\x, {sqrt(\x)});
-          \draw[domain=2.2:4.1,samples=200,>=stealth] plot (\x, {sqrt(\x) + 0.8});
-          \draw (0, 0) node[below left]{O};
-          \draw (2.2, -0.3) node {$r$};
-        \end{tikzpicture}
-        \scriptsize
-        \caption{jump at the reference point}
-        \label{jump}
-      \end{figure}
-    \end{minipage}
-  \end{tabular}
+      \end{minipage} &
+      \begin{minipage}[H]{0.3\textwidth}
+        \begin{figure}[H]
+          \begin{tikzpicture}
+            [domain = -2:2, samples = 200, >= stealth]
+            \draw[->] (-2,0) -- (2,0) node[right]{$x$};
+            \draw[->] (0,-2) -- (0,2) node[above]{$u(x)$};
+            \draw plot[domain = 0:1.7] (\x, {sqrt( \x)});
+            \draw plot[domain = -1.7:0] (\x, {-sqrt(2 * - \x)});
+            \draw (0,0) node [below right] {$r$};
+          \end{tikzpicture}
+          \scriptsize
+          \caption{diminishing sensitivity}
+          \label{dim-sen}
+        \end{figure}
+        \end{minipage}&
+        \begin{minipage}[H]{0.3\textwidth}
+          \begin{figure}[H]
+            \begin{tikzpicture}[domain = 0:4, samples = 200, >= stealth]
+              \draw[->](-0.5, 0) -- (4.2, 0) node[right]{$x$};
+              \draw[->](0, -0.5) -- (0, 3.7) node[above]{$u(x)$};
+              \draw[-](2.2, -0.1) -- (2.2, 0.1);
+              \draw[domain=0:2.2,samples=200,>=stealth] plot (\x, {sqrt(\x)});
+              \draw[domain=2.2:4.1,samples=200,>=stealth] plot (\x, {sqrt(\x) + 0.8});
+              \draw (0, 0) node[below left]{O};
+              \draw (2.2, -0.3) node {$r$};
+            \end{tikzpicture}
+            \scriptsize
+            \caption{jump at the reference point}
+            \label{jump}
+          \end{figure}
+        \end{minipage}
+      \end{tabular}
 
-  \vspace{1zw}
+\vspace{1zw}
 
-  Individuals with such reference-point dependent utility try to adjust their effort level so as to achieve their internal target, or reference point. There is a number of empirical literature that specifies the existence of reference dependence in the field or lab studies. Farber(2008) applied this model to the labor supply of New York cab drivers to show that as soon as they reached daily target sales, they considers to quit, even when they reached it early in each day. Jones(2018) made analysis on the system of American tax payment. He showed that individuals try to manipulate their real payment by substituting it by donation or other charitable action, and that especially when facing losses, they make more effort. This observation is also caused loss-aversion, with the reference point of zero-payment threshold.
 
-  Reference dependence also occurs in the cases of sports. One of the most well-known papers amoung them is Pope and Schweizer (2011). They obtained the data of professional golf players, to point out that in each hole, players behave as they take ``per'' as the reference point: Specifically, they scceeed their putts, significantly better when the putt was one to save per than when it was one to get ``eagle'' or ``birdie.'' Similarly, Allen \textit{et al} (2016) specified the existance of reference point dependence of marathon runners, using data about the finish time of enormous number of race in the United States. In this case, the distribution of finishing time has excess mass around evry hour and 30 minutes. Note that these cases are common in that even if they achieve their internal goals, they do not receive any monetary reward for their success. Professional golf players are awarded according to the total number of shots through the whole tour, not to the number of pers they saved.
-  %注釈:サブ4で特別な表彰？
+Reference dependence also occurs in the cases of sports. One of the most well-known papers amoung them is Pope and Schweizer (2011). They obtained the data of professional golf players, to point out that in each hole, players behave as they take ``per'' as the reference point: Specifically, they scceeed their putts, significantly better when the putt was one to save per than when it was one to get ``eagle'' or ``birdie.'' Similarly, Allen \textit{et al} (2016) specified the existance of reference point dependence of marathon runners, using data about the finish time of enormous number of race in the United States. In this case, the distribution of finishing time has excess mass around evry hour and 30 minutes. Note that these cases are common in that even if they achieve their internal goals, they do not receive any monetary reward for their success. Professional golf players are awarded according to the total number of shots through the whole tour, not to the number of pers they saved.
+%注釈:サブ4で特別な表彰？
 
-  Pope and Simonsohn (2011) mention a seemingly similar case. They picked up three empirical evidence of round number as reference points: SAT (a standardized test for college admission in the United States) scores, laboratory experiment, and baseball. In their section of baseball, they picked up the evidence of Major League Baseball (MLB) players to claim that they suggest their reference depenent preference by the distribution of their perfonmance index: batting-average (AVG). According to their paper, the position players (batters) pay attention to their batting-average (AVG), especially to finish each season with their batting average of just above .300. They obatined MLB season individual AVG data from 1975 to 2008 and observed position players (= players except for pitchers) with at least 200 at-bats in each season. Then, they found that their distribution of the batting-average has excess mass just above .300, which reveals the existance of manipulation there.Furthermore, they found that players with batting-average of just below .300 are more likely to hit a base-hit and less likely to get a base-on-balls. Both base-hits and base-on-balls avoid the batter from being gotten out, so for the team he belongs to, base-on-balls also have important value to win the game. However, batting-average does not count base-on-balls as the element to raise the number (For the definition of performance statistics, see Appendix), so they prefer getting hit to base-on-balls. Thus, observed behavior they claims is sufficient evidence that shows the existance of round-number reference point dependent preference of the MLB players.
+Pope and Simonsohn (2011) mention a seemingly similar case. They picked up three empirical evidence of round number as reference points: SAT (a standardized test for college admission in the United States) scores, laboratory experiment, and baseball. In their section of baseball, they picked up the evidence of Major League Baseball (MLB) players to claim that they suggest their reference depenent preference by the distribution of their perfonmance index: batting-average (AVG). According to their paper, the position players (batters) pay attention to their batting-average (AVG), especially to finish each season with their batting average of just above .300. They obatined MLB season individual AVG data from 1975 to 2008 and observed position players (= players except for pitchers) with at least 200 at-bats in each season. Then, they found that their distribution of the batting-average has excess mass just above .300, which reveals the existance of manipulation there.Furthermore, they found that players with batting-average of just below .300 are more likely to hit a base-hit and less likely to get a base-on-balls. Both base-hits and base-on-balls avoid the batter from being gotten out, so for the team he belongs to, base-on-balls also have important value to win the game. However, batting-average does not count base-on-balls as the element to raise the number (For the definition of performance statistics, see Appendix), so they prefer getting hit to base-on-balls. Thus, observed behavior they claims is sufficient evidence that shows the existance of round-number reference point dependent preference of the MLB players.
 
-  It is true that there is observed behavior similar to the cases of Pope and Schweizer (2011) or Allen \textit{et al} (2016). However, one important thing we have to take care of is there exists procedure of contract between the player and the team manager: those who evaluate the player. In other words, it may owe to their monetary value function, not by the preference of themselves. This is the main contribution of my research.
+It is true that there is observed behavior similar to the cases of Pope and Schweizer (2011) or Allen \textit{et al} (2016). However, one important thing we have to take care of is there exists procedure of contract between the player and the team manager: those who evaluate the player. In other words, it may owe to their monetary value function, not by the preference of themselves. This is the main contribution of my research.
 
-  Pope and Simonsohn stated in their own paper that they conducted analysis only for batting-average, and following research is to be made. So I first follow this: ``Is batting-average unique case?'' Then, I test if there exists monetary incentive for the player. If the team managaers they belong to adopt a system of salary that discontinuously ``jump'' by a certain performance index reaching to the point where manpulation is observed, then for the players it can be interpreted as rational choice, given the contract design. In general, players with their performance index just above these cutoff point and those just below the point have almost same ability as a baseball player. At least, it is natural to think there is no reason to treat players discontinuously better, only because he achieve the cutoff. Then, it is interpreted that it is rather the team manager than the players themselves who have the reference-point dependent preference, which makes the players encouraged to meet their goals.
+Pope and Simonsohn stated in their own paper that they conducted analysis only for batting-average, and following research is to be made. So I first follow this: ``Is batting-average unique case?'' Then, I test if there exists monetary incentive for the player. If the team managaers they belong to adopt a system of salary that discontinuously ``jump'' by a certain performance index reaching to the point where manpulation is observed, then for the players it can be interpreted as rational choice, given the contract design. In general, players with their performance index just above these cutoff point and those just below the point have almost same ability as a baseball player. At least, it is natural to think there is no reason to treat players discontinuously better, only because he achieve the cutoff. Then, it is interpreted that it is rather the team manager than the players themselves who have the reference-point dependent preference, which makes the players encouraged to meet their goals.
 
-  On the other hand, if there exists no evidence that team managers evaluate the players by the achievement of the cutoff, then we can say that the observed behavior is truly drawn by their own reference dependence. In addition, the consistency is so strong that even there exists no rational reason, they try to reach there. Analysing this and verify which hypothesis is my main contribution of this paper.
+On the other hand, if there exists no evidence that team managers evaluate the players by the achievement of the cutoff, then we can say that the observed behavior is truly drawn by their own reference dependence. In addition, the consistency is so strong that even there exists no rational reason, they try to reach there. Analysing this and verify which hypothesis is my main contribution of this paper.
 
 \section{Data Description}
 
@@ -137,7 +138,7 @@ Note that we then restrict the sample to the players who appeare to the plate in
 
 Then, here we describe the nature of the indexes. Baseball batting indexes are roughly divided into two types. One is that simply indicates the number of a certain plays, and another is calculated using these numbers, which indicates the rate or the expected number of the plays. Here we call the former ``cumulative index,'' and the latter ``rate index.'' Cumulative index are for example ``base-hit'' or ``homerun,'' or ``stolen-bases.'' Cumulative indexes are irreversible and so they are monotonically increasing in their appearances. That is, so once the players reached a certain number of cumulative indexes such as 20 homeruns, then it does not matter how their performance goes after then. On the other hand, rate indexes can fluctuate: even once they reached their internal goals, it may fall if their performance get worse. Batting-average and on-base percentage are sorted to this type.
 
-Salary data are obtained from \textit{USA TODAY} and \textit{Baseball Prospectus}. We collected annual salary data of the position players who are registered in MLB Roaster at the beginning of each season. It also contains information about other player-specific charactaristics: age, position (such as catcher, 1st-baseman, left-fielder, designated hitter and so on), the teams they signed, and the possession of free agency. We merged this with the play stats in the previous year, because salary is as usually determined based on the performance of the previous season. Because of lack of disclosed information, this dataset contains only that since 1987. Also, because we regard the players' performance is reflected to their annual reward in that of the next year, we cannot merge the stats dataset of 2018. So the latast available season of this is 2017. The aggregated number of the panel is $N=13226$, and the restriction of 200 plate-appearances reduces the number to $N=8915$. Then, here we conduct analysis with two datasets: one that contains salary data (we call this Sample B), while the other does not (Sample A). As we explain in the next section, we use two main analysis: manipulation of performance index (only use play stats) and design of the contracts (needs information about salary). In the former we use Sample A, and in the latter Samlple B.The summery statistics are descripted in Table \ref{RDD_A} and Table \ref{sum_B}.
+Salary data are obtained from \textit{USA TODAY} and \textit{Baseball Prospectus}. We collected annual salary data of the position players who are registered in MLB Roaster at the beginning of each season. It also contains information about other player-specific charactaristics: age, position (such as catcher, 1st-baseman, left-fielder, designated hitter and so on), the teams they signed, and the possession of free agency. We merged this with the play stats in the previous year, because salary is as usually determined based on the performance of the previous season. Because of lack of disclosed information, this dataset contains only that since 1987. Also, because we regard the players' performance is reflected to their annual reward in that of the next year, we cannot merge the stats dataset of 2018. So the latast available season of this is 2017. The aggregated number of the panel is $N=13226$, and the restriction of 200 plate-appearances reduces the number to $N=8915$. Then, here we conduct analysis with two datasets: one that contains salary data (we call this Sample B), while the other does not (Sample A). As we explain in the next section, we use two main analysis: manipulation of performance index (only use play stats) and design of the contracts (needs information about salary). In the former we use Sample A, and in the latter Samlple B. The descriptive statistics of each sample are descripted in Table \ref{sum_A} and Table \ref{sum_B}, respectively.
 
 \begin{table}
   \include{results/summary}
@@ -153,13 +154,13 @@ Salary data are obtained from \textit{USA TODAY} and \textit{Baseball Prospectus
 
 \subsection{Frameworks}
 
-MLB position players try to maximize their performance, for two main goals: one is to contribute to their team winning more games, and the other is to improve their living standard. That is, getting better contract and playing as long as possible is one of the most important object to play for the team. Performance index is clear and valid benchmarks to signal their ability to the team managers. Baseball is so rich in such indexes, so we can say these are good reliable proxy for their ability as a player. We assume a utility function of the player/manager as $u(x)$ for the value of a certain index $x$. Players' self-evaluation and his salary for the next season reflects this value.
+MLB position players try to maximize their performance, for two main goals: one is to contribute to their team winning more games, and the other is to improve their living standard. That is, getting better contract and playing as long as possible is one of the most important object to play for the team. Performance index is clear and valid benchmarks to signal their ability to the team managers. Baseball is rich in such indexes, so here we avail them as reliable proxy for their ability as a player. We assume a utility function of the player/manager as $u(x)$ for the value of a certain index $x$. Players' self-evaluation and his salary for the next season reflects this value.
 
 Anyway, the important assumption is that players evaluate their performance index using referene-dependent utility function of themselves or the team manager, and manipulate it in order to maximize their utility. This aspiration results in odd distribution of the index at the end of the season: excess mass around the possible referene point. In this paper, following Allen \textit{et al} (2016), I exploit the assumption of the utility function of Diecidue and Van De Ven (2008)`s ``aspiration level" model. The model presents the form of the utility function with ``notch,''
 
 \[
-\lim_{\epsilon \to 0} v_r (r + \epsilon) \neq
-\lim_{\epsilon \to 0} v_r (r - \epsilon)
+\lim_{\epsilon \to 0} u_r (r + \epsilon) \neq
+\lim_{\epsilon \to 0} u_r (r - \epsilon)
 \]
 This form of utility function is discontinuous at the reference point $r$.
 

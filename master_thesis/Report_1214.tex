@@ -79,21 +79,79 @@
 
 \section{Frameworks and Empirical Methods}
 \begin{frame}\frametitle{Theoretical Frameworks}
-  \begin{itemize}
-    \item Following
-  \end{itemize}
+  \begin{tabular}{lrr}
+    \begin{minipage}[H]{0.3\textwidth}
+      \begin{figure}[H]
+        \begin{tikzpicture}[domain = 0:4, samples = 200, >= stealth]
+          \draw[->](-0.5, 0) -- (4.2, 0) node[right]{$x$};
+          \draw[->](0, -0.5) -- (0, 3.7) node[above]{$u(x)$};
+          \draw[-](2.2, -0.1) -- (2.2, 0.1);
+          \draw[domain=0:2.2,samples=200,>=stealth] plot (\x, {sqrt(\x)});
+          \draw[domain=2.2:4.1,samples=200,>=stealth] plot (\x, {sqrt(\x) + 0.8});
+          \draw (0, 0) node[below left]{O};
+          \draw (2.2, -0.3) node {$r$};
+        \end{tikzpicture}
+        \scriptsize
+        \caption{discontinuous utility function}
+        \label{jump}
+      \end{figure}
+      \end{minipage} & \hspace{1zw} &
+      \begin{minipage}[H]{0.5\textwidth}
+        \small
+        \begin{itemize}
+          \item Following Allen et al. (2016) assume utility function $u(x)$ that jumps at the cutoff point, or the reference point.
+
+          $x$ stands for the performance index.
+
+          \item This disconituity generates excess mass, or ``bunching'' around the possible reference point.
+
+          \item We consider if this utility is derived by the descontinuous design of the monetary reward of the players.
+
+        \end{itemize}
+      \end{minipage}
+  \end{tabular}
+
 \end{frame}
 
 \begin{frame}\frametitle{Specification: Manipulation}
+  \begin{itemize}
+    \item We exploit the McCrary's manipulation test, which is used in regression discontinuity design.
 
+    \item Local-linear regression of undersmoothed histgram around the given cutoff point: .300 of AVG, 20 homeruns, \ldots
+
+    \item
+  \end{itemize}
 \end{frame}
 
 \begin{frame}\frametitle{Specification: Contract Design}
+  \begin{itemize}
+    \item Discontinuity of the contract design is tested by RDD methodology:
 
+    \[
+    w_{it} = \beta_0 X_{it} + \beta_1 \text{ABOVE}_{it}
+    \]
+
+    \item To check the robustness of our results, we also conduct the same local regression including the interaction term of $X_{it}$ and $\text{ABOVE}_{it}$.
+
+    \[
+    w_{it} = \beta_0 X_{it} + \beta_1 \text{ABOVE}_{it} + \beta_2 X_{it} \times \text{ABOVE}_{it}
+    \]
+
+  \end{itemize}
 \end{frame}
 
 \begin{frame}\frametitle{Data}
+  We obtain information about the players' stats (indexes) and annual salary.
+  \begin{itemize}
+    \item Stats Data
+    \begin{itemize}
+      \item From \textit{fangraphs}
 
+      \item Play stats from 1957 to 2018
+
+      \item We restrict the sample to the players with at least 200 plate-appearances
+    \end{itemize}
+  \end{itemize}
 \end{frame}
 
 \section{Results}
@@ -122,17 +180,55 @@
 \end{frame}
 
 \section{Conclusions}
-\begin{frame}
+\begin{frame}\frametitle{Conclusion}
   \begin{itemize}
-    \item 
+    \item
   \end{itemize}
 \end{frame}
 
 \begin{frame}\frametitle{Reference}
-  \footnotesize
-  \begin{itemize}
-    \item
-  \end{itemize}
+  \tiny
+  \begin{thebibliography}{99}
+    \bibitem PPope and Simonsohn. 2011.
+    Round Numbers as Goals: Evidence From Baseball, SAT Takers, and the Lab
+    \textit{Psychological Science} 22(1) 7179
+
+    \bibitem HHakes and Sauer. 2006.
+    An Economic Evaluation of the Moneyball Hypothesis
+    \textit{Journal of Economic Perspectives} Volume 20, Number 3―Summer 2006―Pages 173185
+
+    \bibitem AAllen, Dechow, Pope and Wu. 2016.
+    Reference-Dependent Preferences: Evidence from Marathon Runners \textit{Management Science} 63(6):1657-1672.
+
+    \bibitem PPope and Schweizer. 2011.
+    Is Tiger Woods Loss Averse? Persistent Bias in the Face of Experience, Competition, and High Stakes
+    \textit{American Economic Review} 101 (February 2011): 129157
+
+    \bibitem{}Kahneman and Tversky. 1979.
+    Prospect Theory: An Analysis of Decision under Risk.
+    \textit{Econometrica}
+    Journal of the Econometric Society47 (2):263291.
+
+    \bibitem{}McCrary. 2007.
+    Manipulation of the running variable in the regression discontinuity design: A density test
+    \textit{Journal of Econometrics} 142 (2008) 698–714
+
+    \bibitem{}Krautmann and Oppenheimer. 2002.
+    Contract Length and the Return to Performance in Major League Baseball
+    \textit{Journal of Sports Economics} February 2002
+
+    \bibitem{}Tversky and Kahneman. 1992.
+    Advances in Prospect Theory: Cumulative Representation of Uncertainty
+    \textit{Journal of Risk and Uncertainty}, 5:297-323 (1992)
+
+    \bibitem{}Imbens and Kalyanaraman. 2009.
+    \textit{NBER Working Paper Series.} 14726
+
+    \bibitem{}Alex Rees-Jones. 2018.
+    Quantifying Loss-Averse Tax Manipulation
+    \textit{Review of Economic Studies} (2018) 85, 1251–1278
+  \end{thebibliography}
+
 \end{frame}
 
 \end{document}
