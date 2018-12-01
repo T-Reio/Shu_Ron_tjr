@@ -156,6 +156,8 @@ INPUT c:/texlive/2018/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 INPUT c:/texlive/2018/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 INPUT thesis_quated.aux
 INPUT thesis_quated.aux
+INPUT results/summary.aux
+INPUT results/summary.aux
 OUTPUT thesis_quated.aux
 INPUT c:/texlive/2018/texmf-dist/tex/latex/base/ts1cmr.fd
 INPUT c:/texlive/2018/texmf-dist/tex/latex/base/ts1cmr.fd
@@ -241,4 +243,115 @@ INPUT c:/texlive/2018/texmf-dist/fonts/tfm/ptex-fonts/standard/min9.tfm
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/ptex-fonts/standard/tmin8.tfm
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/ptex-fonts/standard/min8.tfm
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/palatino/pplri7t.tfm
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/palatino/pplb7t.tfm
+OUTPUT results/summary.aux
+INPUT results/summary.tex
+INPUT results/summary.tex
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/palatino/pplr7t.tfm
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/palatino/pplr7t.tfm
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/mathpazo/zplmr7m.tfm
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/mathpazo/zplmr7m.tfm
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/mathpazo/zplmr7y.tfm
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/mathpazo/zplmr7y.tfm
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/mathpazo/zplmr7v.tfm
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/mathpazo/zplmr7v.tfm
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/mathpazo/zplmr7t.tfm
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/mathpazo/zplmr7t.tfm
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT results/summary_B.tex
+INPUT results/summary_B.tex
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/ptex-fonts/standard/tgoth10.tfm
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/ptex-fonts/standard/goth10.tfm
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/palatino/pplb7t.tfm
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/mathpazo/zplmr7m.tfm
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/mathpazo/zplmr7y.tfm
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/mathpazo/zplmr7v.tfm
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/mathpazo/zplmr7t.tfm
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT graphs/hist_AVG_all.png
+INPUT extractbb -B cropbox -O graphs/hist_AVG_all.png
+INPUT graphs/AVG_300.png
+INPUT extractbb -B cropbox -O graphs/AVG_300.png
+INPUT graphs/AVG_250.png
+INPUT extractbb -B cropbox -O graphs/AVG_250.png
+INPUT graphs/hist_OBP_all.png
+INPUT extractbb -B cropbox -O graphs/hist_OBP_all.png
+INPUT graphs/OBP_350.png
+INPUT extractbb -B cropbox -O graphs/OBP_350.png
+INPUT graphs/hist_HR_all.png
+INPUT extractbb -B cropbox -O graphs/hist_HR_all.png
+INPUT graphs/HR_20.png
+INPUT extractbb -B cropbox -O graphs/HR_20.png
+INPUT graphs/hist_RBI_all.png
+INPUT extractbb -B cropbox -O graphs/hist_RBI_all.png
+INPUT graphs/RBI_100.png
+INPUT extractbb -B cropbox -O graphs/RBI_100.png
+INPUT graphs/hist_H_all.png
+INPUT extractbb -B cropbox -O graphs/hist_H_all.png
+INPUT graphs/H_200.png
+INPUT extractbb -B cropbox -O graphs/H_200.png
+INPUT graphs/hist_SB_all.png
+INPUT extractbb -B cropbox -O graphs/hist_SB_all.png
+INPUT graphs/SB_30.png
+INPUT extractbb -B cropbox -O graphs/SB_30.png
+INPUT graphs/SB_40.png
+INPUT extractbb -B cropbox -O graphs/SB_40.png
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/ptex-fonts/standard/tmin6.tfm
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/ptex-fonts/standard/min6.tfm
+INPUT results/Sal_AVG300_A.tex
+INPUT results/Sal_AVG300_A.tex
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/palatino/pplri7t.tfm
+INPUT results/Sal_AVG250_A.tex
+INPUT results/Sal_AVG250_A.tex
+INPUT results/Sal_OBP350_A.tex
+INPUT results/Sal_OBP350_A.tex
+INPUT results/Sal_HR20_A.tex
+INPUT results/Sal_HR20_A.tex
+INPUT results/Sal_SB30_A.tex
+INPUT results/Sal_SB30_A.tex
+INPUT results/Sal_SB40_A.tex
+INPUT results/Sal_SB40_A.tex
+INPUT results/Sal_RBI100_A.tex
+INPUT results/Sal_RBI100_A.tex
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/palatino/pplr7t.tfm
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/mathpazo/zplmr7m.tfm
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/mathpazo/zplmr7y.tfm
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/mathpazo/zplmr7v.tfm
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/mathpazo/zplmr7t.tfm
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/palatino/pplr8c.tfm
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/ptex-fonts/standard/tgoth10.tfm
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/ptex-fonts/standard/goth10.tfm
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/palatino/pplb7t.tfm
+INPUT results/Sal_AVG300_B.tex
+INPUT results/Sal_AVG300_B.tex
+INPUT results/Sal_AVG300_C.tex
+INPUT results/Sal_AVG300_C.tex
+INPUT results/Sal_AVG300_D.tex
+INPUT results/Sal_AVG300_D.tex
+INPUT results/Sal_AVG250_B.tex
+INPUT results/Sal_AVG250_B.tex
+INPUT results/Sal_AVG250_C.tex
+INPUT results/Sal_AVG250_C.tex
+INPUT results/Sal_AVG250_D.tex
+INPUT results/Sal_AVG250_D.tex
+INPUT results/Sal_OBP350_B.tex
+INPUT results/Sal_OBP350_B.tex
+INPUT results/Sal_OBP350_C.tex
+INPUT results/Sal_OBP350_C.tex
+INPUT results/Sal_OBP350_D.tex
+INPUT results/Sal_OBP350_D.tex
+INPUT results/Sal_HR20_B.tex
+INPUT results/Sal_HR20_B.tex
+INPUT results/Sal_HR20_C.tex
+INPUT results/Sal_HR20_C.tex
+INPUT results/Sal_HR20_D.tex
+INPUT results/Sal_HR20_D.tex
 INPUT thesis_quated.aux
+INPUT results/summary.aux
+INPUT results/summary.aux

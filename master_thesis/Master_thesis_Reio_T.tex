@@ -21,7 +21,7 @@
 \rightskip = 25pt
   \small
   \textit{
-  Many empircal studies have revealed the existance of reference-point dependent preference in field settings, including cases from professional sports players' decision making, whose performance is observed by the manager and is observed by their monetary rewards. If there is some incentives in the rewards that lead the individuals to taking behavior that ``appears'' reference dependence, then we should rather think it is caused by the design of the contracts. In this paper, I picked up the case of Major League Baseball players, which Pope and Simonsohn (2011) reported have reference-point dependent tastes about the number of their batting-average. I first confirmed the evidences that supports reference point dependent manipulation of batting-average and other performance indexes. Then I tested if there exist any monetary incentives that encourage the players to do so. My results are against this assumption: no additional incentive of achieving the possible reference point was observed, which confirms that players adjust their aspiration level to reach their internal goal, even though there is no additional bonus that rewards their achievement.
+  Many empircal studies have revealed the existance of reference-point dependent preference in field settings, including cases from professional sports players' decision making, whose performance is observed by the manager and is evaluated as their monetary rewards. If there is some incentives, or discontinuous in their rewards that lead the individuals to taking behavior that ``appears'' reference dependence, then we should rather think it is caused by the design of the contracts. In this paper, we picked up the case of Major League Baseball players, which Pope and Simonsohn (2011) reported have reference-point dependent preferences about the number of their batting-average. Then, we confirmed the evidences for manipulation in batting-average and other performance indexes, and tested if there exist any monetary incentives that encourage the players to do so. We found three implications: first, there actually exists manipulation in the players' batting-average. Second, surprisingly, there were little evidencs that supports the monetary-incentive hypothesis. Third, among the variable indexes, .300 of batting-average was a solid benchmarks for the playrs.
   }
 
 \leftskip = 0pt
@@ -154,37 +154,50 @@ Salary data are obtained from \textit{USA TODAY} and \textit{Baseball Prospectus
 
 \subsection{Frameworks}
 
-MLB position players try to maximize their performance, for two main goals: one is to contribute to their team winning more games, and the other is to improve their living standard. That is, getting better contract and playing as long as possible is one of the most important object to play for the team. Performance index is clear and valid benchmarks to signal their ability to the team managers. Baseball is rich in such indexes, so here we avail them as reliable proxy for their ability as a player. We assume a utility function of the player/manager as $u(x)$ for the value of a certain index $x$. Players' self-evaluation and his salary for the next season reflects this value.
-
-Anyway, the important assumption is that players evaluate their performance index using referene-dependent utility function of themselves or the team manager, and manipulate it in order to maximize their utility. This aspiration results in odd distribution of the index at the end of the season: excess mass around the possible referene point. In this paper, following Allen \textit{et al} (2016), I exploit the assumption of the utility function of Diecidue and Van De Ven (2008)`s ``aspiration level" model. The model presents the form of the utility function with ``notch,''
+Baseball is so rich in performance indexes, that records the plays in variable viewpoints. Performance indexes are interpreted as reliable proxies for the skills of the players, so we assume that the players are trying to make them as good as possible. Performance indexes work as clear and valid benchmarks to signal their ability, and team managers evaluate them according to them (also, they include the player-specific charactaristics: age, position and so on). Their evaluation is reflected to monetary rewards to the players, so the players benefit function is described as follows:
 
 \[
-\lim_{\epsilon \to 0} u_r (r + \epsilon) \neq
-\lim_{\epsilon \to 0} u_r (r - \epsilon)
+F_{it} = F(X_{it}, Z_{it})
+\]
+where $F$ stands for the monetary reward function to the player $i$ at time $t$, and $X_{it}$ and $Z_{it}$ expresses the value of the index and other player charactaristics, respectively. Players make decision according to this benefit function, and adjust their effort to maximize their utility.
+
+Moreover, each player evaluate himself as an athlete: players directly yield utility by their value of the performance indexes. An alternative explanation is derived by this. That is, players make decision making according to their utility function
+
+\[
+U_{it} = U(X_{it})
+\]
+In this model, players no longer pay attention to their future monetary rewards, and the same in the first model, players decide their effort level to maximize their utility.
+
+Here we assume that before our analysis, we cannot determine which model is proper to interpret the observed behavior of the players: excess mass or bunching around the possible referene points. Our interest is in whether there exists any monetary incentives to lead bunching: Concretely, whether the players' benefit function has discontinuity in a certain performance index. Following Allen \textit{et al} (2016), we first use the assumption of the utility function of Diecidue and Van De Ven (2008)`s ``aspiration level" model. The model presents the form of the utility function with ``notch,''
+
+\[
+\lim_{\epsilon \to 0} U_r (r + \epsilon) \neq
+\lim_{\epsilon \to 0} U_r (r - \epsilon)
 \]
 This form of utility function is discontinuous at the reference point $r$.
 
-In my paper, it is not determined who has such a utility function. At least one of the these two agents: players and managers has reference dependent feature in their utility. Players pay attention to if each index are above the reference points.In  Allen \textit{et al} (2016), it is assumed that discontinuous utility function occurs as excess mass around the reference points. In my paper, I suppose there may be another story. That is, discontinuous utility function of the managers emerges as discontinuous evaluation of the players: salary scheme jumps, depending on whether a ceatain performance index is above or below the reference point. Then, it modifies the income function of the players discontinuous, which results in bunching as the best response of them.
+Also, we consider the possibility that the discontinuous design of the contracts. Similarly to the utility function, notch in the benefit function is expressed as follows:
+
+\[
+\lim_{\epsilon \to 0} F_r (r + \epsilon) \neq
+\lim_{\epsilon \to 0} F_r (r - \epsilon)
+\]
+
+Anyway, the important assumption is that players evaluate their performance index using referene-dependent utility function of themselves or the team manager, and manipulate it in order to maximize their utility. This aspiration results in odd distribution of the index at the end of the season: excess mass around the possible referene point.
+
+In Allen \textit{et al} (2016), they assumed that it is the runners  themselves that have the discontinuous utility function occurs as excess mass around the reference points. On the other hand, we suppose there may be another story. That is, discontinuous utility function of the managers emerges as discontinuous evaluation of the players: salary scheme jumps, depending on whether a ceatain performance index is above or below the reference point. Then, it modifies the income function of the players discontinuous, which results in bunching as the best response of them.
 
  \subsection{Empirical Method}
 
   \subsubsection{Test for Bunching}
 
-  First, we test if there is observed any behavior that seems to be related to reference dependent preference. As we explained in the previous chpaters, the existance is verified by the observation of bunching, or excess mass around the possible reference point. To specify the excess mass, we apply the method of regression discontinuity design (RDD).
+  First, we test if there is observed any behavior that seems to be related to reference dependent preference. As we explained in the previous sections, manipulation is verified by the observation of bunching, or an excess mass around the possible reference point. To specify the excess mass, we apply the method of regression discontinuity design (RDD).
 
   RDD is a way to measure the effect of a treatment, such that whether the treatment is assigned or not depends on the threshold of a certain variable (called ``running variable''). Then, comparing the samples just above and just below the threshold is sufficient examination of the treatment, since they are in almost same states except for the existance of the treatment.
 
-  However, there is an important assumption for this specification to be valid (Lee and Lemieux, 2010): continuity of the running variable around the threshold. In other words, individuals must not be able to manipulate the running variable so as to be above the cutpoint. This is because if there exists manipulation, then there occurs selection bias problem, that those who try to be assigned the treatment can adjust their running variable. Therefore, there are some empirical way to test the manipulation of a variable, which is the very method I apply in our analysis.
+  However, there is an important assumption for this specification to be valid (Lee and Lemieux, 2010): continuity of the running variable around the threshold. In other words, individuals must not be able to manipulate the running variable so as to be above the cutpoint. This is because if there exists manipulation, then there occurs selection bias problem, that those who try to be assigned the treatment can adjust their running variable. Therefore, there are some empirical way to test the manipulation of a variable, which is the very method I apply in our analysis. One of the frequently applied methods for this specification is  McCrary(2008)'s local linear density estimation. We avail this to our specification of bunching.
 
-  One of the frequently applied methods for this specification is  McCrary(2008)'s local linear density estimation. We avail this to our specification of bunching.
-
-  This estimation of the manipulation at the cutoff point $c$, proceeds in two steps: undersmoothing histograms and local linear smoothing. Undersmoothing means to determine the binsize $b$ of the running variable: in this paper, the index argued.
-
-  \[
-  g(R_i) = \left \lfloor \dfrac{R_i - c}{b} \right \rfloor b
-  + \dfrac{b}{2} + c \in \left \{ \ldots, c-5\dfrac{b}{2},  c-3\dfrac{b}{2}, c-\dfrac{b}{2}, c+\dfrac{b}{2}, c+3\dfrac{b}{2}, c+5\dfrac{b}{2}, \ldots \right \}
-  \]
-  where $\lfloor a \rfloor$ denotes the greatest integer less than $a$, and $g(R_i)$ stands for the height, or frequency of each bin. Then, we make local approximation above and below $c$, the possible value of reference dependence point. Bandwidth is calculated to minimize the estimation error. Then, we estimate the frequency at the cutoff point, $\Hat{f}(r)$, by fitting the estimated density function below and above the cutoff, $\hat{f}^+$ and $\hat{f}^-$, respectively. Finally, we take the difference between $\ln \hat{f}^+$ and $\ln \hat{f}^-$ to calculate the statistics $\theta$. With $\theta$ and its estimator of standard deviation, $t$-tests can be condtructed to specifying manipulation.
+  This test of the manipulation at the cutoff point $c$, proceeds in two steps. First, define $f(.)$ be the density function of the variable $x$ to be tested (here we use the performance indexes). Then we undersmooth the observed density: determine the binsize $b$ of $x$, and obtain the histgram. And finally, we conduct local linear approximation to both just above and below the cutoff point. Note that the optimal bandwidth is to be selected by the fourth order polynominal approximation. Then, we estimate the frequency at the cutoff point, $\Hat{f}(r)$, by fitting the estimated density function from both below and above the cutoff, $\hat{f}^+$ and $\hat{f}^-$, respectively. Finally, we take the difference between $\ln \hat{f}^+$ and $\ln \hat{f}^-$ to calculate the statistics $\theta$. With $\theta$ and its estimator of standard deviation, $t$-tests can be condtructed to specifying manipulation.
 
   \subsubsection{Monetary Incentive}
 

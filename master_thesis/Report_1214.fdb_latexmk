@@ -1,13 +1,14 @@
 # Fdb version 3
-["dvipdf"] 1543492460 "Report_1214.dvi" "Report_1214.pdf" "Report_1214" 1543492461
-  "Report_1214.dvi" 1543492459 76996 c86fa410b2eb0b0c4b6763ebc9f0d373 "latex"
+["dvipdf"] 1543675512 "Report_1214.dvi" "Report_1214.pdf" "Report_1214" 1543675514
+  "Report_1214.dvi" 1543675511 105324 7b4c1d93e72445d9d98d21c6660eae3f "latex"
   (generated)
   "Report_1214.pdf"
-["latex"] 1543492454 "Report_1214.tex" "Report_1214.dvi" "Report_1214" 1543492461
-  "Report_1214.aux" 1543492459 4909 9b246bc4ba09fa5b0a95b3c6044cecea ""
-  "Report_1214.nav" 1543492459 2412 62199257f3182ef55fbf1f5a9a2d9af5 ""
-  "Report_1214.out" 1543492459 256 4474b5fab3a7eb8169f6bfae568fae99 ""
-  "Report_1214.tex" 1543492452 8150 ad4039a743217e05a2e5b04991604c99 ""
+["latex"] 1543675502 "Report_1214.tex" "Report_1214.dvi" "Report_1214" 1543675514
+  "Report_1214.aux" 1543675511 6691 10ab790de57ef42c09c7d77834180c02 ""
+  "Report_1214.nav" 1543675511 3287 41789c4e3f785b1ba6b8c18c803a2d83 ""
+  "Report_1214.out" 1543675511 413 b785c4ca547ec0512e111af5b5ad288a ""
+  "Report_1214.tex" 1543675499 14723 65ed64147d1a619fafc2185111eb59d7 ""
+  "Report_1214.toc" 1543675511 271 e2e9d09fea33933fe6c284ecc10712d5 ""
   "c:/texlive/2018/texmf-dist/fonts/map/fontname/texfonts.map" 1541079023 3332 103109f5612ad95229751940c61aada0 ""
   "c:/texlive/2018/texmf-dist/fonts/tfm/ptex-fonts/jis/jis.tfm" 1541081721 468 53f854284f6afa6c36aaa2d1090ecc12 ""
   "c:/texlive/2018/texmf-dist/fonts/tfm/ptex-fonts/standard/tmin10.tfm" 1541081721 856 39c171483fe1bb7d0e1368980c0c205b ""
@@ -199,11 +200,15 @@
   "c:/texlive/2018/texmf-var/web2c/eptex/platex.fmt" 1541083882 4472184 3331907170f2ede6ea63f6d37904ddf3 ""
   "c:/texlive/2018/texmf.cnf" 1541083614 673 2e5aa3ac564c6f70f54d6752d765c05d ""
   "extractbb -B cropbox -O beamericonarticle.pdf" 0 -1 0 ""
+  "extractbb -B cropbox -O graphs/AVG_300.png" 0 -1 0 ""
+  "extractbb -B cropbox -O graphs/hist_AVG_all.png" 0 -1 0 ""
+  "graphs/AVG_300.png" 1541062632 5827 98218586b867000a097f6c7062ca6f71 ""
+  "graphs/hist_AVG_all.png" 1542098569 4953 e28954ec7938c3971f1f97fac4f07a10 ""
   (generated)
-  "Report_1214.aux"
   "Report_1214.dvi"
-  "Report_1214.snm"
-  "Report_1214.log"
-  "Report_1214.nav"
-  "Report_1214.toc"
   "Report_1214.out"
+  "Report_1214.toc"
+  "Report_1214.aux"
+  "Report_1214.snm"
+  "Report_1214.nav"
+  "Report_1214.log"

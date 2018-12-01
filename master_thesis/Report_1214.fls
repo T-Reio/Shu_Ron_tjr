@@ -317,6 +317,8 @@ INPUT c:/texlive/2018/texmf-dist/fonts/tfm/ptex-fonts/standard/tmin10.tfm
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/ptex-fonts/jis/jis.tfm
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmss8.tfm
 OUTPUT Report_1214.dvi
+INPUT Report_1214.toc
+INPUT Report_1214.toc
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmss9.tfm
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmss8.tfm
 INPUT c:/texlive/2018/texmf-dist/tex/latex/psnfss/omlzplm.fd
@@ -378,6 +380,22 @@ INPUT c:/texlive/2018/texmf-dist/fonts/tfm/ptex-fonts/standard/tmin10.tfm
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/ptex-fonts/jis/jis.tfm
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/ptex-fonts/standard/tmin10.tfm
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/ptex-fonts/jis/jis.tfm
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmssi10.tfm
+INPUT graphs/hist_AVG_all.png
+INPUT extractbb -B cropbox -O graphs/hist_AVG_all.png
+INPUT graphs/AVG_300.png
+INPUT extractbb -B cropbox -O graphs/AVG_300.png
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmss8.tfm
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/mathpazo/zplmr7m.tfm
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/mathpazo/zplmr7y.tfm
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/mathpazo/zplmr7v.tfm
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/mathpazo/zplmr7t.tfm
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/sansmathaccent/mathkerncmssi8.tfm
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/ptex-fonts/standard/tmin10.tfm
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/ptex-fonts/jis/jis.tfm
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmss10.tfm
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmssi10.tfm
 INPUT c:/texlive/2018/texmf-dist/tex/latex/beamer/beamericonarticle.pdf
 INPUT extractbb -B cropbox -O beamericonarticle.pdf
