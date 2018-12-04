@@ -1,14 +1,14 @@
 # Fdb version 3
-["dvipdf"] 1543675512 "Report_1214.dvi" "Report_1214.pdf" "Report_1214" 1543675514
-  "Report_1214.dvi" 1543675511 105324 7b4c1d93e72445d9d98d21c6660eae3f "latex"
+["dvipdf"] 1543900180 "Report_1214.dvi" "Report_1214.pdf" "Report_1214" 1543900182
+  "Report_1214.dvi" 1543900179 144628 97eb131068e1188749badf56a606f21b "latex"
   (generated)
   "Report_1214.pdf"
-["latex"] 1543675502 "Report_1214.tex" "Report_1214.dvi" "Report_1214" 1543675514
-  "Report_1214.aux" 1543675511 6691 10ab790de57ef42c09c7d77834180c02 ""
-  "Report_1214.nav" 1543675511 3287 41789c4e3f785b1ba6b8c18c803a2d83 ""
-  "Report_1214.out" 1543675511 413 b785c4ca547ec0512e111af5b5ad288a ""
-  "Report_1214.tex" 1543675499 14723 65ed64147d1a619fafc2185111eb59d7 ""
-  "Report_1214.toc" 1543675511 271 e2e9d09fea33933fe6c284ecc10712d5 ""
+["latex"] 1543900169 "Report_1214.tex" "Report_1214.dvi" "Report_1214" 1543900182
+  "Report_1214.aux" 1543900179 8370 75c04d647985fae81bae47a5dab225eb ""
+  "Report_1214.nav" 1543900179 3934 a0adfccfeb9e467d3ea4296e005b95c0 ""
+  "Report_1214.out" 1543900179 413 b785c4ca547ec0512e111af5b5ad288a ""
+  "Report_1214.tex" 1543900056 25522 5ccdf842737f7bb12c4003806204a36c ""
+  "Report_1214.toc" 1543900179 271 191fc170bf44a6a15239b05df58f7a98 ""
   "c:/texlive/2018/texmf-dist/fonts/map/fontname/texfonts.map" 1541079023 3332 103109f5612ad95229751940c61aada0 ""
   "c:/texlive/2018/texmf-dist/fonts/tfm/ptex-fonts/jis/jis.tfm" 1541081721 468 53f854284f6afa6c36aaa2d1090ecc12 ""
   "c:/texlive/2018/texmf-dist/fonts/tfm/ptex-fonts/standard/tmin10.tfm" 1541081721 856 39c171483fe1bb7d0e1368980c0c205b ""
@@ -201,14 +201,17 @@
   "c:/texlive/2018/texmf.cnf" 1541083614 673 2e5aa3ac564c6f70f54d6752d765c05d ""
   "extractbb -B cropbox -O beamericonarticle.pdf" 0 -1 0 ""
   "extractbb -B cropbox -O graphs/AVG_300.png" 0 -1 0 ""
+  "extractbb -B cropbox -O graphs/McCrary_figD.png" 0 -1 0 ""
   "extractbb -B cropbox -O graphs/hist_AVG_all.png" 0 -1 0 ""
   "graphs/AVG_300.png" 1541062632 5827 98218586b867000a097f6c7062ca6f71 ""
+  "graphs/McCrary_figD.png" 1543806315 11145 174fe4bdcd6a5afa5519c0399ef3c018 ""
   "graphs/hist_AVG_all.png" 1542098569 4953 e28954ec7938c3971f1f97fac4f07a10 ""
+  "results/MTR_A.tex" 1543900166 2783 776149dd64ddb084c20379c6b1cc1e6e ""
   (generated)
-  "Report_1214.dvi"
-  "Report_1214.out"
   "Report_1214.toc"
   "Report_1214.aux"
+  "Report_1214.out"
   "Report_1214.snm"
   "Report_1214.nav"
   "Report_1214.log"
+  "Report_1214.dvi"

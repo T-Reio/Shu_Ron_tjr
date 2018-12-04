@@ -40,6 +40,11 @@
   \end{itemize}
 \end{frame}
 
+\section*{Table of Contents}
+\begin{frame}\frametitle{Contents}
+  \tableofcontents
+\end{frame}
+
 \begin{frame}\frametitle{Introduction}
   \begin{itemize}
     \item Reference dependence is one of the two main charactaristics of the Tversky and Kahneman (1992)'s prospect theory:
@@ -48,14 +53,10 @@
 
     \item Prospect theory enabled us to interpret some inconsistent empirical decision making with the traditional microeconomic theory, by applying additional assumptions.
 
-    \item There are a lot of following researches that tests the reference dependence in field or laboratory settings.
+    \item There are a lot of following researches that tests the reference dependence in field or laboratory settings, including about athletes' decision making (Allen et al, 2016)
   \end{itemize}
 \end{frame}
 
-\section*{Table of Contents}
-\begin{frame}\frametitle{Contents}
-  \tableofcontents
-\end{frame}
 
 \section{literature and Contribution}
 \begin{frame}\frametitle{Literature}
@@ -111,7 +112,7 @@
 
           \item This disconituity generates excess mass, or ``bunching'' around the possible reference point.
 
-          \item We consider if this utility is derived by the descontinuous design of the monetary reward of the players.
+          \item We consider the possibility that this type of utility is derived by the descontinuous design of the monetary reward of the players.
 
         \end{itemize}
       \end{minipage}
@@ -120,13 +121,26 @@
 \end{frame}
 
 \begin{frame}\frametitle{Specification: Manipulation}
-  \begin{itemize}
-    \item We exploit the McCrary (2007)'s manipulation test, which is used in regression discontinuity design.
 
-    \item Local-linear regression of undersmoothed histgram around the given cutoff point: .300 of AVG, 20 homeruns, \ldots
+  \begin{tabular}{lr}
+    \begin{minipage}[H]{0.4\textwidth}
+      \small
+      \begin{itemize}
+        \item We exploit the McCrary (2007)'s manipulation test, which is used in regression discontinuity design.
 
-    \item
-  \end{itemize}
+        \item Local-linear regression of undersmoothed histgram around (bandwidth is optimized) the given cutoff point: .300 of AVG, 20 homeruns, \ldots
+      \end{itemize}
+    \end{minipage}
+    &
+    \begin{minipage}[H]{0.55\textwidth}
+      \begin{figure}
+        \includegraphics[keepaspectratio, scale = 1]{graphs/McCrary_figD.png}
+        \caption{Discontinuous frequency (quated from McCrary(2007))}
+        \label{McC}
+      \end{figure}
+    \end{minipage}
+  \end{tabular}
+
 \end{frame}
 
 \begin{frame}\frametitle{Specification: Contract Design}
@@ -136,6 +150,8 @@
     \[
     w_{it} = \beta_0 X_{it} + \beta_1 \text{ABOVE}_{it}
     \]
+
+    We also conduct analysis including other performance and other player specific charactaristics.
 
     \item To check the robustness of our results, we also conduct the same local regression including the interaction term of $X_{it}$ and $\text{ABOVE}_{it}$.
 
@@ -159,7 +175,7 @@
     \end{itemize}
     \item Salary Data
     \begin{itemize}
-      \item From \textit{USA TODAY} and \textit{Baseball Prospectus}
+      \item From \textit{USA TODAY} and \textit{Baseball References}
 
       \item Salary information from 1987 to 2017 $N=8915$
     \end{itemize}
@@ -223,11 +239,22 @@
   \end{table}
 \end{frame}
 
-\begin{frame}\frametitle{}
+\begin{frame}\frametitle{Results: Manipulation}
+  \begin{itemize}
+    \item In .300 of batting-average, there in fact exists manipulation by the players.
 
+    \item Also in .250 of AVG and some of other round numbers of indexes, there were observed discontinuity:
+
+    Players consider these numbers as referene points and adjust their aspiration levels.
+
+    \item In contrast to Allen et al (2016), manipulation were not observed in all the round numbers:
+
+    They are likely to be kinds of ``per,'' the well-known benchmarks of a certain sports.
+
+  \end{itemize}
 \end{frame}
 
-\begin{frame}\frametitle{Results: Contract Design}
+\begin{frame}\frametitle{}
   \begin{table}[!]
     \caption{RDD Test for Monetary Incentives}
     \label{RDD_A}
@@ -269,6 +296,22 @@
       & & Half-BW & .022 & 3673 & -.055 & .069 & -.807 \\
       & &Double-BW & .089 & 8637 & .004 & .039 & .107 \\ \hline
 
+      Note: & \multicolumn{7}{r}{***: $p<0.1\%$, **: $p<1\%$, *: $p<5\%$.} \\
+      & \multicolumn{7}{r}{Bandwidth is optimized following the method of Imbens-Kalyanaraman.}
+    \end{tabular}
+  \end{table}
+\end{frame}
+
+\begin{frame}\frametitle{}
+  \begin{table}[!]
+    \caption{RDD Test for Monetary Incentives}
+    \label{RDD_A}
+    \tiny
+    \centering
+    \begin{tabular}{lccccccc}\hline
+      index,cutpoint & Other Control & bw type & bandwidth
+      & Observations & Estimate & Std. Error & $z$
+      \\ \hline \hline
       RBI, 100 & No & LATE & 4.08 & 393 & .072 & .289 & .250 \\
       & &Half-BW & 2.04 & 228 & .282 & .400 & .707 \\
       & &Double-BW & 8.16 & 714 & .008 & .185 & .043 \\ \cline{3-8}
@@ -308,19 +351,30 @@
 \end{frame}
 
 \begin{frame}\frametitle{}
-
+\input{results/MTR_A.tex}
 \end{frame}
 
-\begin{frame}\frametitle{Summary}
+\begin{frame}\frametitle{Results: Monetary Incentives}
+  \begin{itemize}
+    \item As a whole, there are not observed clear evidence for additional bonuses achieving some these round numbers.
 
+    \item Including interaction term with the index does not present important changes.
+
+    $\Rightarrow$ Players manipulate their performance indexes, even though there are little or no monetary incentives to do so.
+
+    \item For 30 stolen-bases, our analysis does not show determinant results, so we should further results.
+
+    \item Restricting the sample to the players with the right of free agency yields essentially the same results.
+
+  \end{itemize}
 \end{frame}
 
-\begin{frame}\frametitle{Discussion}
+\begin{frame}\frametitle{Extention}
   \begin{itemize}
     \item By-Time analysis
     \begin{itemize}
       \item Replicate the same examination, but now we devide the sample by histrical terms:
-      \begin{itemize}
+      \begin{enumerate}
         \item Before the system of free agency regulated (-1975)
 
         \item Before the Strike of Players Association (-1994)
@@ -328,10 +382,98 @@
         \item Before \textit{Moneyball} (Lewis) was published (-2003)
 
         \item Afterward (2004-)
-      \end{itemize}
+
+        * Note that because we obtain the sample of contract design only after '87, we cannot conduct the second analysis for before '86.
+      \end{enumerate}
+
+      \item Hakes and Sauer (2006) aregued that after the publication of \textit{Moneyball}, team managers regard on-base percentage as more important index to measure the players' contribution to the team they belong to.
+
     \end{itemize}
   \end{itemize}
 
+\end{frame}
+
+\begin{frame}
+  \begin{table}
+    \centering
+    \caption{Manipulation Test for the Grouped Sample by Time}
+    \label{Mani-Era}
+    \tiny
+    \begin{tabular}{lcccccc} \hline
+      index, cutpoint &  & '57-'75 &'76-'94 & '95-2003 & 2004- &full sample \\ \hline \hline
+      AVG, .300 & bw & .023 & .020 & .022 & .019 & .019 \\
+      & $\theta$ & .573 & .566 & .310 & .403 & .499 \\
+      & & (.146) & (.120) & (.130) & (.120) & (.067) \\
+      & $z$ & 3.934*** & 4.732*** & 2.393* & 3.376*** & 7.442*** \\ \hline
+      AVG, .250 & bw & .028 & .028 & .032 & .027 & .024 \\
+      & $\theta$ & .250 & .151 & .306 & .121 & .212 \\
+      & & (.080) & (.069) & (.094)& (.076) & (.042) \\
+      & $z$ & 3.149** & 2.188* & 3.242** & 1.595 & 5.061*** \\ \hline
+      OBP, .350 & bw & .031 & .030 & .036 & .030 & .024 \\
+      & $\theta$ & .137 & .149 & -.035 & .137 & .139 \\
+      & & (.089) & (.081) & (.093) & (.082) & (.049) \\
+      & $z$ & 1.538 & 1.846 & -.380 & 1.672 & 2.854** \\ \hline
+      HR, 20 & bw & 6.313 & 6.677 & 10.165 & 7.273 & 5.309 \\
+      & $\theta$ & .222 & .214 & .145 & .315 & .259 \\
+      & & (.150) & (.123) & (.129) & (.112) & (.075) \\
+      & $z$ & 1.479 & 1.751 & 1.117 & 2.819** & 3.465*** \\ \hline
+      Note & \multicolumn{6}{r}{
+      ***: $p<0.1\%$, **: $p<1\%$, *: $p<5\%$.
+      }\\
+      & \multicolumn{6}{r}{
+      Bandwidth is optimized following the method of McCrary(2008).
+      }
+    \end{tabular}
+  \end{table}
+
+\end{frame}
+
+\begin{frame}
+  \begin{table}
+    \centering
+    \caption{RDD for the Grouped Sample by Time}
+    \label{RDD_Era}
+    \tiny
+    \begin{tabular}{lcccccc} \hline
+      index, cutpoint & bw, type &  &'87-'94 & '95-2003 & 2004- &full sample \\ \hline \hline
+      AVG, .300 & LATE & bw & .024 & .042 & .030 & .045 \\
+      &  & Obs. & 697 & 1806 & 1872 & 5930 \\
+      &  & estimate & -.034 & .064 & .066 & .034 \\
+      &  & & (.137) & (.092) & (.103) & (.056) \\
+      & & $z$ & -.250 & .697 & .637 & .615 \\ \hline
+      AVG, .250 & LATE & bw & .036 & .043 &.075 & .048 \\
+      &  & Obs. & 1482 & 1806 & 3991 & 7271 \\
+      &  & estimate & .154 & .064 & .076 & .070 \\
+      &  & & (.084) & (.092) & (.060) & (.052) \\
+      & & $z$ & 1.825 & .697 & 1.277 & 1.340 \\ \hline
+      HR, 20 & LATE & bw & 4.183 & 3.685 & 2.46 & 3.30 \\
+      &  & Obs. & 341 & 371 & 475 & 1307 \\
+      &  & estimate & -.255 & -.348 & .343 & -.002 \\
+      &  & & (.228) & (.218) & (.264) & (.141) \\
+      & & $z$ & -1.122 & -1.600 & 1.300 & -.015 \\ \hline
+      OBP, .350 & LATE & bw & .031 & .025 & .027 & .045 \\
+      &  & Obs. & 1098 & 1281 & 2042 & 6525 \\
+      &  & estimate & .109 & -.151 & -.030 & -.013 \\
+      &  & & (.106) & (.120) & (.093) & (.049) \\
+      & & $z$ & 1.031 & -1.262 & -.323 & -.272 \\ \hline
+      Note: & \multicolumn{6}{r}{***: $p<0.1\%$, **: $p<1\%$, *: $p<5\%$.} \\
+      & \multicolumn{6}{r}{Bandwidth is optimized following the method of Imbens-Kalyanaraman.}
+    \end{tabular}
+  \end{table}
+\end{frame}
+
+\begin{frame}\frametitle{}
+  \begin{itemize}
+    \item About manipulation, players seems to be affected by the historical changes.
+
+    \item However, .300 of batting-average has been a solid benchmarks for the players.
+
+    \item On the other hand, team managers (since '87) does not propose any discontinuous form of contracts to the players.
+
+    $\Rightarrow$ Again, we argure there does not exists no monetary incentive that leads them to manipulate indexes.
+
+    \item Including interaction terms, and restricting the sample to the FA players also show the same.
+  \end{itemize}
 \end{frame}
 
 \section{Conclusions}
@@ -346,6 +488,8 @@
 
     - Among them, especially, .300 of AVG shows consistent results, which shows it is solid benchmarks for the players.
   \end{enumerate}
+
+  Note that some indexes require following research.
 \end{frame}
 
 \begin{frame}\frametitle{Reference}
@@ -357,7 +501,7 @@
 
     \bibitem HHakes and Sauer. 2006.
     An Economic Evaluation of the Moneyball Hypothesis
-    \textit{Journal of Economic Perspectives} Volume 20, Number 3―Summer 2006―Pages 173185
+    \textit{Journal of Economic Perspectives} Volume 20, Number 3 - Summer 2006 - Pages 173185
 
     \bibitem AAllen, Dechow, Pope and Wu. 2016.
     Reference-Dependent Preferences: Evidence from Marathon Runners \textit{Management Science} 63(6):1657-1672.
@@ -373,7 +517,7 @@
 
     \bibitem{}McCrary. 2007.
     Manipulation of the running variable in the regression discontinuity design: A density test
-    \textit{Journal of Econometrics} 142 (2008) 698–714
+    \textit{Journal of Econometrics} 142 (2008) 698 - 714
 
     \bibitem{}Krautmann and Oppenheimer. 2002.
     Contract Length and the Return to Performance in Major League Baseball
@@ -381,20 +525,144 @@
 
     \bibitem{}Tversky and Kahneman. 1992.
     Advances in Prospect Theory: Cumulative Representation of Uncertainty
-    \textit{Journal of Risk and Uncertainty}, 5:297-323 (1992)
+    \textit{Journal of Risk and Uncertainty}, 5:297 - 323 (1992)
 
     \bibitem{}Imbens and Kalyanaraman. 2009.
     \textit{NBER Working Paper Series.} 14726
 
     \bibitem{}Alex Rees-Jones. 2018.
     Quantifying Loss-Averse Tax Manipulation
-    \textit{Review of Economic Studies} (2018) 85, 1251–1278
+    \textit{Review of Economic Studies} (2018) 85, 1251 - 1278
   \end{thebibliography}
 
 \end{frame}
 
 \section*{Appendix}
+\begin{frame}\frametitle{Contract Length}
+  \begin{itemize}
+    \item Krautmann and Oppenheimer (2002) pointed out that the longer the contract duration extend, the lower return to their performance is obtained:
+
+    Players show the risk-aversion.
+
+    \begin{align*}
+      \ln(SAL_{it}) = \beta_1 &+ \beta_2 PERF_{it} \\
+      &+ \beta_3 (PERF_{it} * LENGTH_{it})+ \beta_4 LENGTH_{it}
+    \end{align*}
+    \footnotesize
+    \flushright
+    * The model is quoted from Krautmann and Oppenheimer (2006).
+
+    \flushleft
+    \normalsize
+
+    Estimated value of $\beta_3$ was negative.
+  \end{itemize}
+
+\end{frame}
+
+
+\begin{frame}\frametitle{Incentivised Contracts}
+    \begin{itemize}
+      \footnotesize
+      \item Ichiro Suzuki, Outfielder, 4-year contract with Seattle Marinars (2004-'07)
+      \begin{itemize}
+        \footnotesize
+        \item signing bonus- \$6M
+
+        \item fixed payment- 04:\$5M, 05:\$11M, 06:\$11M, 07:\$11M
+
+        \item performance bonuses- \$1.25M in performance bonuses for plate appearances
+
+        \begin{itemize}
+          \footnotesize
+          \item \$50,000 each for 400 PAs, 2004-06
+
+          \item \$0.1M each for 500 \& 600 PAs, 2004-06
+
+          \item \$0.1M for 400 PAs, 2007
+
+          \item \$0.2M each for 500 \& 600 PAs, 2007
+        \end{itemize}
+
+        \item award bonuses: \$50,000 each for Gold Glove, All Star selection
+
+        \item trade-Protection (Veto for moving the team without his acceptance):
+
+        limited no-trade clause (may block deals to 10 clubs)
+
+        \item Other
+
+        \begin{itemize}
+          \footnotesize
+          \item housing allowance: \$28,000 in 2004, \$29,000 in 2005, \$30,000 in 2006, \$31,000 in 2007
+
+          \item interpreter, trainer, transportation for spring \& regular season
+
+          \item 4 annual round-trip airline tickets from Seattle to Japan
+        \end{itemize}
+      \end{itemize}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}\frametitle{Incentivised Contracts}
+  \begin{itemize}
+    \footnotesize
+    \item Eric Sogard, 2nd-baseman, single-year contract with Milwaukee Brewers (2018)
+    \begin{itemize}
+      \footnotesize
+      \item fixed Payment- \$2.4M
+
+      \item performance bonuses- : \$0.15M each for 30, 50, 70, 90 games. \$50,000 for 120 games
+    \end{itemize}
+  \end{itemize}
+
+  \begin{itemize}
+    \footnotesize
+    \item Alex Avila, Catcher, two-year contract with Arizona Diamondbacks (2018, 2019)
+
+    \begin{itemize}
+      \footnotesize
+      \item Fixed Payment- 18:\$4M, 19:\$4.25M
+
+      \item annual performance bonuses: \$25,000 each for 350, 400 plate appearances. \$50,000 each for 450, 500 PA. \$0.1M for 550 PA.
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+
+
 \begin{frame}
+  \begin{table}
+    \centering
+    \caption{RDD for the Grouped Sample by Time, Only Including FA Players}
+    \label{RDD_Era_FA}
+    \tiny
+    \begin{tabular}{lcccccc} \hline
+      index, cutpoint & bw, type &  &'87-'94 & '95-2003 & 2004- &full sample \\ \hline \hline
+      AVG, .300 & LATE & bw & .060 & .032 & .039 & .026 \\
+      &  & Obs. & 218 & 229 & 354 & 509 \\
+      &  & estimate & -.026 & -.309 & -.186 & -.253 \\
+      &  & & (.247) & (.182) & (.182) & (.138) \\
+      & & $z$ & -.108 & -1.700 &  -1.020 & -1.832 \\ \hline
+      AVG, .250 & LATE & bw & .018 & .023 & .078 & .058 \\
+      &  & Obs. & 123 & 227 & 716 & 1367 \\
+      &  & estimate & .425 & .293 & .047 & .084 \\
+      &  & & (.281) & (.230) & (.103) & (.082) \\
+      & & $z$ & 1.512 & 1.272 & -.448 & 1.020 \\ \hline
+      HR, 20 & LATE & bw & 5.35 & 3.504 & 3.566 & 3.50 \\
+      &  & Obs. & 47 & 70 & 102 & 206 \\
+      &  & estimate & .004 & -.701 & -.337 & -.273 \\
+      &  & & (.284) & (.492) & (.513) & (.296) \\
+      & & $z$ & -1.600 & -1.423 & -.657 & -.924 \\ \hline
+      OBP, .350 & LATE & bw & .034 & .042 & .031 & .043 \\
+      &  & Obs. & 154 & 344 & 395 & 1044 \\
+      &  & estimate & .080 & -.174 & .115 & .021 \\
+      &  & & (.291) & (.179) & (.188) & (.107) \\
+      & & $z$ & .276 & -.971 & .616 & .196 \\ \hline
+      Note: & \multicolumn{6}{r}{***: $p<0.1\%$, **: $p<1\%$, *: $p<5\%$.} \\
+      & \multicolumn{6}{r}{Bandwidth is optimized following the method of Imbens-Kalyanaraman.}
+    \end{tabular}
+  \end{table}
 
 \end{frame}
 
