@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.0-180226-2.6 (utf8.sjis) (TeX Live 2018/W32TeX) (preloaded format=platex 2018.11.1)  4 DEC 2018 14:09
+This is e-pTeX, Version 3.14159265-p3.8.0-180226-2.6 (utf8.sjis) (TeX Live 2018/W32TeX) (preloaded format=platex 2018.11.1)  6 DEC 2018 21:30
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -800,6 +800,38 @@ Overfull \hbox (3.36536pt too wide) has occurred while \output is active
 [4
 
 ]
+LaTeX Font Info:    Try loading font information for OML+zplm on input line 73.
+ (c:/texlive/2018/texmf-dist/tex/latex/psnfss/omlzplm.fd
+File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
+)
+LaTeX Font Info:    Try loading font information for OMS+zplm on input line 73.
+ (c:/texlive/2018/texmf-dist/tex/latex/psnfss/omszplm.fd
+File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
+)
+LaTeX Font Info:    Try loading font information for OMX+zplm on input line 73.
+ (c:/texlive/2018/texmf-dist/tex/latex/psnfss/omxzplm.fd
+File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
+)
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 12.50409pt on input line 73.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 9.37807pt on input line 73.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 7.29405pt on input line 73.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 12.50409pt on input line 73.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 9.37807pt on input line 73.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 7.29405pt on input line 73.
+LaTeX Font Info:    Try loading font information for OT1+zplm on input line 73.
+ (c:/texlive/2018/texmf-dist/tex/latex/psnfss/ot1zplm.fd
+File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
+)
+LaTeX Font Info:    Try loading font information for OT1+mathkerncmss on input line 73.
+ (c:/texlive/2018/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
+File: ot1mathkerncmss.fd 2013/03/27 Fontinst v1.933 font definitions for OT1/mathkerncmss.
+)
 Overfull \hbox (3.36536pt too wide) has occurred while \output is active
  [][][][]  
  []
@@ -807,6 +839,34 @@ Overfull \hbox (3.36536pt too wide) has occurred while \output is active
 [5
 
 ]
+LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
+(Font)              scaled to size 10.52292pt on input line 99.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 10.52292pt on input line 99.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 11.40997pt on input line 99.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 8.33606pt on input line 99.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 6.25204pt on input line 99.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 11.40997pt on input line 99.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 8.33606pt on input line 99.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 6.25204pt on input line 99.
+LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
+(Font)              scaled to size 9.60999pt on input line 99.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 9.60999pt on input line 99.
+File: graphs/PS_fig1.png Graphic file (type bmp)
+<graphs/PS_fig1.png>
+
+Overfull \hbox (24.00002pt too wide) in paragraph at lines 99--99
+[]  
+ []
+
+
 Overfull \hbox (3.36536pt too wide) has occurred while \output is active
  [][][][]  
  []
@@ -814,59 +874,6 @@ Overfull \hbox (3.36536pt too wide) has occurred while \output is active
 [6
 
 ]
-LaTeX Font Info:    Try loading font information for OML+zplm on input line 121.
- (c:/texlive/2018/texmf-dist/tex/latex/psnfss/omlzplm.fd
-File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
-)
-LaTeX Font Info:    Try loading font information for OMS+zplm on input line 121.
- (c:/texlive/2018/texmf-dist/tex/latex/psnfss/omszplm.fd
-File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
-)
-LaTeX Font Info:    Try loading font information for OMX+zplm on input line 121.
- (c:/texlive/2018/texmf-dist/tex/latex/psnfss/omxzplm.fd
-File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
-)
-LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 12.50409pt on input line 121.
-LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 9.37807pt on input line 121.
-LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 7.29405pt on input line 121.
-LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 12.50409pt on input line 121.
-LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 9.37807pt on input line 121.
-LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 7.29405pt on input line 121.
-LaTeX Font Info:    Try loading font information for OT1+zplm on input line 121.
- (c:/texlive/2018/texmf-dist/tex/latex/psnfss/ot1zplm.fd
-File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
-)
-LaTeX Font Info:    Try loading font information for OT1+mathkerncmss on input line 121.
- (c:/texlive/2018/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
-File: ot1mathkerncmss.fd 2013/03/27 Fontinst v1.933 font definitions for OT1/mathkerncmss.
-)
-Overfull \hbox (14.43253pt too wide) in paragraph at lines 121--121
- [] 
- []
-
-LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 10.52292pt on input line 121.
-LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 10.52292pt on input line 121.
-LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 11.40997pt on input line 121.
-LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 8.33606pt on input line 121.
-LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 6.25204pt on input line 121.
-LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 11.40997pt on input line 121.
-LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 8.33606pt on input line 121.
-LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 6.25204pt on input line 121.
-
 Overfull \hbox (3.36536pt too wide) has occurred while \output is active
  [][][][]  
  []
@@ -874,13 +881,18 @@ Overfull \hbox (3.36536pt too wide) has occurred while \output is active
 [7
 
 ]
-File: graphs/McCrary_figD.png Graphic file (type bmp)
-<graphs/McCrary_figD.png>
-
-Overfull \hbox (6.96419pt too wide) in paragraph at lines 144--144
-[][]  
+Overfull \hbox (14.43253pt too wide) in paragraph at lines 147--147
+ [] 
  []
 
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 10.42007pt on input line 147.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 7.91925pt on input line 147.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 10.42007pt on input line 147.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 7.91925pt on input line 147.
 
 Overfull \hbox (3.36536pt too wide) has occurred while \output is active
  [][][][]  
@@ -889,15 +901,6 @@ Overfull \hbox (3.36536pt too wide) has occurred while \output is active
 [8
 
 ]
-LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 8.64899pt on input line 163.
-LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 8.64899pt on input line 163.
-LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 6.72699pt on input line 163.
-LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 6.72699pt on input line 163.
-
 Overfull \hbox (3.36536pt too wide) has occurred while \output is active
  [][][][]  
  []
@@ -905,18 +908,13 @@ Overfull \hbox (3.36536pt too wide) has occurred while \output is active
 [9
 
 ]
+File: graphs/McCrary_figD.png Graphic file (type bmp)
+<graphs/McCrary_figD.png>
 
-LaTeX Font Warning: Font shape `JT1/mc/m/it' undefined
-(Font)              using `JT1/mc/m/n' instead on input line 183.
+Overfull \hbox (6.96419pt too wide) in paragraph at lines 182--182
+[][]  
+ []
 
-
-LaTeX Font Warning: Font shape `JY1/mc/m/it' undefined
-(Font)              using `JY1/mc/m/n' instead on input line 183.
-
-LaTeX Font Info:    Font shape `JT1/mc/m/it' will be
-(Font)              scaled to size 10.52292pt on input line 183.
-LaTeX Font Info:    Font shape `JY1/mc/m/it' will be
-(Font)              scaled to size 10.52292pt on input line 183.
 
 Overfull \hbox (3.36536pt too wide) has occurred while \output is active
  [][][][]  
@@ -925,10 +923,37 @@ Overfull \hbox (3.36536pt too wide) has occurred while \output is active
 [10
 
 ]
+Overfull \hbox (3.36536pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[11
+
+]
+
+LaTeX Font Warning: Font shape `JT1/mc/m/it' undefined
+(Font)              using `JT1/mc/m/n' instead on input line 231.
+
+
+LaTeX Font Warning: Font shape `JY1/mc/m/it' undefined
+(Font)              using `JY1/mc/m/n' instead on input line 231.
+
+LaTeX Font Info:    Font shape `JT1/mc/m/it' will be
+(Font)              scaled to size 10.52292pt on input line 231.
+LaTeX Font Info:    Font shape `JY1/mc/m/it' will be
+(Font)              scaled to size 10.52292pt on input line 231.
+
+Overfull \hbox (3.36536pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[12
+
+]
 File: graphs/hist_AVG_all.png Graphic file (type bmp)
 <graphs/hist_AVG_all.png>
 
-Overfull \vbox (1.60664pt too high) detected at line 193
+Overfull \vbox (1.60664pt too high) detected at line 241
  []
 
 
@@ -936,7 +961,7 @@ Overfull \hbox (3.36536pt too wide) has occurred while \output is active
  [][][][]  
  []
 
-[11
+[13
 
 ]
 File: graphs/AVG_300.png Graphic file (type bmp)
@@ -946,28 +971,14 @@ Overfull \hbox (3.36536pt too wide) has occurred while \output is active
  [][][][]  
  []
 
-[12
-
-]
-LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 5.21004pt on input line 240.
-LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 5.21004pt on input line 240.
-
-Overfull \hbox (3.36536pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[13
-
-]
-Overfull \hbox (3.36536pt too wide) has occurred while \output is active
- [][][][]  
- []
-
 [14
 
 ]
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 5.21004pt on input line 288.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 5.21004pt on input line 288.
+
 Overfull \hbox (3.36536pt too wide) has occurred while \output is active
  [][][][]  
  []
@@ -980,6 +991,13 @@ Overfull \hbox (3.36536pt too wide) has occurred while \output is active
  []
 
 [16
+
+]
+Overfull \hbox (3.36536pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[17
 
 ] (./results/MTR_A.tex
 LaTeX Font Info:    Calculating math sizes for size <4> on input line 8.
@@ -1009,24 +1027,12 @@ Overfull \hbox (3.36536pt too wide) has occurred while \output is active
  [][][][]  
  []
 
-[17
-
-]
-Overfull \hbox (3.36536pt too wide) has occurred while \output is active
- [][][][]  
- []
-
 [18
 
 ]
-LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 394.
-LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 394.
-LaTeX Font Info:    Font shape `JT1/mc/m/it' will be
-(Font)              scaled to size 9.60999pt on input line 394.
-LaTeX Font Info:    Font shape `JY1/mc/m/it' will be
-(Font)              scaled to size 9.60999pt on input line 394.
+Overfull \vbox (0.62405pt too high) detected at line 411
+ []
+
 
 Overfull \hbox (3.36536pt too wide) has occurred while \output is active
  [][][][]  
@@ -1042,6 +1048,11 @@ Overfull \hbox (3.36536pt too wide) has occurred while \output is active
 [20
 
 ]
+LaTeX Font Info:    Font shape `JT1/mc/m/it' will be
+(Font)              scaled to size 9.60999pt on input line 453.
+LaTeX Font Info:    Font shape `JY1/mc/m/it' will be
+(Font)              scaled to size 9.60999pt on input line 453.
+
 Overfull \hbox (3.36536pt too wide) has occurred while \output is active
  [][][][]  
  []
@@ -1063,33 +1074,6 @@ Overfull \hbox (3.36536pt too wide) has occurred while \output is active
 [23
 
 ]
-File: beamericonarticle.pdf Graphic file (type pdf)
-<beamericonarticle.pdf>
-File: beamericonarticle.pdf Graphic file (type pdf)
-<beamericonarticle.pdf>
-LaTeX Font Info:    Font shape `JT1/mc/m/it' will be
-(Font)              scaled to size 5.76599pt on input line 538.
-LaTeX Font Info:    Font shape `JY1/mc/m/it' will be
-(Font)              scaled to size 5.76599pt on input line 538.
-File: beamericonarticle.pdf Graphic file (type pdf)
-<beamericonarticle.pdf>
-File: beamericonarticle.pdf Graphic file (type pdf)
-<beamericonarticle.pdf>
-File: beamericonarticle.pdf Graphic file (type pdf)
-<beamericonarticle.pdf>
-File: beamericonarticle.pdf Graphic file (type pdf)
-<beamericonarticle.pdf>
-File: beamericonarticle.pdf Graphic file (type pdf)
-<beamericonarticle.pdf>
-File: beamericonarticle.pdf Graphic file (type pdf)
-<beamericonarticle.pdf>
-File: beamericonarticle.pdf Graphic file (type pdf)
-<beamericonarticle.pdf>
-File: beamericonarticle.pdf Graphic file (type pdf)
-<beamericonarticle.pdf>
-File: beamericonarticle.pdf Graphic file (type pdf)
-<beamericonarticle.pdf>
-
 Overfull \hbox (3.36536pt too wide) has occurred while \output is active
  [][][][]  
  []
@@ -1104,6 +1088,33 @@ Overfull \hbox (3.36536pt too wide) has occurred while \output is active
 [25
 
 ]
+File: beamericonarticle.pdf Graphic file (type pdf)
+<beamericonarticle.pdf>
+File: beamericonarticle.pdf Graphic file (type pdf)
+<beamericonarticle.pdf>
+LaTeX Font Info:    Font shape `JT1/mc/m/it' will be
+(Font)              scaled to size 5.76599pt on input line 599.
+LaTeX Font Info:    Font shape `JY1/mc/m/it' will be
+(Font)              scaled to size 5.76599pt on input line 599.
+File: beamericonarticle.pdf Graphic file (type pdf)
+<beamericonarticle.pdf>
+File: beamericonarticle.pdf Graphic file (type pdf)
+<beamericonarticle.pdf>
+File: beamericonarticle.pdf Graphic file (type pdf)
+<beamericonarticle.pdf>
+File: beamericonarticle.pdf Graphic file (type pdf)
+<beamericonarticle.pdf>
+File: beamericonarticle.pdf Graphic file (type pdf)
+<beamericonarticle.pdf>
+File: beamericonarticle.pdf Graphic file (type pdf)
+<beamericonarticle.pdf>
+File: beamericonarticle.pdf Graphic file (type pdf)
+<beamericonarticle.pdf>
+File: beamericonarticle.pdf Graphic file (type pdf)
+<beamericonarticle.pdf>
+File: beamericonarticle.pdf Graphic file (type pdf)
+<beamericonarticle.pdf>
+
 Overfull \hbox (3.36536pt too wide) has occurred while \output is active
  [][][][]  
  []
@@ -1111,6 +1122,11 @@ Overfull \hbox (3.36536pt too wide) has occurred while \output is active
 [26
 
 ]
+LaTeX Font Info:    Font shape `JT1/mc/m/it' will be
+(Font)              scaled to size 11.53198pt on input line 619.
+LaTeX Font Info:    Font shape `JY1/mc/m/it' will be
+(Font)              scaled to size 11.53198pt on input line 619.
+
 Overfull \hbox (3.36536pt too wide) has occurred while \output is active
  [][][][]  
  []
@@ -1125,6 +1141,42 @@ Overfull \hbox (3.36536pt too wide) has occurred while \output is active
 [28
 
 ]
+Overfull \hbox (3.36536pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[29
+
+]
+Overfull \hbox (3.36536pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[30
+
+]
+Overfull \hbox (3.36536pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[31
+
+]
+File: graphs/Allen_fig2.png Graphic file (type bmp)
+<graphs/Allen_fig2.png>
+
+Overfull \hbox (6.96419pt too wide) in paragraph at lines 747--747
+[][]  
+ []
+
+
+Overfull \hbox (3.36536pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[32
+
+]
 \tf@nav=\write6
 \openout6 = `Report_1214.nav'.
 
@@ -1134,13 +1186,13 @@ Overfull \hbox (3.36536pt too wide) has occurred while \output is active
 \tf@snm=\write8
 \openout8 = `Report_1214.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 669.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 669.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 750.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 750.
  (./Report_1214.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 669.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 669.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 750.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 750.
 Package rerunfilecheck Info: File `Report_1214.out' has not changed.
-(rerunfilecheck)             Checksum: B785C4CA547EC0512E111AF5B5AD288A;413.
+(rerunfilecheck)             Checksum: 87B28483F1553B60A3A5084EE4731216;469.
 
 
 LaTeX Font Warning: Size substitutions with differences
@@ -1154,12 +1206,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 20961 strings out of 493281
- 411287 string characters out of 6148126
- 520665 words of memory out of 5000000
- 24415 multiletter control sequences out of 15000+600000
- 40750 words of font info for 136 fonts, out of 8000000 for 9000
+ 21001 strings out of 493281
+ 411809 string characters out of 6148126
+ 522076 words of memory out of 5000000
+ 24449 multiletter control sequences out of 15000+600000
+ 45084 words of font info for 147 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
- 56i,15n,61p,778b,943s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 56i,15n,61p,778b,941s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on Report_1214.dvi (28 pages, 144628 bytes).
+Output written on Report_1214.dvi (32 pages, 160512 bytes).

@@ -28,15 +28,15 @@
 \end{frame}
 
 \section{Introduction}
+
 \begin{frame}\frametitle{Abstract}
   \begin{itemize}
-    \item Empirical research that specifies the existance of reference point dependence observed in field setting:
 
-    We pick up evidence of Major League Baseball (MLB)
+    \item Using the data of Major League Baseball (MLB), we analyzed the relationship between observed reference dependent behavior and monetary incentives.
 
-    \item Players take some round numbers of the batting performance indexes as reference points, and adjust their effort level to meet the goals
+    \item MLB players evaluates their performance indexes as an outcome, with the reference dependent preference.
 
-    \item There are NOT observed any evidence for the monetary incentives that is paid to the players if they achieve these internal goals
+    \item They manipulate the indexes in order to achieve the reference points, even though there are NOT observed any monetary incentives.
   \end{itemize}
 \end{frame}
 
@@ -45,36 +45,62 @@
   \tableofcontents
 \end{frame}
 
-\begin{frame}\frametitle{Introduction}
+\section{Literature and Contribution}
+\begin{frame}\frametitle{Reference Dependence}
   \begin{itemize}
-    \item Reference dependence is one of the two main charactaristics of the Tversky and Kahneman (1992)'s prospect theory:
+    \item Individuals evaluate outcomes by the relative value to their internal benchmarks, or reference point, not by their absolute ones: reference dependence
 
-    Individuals evaluate outcomes by the relative value to their internal benchmarks, or reference point, not by their absolute ones.
+    \item Reference dependence enabled us to interpret some inconsistent empirical decision making with the traditional microeconomic theory, by applying additional assumptions.
 
-    \item Prospect theory enabled us to interpret some inconsistent empirical decision making with the traditional microeconomic theory, by applying additional assumptions.
+    \item There are a lot of following researches that shows the evidence for the reference dependence in field or laboratory settings, including about athletes' decision making.
 
-    \item There are a lot of following researches that tests the reference dependence in field or laboratory settings, including about athletes' decision making (Allen et al, 2016)
+    : Performance of sports is measured by nonmonetary outcomes.
+
   \end{itemize}
 \end{frame}
 
-
-\section{literature and Contribution}
 \begin{frame}\frametitle{Literature}
-  Pope and Simonsohn (2011)
   \begin{itemize}
-    \item presents three empirical evidences that verify the reference dependence, with the reference points ``round numbers.''
 
-    \item One of them picked up Major League Baseball (MLB) players, about the observed attitude to their performance indexes.
+    \item Pope and Schweizer (2011) pointed out that for the professional golf players regard ``per'' as the reference point, which results in the different probability of success in their putts.
 
-    \item MLB position players manipulate their batting-average (AVG), in order to meet their internal goals: .300
+    \item Allen et al. (2016) specified the existance of reference point dependence of marathon runners, using data about the finish time of enormous number of race in the United States.
 
-    \item As a results, there is observed excess mass, or ``bunching'' around .300 of AVG.
+    $\Rightarrow$ Runners try to goal before the round numbers, and it results in observed excess mass, or ``bunching'' around 4 hours.
+
   \end{itemize}
+
 \end{frame}
 
-\begin{frame}\frametitle{Contribution}
+\begin{frame}\frametitle{Literature}
+  \small
+  Pope and Simonsohn (2011)
+  \begin{tabular}{lr}
+    \begin{minipage}[H]{0.45\textwidth}
+      \footnotesize
+      \begin{itemize}
+        \item picked up the case of Major League Baseball (MLB) players, about the observed attitude to their performance indexes.
+
+        \item MLB position players manipulate their batting-average (AVG), in order to meet their internal goals: .300
+
+        \item As a result, there is observed excess mass, or ``bunching'' around .300 of AVG.
+      \end{itemize}
+
+    \end{minipage} &
+    \begin{minipage}[H]{0.55\textwidth}
+      \begin{figure}
+        \includegraphics[keepaspectratio, scale = 0.33]{graphs/PS_fig1}
+        \caption{Excess Mass Around .300 (quated from Pope and Simonsohn (2011))}
+        \label{PS_fig}
+      \end{figure}
+    \end{minipage}
+  \end{tabular}
+
+\end{frame}
+
+\begin{frame}\frametitle{Extention and Contribution}
 \begin{itemize}
-  \item Professional athletes receive monetary rewards according to the contracts they signed.
+  \item The case of MLB is differenct from that of marathon, in that players receive monetary rewards according to the contracts they signed.
 
   \item Their contracts might include some incentivesed parts, which pay them additional bonus when their AVG reaches a certain cutoff point.
 
@@ -104,7 +130,7 @@
       \end{figure}
       \end{minipage} &
       \begin{minipage}[H]{0.5\textwidth}
-        \small
+        \footnotesize
         \begin{itemize}
           \item Following Allen et al. (2016) assume utility function $u(x)$ that jumps at the cutoff point, or the reference point.
 
@@ -112,12 +138,24 @@
 
           \item This disconituity generates excess mass, or ``bunching'' around the possible reference point.
 
-          \item We consider the possibility that this type of utility is derived by the descontinuous design of the monetary reward of the players.
+          \item We consider the possibility that this type of utility is derived by the discontinuous design of the monetary reward of the players.
 
         \end{itemize}
       \end{minipage}
   \end{tabular}
 
+\end{frame}
+
+\begin{frame}\frametitle{Flow of Specification}
+  \begin{enumerate}
+    \item First, confirm that there exists manipulation in AVG, including other round-numbers such as .200 or .350:
+
+    Also, we examine this about other performance indexes.
+
+    -- On-base percentage (OBP), homerun (HR), runs-batted-in (RBI), stolen-bases (SB), base-hit (H), and stolen-base (SB).
+
+    \item Second, for the possible reference points, test if there are any monetary incentives: discontinuous design of the contracts.
+  \end{enumerate}
 \end{frame}
 
 \begin{frame}\frametitle{Specification: Manipulation}
@@ -145,11 +183,16 @@
 
 \begin{frame}\frametitle{Specification: Contract Design}
   \begin{itemize}
+    \small
     \item Discontinuity of the contract design is tested by RDD methodology:
 
-    \[
-    w_{it} = \beta_0 X_{it} + \beta_1 \text{ABOVE}_{it}
-    \]
+    \begin{align*}
+      w_{it} = & \beta_0 X_{it} + \beta_1 \text{ABOVE}_{it} \\
+      \text{where} \\
+      w_{it}: & \text{ log salary of the next season} \\
+      X_{it}: & \text{ performance index} \\
+      \text{ABOVE}_{it}: & \text{ indicator achievement}
+    \end{align*}
 
     We also conduct analysis including other performance and other player specific charactaristics.
 
@@ -177,7 +220,12 @@
     \begin{itemize}
       \item From \textit{USA TODAY} and \textit{Baseball References}
 
-      \item Salary information from 1987 to 2017 $N=8915$
+      \item Contract information from 1987 to 2017 $N=8915$
+      \begin{itemize}
+        \item Fixed part of the salary of each player
+
+        \item possession of free agency, the right to negotiate any team in MLB.
+      \end{itemize}
     \end{itemize}
   \end{itemize}
 \end{frame}
@@ -297,14 +345,22 @@
       & &Double-BW & .089 & 8637 & .004 & .039 & .107 \\ \hline
 
       Note: & \multicolumn{7}{r}{***: $p<0.1\%$, **: $p<1\%$, *: $p<5\%$.} \\
-      & \multicolumn{7}{r}{Bandwidth is optimized following the method of Imbens-Kalyanaraman.}
+      & \multicolumn{7}{r}{Bandwidth is optimized following the method of Imbens and Kalyanaraman (2009).} \\
+      & \multicolumn{7}{r}{``Half'' and ``Double'' stands for using a half and twice of bandiwidths, respectively.} \\
+      \multicolumn{8}{r}{
+      ``Yes'' in ``Other Control'' shows including players' age (quadratic), FLD, BsR, FA dummy, Season and Position dummies.
+      }
     \end{tabular}
   \end{table}
 \end{frame}
 
 \begin{frame}\frametitle{}
+  \input{results/MTR_A.tex}
+\end{frame}
+
+\begin{frame}\frametitle{}
   \begin{table}[!]
-    \caption{RDD Test for Monetary Incentives}
+    \caption{RDD Test for Monetary Incentives (Cont')}
     \label{RDD_A}
     \tiny
     \centering
@@ -345,14 +401,15 @@
       & & Double-BW & 6.33 & 245 & -.115 & .244 & -.472 \\ \hline
 
       Note: & \multicolumn{7}{r}{***: $p<0.1\%$, **: $p<1\%$, *: $p<5\%$.} \\
-      & \multicolumn{7}{r}{Bandwidth is optimized following the method of Imbens-Kalyanaraman.}
+      & \multicolumn{7}{r}{Bandwidth is optimized following the method of Imbens and Kalyanaraman (2009).} \\
+      & \multicolumn{7}{r}{``Half'' and ``Double'' stands for using a half and twice of bandiwidths, respectively.} \\
+      \multicolumn{8}{r}{
+      ``Yes'' in ``Other Control'' shows including players' age (quadratic), FLD, BsR, FA dummy, Season and Position dummies.
+      }
     \end{tabular}
   \end{table}
 \end{frame}
 
-\begin{frame}\frametitle{}
-\input{results/MTR_A.tex}
-\end{frame}
 
 \begin{frame}\frametitle{Results: Monetary Incentives}
   \begin{itemize}
@@ -365,6 +422,8 @@
     \item For 30 stolen-bases, our analysis does not show determinant results, so we should further results.
 
     \item Restricting the sample to the players with the right of free agency yields essentially the same results.
+
+    \item (Plate-appearance was incentivised: Appendix)
 
   \end{itemize}
 \end{frame}
@@ -492,6 +551,8 @@
   Note that some indexes require following research.
 \end{frame}
 
+\section*{Reference and Sources}
+
 \begin{frame}\frametitle{Reference}
   \tiny
   \begin{thebibliography}{99}
@@ -537,12 +598,30 @@
 
 \end{frame}
 
+\begin{frame}\frametitle{Data References}
+  \begin{itemize}
+    \item \textit{fangraphs Baseball}
+
+    https://www.fangraphs.com/
+
+    \item \textit{Baseball Reference}
+
+    https://www.baseball-reference.com
+
+    \item \textit{USA TODAY}
+
+    https://www.usatoday.com/sports/mlb/
+
+    \item \textit{Baseball Prospectus: Cot's Baseball Contracts}
+
+    https://www.baseballprospectus.com/
+  \end{itemize}
+\end{frame}
+
 \section*{Appendix}
 \begin{frame}\frametitle{Contract Length}
   \begin{itemize}
-    \item Krautmann and Oppenheimer (2002) pointed out that the longer the contract duration extend, the lower return to their performance is obtained:
-
-    Players show the risk-aversion.
+    \item Krautmann and Oppenheimer (2002) pointed out that the longer the contract duration extend, the lower return to their performance is obtained: Players show the risk-aversion.
 
     \begin{align*}
       \ln(SAL_{it}) = \beta_1 &+ \beta_2 PERF_{it} \\
@@ -555,7 +634,9 @@
     \flushleft
     \normalsize
 
-    Estimated value of $\beta_3$ was negative.
+    \item Estimated value of $\beta_3$ was negative.
+
+    \item Further research considering the contract length to be required.
   \end{itemize}
 
 \end{frame}
@@ -629,41 +710,41 @@
   \end{itemize}
 \end{frame}
 
+\begin{frame}
+  \begin{itemize}
+    \item We obtained details of the contracts about the active players in 2018 season from \textit{Cot's}.
 
+    \item Players receive additional performance-dependent rewards:
+
+    Award bonus and index-dependent bonus.
+
+    \item Few position players sign the contract with index-dependent bonus, and all of them are related to the number of attendance:
+
+    Plate-appearances, games-attended
+  \end{itemize}
+\end{frame}
 
 \begin{frame}
-  \begin{table}
-    \centering
-    \caption{RDD for the Grouped Sample by Time, Only Including FA Players}
-    \label{RDD_Era_FA}
-    \tiny
-    \begin{tabular}{lcccccc} \hline
-      index, cutpoint & bw, type &  &'87-'94 & '95-2003 & 2004- &full sample \\ \hline \hline
-      AVG, .300 & LATE & bw & .060 & .032 & .039 & .026 \\
-      &  & Obs. & 218 & 229 & 354 & 509 \\
-      &  & estimate & -.026 & -.309 & -.186 & -.253 \\
-      &  & & (.247) & (.182) & (.182) & (.138) \\
-      & & $z$ & -.108 & -1.700 &  -1.020 & -1.832 \\ \hline
-      AVG, .250 & LATE & bw & .018 & .023 & .078 & .058 \\
-      &  & Obs. & 123 & 227 & 716 & 1367 \\
-      &  & estimate & .425 & .293 & .047 & .084 \\
-      &  & & (.281) & (.230) & (.103) & (.082) \\
-      & & $z$ & 1.512 & 1.272 & -.448 & 1.020 \\ \hline
-      HR, 20 & LATE & bw & 5.35 & 3.504 & 3.566 & 3.50 \\
-      &  & Obs. & 47 & 70 & 102 & 206 \\
-      &  & estimate & .004 & -.701 & -.337 & -.273 \\
-      &  & & (.284) & (.492) & (.513) & (.296) \\
-      & & $z$ & -1.600 & -1.423 & -.657 & -.924 \\ \hline
-      OBP, .350 & LATE & bw & .034 & .042 & .031 & .043 \\
-      &  & Obs. & 154 & 344 & 395 & 1044 \\
-      &  & estimate & .080 & -.174 & .115 & .021 \\
-      &  & & (.291) & (.179) & (.188) & (.107) \\
-      & & $z$ & .276 & -.971 & .616 & .196 \\ \hline
-      Note: & \multicolumn{6}{r}{***: $p<0.1\%$, **: $p<1\%$, *: $p<5\%$.} \\
-      & \multicolumn{6}{r}{Bandwidth is optimized following the method of Imbens-Kalyanaraman.}
-    \end{tabular}
-  \end{table}
+  \begin{tabular}{lc}
+    \begin{minipage}[H]{0.45\textwidth}
+      \begin{itemize}
+        \small
+        \item Allen et al. (2016) specified the existance of reference point dependence of marathon runners, using data about the finish time of enormous number of race in the United States.
 
+        $\Rightarrow$ Runners try to goal before the round numbers, and it results in observed excess mass, or ``bunching'' around 4 hours.
+
+      \end{itemize}
+
+    \end{minipage} &
+    \begin{minipage}[H]{0.5\textwidth}
+      \begin{figure}
+        \includegraphics[keepaspectratio, scale = 0.45]{graphs/Allen_fig2.png}
+        \caption{Excess Mass of finish times (quated from Allen et al.(2016))}
+        \label{allen}
+      \end{figure}
+    \end{minipage}
+  \end{tabular}
 \end{frame}
+
 
 \end{document}
