@@ -52,7 +52,7 @@
 
     \item Reference dependence enabled us to interpret some inconsistent empirical decision making with the traditional microeconomic theory, by applying additional assumptions.
 
-    \item There are a lot of following researches that shows the evidence for the reference dependence in field or laboratory settings, including about athletes' decision making.
+    \item There are a lot of following researches that shows the evidence for the reference dependence in field and laboratory settings, including about athletes' decision making.
 
     : Performance of sports is measured by nonmonetary outcomes.
 
@@ -100,11 +100,9 @@
 
 \begin{frame}\frametitle{Extention and Contribution}
 \begin{itemize}
-  \item The case of MLB is differenct from that of marathon, in that players receive monetary rewards according to the contracts they signed.
+  \item The case of MLB is different from that of marathon, in that players receive monetary rewards according to the contracts they signed.
 
   \item Their contracts might include some incentivesed parts, which pay them additional bonus when their AVG reaches a certain cutoff point.
-
-  \item If so, the observed behavior might be caused by the discontinuity of their profit function, not by the reference dependence.
 
   \item The contribution of our research is to examine this: examine if there exists any monetary incentives that make players make effort to the cutoff point.
 \end{itemize}
@@ -161,18 +159,18 @@
 \begin{frame}\frametitle{Specification: Manipulation}
 
   \begin{tabular}{lr}
-    \begin{minipage}[H]{0.4\textwidth}
+    \begin{minipage}[H]{0.45\textwidth}
       \small
       \begin{itemize}
         \item We exploit the McCrary (2007)'s manipulation test, which is used in regression discontinuity design.
 
-        \item Local-linear regression of undersmoothed histgram around (bandwidth is optimized) the given cutoff point: .300 of AVG, 20 homeruns, \ldots
+        \item Make local approximation of the histgram of the variable of interest, and calculate the predicted values of $f(r)$ at the cutoff point, from both above and below there.
       \end{itemize}
     \end{minipage}
     &
-    \begin{minipage}[H]{0.55\textwidth}
+    \begin{minipage}[H]{0.5\textwidth}
       \begin{figure}
-        \includegraphics[keepaspectratio, scale = 1]{graphs/McCrary_figD.png}
+        \includegraphics[keepaspectratio, scale = 0.8]{graphs/McCrary_figD.png}
         \caption{Discontinuous frequency (quated from McCrary(2007))}
         \label{McC}
       \end{figure}
@@ -191,7 +189,7 @@
       \text{where} \\
       w_{it}: & \text{ log salary of the next season} \\
       X_{it}: & \text{ performance index} \\
-      \text{ABOVE}_{it}: & \text{ indicator achievement}
+      \text{ABOVE}_{it}: & \text{ indicator for achievement}
     \end{align*}
 
     We also conduct analysis including other performance and other player specific charactaristics.
@@ -293,11 +291,9 @@
 
     \item Also in .250 of AVG and some of other round numbers of indexes, there were observed discontinuity:
 
-    Players consider these numbers as referene points and adjust their aspiration levels.
+    $\Rightarrow$Players consider these numbers as referene points and adjust their aspiration levels.
 
-    \item In contrast to Allen et al (2016), manipulation were not observed in all the round numbers:
-
-    They are likely to be kinds of ``per,'' the well-known benchmarks of a certain sports.
+    \item Manipulation is not observed in all the round numbers.
 
   \end{itemize}
 \end{frame}
@@ -415,15 +411,11 @@
   \begin{itemize}
     \item As a whole, there are not observed clear evidence for additional bonuses achieving some these round numbers.
 
-    \item Including interaction term with the index does not present important changes.
-
     $\Rightarrow$ Players manipulate their performance indexes, even though there are little or no monetary incentives to do so.
 
     \item For 30 stolen-bases, our analysis does not show determinant results, so we should further results.
 
     \item Restricting the sample to the players with the right of free agency yields essentially the same results.
-
-    \item (Plate-appearance was incentivised: Appendix)
 
   \end{itemize}
 \end{frame}
@@ -531,7 +523,7 @@
 
     $\Rightarrow$ Again, we argure there does not exists no monetary incentive that leads them to manipulate indexes.
 
-    \item Including interaction terms, and restricting the sample to the FA players also show the same.
+    \item Restricting the sample to the FA players also show the same.
   \end{itemize}
 \end{frame}
 
@@ -548,7 +540,7 @@
     - Among them, especially, .300 of AVG shows consistent results, which shows it is solid benchmarks for the players.
   \end{enumerate}
 
-  Note that some indexes require following research.
+  Note that some indexes require following research, obatining information that makes limitation of our analysis.
 \end{frame}
 
 \section*{Reference and Sources}
@@ -723,28 +715,5 @@
     Plate-appearances, games-attended
   \end{itemize}
 \end{frame}
-
-\begin{frame}
-  \begin{tabular}{lc}
-    \begin{minipage}[H]{0.45\textwidth}
-      \begin{itemize}
-        \small
-        \item Allen et al. (2016) specified the existance of reference point dependence of marathon runners, using data about the finish time of enormous number of race in the United States.
-
-        $\Rightarrow$ Runners try to goal before the round numbers, and it results in observed excess mass, or ``bunching'' around 4 hours.
-
-      \end{itemize}
-
-    \end{minipage} &
-    \begin{minipage}[H]{0.5\textwidth}
-      \begin{figure}
-        \includegraphics[keepaspectratio, scale = 0.45]{graphs/Allen_fig2.png}
-        \caption{Excess Mass of finish times (quated from Allen et al.(2016))}
-        \label{allen}
-      \end{figure}
-    \end{minipage}
-  \end{tabular}
-\end{frame}
-
 
 \end{document}

@@ -450,8 +450,6 @@ INPUT c:/texlive/2018/texmf-dist/tex/latex/beamer/beamericonarticle.pdf
 INPUT c:/texlive/2018/texmf-dist/tex/latex/beamer/beamericonarticle.pdf
 INPUT c:/texlive/2018/texmf-dist/tex/latex/beamer/beamericonarticle.pdf
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmssi12.tfm
-INPUT graphs/Allen_fig2.png
-INPUT extractbb -B cropbox -O graphs/Allen_fig2.png
 OUTPUT Report_1214.nav
 OUTPUT Report_1214.toc
 OUTPUT Report_1214.snm

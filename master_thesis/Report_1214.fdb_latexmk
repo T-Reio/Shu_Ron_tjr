@@ -1,14 +1,14 @@
 # Fdb version 3
-["dvipdf"] 1544099423 "Report_1214.dvi" "Report_1214.pdf" "Report_1214" 1544099426
-  "Report_1214.dvi" 1544099423 160512 24b30e0433c1c9c1e2c596682fd25a0a "latex"
+["dvipdf"] 1544181938 "Report_1214.dvi" "Report_1214.pdf" "Report_1214" 1544182246
+  "Report_1214.dvi" 1544181938 156492 1b5b9dd239a51c8b0af13904f13b8f42 "latex"
   (generated)
   "Report_1214.pdf"
-["latex"] 1544099411 "Report_1214.tex" "Report_1214.dvi" "Report_1214" 1544099426
-  "Report_1214.aux" 1544099423 9323 afd9254cbada985f996fd640dd3669fc ""
-  "Report_1214.nav" 1544099423 4481 b47023510c4204223b28375ddce0ede7 ""
-  "Report_1214.out" 1544099423 469 87b28483f1553b60a3a5084ee4731216 ""
-  "Report_1214.tex" 1544099409 28330 a3ef34cd33494c32cfeaffb9cce4e31c ""
-  "Report_1214.toc" 1544099423 271 61b13015675dd7854f0f935c3067a809 ""
+["latex"] 1544181929 "Report_1214.tex" "Report_1214.dvi" "Report_1214" 1544182246
+  "Report_1214.aux" 1544181938 9076 1ec46dc6270a47b183eead8742c63f99 ""
+  "Report_1214.nav" 1544181938 4389 248abd7d2303deeb32c91f9c5a64b2b2 ""
+  "Report_1214.out" 1544181938 469 87b28483f1553b60a3a5084ee4731216 ""
+  "Report_1214.tex" 1544181927 27171 7b278c5684377e04e2a114419382ed04 ""
+  "Report_1214.toc" 1544181938 271 61b13015675dd7854f0f935c3067a809 ""
   "c:/texlive/2018/texmf-dist/fonts/map/fontname/texfonts.map" 1541079023 3332 103109f5612ad95229751940c61aada0 ""
   "c:/texlive/2018/texmf-dist/fonts/tfm/ptex-fonts/jis/jis.tfm" 1541081721 468 53f854284f6afa6c36aaa2d1090ecc12 ""
   "c:/texlive/2018/texmf-dist/fonts/tfm/ptex-fonts/standard/tmin10.tfm" 1541081721 856 39c171483fe1bb7d0e1368980c0c205b ""
@@ -202,21 +202,19 @@
   "c:/texlive/2018/texmf.cnf" 1541083614 673 2e5aa3ac564c6f70f54d6752d765c05d ""
   "extractbb -B cropbox -O beamericonarticle.pdf" 0 -1 0 ""
   "extractbb -B cropbox -O graphs/AVG_300.png" 0 -1 0 ""
-  "extractbb -B cropbox -O graphs/Allen_fig2.png" 0 -1 0 ""
   "extractbb -B cropbox -O graphs/McCrary_figD.png" 0 -1 0 ""
   "extractbb -B cropbox -O graphs/PS_fig1.png" 0 -1 0 ""
   "extractbb -B cropbox -O graphs/hist_AVG_all.png" 0 -1 0 ""
   "graphs/AVG_300.png" 1541062632 5827 98218586b867000a097f6c7062ca6f71 ""
-  "graphs/Allen_fig2.png" 1544008222 34635 a476f1c0b67fa3af2c4efe0b7ac4e658 ""
   "graphs/McCrary_figD.png" 1543806315 11145 174fe4bdcd6a5afa5519c0399ef3c018 ""
   "graphs/PS_fig1.png" 1544092443 71542 a827b8039e2200637fed7cf8ce40fdb7 ""
   "graphs/hist_AVG_all.png" 1542098569 4953 e28954ec7938c3971f1f97fac4f07a10 ""
   "results/MTR_A.tex" 1544093682 2807 ddedfa573093bf99b6acf8574eba9255 ""
   (generated)
-  "Report_1214.out"
-  "Report_1214.toc"
   "Report_1214.aux"
-  "Report_1214.log"
-  "Report_1214.nav"
+  "Report_1214.toc"
+  "Report_1214.out"
   "Report_1214.snm"
+  "Report_1214.log"
   "Report_1214.dvi"
+  "Report_1214.nav"
