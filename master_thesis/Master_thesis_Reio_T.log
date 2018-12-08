@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.0-180226-2.6 (utf8.sjis) (TeX Live 2018/W32TeX) (preloaded format=platex 2018.11.1)  7 DEC 2018 23:22
+This is e-pTeX, Version 3.14159265-p3.8.0-180226-2.6 (utf8.sjis) (TeX Live 2018/W32TeX) (preloaded format=platex 2018.11.1)  8 DEC 2018 17:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -656,14 +656,14 @@ Overfull \hbox (6.42601pt too wide) in paragraph at lines 72--120
 
 [4] [5]
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <12> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 145.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 144.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 145.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 144.
 LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 145.
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 144.
 
 
-LaTeX Warning: Reference `sum_A' on page 6 undefined on input line 145.
+LaTeX Warning: Reference `sum_A' on page 6 undefined on input line 144.
 
 [6]
 \openout2 = `results/summary.aux'.
@@ -684,11 +684,11 @@ Overfull \hbox (49.92552pt too wide) in paragraph at lines 9--31
 
 )
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <14.4> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 159.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 158.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <14.4> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 159.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 158.
 LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 159.
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 158.
  [7
 
 
@@ -697,27 +697,27 @@ LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <14.4> not available
 
 ] [8] [9]
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 11.40997pt on input line 229.
+(Font)              scaled to size 11.40997pt on input line 228.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 11.40997pt on input line 229.
+(Font)              scaled to size 11.40997pt on input line 228.
 File: graphs/hist_AVG_all.png Graphic file (type bmp)
 <graphs/hist_AVG_all.png>
 
-Overfull \hbox (115.29689pt too wide) in paragraph at lines 270--270
+Overfull \hbox (115.29689pt too wide) in paragraph at lines 269--269
 [][] 
  []
 
 File: graphs/AVG_300.png Graphic file (type bmp)
 <graphs/AVG_300.png>
 
-Overfull \hbox (74.71155pt too wide) in paragraph at lines 277--277
+Overfull \hbox (74.71155pt too wide) in paragraph at lines 276--276
 [][] 
  []
 
 File: graphs/AVG_250.png Graphic file (type bmp)
 <graphs/AVG_250.png>
 
-Overfull \hbox (74.71155pt too wide) in paragraph at lines 284--284
+Overfull \hbox (74.71155pt too wide) in paragraph at lines 283--283
 [][] 
  []
 
@@ -730,12 +730,12 @@ File: graphs/hist_HR_all.png Graphic file (type bmp)
 File: graphs/HR_20.png Graphic file (type bmp)
 <graphs/HR_20.png>
 
-Overfull \hbox (2.8062pt too wide) in paragraph at lines 312--313
+Overfull \hbox (2.8062pt too wide) in paragraph at lines 311--312
 [][] 
  []
 
 
-Overfull \hbox (24.00002pt too wide) in paragraph at lines 291--318
+Overfull \hbox (24.00002pt too wide) in paragraph at lines 290--317
  [][] 
  []
 
@@ -748,35 +748,35 @@ File: graphs/hist_H_all.png Graphic file (type bmp)
 File: graphs/H_200.png Graphic file (type bmp)
 <graphs/H_200.png>
 
-Overfull \hbox (23.99998pt too wide) in paragraph at lines 322--349
+Overfull \hbox (23.99998pt too wide) in paragraph at lines 321--348
  [][] 
  []
 
 File: graphs/hist_SB_all.png Graphic file (type bmp)
 <graphs/hist_SB_all.png>
 
-Overfull \hbox (115.29689pt too wide) in paragraph at lines 360--360
+Overfull \hbox (115.29689pt too wide) in paragraph at lines 359--359
 [][] 
  []
 
 File: graphs/SB_30.png Graphic file (type bmp)
 <graphs/SB_30.png>
 
-Overfull \hbox (109.72221pt too wide) in paragraph at lines 367--367
+Overfull \hbox (109.72221pt too wide) in paragraph at lines 366--366
 [][] 
  []
 
 File: graphs/SB_40.png Graphic file (type bmp)
 <graphs/SB_40.png>
 
-Overfull \hbox (74.71155pt too wide) in paragraph at lines 374--374
+Overfull \hbox (74.71155pt too wide) in paragraph at lines 373--373
 [][] 
  []
 
 [10] [11] [12] [13] [14] [15] [16]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `!tbp') on input line 405.
+               Default added (so using `!tbp') on input line 404.
 
 [17] (./results/Sal_AVG300_A.tex
 Overfull \hbox (4.11371pt too wide) in paragraph at lines 8--55
@@ -796,14 +796,14 @@ Overfull \hbox (4.11371pt too wide) in paragraph at lines 8--55
 ) [20] (./results/Sal_HR20_A.tex) [21] (./results/Sal_SB30_A.tex) [22] (./results/Sal_SB40_A.tex) [23] (./results/Sal_RBI100_A.tex) [24]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `!tbp') on input line 538.
+               Default added (so using `!tbp') on input line 537.
 
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 7.91925pt on input line 543.
+(Font)              scaled to size 7.91925pt on input line 542.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 7.91925pt on input line 543.
+(Font)              scaled to size 7.91925pt on input line 542.
 
-Overfull \hbox (18.15425pt too wide) in paragraph at lines 543--601
+Overfull \hbox (18.15425pt too wide) in paragraph at lines 542--600
  [][] 
  []
 
@@ -824,13 +824,13 @@ Overfull \hbox (18.15425pt too wide) in paragraph at lines 543--601
 
 ] [26] [27]
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <10.95> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 627.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 626.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <10.95> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 627.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 626.
 LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 627.
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 626.
  [28] [29]
-Overfull \hbox (6.32813pt too wide) in paragraph at lines 704--705
+Overfull \hbox (6.32813pt too wide) in paragraph at lines 703--704
 []\OT1/ppl/m/n/12 Then, one pos-si-ble ques-tion oc-curs: ``Does the ten-dency of ma-nip-u-la-tion/discoutinuous
  []
 
@@ -878,10 +878,10 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  14288 strings out of 493281
  279360 string characters out of 6148126
- 354122 words of memory out of 5000000
+ 355201 words of memory out of 5000000
  17880 multiletter control sequences out of 15000+600000
  39646 words of font info for 133 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
- 55i,18n,54p,1670b,805s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,18n,54p,1712b,805s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on Master_thesis_Reio_T.dvi (47 pages, 218940 bytes).
+Output written on Master_thesis_Reio_T.dvi (47 pages, 219820 bytes).
