@@ -1,9 +1,9 @@
 # Fdb version 3
-["dvipdf"] 1543671354 "thesis_quated.dvi" "thesis_quated.pdf" "thesis_quated" 1543671357
-  "thesis_quated.dvi" 1543671354 220272 542e0456a26b144db51b0426f42c2289 "latex"
+["dvipdf"] 1544527963 "thesis_quated.dvi" "thesis_quated.pdf" "thesis_quated" 1544527966
+  "thesis_quated.dvi" 1544527963 232656 51f75b898b8e2b74c62b10833469f475 "latex"
   (generated)
   "thesis_quated.pdf"
-["latex"] 1543671337 "thesis_quated.tex" "thesis_quated.dvi" "thesis_quated" 1543671357
+["latex"] 1544527945 "thesis_quated.tex" "thesis_quated.dvi" "thesis_quated" 1544527965
   "c:/texlive/2018/texmf-dist/fonts/map/fontname/texfonts.map" 1541079023 3332 103109f5612ad95229751940c61aada0 ""
   "c:/texlive/2018/texmf-dist/fonts/tfm/adobe/palatino/pplb7t.tfm" 1541081124 1616 371d1ee60c04b008c8fd760060cd34f1 ""
   "c:/texlive/2018/texmf-dist/fonts/tfm/adobe/palatino/pplr7t.tfm" 1541081124 1804 7b5f73028f6509167f47ace9d69509ed ""
@@ -177,13 +177,13 @@
   "results/Sal_RBI100_A.tex" 1542456450 3040 ae33a5791977b954da661a2085de8cf6 ""
   "results/Sal_SB30_A.tex" 1542457514 3087 0f37fde1dbd07abef7adf17a8c8b68c4 ""
   "results/Sal_SB40_A.tex" 1542456434 3022 a7dbe6151f23a3e437dff614c6ff4f60 ""
-  "results/summary.aux" 1543671340 489 5cada36229205671ba2daa041a549926 ""
+  "results/summary.aux" 1544527948 489 5cada36229205671ba2daa041a549926 ""
   "results/summary.tex" 1543487606 1185 a1b9ca806be26cad6b914cb96a5e07e2 ""
   "results/summary_B.tex" 1543487581 1655 161228df3d4c8f49bdc04413bcd8ddc2 ""
-  "thesis_quated.aux" 1543671354 9033 7993a65ff5e60a37bdc4bd9b5cdadf77 ""
-  "thesis_quated.tex" 1543670939 77238 9a714e2cbe3bea213f4c864248142a9b ""
+  "thesis_quated.aux" 1544527963 9002 b2499d1d8225537c14a2db3066ea6a5e ""
+  "thesis_quated.tex" 1544527925 86014 ccb78df129c8479f38bf38f1ad6d5be8 ""
   (generated)
   "thesis_quated.dvi"
+  "thesis_quated.log"
   "results/summary.aux"
   "thesis_quated.aux"
-  "thesis_quated.log"
