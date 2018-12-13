@@ -1,0 +1,52 @@
+
+% Table created by stargazer v.5.2.2 by Marek Hlavac, Harvard University. E-mail: hlavac at fas.harvard.edu
+% Date and time: ��, 12 13, 2018 - 22:25:04
+\begin{table}[H] \centering
+  \caption{Regression on Log-Salary, Including Interaction Term: around 30 SB}
+  \label{SB30_A}
+\tiny
+\begin{tabular}{@{\extracolsep{5pt}}lcccccc}
+\\[-1.8ex]\hline
+\hline \\[-1.8ex]
+ & \multicolumn{6}{c}{\textit{Dependent variable:}} \\
+\cline{2-7}
+\\[-1.8ex] & \multicolumn{6}{c}{Loggarithm of Salary Next Year} \\
+\\[-1.8ex] & \multicolumn{4}{c}{\textit{OLS}} & \multicolumn{2}{c}{\textit{felm}} \\
+\\[-1.8ex] & (1) & (2) & (3) & (4) & (5) & (6)\\
+\hline \\[-1.8ex]
+ Constant & 13.466$^{***}$ & $-$4.126 & $-$3.974 & $-$3.312 &  &  \\
+  & (3.672) & (3.586) & (3.614) & (3.640) &  &  \\
+  & & & & & & \\
+ SB & .029 & $-$.036 & $-$.058 & $-$.067 & $-$.001 & .075 \\
+  & (.132) & (.099) & (.096) & (.096) & (.097) & (.185) \\
+  & & & & & & \\
+ SB\_30 & 12.468$^{**}$ & 2.544 & 1.303 & .816 & 2.054 & 7.200 \\
+  & (4.569) & (3.531) & (3.452) & (3.464) & (3.516) & (6.586) \\
+  & & & & & & \\
+ FLD &  & .007 & .008 & .008 & .007 & .013 \\
+  &  & (.006) & (.005) & (.005) & (.006) & (.011) \\
+  & & & & & & \\
+ BAT &  & .023$^{***}$ & .018$^{**}$ & .017$^{**}$ & .016$^{**}$ & .019 \\
+  &  & (.003) & (.006) & (.006) & (.006) & (.010) \\
+  & & & & & & \\
+ SB:SB\_30 & $-$.391$^{*}$ & $-$.071 & $-$.030 & $-$.013 & $-$.060 & $-$.230 \\
+  & (.158) & (.122) & (.119) & (.119) & (.121) & (.229) \\
+  & & & & & & \\
+\hline \\[-1.8ex]
+Season dummies &  & X & X & X & X & X \\
+WPA &  & X & X & X & X &  \\
+AGE (quadratic) &  & X & X & X & X &  \\
+FA dummy &  &  &  & X & X & X \\
+Position dummies &  &  & X & X &  &  \\
+Fixed effects &  &  &  &  & Team & Individual \\
+Observations & 282 & 282 & 282 & 282 & 282 & 282 \\
+R$^{2}$ & .075 & .628 & .672 & .675 & .716 & .915 \\
+Adjusted R$^{2}$ & .065 & .571 & .606 & .608 & .624 & .651 \\
+Residual Std. Error & 1.229 (df = 278) & .833 (df = 244) & .797 (df = 234) & .796 (df = 233) & .779 (df = 212) & .751 (df = 68) \\
+F Statistic & 7.559$^{***}$ (df = 3; 278) & 11.110$^{***}$ (df = 37; 244) & 10.213$^{***}$ (df = 47; 234) & 10.075$^{***}$ (df = 48; 233) &  &  \\
+\hline
+\hline \\[-1.8ex]
+\textit{Note:}  & \multicolumn{6}{r}{$^{*}$p$<$0.05; $^{**}$p$<$0.01; $^{***}$p$<$0.001} \\
+& \multicolumn{6}{r}{Notations are same as Table 5.} \\
+\end{tabular}
+\end{table}

@@ -1,0 +1,52 @@
+
+% Table created by stargazer v.5.2.2 by Marek Hlavac, Harvard University. E-mail: hlavac at fas.harvard.edu
+% Date and time: ��, 12 13, 2018 - 22:25:05
+\begin{table}[H] \centering
+  \caption{Regression on Log-Salary, Including Interaction Term: around 40 SB}
+  \label{SB40_A}
+\tiny
+\begin{tabular}{@{\extracolsep{5pt}}lcccccc}
+\\[-1.8ex]\hline
+\hline \\[-1.8ex]
+ & \multicolumn{6}{c}{\textit{Dependent variable:}} \\
+\cline{2-7}
+\\[-1.8ex] & \multicolumn{6}{c}{Loggarithm of Salary Next Year} \\
+\\[-1.8ex] & \multicolumn{4}{c}{\textit{OLS}} & \multicolumn{2}{c}{\textit{felm}} \\
+\\[-1.8ex] & (1) & (2) & (3) & (4) & (5) & (6)\\
+\hline \\[-1.8ex]
+ Constant & .097 & $-$6.186 & $-$5.552 & $-$4.107 &  &  \\
+  & (6.865) & (6.345) & (6.865) & (7.051) &  &  \\
+  & & & & & & \\
+ SB & .392$^{*}$ & .191 & .185 & .148 & .138 & .679$^{*}$ \\
+  & (.182) & (.155) & (.157) & (.163) & (.185) & (.265) \\
+  & & & & & & \\
+ SB\_40 & 20.483$^{*}$ & 5.634 & 8.101 & 7.669 & 6.569 & 37.152$^{**}$ \\
+  & (8.497) & (7.281) & (7.490) & (7.511) & (8.087) & (12.783) \\
+  & & & & & & \\
+ FLD &  & .005 & .007 & .008 & .008 & .021 \\
+  &  & (.008) & (.008) & (.009) & (.009) & (.020) \\
+  & & & & & & \\
+ BAT &  & .023$^{***}$ & .021$^{*}$ & .021$^{*}$ & .027$^{**}$ & $-$.001 \\
+  &  & (.004) & (.009) & (.009) & (.010) & (.020) \\
+  & & & & & & \\
+ SB:SB\_40 & $-$.537$^{*}$ & $-$.152 & $-$.212 & $-$.198 & $-$.169 & $-$.956$^{**}$ \\
+  & (.218) & (.187) & (.193) & (.194) & (.209) & (.328) \\
+  & & & & & & \\
+\hline \\[-1.8ex]
+Season dummies &  & X & X & X & X & X \\
+WPA &  & X & X & X & X &  \\
+AGE (quadratic) &  & X & X & X & X &  \\
+FA dummy &  &  &  & X & X & X \\
+Position dummies &  &  & X & X &  &  \\
+Fixed effects &  &  &  &  & Team & Individual \\
+Observations & 134 & 134 & 134 & 134 & 134 & 134 \\
+R$^{2}$ & .062 & .634 & .662 & .665 & .782 & .949 \\
+Adjusted R$^{2}$ & .041 & .499 & .495 & .494 & .561 & .645 \\
+Residual Std. Error & 1.158 (df = 130) & .837 (df = 97) & .841 (df = 89) & .841 (df = 88) & .784 (df = 66) & .705 (df = 19) \\
+F Statistic & 2.875$^{*}$ (df = 3; 130) & 4.674$^{***}$ (df = 36; 97) & 3.960$^{***}$ (df = 44; 89) & 3.884$^{***}$ (df = 45; 88) &  &  \\
+\hline
+\hline \\[-1.8ex]
+\textit{Note:}  & \multicolumn{6}{r}{$^{*}$p$<$0.05; $^{**}$p$<$0.01; $^{***}$p$<$0.001} \\
+& \multicolumn{6}{r}{Notations are same as Table 5.} \\
+\end{tabular}
+\end{table}

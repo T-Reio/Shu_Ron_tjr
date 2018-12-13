@@ -1,0 +1,52 @@
+
+% Table created by stargazer v.5.2.2 by Marek Hlavac, Harvard University. E-mail: hlavac at fas.harvard.edu
+% Date and time: ��, 12 13, 2018 - 22:25:00
+\begin{table}[H] \centering
+  \caption{Regression on Log-Salary, Including Interaction Term: around 20 HR}
+  \label{HR20_A}
+\tiny
+\begin{tabular}{@{\extracolsep{5pt}}lcccccc}
+\\[-1.8ex]\hline
+\hline \\[-1.8ex]
+ & \multicolumn{6}{c}{\textit{Dependent variable:}} \\
+\cline{2-7}
+\\[-1.8ex] & \multicolumn{6}{c}{Loggarithm of Salary Next Year} \\
+\\[-1.8ex] & \multicolumn{4}{c}{\textit{OLS}} & \multicolumn{2}{c}{\textit{felm}} \\
+\\[-1.8ex] & (1) & (2) & (3) & (4) & (5) & (6)\\
+\hline \\[-1.8ex]
+ Constant & 14.429$^{***}$ & $-$6.385$^{***}$ & $-$5.765$^{***}$ & $-$6.113$^{***}$ &  &  \\
+  & (1.092) & (1.381) & (1.432) & (1.418) &  &  \\
+  & & & & & & \\
+ HR & .014 & .076 & .085 & .083 & .065 & .070 \\
+  & (.061) & (.046) & (.045) & (.045) & (.045) & (.054) \\
+  & & & & & & \\
+ HR\_20 & $-$1.154 & .008 & $-$.084 & $-$.003 & $-$.266 & .993 \\
+  & (1.393) & (1.055) & (1.036) & (1.025) & (1.028) & (1.248) \\
+  & & & & & & \\
+ FLD &  & .010$^{***}$ & .010$^{**}$ & .010$^{***}$ & .009$^{**}$ & .006 \\
+  &  & (.003) & (.003) & (.003) & (.003) & (.004) \\
+  & & & & & & \\
+ BsR &  & .001 & $-$.022$^{*}$ & $-$.022$^{*}$ & $-$.008 & $-$.007 \\
+  &  & (.009) & (.010) & (.010) & (.009) & (.015) \\
+  & & & & & & \\
+ HR:HR\_20 & .061 & $-$.005 & $-$.004 & $-$.007 & .009 & $-$.052 \\
+  & (.073) & (.055) & (.054) & (.054) & (.054) & (.065) \\
+  & & & & & & \\
+\hline \\[-1.8ex]
+Season dummies &  & X & X & X & X & X \\
+WPA &  & X & X & X & X &  \\
+AGE (quadratic) &  & X & X & X & X &  \\
+FA dummy &  &  &  & X & X & X \\
+Position dummies &  &  & X & X &  &  \\
+Fixed effects &  &  &  &  & Team & Individual \\
+Observations & 1,315 & 1,307 & 1,307 & 1,307 & 1,307 & 1,307 \\
+R$^{2}$ & .009 & .467 & .497 & .508 & .519 & .806 \\
+Adjusted R$^{2}$ & .007 & .452 & .478 & .489 & .492 & .610 \\
+Residual Std. Error & 1.203 (df = 1311) & .894 (df = 1269) & .873 (df = 1258) & .864 (df = 1257) & .861 (df = 1237) & .755 (df = 650) \\
+F Statistic & 3.882$^{**}$ (df = 3; 1311) & 30.087$^{***}$ (df = 37; 1269) & 25.872$^{***}$ (df = 48; 1258) & 26.476$^{***}$ (df = 49; 1257) &  &  \\
+\hline
+\hline \\[-1.8ex]
+\textit{Note:}  & \multicolumn{6}{r}{$^{*}$p$<$0.05; $^{**}$p$<$0.01; $^{***}$p$<$0.001} \\
+& \multicolumn{6}{r}{Notations are same as Table 5.} \\
+\end{tabular}
+\end{table}

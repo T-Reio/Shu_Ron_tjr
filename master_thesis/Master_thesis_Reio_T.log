@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.0-180226-2.6 (utf8.sjis) (TeX Live 2018/W32TeX) (preloaded format=platex 2018.11.1)  13 DEC 2018 18:27
+This is e-pTeX, Version 3.14159265-p3.8.0-180226-2.6 (utf8.sjis) (TeX Live 2018/W32TeX) (preloaded format=platex 2018.11.1)  13 DEC 2018 22:43
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -514,6 +514,9 @@ LaTeX Warning: Label `' multiply defined.
 
 LaTeX Warning: Label `' multiply defined.
 
+
+LaTeX Warning: Label `AVG300_A' multiply defined.
+
 )
 \openout1 = `Master_thesis_Reio_T.aux'.
 
@@ -793,43 +796,34 @@ Overfull \hbox (29.28076pt too wide) in paragraph at lines 8--52
  [][] 
  []
 
-) [19] [20] (./results/Sal_HR20_A.tex) [21] (./results/Sal_SB30_A.tex) [22] (./results/Sal_SB40_A.tex) [23] (./results/Sal_RBI100_A.tex) [24]
+) [19] (./results/Sal_HR20_E.tex
+Overfull \hbox (11.55081pt too wide) in paragraph at lines 8--52
+ [][] 
+ []
 
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `!tbp') on input line 528.
-
-[25
-
-
-
-
-
-
-
-
-] [26]
+) (./results/Sal_RBI100_E.tex) [20] (./results/Sal_H200_E.tex) (./results/Sal_SB30_E.tex) [21] (./results/Sal_SB40_E.tex) [22] [23] [24]
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <10.95> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 625.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 611.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <10.95> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 625.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 611.
 LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 625.
- [27] [28]
-Overfull \hbox (6.32813pt too wide) in paragraph at lines 702--703
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 611.
+ [25] [26]
+Overfull \hbox (6.32813pt too wide) in paragraph at lines 688--689
 []\OT1/ppl/m/n/12 Then, one pos-si-ble ques-tion oc-curs: ``Does the ten-dency of ma-nip-u-la-tion/discoutinuous
  []
 
-[29]
+[27]
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 7.91925pt on input line 735.
+(Font)              scaled to size 7.91925pt on input line 721.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 7.91925pt on input line 735.
- [30] [31] [32] (./results/Sal_AVG300_B.tex) [33] (./results/Sal_AVG300_C.tex) [34] (./results/Sal_AVG300_D.tex) [35] (./results/Sal_AVG250_B.tex) [36] (./results/Sal_AVG250_C.tex) [37] (./results/Sal_AVG250_D.tex
+(Font)              scaled to size 7.91925pt on input line 721.
+ [28] [29] [30] (./results/Sal_AVG300_B.tex) [31] (./results/Sal_AVG300_C.tex) [32] (./results/Sal_AVG300_D.tex) [33] (./results/Sal_AVG250_B.tex) [34] (./results/Sal_AVG250_C.tex) [35] (./results/Sal_AVG250_D.tex
 Overfull \hbox (4.11371pt too wide) in paragraph at lines 8--55
  [][] 
  []
 
-) [38] (./results/Sal_OBP350_B.tex) [39] (./results/Sal_OBP350_C.tex) [40] (./results/Sal_OBP350_D.tex) [41] (./results/Sal_HR20_B.tex) [42] (./results/Sal_HR20_C.tex) [43] (./results/Sal_HR20_D.tex) [44] [45
+) [36] (./results/Sal_OBP350_B.tex) [37] (./results/Sal_OBP350_C.tex) [38] (./results/Sal_OBP350_D.tex) [39] (./results/Sal_HR20_B.tex) [40] (./results/Sal_HR20_C.tex) [41] (./results/Sal_HR20_D.tex) [42] [43
 
 
 
@@ -855,11 +849,11 @@ Overfull \hbox (4.11371pt too wide) in paragraph at lines 8--55
 
 
 ]
-Overfull \hbox (19.5771pt too wide) in paragraph at lines 942--943
+Overfull \hbox (19.5771pt too wide) in paragraph at lines 928--929
 []\OT1/ppl/m/n/10.95 The rate of base-hit. At-Bat(AB) is calu-cu-lated as $[] \OT1/zplm/m/n/10.95 = [] \OMS/zplm/m/n/10.95 ^^@ [] ^^@ [] ^^@
  []
 
-[46] (./results/MTR_A.tex
+[44] (./results/MTR_A.tex
 LaTeX Font Info:    Calculating math sizes for size <4> on input line 8.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
 (Font)              scaled to size 4.16803pt on input line 8.
@@ -873,7 +867,7 @@ LaTeX Font Info:    Font shape `U/msb/m/n' will be
 (Font)              scaled to size 3.16768pt on input line 8.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
 (Font)              scaled to size 2.50084pt on input line 8.
-) [47] [48] (./Master_thesis_Reio_T.aux (./results/summary.aux))
+) [45] [46] (./Master_thesis_Reio_T.aux (./results/summary.aux))
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -885,12 +879,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 14319 strings out of 493281
- 279838 string characters out of 6148126
- 368211 words of memory out of 5000000
+ 14322 strings out of 493281
+ 279892 string characters out of 6148126
+ 370212 words of memory out of 5000000
  17908 multiletter control sequences out of 15000+600000
  47412 words of font info for 157 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
  55i,18n,54p,1712b,805s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on Master_thesis_Reio_T.dvi (48 pages, 230720 bytes).
+Output written on Master_thesis_Reio_T.dvi (46 pages, 229200 bytes).
