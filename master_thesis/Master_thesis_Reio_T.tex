@@ -414,9 +414,9 @@ On-base percentage shows similar tendency. For this index, the estimated jump ta
 \begin{table}[!]
   \caption{RDD Test for Monetary Incentives}
   \label{RDD_A}
-  \tiny
+  \fontsize{9pt}{6pt}\selectfont
   \centering
-  \begin{tabular}{lccccccc}\hline
+  \begin{tabular}{@{\extracolsep{0pt}}lccccccc}\hline
     index,cutpoint & Other Control & bw type & bandwidth
     & Observations & Estimate & Std. Error & $z$
     \\ \hline \hline
@@ -489,24 +489,17 @@ On-base percentage shows similar tendency. For this index, the estimated jump ta
   \end{tabular}
 \end{table}
 
-\begin{landscape}
-  \begin{table}
-    \input{results/Sal_AVG300_A.tex}
-  \end{table}
-\end{landscape}
 
-\begin{landscape}
-  \begin{table}
-    \input{results/Sal_AVG250_A.tex}
-  \end{table}
-\end{landscape}
 
-\begin{landscape}
-  \begin{table}
-    \input{results/Sal_OBP350_A.tex}
-  \end{table}
-\end{landscape}
 
+
+\input{results/Sal_AVG300_E.tex}
+
+
+\input{results/Sal_AVG250_E.tex}
+
+
+\input{results/Sal_OBP350_E.tex}
 
 \begin{landscape}
   \begin{table}
@@ -532,18 +525,12 @@ On-base percentage shows similar tendency. For this index, the estimated jump ta
   \end{table}
 \end{landscape}
 
-Also for the cumulative indexes, observed results are almost the same: 20 of homerun, 100 of runs-batted-in, and 200 base-hits does not discontinuously raise the players' salary. Homeruns produce at least one score to the team, and are take one of the most ``attractive'' aspects of baseball, so there may exists additional positive effect for the team: it may bring a lot of audience, which profits them by stadium fees. Nevertheless, discontinuous scheme of the salary was not observed. Regressions with the interaction term reported the same results.
-
-Stolen-base, however, shows different results. In RDD for the cutpoint of 30, including no other controls yields significant discontinuity in every bandwidth. Also, the results are consistent in some models of the interaction term. Compared to the other indexes, there were observed evidence that are for the monetary incentives. However, we do not regard them as sufficient support. First, for RDD, controling other player-specific charactarisitcs, their significancy level drastically goes down. Also, in interaction-term analysis, the estimated values are mixture of significant ones and not significant ones, and they fluctuate from .816 to 13.567. And finally, for 40 stolen-bases, the results of RDD estimation showed negative jump, inconsistent with that of 30, even though these results argue the same index. Thus, we conclude these results cannot support the counter hypothesis that denies discontinuity of the salary contracts, but either vice versa. Especially in this point, we require further analysis.
-
-One possible alternative interpretation is that there exits the players that sign the contracts that includes plural-year service. Such a player plays receive fixed salary regardless of their single-year performance. Thus, we conducted a supplimental analysis that restricts the sample to those who have the free-agency, which enables them to negotiate with any MLB or other professional baseball teams. These players cannot play for the MLB without signing a new contract, which always reflects his performance of the previous year. In the analysis above, we consider the possession of the right of free agency by adding the dummy variable that indicates whether he holds the right or not.
-
 \begin{table}[!]
   \caption{RDD Test for Discontinuity, Only Including FA Players}
   \label{RDD_B}
-  \footnotesize
+  \fontsize{9pt}{6pt}\selectfont
   \centering
-  \begin{tabular}{lccccccc}\hline
+  \begin{tabular}{@{\extracolsep{0pt}}lccccccc}\hline
     index,cutpoint & Other Control & bw type & bandwidth
     & Observations & Estimate & Std. Error & $z$
     \\ \hline \hline
@@ -602,6 +589,14 @@ One possible alternative interpretation is that there exits the players that sig
     }
   \end{tabular}
 \end{table}
+
+Also for the cumulative indexes, observed results are almost the same: 20 of homerun, 100 of runs-batted-in, and 200 base-hits does not discontinuously raise the players' salary. Homeruns produce at least one score to the team, and are take one of the most ``attractive'' aspects of baseball, so there may exists additional positive effect for the team: it may bring a lot of audience, which profits them by stadium fees. Nevertheless, discontinuous scheme of the salary was not observed. Regressions with the interaction term reported the same results.
+
+Stolen-base, however, shows different results. In RDD for the cutpoint of 30, including no other controls yields significant discontinuity in every bandwidth. Also, the results are consistent in some models of the interaction term. Compared to the other indexes, there were observed evidence that are for the monetary incentives. However, we do not regard them as sufficient support. First, for RDD, controling other player-specific charactarisitcs, their significancy level drastically goes down. Also, in interaction-term analysis, the estimated values are mixture of significant ones and not significant ones, and they fluctuate from .816 to 13.567. And finally, for 40 stolen-bases, the results of RDD estimation showed negative jump, inconsistent with that of 30, even though these results argue the same index. Thus, we conclude these results cannot support the counter hypothesis that denies discontinuity of the salary contracts, but either vice versa. Especially in this point, we require further analysis.
+
+One possible alternative interpretation is that there exits the players that sign the contracts that includes plural-year service. Such a player plays receive fixed salary regardless of their single-year performance. Thus, we conducted a supplimental analysis that restricts the sample to those who have the free-agency, which enables them to negotiate with any MLB or other professional baseball teams. These players cannot play for the MLB without signing a new contract, which always reflects his performance of the previous year. In the analysis above, we consider the possession of the right of free agency by adding the dummy variable that indicates whether he holds the right or not.
+
+
 
 Table \ref{RDD_B} shows the results of RDD, with the restricted sample to free-agent players. This is consistent with the main results: there does not exist evidence that supports the additional reward at each cutoff points. Analysis about stolen-bases were not conducted because of lack of players around there.
 
@@ -993,6 +988,8 @@ Here we describe the details of the indexes used in the paper.
   In 1994, the Players Association of MLB declared to make Strike, in order to stop the owners' cartel. In these days, because of the increasing salary of the skilled players, they are sufferred from keep their payroll in their budget constraint. So in order to resist this, they are tried to make cartel that refrain from proposing any or sufficient contract to the superskilled players. In fact, this results in such cases that players who has enough skills chose to go to Nippon Professional Baseball (NPB).
 
 \end{itemize}
+
+\input{results/MTR_A.tex}
 
 \begin{thebibliography}{99}
   \bibitem PPope and Simonsohn. 2011.

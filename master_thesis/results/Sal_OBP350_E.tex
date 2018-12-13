@@ -1,0 +1,52 @@
+
+% Table created by stargazer v.5.2.2 by Marek Hlavac, Harvard University. E-mail: hlavac at fas.harvard.edu
+% Date and time: ��, 12 13, 2018 - 17:59:22
+\begin{table}[H] \centering
+  \caption{Regression on Log-Salary, Including Interaction Term: around .350}
+  \label{OBP350_E}
+\tiny
+\begin{tabular}{@{\extracolsep{5pt}}lcccccc}
+\\[-1.8ex]\hline
+\hline \\[-1.8ex]
+ & \multicolumn{6}{c}{\textit{Dependent variable:}} \\
+\cline{2-7}
+\\[-1.8ex] & \multicolumn{6}{c}{Loggarithm of Salary Next Year} \\
+\\[-1.8ex] & \multicolumn{4}{c}{\textit{OLS}} & \multicolumn{2}{c}{\textit{felm}} \\
+\\[-1.8ex] & (1) & (2) & (3) & (4) & (5) & (6)\\
+\hline \\[-1.8ex]
+ Constant & 10.793$^{***}$ & $-$7.002$^{***}$ & $-$7.166$^{***}$ & $-$7.243$^{***}$ &  &  \\
+  & (.516) & (.666) & (.688) & (.682) &  &  \\
+  & & & & & & \\
+ OBP & 10.357$^{***}$ & 10.183$^{***}$ & 5.488$^{***}$ & 5.346$^{***}$ & 5.561$^{***}$ & 6.739$^{***}$ \\
+  & (1.574) & (1.228) & (1.253) & (1.242) & (1.236) & (1.212) \\
+  & & & & & & \\
+ OBP\_350 & $-$.132 & .103 & .099 & .130 & .068 & $-$.832 \\
+  & (.888) & (.691) & (.673) & (.667) & (.662) & (.620) \\
+  & & & & & & \\
+ FLD &  & .007$^{***}$ & .008$^{***}$ & .008$^{***}$ & .007$^{***}$ & .007$^{***}$ \\
+  &  & (.002) & (.002) & (.002) & (.002) & (.002) \\
+  & & & & & & \\
+ BsR &  & .002 & $-$.001 & $-$.0003 & .003 & .022$^{***}$ \\
+  &  & (.004) & (.005) & (.005) & (.004) & (.005) \\
+  & & & & & & \\
+ OBP:OBP\_350 & .356 & $-$.237 & $-$.211 & $-$.321 & $-$.214 & 2.166 \\
+  & (2.516) & (1.960) & (1.907) & (1.889) & (1.878) & (1.760) \\
+  & & & & & & \\
+\hline \\[-1.8ex]
+Season dummies &  & X & X & X & X & X \\
+WPA &  & X & X & X & X &  \\
+AGE (quadratic) &  & X & X & X & X &  \\
+FA dummy &  &  &  & X & X & X \\
+Position dummies &  &  & X & X &  &  \\
+Fixed effects &  &  &  &  & Team & Individual \\
+Observations & 6,656 & 6,620 & 6,620 & 6,620 & 6,620 & 6,620 \\
+R$^{2}$ & .036 & .427 & .460 & .470 & .480 & .733 \\
+Adjusted R$^{2}$ & .035 & .424 & .456 & .466 & .474 & .650 \\
+Residual Std. Error & 1.267 (df = 6652) & .980 (df = 6582) & .951 (df = 6571) & .943 (df = 6570) & .936 (df = 6550) & .764 (df = 5042) \\
+F Statistic & 81.971$^{***}$ (df = 3; 6652) & 132.495$^{***}$ (df = 37; 6582) & 116.815$^{***}$ (df = 48; 6571) & 119.006$^{***}$ (df = 49; 6570) &  &  \\
+\hline
+\hline \\[-1.8ex]
+\textit{Note:}  & \multicolumn{6}{r}{$^{*}$p$<$0.05; $^{**}$p$<$0.01; $^{***}$p$<$0.001} \\
+& \multicolumn{6}{r}{Notations are same as Table 5.} \\
+\end{tabular}
+\end{table}

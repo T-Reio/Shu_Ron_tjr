@@ -1,14 +1,14 @@
 # Fdb version 3
-["dvipdf"] 1544181938 "Report_1214.dvi" "Report_1214.pdf" "Report_1214" 1544182246
-  "Report_1214.dvi" 1544181938 156492 1b5b9dd239a51c8b0af13904f13b8f42 "latex"
+["dvipdf"] 1544680499 "Report_1214.dvi" "Report_1214.pdf" "Report_1214" 1544680501
+  "Report_1214.dvi" 1544680498 156492 674e02a314bdaf5bbc80c77c8ace26d4 "latex"
   (generated)
   "Report_1214.pdf"
-["latex"] 1544181929 "Report_1214.tex" "Report_1214.dvi" "Report_1214" 1544182246
-  "Report_1214.aux" 1544181938 9076 1ec46dc6270a47b183eead8742c63f99 ""
-  "Report_1214.nav" 1544181938 4389 248abd7d2303deeb32c91f9c5a64b2b2 ""
-  "Report_1214.out" 1544181938 469 87b28483f1553b60a3a5084ee4731216 ""
-  "Report_1214.tex" 1544181927 27171 7b278c5684377e04e2a114419382ed04 ""
-  "Report_1214.toc" 1544181938 271 61b13015675dd7854f0f935c3067a809 ""
+["latex"] 1544680487 "Report_1214.tex" "Report_1214.dvi" "Report_1214" 1544680501
+  "Report_1214.aux" 1544680498 9076 1ec46dc6270a47b183eead8742c63f99 ""
+  "Report_1214.nav" 1544680498 4389 248abd7d2303deeb32c91f9c5a64b2b2 ""
+  "Report_1214.out" 1544680498 469 87b28483f1553b60a3a5084ee4731216 ""
+  "Report_1214.tex" 1544680483 27171 f154eaf540c665a18dfd6eed788d0d73 ""
+  "Report_1214.toc" 1544680498 271 61b13015675dd7854f0f935c3067a809 ""
   "c:/texlive/2018/texmf-dist/fonts/map/fontname/texfonts.map" 1541079023 3332 103109f5612ad95229751940c61aada0 ""
   "c:/texlive/2018/texmf-dist/fonts/tfm/ptex-fonts/jis/jis.tfm" 1541081721 468 53f854284f6afa6c36aaa2d1090ecc12 ""
   "c:/texlive/2018/texmf-dist/fonts/tfm/ptex-fonts/standard/tmin10.tfm" 1541081721 856 39c171483fe1bb7d0e1368980c0c205b ""
@@ -209,12 +209,12 @@
   "graphs/McCrary_figD.png" 1543806315 11145 174fe4bdcd6a5afa5519c0399ef3c018 ""
   "graphs/PS_fig1.png" 1544092443 71542 a827b8039e2200637fed7cf8ce40fdb7 ""
   "graphs/hist_AVG_all.png" 1542098569 4953 e28954ec7938c3971f1f97fac4f07a10 ""
-  "results/MTR_A.tex" 1544093682 2807 ddedfa573093bf99b6acf8574eba9255 ""
+  "results/MTR_A.tex" 1544603298 2807 ddedfa573093bf99b6acf8574eba9255 ""
   (generated)
   "Report_1214.aux"
-  "Report_1214.toc"
-  "Report_1214.out"
-  "Report_1214.snm"
   "Report_1214.log"
-  "Report_1214.dvi"
+  "Report_1214.toc"
   "Report_1214.nav"
+  "Report_1214.snm"
+  "Report_1214.out"
+  "Report_1214.dvi"

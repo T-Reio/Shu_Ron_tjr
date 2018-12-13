@@ -41,7 +41,7 @@ H <- stats$H
 
 
 
-DCdensity(AVG, 0.2995, bin = 0.001, ext.out = T)
+DCdensity(AVG, 0.250, bin = 0.001, ext.out = T)
 DCdensity(AVG, 0.2995, ext.out = T)
 title('', xlab = 'Batting-Average', ylab = 'Density')
 rect(0.297, 4.3, 0.303, 14, col = 'red')
