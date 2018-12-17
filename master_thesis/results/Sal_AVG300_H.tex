@@ -1,0 +1,52 @@
+
+% Table created by stargazer v.5.2.2 by Marek Hlavac, Harvard University. E-mail: hlavac at fas.harvard.edu
+% Date and time: ��, 12 17, 2018 - 12:23:08
+\begin{table}[H] \centering
+  \caption{For 2004 Afterward, Regression on Log-Salary, Including Interaction Term: around .300}
+  \label{AVG300_D}
+\tiny
+\begin{tabular}{@{\extracolsep{5pt}}lcccccc}
+\\[-1.8ex]\hline
+\hline \\[-1.8ex]
+ & \multicolumn{6}{c}{\textit{Dependent variable:}} \\
+\cline{2-7}
+\\[-1.8ex] & \multicolumn{6}{c}{Loggarithm of Salary Next Year} \\
+\\[-1.8ex] & \multicolumn{4}{c}{\textit{OLS}} & \multicolumn{2}{c}{\textit{felm}} \\
+\\[-1.8ex] & (1) & (2) & (3) & (4) & (5) & (6)\\
+\hline \\[-1.8ex]
+ Constant & 14.252$^{***}$ & $-$4.948$^{***}$ & $-$4.085$^{**}$ & $-$4.018$^{**}$ &  &  \\
+  & (1.163) & (1.392) & (1.406) & (1.400) &  &  \\
+  & & & & & & \\
+ AVG & 2.257 & 7.693$^{*}$ & 1.683 & 1.946 & 1.607 & .332 \\
+  & (4.111) & (3.399) & (3.326) & (3.312) & (3.304) & (3.374) \\
+  & & & & & & \\
+ AVG\_300 & $-$.732 & $-$1.023 & $-$.045 & .275 & .370 & $-$1.570 \\
+  & (2.357) & (1.945) & (1.875) & (1.869) & (1.856) & (1.757) \\
+  & & & & & & \\
+ FLD &  & .006 & .008$^{*}$ & .008$^{*}$ & .008$^{*}$ & .002 \\
+  &  & (.003) & (.003) & (.003) & (.003) & (.004) \\
+  & & & & & & \\
+ BsR &  & $-$.0001 & $-$.007 & $-$.006 & $-$.006 & .013 \\
+  &  & (.006) & (.007) & (.007) & (.006) & (.009) \\
+  & & & & & & \\
+ AVG:AVG\_300 & 3.198 & 3.577 & .308 & $-$.759 & $-$1.016 & 5.210 \\
+  & (7.782) & (6.421) & (6.191) & (6.169) & (6.128) & (5.813) \\
+  & & & & & & \\
+\hline \\[-1.8ex]
+Season dummies &  & X & X & X & X & X \\
+WPA &  & X & X & X & X &  \\
+AGE (quadratic) &  & X & X & X & X &  \\
+FA dummy &  &  &  & X & X & X \\
+Position dummies &  &  & X & X &  &  \\
+Fixed effects &  &  &  &  & Team & Individual \\
+Observations & 1,880 & 1,872 & 1,872 & 1,872 & 1,872 & 1,872 \\
+R$^{2}$ & .013 & .342 & .398 & .403 & .423 & .776 \\
+Adjusted R$^{2}$ & .011 & .335 & .388 & .393 & .407 & .640 \\
+Residual Std. Error & 1.273 (df = 1876) & 1.044 (df = 1851) & 1.002 (df = 1840) & .998 (df = 1839) & .986 (df = 1819) & .769 (df = 1165) \\
+F Statistic & 8.204$^{***}$ (df = 3; 1876) & 48.083$^{***}$ (df = 20; 1851) & 39.211$^{***}$ (df = 31; 1840) & 38.853$^{***}$ (df = 32; 1839) &  &  \\
+\hline
+\hline \\[-1.8ex]
+\textit{Note:}  & \multicolumn{6}{r}{$^{*}$p$<$0.05; $^{**}$p$<$0.01; $^{***}$p$<$0.001} \\
+& \multicolumn{6}{r}{Notations are same as Table 18.} \\
+\end{tabular}
+\end{table}

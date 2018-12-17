@@ -1,0 +1,52 @@
+
+% Table created by stargazer v.5.2.2 by Marek Hlavac, Harvard University. E-mail: hlavac at fas.harvard.edu
+% Date and time: ��, 12 17, 2018 - 12:30:58
+\begin{table}[H] \centering
+  \caption{From '95 to 2003, Regression on Log-Salary, Including Interaction Term: around .300}
+  \label{AVG300_C}
+\tiny
+\begin{tabular}{@{\extracolsep{5pt}}lcccccc}
+\\[-1.8ex]\hline
+\hline \\[-1.8ex]
+ & \multicolumn{6}{c}{\textit{Dependent variable:}} \\
+\cline{2-7}
+\\[-1.8ex] & \multicolumn{6}{c}{Loggarithm of Salary Next Year} \\
+\\[-1.8ex] & \multicolumn{4}{c}{\textit{OLS}} & \multicolumn{2}{c}{\textit{felm}} \\
+\\[-1.8ex] & (1) & (2) & (3) & (4) & (5) & (6)\\
+\hline \\[-1.8ex]
+ Constant & 10.414$^{***}$ & $-$8.332$^{***}$ & $-$5.824$^{***}$ & $-$5.818$^{***}$ &  &  \\
+  & (.717) & (1.250) & (1.243) & (1.228) &  &  \\
+  & & & & & & \\
+ AVG & 13.708$^{***}$ & 13.943$^{***}$ & 4.119 & 3.604 & 2.907 & .837 \\
+  & (2.594) & (2.280) & (2.264) & (2.238) & (2.209) & (2.182) \\
+  & & & & & & \\
+ AVG\_300 & $-$1.285 & $-$.554 & $-$1.186 & $-$1.241 & $-$.878 & $-$.816 \\
+  & (1.696) & (1.482) & (1.405) & (1.387) & (1.366) & (1.226) \\
+  & & & & & & \\
+ FLD &  & .005 & .006$^{*}$ & .006$^{*}$ & .005$^{*}$ & .007$^{*}$ \\
+  &  & (.003) & (.003) & (.003) & (.003) & (.003) \\
+  & & & & & & \\
+ BsR &  & .040$^{***}$ & .033$^{**}$ & .033$^{**}$ & .034$^{**}$ & .029$^{*}$ \\
+  &  & (.011) & (.011) & (.011) & (.011) & (.012) \\
+  & & & & & & \\
+ AVG:AVG\_300 & 4.259 & 1.861 & 3.955 & 4.216 & 3.025 & 2.874 \\
+  & (5.555) & (4.852) & (4.601) & (4.544) & (4.475) & (4.023) \\
+  & & & & & & \\
+\hline \\[-1.8ex]
+Season dummies &  & X & X & X & X & X \\
+WPA &  & X & X & X & X &  \\
+AGE (quadratic) &  & X & X & X & X &  \\
+FA dummy &  &  &  & X & X & X \\
+Position dummies &  &  & X & X &  &  \\
+Fixed effects &  &  &  &  & Team & Individual \\
+Observations & 1,878 & 1,867 & 1,867 & 1,867 & 1,867 & 1,867 \\
+R$^{2}$ & .062 & .299 & .376 & .392 & .422 & .766 \\
+Adjusted R$^{2}$ & .060 & .294 & .368 & .384 & .407 & .657 \\
+Residual Std. Error & 1.166 (df = 1874) & 1.014 (df = 1851) & .958 (df = 1843) & .947 (df = 1842) & .929 (df = 1819) & .707 (df = 1271) \\
+F Statistic & 41.081$^{***}$ (df = 3; 1874) & 52.680$^{***}$ (df = 15; 1851) & 48.317$^{***}$ (df = 23; 1843) & 49.452$^{***}$ (df = 24; 1842) &  &  \\
+\hline
+\hline \\[-1.8ex]
+\textit{Note:}  & \multicolumn{6}{r}{$^{*}$p$<$0.05; $^{**}$p$<$0.01; $^{***}$p$<$0.001} \\
+& \multicolumn{6}{r}{Notations are same as Table 18.} \\
+\end{tabular}
+\end{table}
