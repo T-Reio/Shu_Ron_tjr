@@ -65,7 +65,7 @@ This paper proceed as follows. In the Section 2, we review some literature and v
   \]
   where $x$ denotes a certain outcome, and $r$ is one of the reference points (Figure \ref{gain-loss}). This agent evaluates the outcome by the difference from the reference point. In adiition, they assume ``loss-aversion'' of the individual, or $\lambda > 1$. Those who have this type of utility function, than they regard same absolute amount of outcome in different way, depending on s/he faces gain or loss situation. ``Diminishing sensitivity,'' which is concave in facing gain and convex in facing loss is an advanced form of this specification (Figure \ref{dim-sen}).
 
-  Diecidue and Van de Ven (2008)`s ``aspiration level'' model added discontinuity assumption: that is, a utility function that ``jumps'' at the reference point (Figure \ref{jump}). When ther exists jump in their utility function, then individuals try to manipulate outcome level, paying addtional cost which was not accepted in the standard continuous utility function. And as a result, there is observed excess mass or bunching around or just above the reference point. As mentioned below, we exploit this assumption to our model in this paper.
+  Diecidue and Van de Ven (2008)`s ``aspiration level'' model added discontinuity assumption: that is, a utility function that ``jumps'' at the reference point (Figure \ref{jump}). When ther exists jump in their utility function, then individuals try to manipulate outcome level, paying addtional cost which was not accepted in the standard continuous utility function. And as a result, there is observed excess mass or bunching around or just above the reference point. We discuss the required functional assumptions of them in Section 4.1.
 
   Individuals with such reference-point dependent utility try to adjust their effort level so as to achieve their internal target, or reference point. There is a number of empirical literature that specifies the existence of reference dependence in the field or lab studies. Farber (2008) applied this model to the labor supply of New York cab drivers to show that as soon as they reached daily target sales, they considers to quit, even when they reached it early in each day. Jones (2018) made analysis on the system of American tax payment. He showed that individuals try to manipulate their real payment by substituting it by donation or other charitable action, and that especially when facing losses, they make more effort. This observation is also caused loss-aversion, with the reference point of zero-payment threshold.
 
@@ -176,32 +176,90 @@ In this model, players no longer pay attention to their future monetary rewards,
 
 Here we assume that before our analysis, we cannot determine which model is proper to interpret the observed behavior of the players: excess mass or bunching around the possible referene points. If the players' own reference dependent preferences about the performance indexes cause them,  then $U(.)$ has functional features that represent reference dependence. On the other hand, if their contracts designed to lead them to the bunching around some possible reference point, now we can regard that $F(.)$ has the features described. Our interest is that which of the two assumptions are in fact observed.
 
-Then, we consider the functional features that causes excess mass. In this paper, we avail the two models quated in Section 2: one is ``kink'' at the reference point, and the other is ``notch'' of the function.
+Then, we consider the functional features of $F(.)$ or $U(.)$, which cause bunching of the histgrams of the indexes. In this paper, we avail the two models quated in Section 2: one is ``kink'' at the reference point, and the other is ``notch'' of the function.
 
 \begin{enumerate}
-  \item ``kink'' at $r$
+  \item \textbf{``notch'' at $r$} (Figure \ref{notch})
 
-  \item ``notch'' at $r$
+  The first possible assumption is discontinuity at a certain cutoff point of the function, described as follows:
+
+  \begin{align*}
+    \lim_{\epsilon \to 0} U_r (r + \epsilon) & \neq
+    \lim_{\epsilon \to 0} U_r (r - \epsilon) \\
+    \lim_{\epsilon \to 0} F_r (r + \epsilon) & \neq
+    \lim_{\epsilon \to 0} F_r (r - \epsilon)
+  \end{align*}
+  This is the discontinuous form of the function at the cutoff point $r$, introduced by Diecidue and Van de Ven (2008).
+
+  \item \textbf{``kink'' at $r$} (Figure \ref{kink})
+
+  \begin{align*}
+    \lim_{\epsilon \to 0} U'_r (r + \epsilon) & \neq
+    \lim_{\epsilon \to 0} U'_r (r - \epsilon) \\
+    \lim_{\epsilon \to 0} F'_r (r + \epsilon) & \neq
+    \lim_{\epsilon \to 0} F'_r (r - \epsilon)
+  \end{align*}
+
+  $U'(.)$ and $F'(.)$ stand for the first-order differential of $U(.)$ and $F(.)$, respectively ($U(.)$ and $F(.)$ are assumued to be continuous differential). As we explained in the Section 2, this is the primitive form of reference dependence, introduced in Kahneman and Tversky (1979) and Tversky and Kahneman (1992).
 \end{enumerate}
 
-Concretely, whether the players' benefit function has discontinuity in a certain performance index. Following Allen \textit{et al} (2016), we first use the assumption of the utility function of Diecidue and Van De Ven (2008)`s ``aspiration level" model. The model presents the form of the utility function with ``notch,''
+\begin{tabular}{cc}
+  \begin{minipage}[H]{0.5\textwidth}
+    \begin{figure}[H]
+      \begin{tikzpicture}[domain = 0:4, samples = 200, >= stealth]
+        \draw[->](-0.5, 0) -- (4.2, 0) node[right]{$X$};
+        \draw[->](0, -0.5) -- (0, 3.7) node[above]{$F(X), U(X)$};
+        \draw[-](2.2, -0.1) -- (2.2, 0.1);
+        \draw[domain=0:2.2,samples=200,>=stealth] plot (\x, {sqrt(\x)});
+        \draw[domain=2.2:4.1,samples=200,>=stealth] plot (\x, {sqrt(\x) + 0.8});
+        \draw (0, 0) node[below left]{O};
+        \draw (2.2, -0.3) node {$r$};
+      \end{tikzpicture}
+      \scriptsize
+      \caption{"notch" at the reference point}
+      \label{notch}
+    \end{figure}
+    \end{minipage} &
+    \begin{minipage}[H]{0.5\textwidth}
+      \begin{figure}[H]
+        \begin{tikzpicture}
+          [domain = -2:2, samples = 200, >= stealth]
+          \draw[->] (-2,0) -- (2,0) node[right]{$X$};
+          \draw[->] (0,-2) -- (0,2) node[above]{$F(X), U(X)$};
+          \draw plot[domain = 0:1.7] (\x, \x);
+          \draw plot[domain = -0.9:0] (\x, {2 * \x});
+          \draw (0,0) node [below right] {$r$};
+        \end{tikzpicture}
+        \scriptsize
+        \caption{"kink" at the reference point}
+        \label{kink}
+      \end{figure}
+    \end{minipage}
+\end{tabular}
+
+\vspace{2zw}
+
+Allen \textit{et al.} (2016) also supposed these types of model, and specified bunching of the marathon runners' finish time around the round numbers. Both two possible assumptions result in bunching at the cutoff point: in our paper, we consider these cutoffs are the round numbers of the performance indexes, such as .300 of batting-average. Therefore, here we do not pay attention to which is more adequate to specify $U$,: that is, our interest is whether $F(.)$ has these types of functional features in the number of performance indexes. In words, the players salary scheme might be designed so that players make effort to meet their cutoff points. In the rest of this subsection, we explain the possible design of the contracts.
+
+\vspace{1zw}
+
+Let us consider the first case: monetary reward ``jumps'' at the possible reference point. Then, the salary function is decomposed into two terms as follows.
 
 \[
-\lim_{\epsilon \to 0} U_r (r + \epsilon) \neq
-\lim_{\epsilon \to 0} U_r (r - \epsilon)
+F_{it+1}(.) = f(X_{it}, Z_{it}) + D_{it} \textit{Bonus}(X_{it})
 \]
-This form of utility function is discontinuous at the reference point $r$.
 
-Also, we consider the possibility that the discontinuous design of the contracts. Similarly to the utility function, notch in the benefit function is expressed as follows:
+$f(.)$ is determined by the the number of the performance index $X$ and other player-specific charactaristics $Z$, note that this term is continuous in $X$. $D$ is the dummy variable that depends on $X$: to indicate whether the player's index is above the cutoff point. If the players achieve the cutoff point like .300 of batting-average, then $F$ discontinuously rise by the appearance of $\textit{Bonus}$ term. And as a result, salary scheme with this form of function cause the excess mass around the cutoff, by the players who desire the additional monetary rewards.
+
+The second case, on the other hand, express the ``kink'' of $F$ as follows:
 
 \[
-\lim_{\epsilon \to 0} F_r (r + \epsilon) \neq
-\lim_{\epsilon \to 0} F_r (r - \epsilon)
+F_{it+1}(.) = (1-I_{it})g(X_{it}, Z_{it}) + I_{it}h(X_{it}, Z_{it})
 \]
 
-Anyway, the important assumption is that players evaluate their performance index using referene-dependent utility function of themselves or the team manager, and manipulate it in order to maximize their utility. This aspiration results in odd distribution of the index at the end of the season: excess mass around the possible referene point.
+$I$ is the same indicator as $D$, which takes 1 if $X$ is larger than the cutoff, 0 otherwise. There are two salary schemes depending on the players performance index, represented by $g$ and $h$. $g$ is applied for the players with the index below the cutoff, and $h$ is for those with above there. Furthermore, $h$ consists of two terms: $h(.,.) = g(c, Z{it}) + k(X_{it}-c)$. $c$ stands for the cutoff. In words, players receive continuous reward in their performance index, but the return to them changes after they achieve the cutoff: in our assumption, decrease. More directly, the marginal rate of return to their performance index discontinuously diminishes: kinks at the reference point.
 
-In Allen \textit{et al} (2016), they assumed that it is the runners  themselves that have the discontinuous utility function occurs as excess mass around the reference points. On the other hand, we suppose there may be another story. That is, discontinuous utility function of the managers emerges as discontinuous evaluation of the players: salary scheme jumps, depending on whether a ceatain performance index is above or below the reference point. Then, it modifies the income function of the players discontinuous, which results in bunching as the best response of them.
+If the observed bunching is because of the contract design, then the salary scheme has at least one of the features above. In the next section, we describe how to specify them.
 
  \subsection{Empirical Method}
 
@@ -831,6 +889,7 @@ In sum, we obtain the additional conclusion of our article: there may have some 
 \input{results/Sal_AVG300_G.tex}
 
 \input{results/Sal_AVG300_H.tex}
+
 
 \section{Conclusion}
 

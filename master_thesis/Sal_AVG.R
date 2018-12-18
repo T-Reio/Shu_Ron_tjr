@@ -291,3 +291,51 @@ stargazer(d1,d2,d3,d4,d5,d6,d7,d8,
                              "Position", "Individual","Position")
           )
 )
+
+
+stats <- fread("C:/Users/easyu/Master_thesis/master_thesis/output/stats_sal_fa_revised_B.csv",
+               header = T, sep = ",")
+stats <- subset(stats, stats$PA >= 200)
+stats <- subset(stats, AVG < 0.346 & AVG >= 0.255)
+stats <- subset(stats, AVG <= 0.295 | AVG > 0.305)
+Sal <- stats$`Log AVG ANNUAL`
+AVG <- stats$AVG
+AGE <- stats$Age
+AGE_sq <- AGE^2
+G <- stats$G
+PA <- stats$PA
+WPA <- stats$`+WPA`/stats$PA
+nWPA <- -stats$`-WPA`/stats$PA
+ID <- stats$playerid
+BAT <- stats$Bat
+FLD <- stats$Fld
+BsR <- stats$BsR
+POS <- stats$POS
+TEAM <- stats$TEAM_nextyr
+Yr <- as.factor(stats$Season)
+AVG_300 <- stats$AVG_300
+FA <- stats$FA
+
+d1 <- lm(Sal ~ AVG * AVG_300)
+d3 <- lm(Sal ~ AVG * AVG_300 + FLD + BsR + AGE + AGE_sq + Yr)
+d4 <- lm(Sal ~ AVG * AVG_300 + FLD + BsR + AGE + AGE_sq + WPA + nWPA + Yr + POS)
+d5 <- lm(Sal ~ AVG * AVG_300 + FLD + BsR + AGE + AGE_sq + WPA + nWPA + FA + Yr + POS)
+d6 <- felm(Sal ~ AVG * AVG_300 + FLD + BsR + AGE + AGE_sq + WPA + nWPA + FA + Yr | TEAM)
+d7 <- felm(Sal ~ AVG * AVG_300 + FLD + BsR + WPA + nWPA + FA + Yr| ID)
+
+stargazer(d1,d3,d4,d5,d6,d7,
+          type="text",
+          title = 'Regression on Log-Salary, Including Interaction Term: around .300',
+          align = F, initial.zero = F,
+          intercept.bottom = FALSE, font.size = "tiny", label = "AVG300_A",
+          table.placement = "H", star.cutoffs = c(0.05, 0.01, 0.001),
+          omit = c("WPA", "nWPA", "FA", "Yr", "POS", "AGE", "AGE_sq"),
+          add.lines = list(c("Season dummies","","X","X","X","X","X"),
+                 c("WPA", "","X","X","X","X"),
+                 c("AGE (quadratic)", "", "X", "X", "X", "X", ""),
+                 c("FA dummy","","", "","X","X","X"),
+                 c("Position dummies", "", "", "X", "X", "",""),
+                 c("Fixed effects","","","","",
+                   "Team", "Individual")
+                 )
+          )

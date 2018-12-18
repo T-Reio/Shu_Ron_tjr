@@ -264,6 +264,8 @@ INPUT c:/texlive/2018/texmf-dist/fonts/tfm/ptex-fonts/standard/tgoth10.tfm
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/ptex-fonts/standard/goth10.tfm
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/palatino/pplb7t.tfm
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/palatino/pplb7t.tfm
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/palatino/pplri7t.tfm
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/palatino/pplri7t.tfm
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/mathpazo/zplmr7m.tfm
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/mathpazo/zplmr7y.tfm
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/mathpazo/zplmr7v.tfm
