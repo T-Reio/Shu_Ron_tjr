@@ -239,7 +239,7 @@ Then, we consider the functional features of $F(.)$ or $U(.)$, which cause bunch
 
 \vspace{2zw}
 
-Allen \textit{et al.} (2016) also supposed these types of model, and specified bunching of the marathon runners' finish time around the round numbers. Both two possible assumptions result in bunching at the cutoff point: in our paper, we consider these cutoffs are the round numbers of the performance indexes, such as .300 of batting-average. Therefore, here we do not pay attention to which is more adequate to specify $U$,: that is, our interest is whether $F(.)$ has these types of functional features in the number of performance indexes. In words, the players salary scheme might be designed so that players make effort to meet their cutoff points. In the rest of this subsection, we explain the possible design of the contracts.
+Allen \textit{et al.} (2016) also supposed these types of model, and specified bunching of the marathon runners' finish time around the round numbers. Both two possible assumptions result in bunching at the cutoff point: in our paper, we consider these cutoffs are the round numbers of the performance indexes, such as .300 of batting-average. Therefore, we regard it as not so important that which of the two to be appropreate to describe the bunching itself: that is, our interest is whether $F(.)$ has these types of functional features in the number of performance indexes. In words, the players salary scheme might be designed so that players make effort to meet their cutoff points. In the rest of this subsection, we explain the possible design of the contracts.
 
 \vspace{1zw}
 
@@ -257,7 +257,7 @@ The second case, on the other hand, express the ``kink'' of $F$ as follows:
 F_{it+1}(.) = (1-I_{it})g(X_{it}, Z_{it}) + I_{it}h(X_{it}, Z_{it})
 \]
 
-$I$ is the same indicator as $D$, which takes 1 if $X$ is larger than the cutoff, 0 otherwise. There are two salary schemes depending on the players performance index, represented by $g$ and $h$. $g$ is applied for the players with the index below the cutoff, and $h$ is for those with above there. Furthermore, $h$ consists of two terms: $h(.,.) = g(c, Z{it}) + k(X_{it}-c)$. $c$ stands for the cutoff. In words, players receive continuous reward in their performance index, but the return to them changes after they achieve the cutoff: in our assumption, decrease. More directly, the marginal rate of return to their performance index discontinuously diminishes: kinks at the reference point.
+$I$ is the same indicator as $D$, which takes 1 if $X$ is larger than the cutoff, 0 otherwise. There are two salary schemes depending on the players performance index, represented by $g$ and $h$. $g$ is applied for the players with the index below the cutoff, and $h$ is for those with above there. Furthermore, $h$ consists of two terms: $h(.,.) = g(c, Z{it}) + k(X_{it}-c)$. $c$ stands for the given cutoff. In words, players receive continuous reward in their performance index, but the return to them changes after they achieve the cutoff: in our assumption, decrease. More directly, the marginal rate of return to their performance index discontinuously diminishes: kinks at the reference point.
 
 If the observed bunching is because of the contract design, then the salary scheme has at least one of the features above. In the next section, we describe how to specify them.
 
@@ -271,15 +271,28 @@ If the observed bunching is because of the contract design, then the salary sche
 
   However, there is an important assumption for this specification to be valid (Lee and Lemieux, 2010): continuity of the running variable around the threshold. In other words, individuals must not be able to manipulate the running variable so as to be above the cutpoint. This is because if there exists manipulation, then there occurs selection bias problem, that those who try to be assigned the treatment can adjust their running variable. Therefore, there are some empirical way to test the manipulation of a variable, which is the very method I apply in our analysis. One of the frequently applied methods for this specification is  McCrary(2008)'s local linear density estimation. We avail this to our specification of bunching.
 
-  This test of the manipulation at the cutoff point $c$, proceeds in two steps. First, define $f(.)$ be the density function of the variable $x$ to be tested (here we use the performance indexes). Then we undersmooth the observed density: determine the binsize $b$ of $x$, and obtain the histgram. And finally, we conduct local linear approximation to both just above and below the cutoff point. Note that the optimal bandwidth is to be selected by the fourth order polynominal approximation. Then, we estimate the frequency at the cutoff point, $\Hat{f}(r)$, by fitting the estimated density function from both below and above the cutoff, $\hat{f}^+$ and $\hat{f}^-$, respectively. Finally, we take the difference between $\ln \hat{f}^+$ and $\ln \hat{f}^-$ to calculate the statistics $\theta$. With $\theta$ and its estimator of standard deviation, $t$-tests can be condtructed to specifying manipulation.
+  This test of the manipulation at the cutoff point $c$, proceeds in two steps. First, define $f(.)$ be the density function of the variable $x$ to be tested (here we use the performance indexes). Then we undersmooth the observed density: determine the binsize $b$ of $x$, and obtain the histgram. And finally, we conduct local linear approximation to both just above and below the cutoff point. Note that the optimal bandwidth is to be selected by the fourth order polynominal approximation. Then, we estimate the frequency at the cutoff point, $\Hat{f}(r)$, by fitting the estimated density function from both below and above the cutoff, $\hat{f}^+$ and $\hat{f}^-$, respectively. Finally, we take the difference between $\ln \hat{f}^+$ and $\ln \hat{f}^-$ to calculate the statistics $\theta$. With $\theta$ and its estimator of standard deviation, $t$-tests can be conducted to specifying manipulation.
 
   \subsubsection{Monetary Incentive}
 
-  Then, We examine the existance of the monetary incentive. We employ the method of sharp regression discontinuity design (RDD): local linear regression around the possible reference point as the cutoff.
+  Then, We examine the existance of the monetary incentive. For this procedure, the specification of the two functional features mentioned in Section 4.1 is to be required: notch and kink at a certain cutoff points.
+
+  First, we specify the salary scheme $F(.,.)$ with notch at the cutoff. Here we exploit the linear function, that is,
+
   \[
-  w_{it} = \beta_0 X_{it} + \beta_1 \text{ABOVE}_{it}
+  F(X_{it}) = w_{it} = \beta_0 + \beta_1 \text{PERF}_{it} + \beta_2 \text{ABOVE}_{it}
   \]
-  For each player $i$ in the season $t$, $w_{it}$ is loggarithm of their annual salary in next season $t+1$. $X_{it}$ are the value of performance index (batting-average, on-base percentage,\ldots). $\text{ABOVE}_{it}$ is an indicator of the achievement of their goals for the index. That is, if he finished his season with a certain index with above the possible reference point, it takes 1, and otherwise 0, so this is the variable of interest. The bandiwidths in each analysis were selected according to the optimization of Imbens and Kalyanaraman (2009), using polynominal approximation.
+  For each player $i$ in the season $t$, $w_{it}$ is loggarithm of their annual salary in next season $t+1$. $\text{Performance}_{it}$ is the value of performance index (batting-average, on-base percentage,\ldots), described as $X_{it}$ in Section 4.1. $\text{ABOVE}_{it}$ is an indicator of the achievement of their goals for the index, which corresponds to $D$ in Section 4.1. If the estimated value of $\beta_2$ is supported to be positive and significant, then we consider there is an additional bonus paid to the player that reached a certain target value of the performance index, which leads them to bunching.
+
+  On the other hand, the second possibility, the kink at the reference point is specified as follows.
+
+  \[
+  F(X_{it}) = w_{it} = \beta_0 + \beta_1 \text{PERF}_{it} + \beta_2 \text{ABOVE}_{it} + \beta_3 \text{PERF}_{it} \times \text{ABOVE}_{it}
+  \]
+
+  The first, second and the third terms are same as specification of notch, the linear salary scheme in the performance index. In addition, we introduce the interaction term of $\text{ABOVE}_{it}$ and $\text{ABOVE}_{it}$. This term stands for the return to the performance index for the players that achieve the cutoff point. In words, players with .320 of batting-average, for example, are evaluated by $\beta_1$ until .300, and then $\beta_1 + \beta_3$ for the rest .020 (it is the case of that bunching at .300 is argued). If the estimated value of $\beta_3$ is negative and significant, then there exists kink in the reward function, which again support the bunching at the cutoff point.
+
+  Then, we discuss about the empirical way of specification. In, our paper, we applicate regression discontinuity design. Concretely, we conduct the linear regression analysis using the models described above, for the samples around the possible reference point as the cutoff. The bandiwidths in each analysis were selected according to the optimization of Imbens and Kalyanaraman (2009), using polynominal approximation.
 
   Estimation was conducted in two ways: one only includes the index term and the dummy for achieving their goals in the model, while the other includes term $Z_{it}$, which consists other elements to affect their annual salary. Concretely, it includes player-specific characters (age, team he signed, position,\ldots), and other performance indexes that controls the aspects that covers the players' residual skill, where the performance index $X_{it}$ does not argues. For further explanation, please see Appendix.
 
