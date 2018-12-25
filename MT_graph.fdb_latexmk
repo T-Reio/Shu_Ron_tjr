@@ -3,7 +3,7 @@
   "MT_graph.dvi" 0 -1 0 "latex"
   (generated)
   "MT_graph.pdf"
-["latex"] 1545017712 "MT_graph.tex" "MT_graph.dvi" "MT_graph" 1545017713
+["latex"] 1545469124 "MT_graph.tex" "MT_graph.dvi" "MT_graph" 1545469125
   "MT_graph.aux" 1544681803 9 a94a2480d3289e625eea47cd1b285758 ""
   "MT_graph.tex" 1545016061 1582 c73bf40a94fd9d2392b3f76f754a8bb8 ""
   "c:/texlive/2018/texmf-dist/fonts/map/fontname/texfonts.map" 1541079023 3332 103109f5612ad95229751940c61aada0 ""
@@ -13,5 +13,5 @@
   "c:/texlive/2018/texmf.cnf" 1541083614 673 2e5aa3ac564c6f70f54d6752d765c05d ""
   "results/Sal_AVG250_B.tex" 0 -1 0 ""
   (generated)
-  "MT_graph.dvi"
   "MT_graph.log"
+  "MT_graph.dvi"
