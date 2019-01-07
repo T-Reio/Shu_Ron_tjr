@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.0-180226-2.6 (utf8.sjis) (TeX Live 2018/W32TeX) (preloaded format=platex 2018.11.1)  31 DEC 2018 18:02
+This is e-pTeX, Version 3.14159265-p3.8.0-180226-2.6 (utf8.sjis) (TeX Live 2018/W32TeX) (preloaded format=platex 2018.11.1)  7 JAN 2019 13:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -497,7 +497,16 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@dimlist=\toks36
 ) (./Master_thesis_Reio_T.aux (./results/summary.aux)
 
-LaTeX Warning: Label `P' multiply defined.
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
 
 
 LaTeX Warning: Label `' multiply defined.
@@ -846,12 +855,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 14281 strings out of 493281
- 279171 string characters out of 6148126
- 371654 words of memory out of 5000000
- 17890 multiletter control sequences out of 15000+600000
+ 14278 strings out of 493281
+ 279162 string characters out of 6148126
+ 370645 words of memory out of 5000000
+ 17887 multiletter control sequences out of 15000+600000
  43938 words of font info for 144 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
  55i,18n,54p,1538b,805s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on Master_thesis_Reio_T.dvi (40 pages, 235680 bytes).
+Output written on Master_thesis_Reio_T.dvi (40 pages, 235744 bytes).
