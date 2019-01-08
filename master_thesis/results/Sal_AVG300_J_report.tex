@@ -1,0 +1,55 @@
+
+% Table created by stargazer v.5.2.2 by Marek Hlavac, Harvard University. E-mail: hlavac at fas.harvard.edu
+% Date and time: ��, 12 24, 2018 - 22:35:23
+\begin{table}[H] \centering
+  \caption{Regression on Log-Salary: around .300, Including Only FA Players}
+  \label{AVG300_F}
+\fontsize{5pt}{4pt}\selectfont
+\begin{tabular}{@{\extracolsep{-15pt}}lcccccc}
+\\[-1.8ex]\hline
+\hline \\[-1.8ex]
+ & \multicolumn{6}{c}{\textit{Dependent variable:}} \\
+\cline{2-7}
+\\[-1.8ex] & \multicolumn{6}{c}{Loggarithm of Salary Next Year} \\
+\\[-1.8ex] & \multicolumn{4}{c}{\textit{OLS}} & \multicolumn{2}{c}{\textit{felm}} \\
+\\[-1.8ex] & (1) & (2) & (3) & (4) & (5) & (6)\\
+\hline \\[-1.8ex]
+ Constant & 7.033$^{**}$ & 7.339$^{*}$ & 7.114$^{*}$ & 7.524$^{*}$ &  &  \\
+  & (2.374) & (3.225) & (3.243) & (3.062) &  &  \\
+  & & & & & & \\
+ AVG & 26.614$^{**}$ & 26.230$^{***}$ & 22.624$^{**}$ & 14.443$^{*}$ & 16.909$^{*}$ & 13.286 \\
+  & (8.308) & (7.245) & (7.355) & (6.851) & (6.961) & (10.076) \\
+  & & & & & & \\
+ AVG\_300 & 6.740 & 2.770 & 1.883 & .969 & 1.636 & 2.727 \\
+  & (4.231) & (3.707) & (3.749) & (3.453) & (3.468) & (4.444) \\
+  & & & & & & \\
+ FLD &  & .005 & .006 & .007 & .004 & .001 \\
+  &  & (.006) & (.006) & (.005) & (.005) & (.007) \\
+  & & & & & & \\
+ BsR &  & .027 & .025 & .019 & .016 & $-$.013 \\
+  &  & (.014) & (.015) & (.014) & (.014) & (.025) \\
+  & & & & & & \\
+ AVG:AVG\_300 & $-$23.155 & $-$10.065 & $-$6.893 & $-$4.015 & $-$6.451 & $-$9.953 \\
+  & (14.071) & (12.333) & (12.474) & (11.489) & (11.540) & (14.911) \\
+  & & & & & & \\
+\hline \\[-1.8ex]
+Season dummies &  & X & X & X & X & X \\
+WPA &  &  &  & X & X & X \\
+AGE (quadratic) &  & X & X & X & X &  \\
+Position dummies &  &  & X & X &  &  \\
+Fixed effects &  &  &  &  & Team & Individual \\
+Observations & 503 & 493 & 493 & 493 & 493 & 493 \\
+R$^{2}$ & .028 & .388 & .406 & .502 & .529 & .937 \\
+Adjusted R$^{2}$ & .022 & .339 & .345 & .448 & .453 & .735 \\
+Residual Std. Error & 1.052 (df = 499) & .870 (df = 455) & .866 (df = 446) & .795 (df = 444) & .791 (df = 424) & .551 (df = 117) \\
+F Statistic & 4.824$^{**}$ (df = 3; 499) & 7.808$^{***}$ (df = 37; 455) & 6.630$^{***}$ (df = 46; 446) & 9.328$^{***}$ (df = 48; 444) &  &  \\
+\hline
+\hline \\[-1.8ex]
+\textit{Note:}  & \multicolumn{6}{r}{$^{*}$p$<$0.05; $^{**}$p$<$0.01; $^{***}$p$<$0.001} \\
+& \multicolumn{6}{r}{The bandwidth is same as RDD for .300 of AVG.} \\
+& \multicolumn{6}{r}{FLD and BsR stands for the contribution of the player to the team, expressed by the runs they earned.} \\
+& \multicolumn{6}{r}{WPA is ``win-percentage added.''} \\
+& \multicolumn{6}{r}{FA dummy indicates the possession of the free agency.}\\
+& \multicolumn{6}{r}{":" stands for the interaction term of the two elements.} \\
+\end{tabular}
+\end{table}

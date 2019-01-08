@@ -1,0 +1,56 @@
+
+% Table created by stargazer v.5.2.2 by Marek Hlavac, Harvard University. E-mail: hlavac at fas.harvard.edu
+% Date and time: ��, 12 24, 2018 - 22:35:20
+\begin{table}[H] \centering
+  \caption{Without Players around the Cutoff}
+  \label{AVG300_E}
+\fontsize{5pt}{4pt}\selectfont
+\begin{tabular}{@{\extracolsep{-15pt}}lcccccc}
+\\[-1.8ex]\hline
+\hline \\[-1.8ex]
+ & \multicolumn{6}{c}{\textit{Dependent variable:}} \\
+\cline{2-7}
+\\[-1.8ex] & \multicolumn{6}{c}{Loggarithm of Salary Next Year} \\
+\\[-1.8ex] & \multicolumn{4}{c}{\textit{OLS}} & \multicolumn{2}{c}{\textit{felm}} \\
+\\[-1.8ex] & (1) & (2) & (3) & (4) & (5) & (6)\\
+\hline \\[-1.8ex]
+ Constant & 11.457$^{***}$ & $-$6.672$^{***}$ & $-$5.567$^{***}$ & $-$5.734$^{***}$ &  &  \\
+  & (.465) & (.709) & (.716) & (.711) &  &  \\
+  & & & & & & \\
+ AVG & 10.428$^{***}$ & 11.419$^{***}$ & 4.782$^{***}$ & 4.643$^{***}$ & 4.346$^{***}$ & 4.393$^{***}$ \\
+  & (1.697) & (1.328) & (1.325) & (1.315) & (1.306) & (1.333) \\
+  & & & & & & \\
+ AVG\_300 & $-$1.277 & $-$.032 & .274 & .320 & .136 & .190 \\
+  & (1.440) & (1.122) & (1.076) & (1.068) & (1.062) & (.968) \\
+  & & & & & & \\
+ FLD &  & .007$^{***}$ & .008$^{***}$ & .008$^{***}$ & .008$^{***}$ & .009$^{***}$ \\
+  &  & (.002) & (.002) & (.002) & (.002) & (.002) \\
+  & & & & & & \\
+ BsR &  & .006 & $-$.0003 & $-$.0003 & .0004 & .018$^{**}$ \\
+  &  & (.005) & (.005) & (.005) & (.005) & (.006) \\
+  & & & & & & \\
+ AVG:AVG\_300 & 4.263 & .309 & $-$.757 & $-$.897 & $-$.333 & $-$.657 \\
+  & (4.600) & (3.582) & (3.438) & (3.412) & (3.393) & (3.103) \\
+  & & & & & & \\
+\hline \\[-1.8ex]
+Season dummies &  & X & X & X & X & X \\
+WPA &  &  & X & X & X & X \\
+AGE (quadratic) &  & X & X & X & X &  \\
+FA dummy &  &  &  & X & X & X \\
+Position dummies &  &  & X & X &  &  \\
+Fixed effects &  &  &  &  & Team & Individual \\
+Observations & 5,259 & 5,232 & 5,232 & 5,232 & 5,232 & 5,232 \\
+R$^{2}$ & .034 & .425 & .473 & .481 & .492 & .752 \\
+Adjusted R$^{2}$ & .034 & .421 & .468 & .476 & .485 & .657 \\
+Residual Std. Error & 1.286 (df = 5255) & .996 (df = 5194) & .955 (df = 5183) & .947 (df = 5182) & .939 (df = 5162) & .767 (df = 3787) \\
+F Statistic & 62.260$^{***}$ (df = 3; 5255) & 103.758$^{***}$ (df = 37; 5194) & 96.869$^{***}$ (df = 48; 5183) & 97.991$^{***}$ (df = 49; 5182) &  &  \\
+\hline
+\hline \\[-1.8ex]
+\textit{Note:}  & \multicolumn{6}{r}{$^{*}$p$<$0.05; $^{**}$p$<$0.01; $^{***}$p$<$0.001} \\
+& \multicolumn{6}{r}{The bandwidth is same as RDD for .300 of AVG.} \\
+& \multicolumn{6}{r}{FLD and BsR stands for the contribution of the player to the team, expressed by the runs they earned.} \\
+& \multicolumn{6}{r}{WPA is ``win-percentage added.''} \\
+& \multicolumn{6}{r}{FA dummy indicates the possession of the free agency.}\\
+& \multicolumn{6}{r}{":" stands for the interaction term of the two elements.} \\
+\end{tabular}
+\end{table}

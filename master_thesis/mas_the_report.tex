@@ -109,39 +109,79 @@
 \end{frame}
 
 \section{Frameworks and Empirical Methods}
+
+\begin{frame}\frametitle{Assumtion}
+  \begin{itemize}
+    \item Reference dependence is specified by some additional assumption about the utility function
+
+    : ``kink'' or ``notch'' at a certain cutoff point expresses the reference dependence, and as a result, we observe excess mass, or ``bunching'' around the possible reference point.
+
+    \item In our research, we consider the possibility that the monetary reward to the players have the same functional features that lead the excess mass.
+
+    \item When excess mass occurs, then at least one of the two: players utility function of the performance index $X$ or the monetary reward function of $X$ has the functional features above.
+
+  \end{itemize}
+\end{frame}
+
+\begin{frame}\frametitle{Assumptions}
+  \begin{block}{Functional Features that Cause Bunching}
+    \begin{itemize}
+      \footnotesize
+      \item function with notch, or jump at the reference points
+
+      \begin{align*}
+        \lim_{\epsilon \to 0} U_r (r + \epsilon) & \neq
+        \lim_{\epsilon \to 0} U_r (r - \epsilon) \\
+        \lim_{\epsilon \to 0} F_r (r + \epsilon) & \neq
+        \lim_{\epsilon \to 0} F_r (r - \epsilon)
+      \end{align*}
+
+      \item function with kink:
+
+      \begin{align*}
+        \lim_{\epsilon \to 0} U'_r (r + \epsilon) & \neq
+        \lim_{\epsilon \to 0} U'_r (r - \epsilon) \\
+        \lim_{\epsilon \to 0} F'_r (r + \epsilon) & \neq
+        \lim_{\epsilon \to 0} F'_r (r - \epsilon)
+      \end{align*}
+    \end{itemize}
+  \end{block}
+\end{frame}
+
 \begin{frame}\frametitle{Theoretical Frameworks}
   \begin{tabular}{lrr}
     \begin{minipage}[H]{0.4\textwidth}
       \begin{figure}[H]
         \begin{tikzpicture}[domain = 0:4, samples = 200, >= stealth]
-          \draw[->](-0.5, 0) -- (4.2, 0) node[right]{$x$};
-          \draw[->](0, -0.5) -- (0, 3.7) node[above]{$u(x)$};
+          \draw[->](-0.5, 0) -- (4.2, 0) node[right]{$X$};
+          \draw[->](0, -0.5) -- (0, 3.7) node[above]{$F(X),U(x)$};
           \draw[-](2.2, -0.1) -- (2.2, 0.1);
           \draw[domain=0:2.2,samples=200,>=stealth] plot (\x, {sqrt(\x)});
           \draw[domain=2.2:4.1,samples=200,>=stealth] plot (\x, {sqrt(\x) + 0.8});
           \draw (0, 0) node[below left]{O};
           \draw (2.2, -0.3) node {$r$};
-        \end{tikzpicture}
-        \scriptsize
-        \caption{discontinuous utility function}
-        \label{jump}
-      \end{figure}
-      \end{minipage} &
-      \begin{minipage}[H]{0.5\textwidth}
-        \footnotesize
-        \begin{itemize}
-          \item Following Allen et al. (2016) assume utility function $u(x)$ that jumps at the cutoff point, or the reference point.
-
-          $x$ stands for the performance index.
-
-          \item This disconituity generates excess mass, or ``bunching'' around the possible reference point.
-
-          \item We consider the possibility that this type of utility is derived by the discontinuous design of the monetary reward of the players.
-
-        \end{itemize}
-      \end{minipage}
-  \end{tabular}
-
+      \end{tikzpicture}
+      \scriptsize
+      \caption{discontinuous utility function}
+      \label{jump}
+    \end{figure}
+  \end{minipage} &
+  \begin{minipage}[H]{0.5\textwidth}
+    \begin{figure}[H]
+      \begin{tikzpicture}
+        [domain = -2:2, samples = 200, >= stealth]
+        \draw[->] (-2,0) -- (2,0) node[right]{$X$};
+        \draw[->] (0,-2) -- (0,2) node[above]{$F(X), U(X)$};
+        \draw plot[domain = 0:1.7] (\x, \x);
+        \draw plot[domain = -0.9:0] (\x, {2 * \x});
+        \draw (0,0) node [below right] {$r$};
+      \end{tikzpicture}
+      \scriptsize
+      \caption{"kink" at the reference point}
+      \label{kink}
+    \end{figure}
+  \end{minipage}
+ \end{tabular}
 \end{frame}
 
 \begin{frame}\frametitle{Flow of Specification}
@@ -156,7 +196,7 @@
   \end{enumerate}
 \end{frame}
 
-\begin{frame}\frametitle{Specification: Manipulation}
+\begin{frame}\frametitle{Specification: Bunching}
 
   \begin{tabular}{lr}
     \begin{minipage}[H]{0.45\textwidth}
@@ -182,24 +222,23 @@
 \begin{frame}\frametitle{Specification: Contract Design}
   \begin{itemize}
     \small
-    \item Discontinuity of the contract design is tested by RDD methodology:
-
+    \item Discontinuity of the contract design is tested by local-linear regression:
     \begin{align*}
-      w_{it} = & \beta_0 X_{it} + \beta_1 \text{ABOVE}_{it} \\
+      \footnotesize
+      w_{it} = & \beta_0 + \beta_1 \text{PERF}_{it} + \beta_2 \text{ABOVE}_{it} \\
       \text{where} \\
       w_{it}: & \text{ log salary of the next season} \\
-      X_{it}: & \text{ performance index} \\
+      \text{PERF}_{it}: & \text{ performance index} \\
       \text{ABOVE}_{it}: & \text{ indicator for achievement}
     \end{align*}
 
-    We also conduct analysis including other performance and other player specific charactaristics.
-
-    \item To check the robustness of our results, we also conduct the same local regression including the interaction term of $X_{it}$ and $\text{ABOVE}_{it}$.
-
+    \item Also, kink is examined by introducing the interaction term of $\text{PERF}_{it}$ and $\text{ABOVE}_{it}$
     \[
-    w_{it} = \beta_0 X_{it} + \beta_1 \text{ABOVE}_{it} + \beta_2 X_{it} \times \text{ABOVE}_{it}
+    \footnotesize
+    w_{it} = \beta_0 + \beta_1 \text{PERF}_{it} + \beta_2 \text{ABOVE}_{it} + \beta_3 \text{PERF}_{it} \times \text{ABOVE}_{it}
     \]
 
+    We also conduct analysis including other performance and other player specific charactaristics.
   \end{itemize}
 \end{frame}
 
@@ -212,13 +251,13 @@
 
       \item Play stats from 1957 to 2018
 
-      \item We restrict the sample to the players with at least 200 plate-appearances $N=18143$
+      \item We restrict the sample to the players with at least 200 plate-appearances $N=18143$ (62 seasons $\times$ players)
     \end{itemize}
     \item Salary Data
     \begin{itemize}
       \item From \textit{USA TODAY} and \textit{Baseball References}
 
-      \item Contract information from 1987 to 2017 $N=8915$
+      \item Contract information from 1987 to 2017 $N=8915$(31 seasons $\times$ players)
       \begin{itemize}
         \item Fixed part of the salary of each player
 
@@ -229,7 +268,7 @@
 \end{frame}
 
 \section{Results}
-\begin{frame}\frametitle{Results: Manipulation}
+\begin{frame}\frametitle{Results: Bunching}
   \begin{figure}
     \centering
     \caption{Histgram of Batting-Average}        \includegraphics[keepaspectratio, scale = 0.35, angle=0]{graphs/hist_AVG_all.png}
@@ -252,7 +291,7 @@
   \begin{table}
     \tiny
     \centering
-    \caption{Test for Manipulation, leastPA $= 200$}
+    \caption{Test for Bunching, leastPA $= 200$}
     \begin{tabular}{lcccccc}\hline
       index & type & cutpoint & binsize & bandwidth & $\theta$ & $z$
       \\ \hline \hline
@@ -285,22 +324,22 @@
   \end{table}
 \end{frame}
 
-\begin{frame}\frametitle{Results: Manipulation}
+\begin{frame}\frametitle{Results: Bunching}
   \begin{itemize}
-    \item In .300 of batting-average, there in fact exists manipulation by the players.
+    \item In .300 of batting-average, there in fact exists excess mass by the players.
 
     \item Also in .250 of AVG and some of other round numbers of indexes, there were observed discontinuity:
 
-    $\Rightarrow$Players consider these numbers as referene points and adjust their aspiration levels.
+    $\Rightarrow$ Players consider these numbers as reference points and adjust their aspiration levels.
 
-    \item Manipulation is not observed in all the round numbers.
+    \item Bunching is not observed in all the round numbers.
 
   \end{itemize}
 \end{frame}
 
 \begin{frame}\frametitle{}
   \begin{table}[!]
-    \caption{RDD Test for Monetary Incentives}
+    \caption{Local-Linear Regression for Monetary Incentives}
     \label{RDD_A}
     \tiny
     \centering
@@ -351,12 +390,12 @@
 \end{frame}
 
 \begin{frame}\frametitle{}
-  \input{results/MTR_A.tex}
+  \input{results/Sal_AVG300_E_report.tex}
 \end{frame}
 
 \begin{frame}\frametitle{}
   \begin{table}[!]
-    \caption{RDD Test for Monetary Incentives (Cont')}
+    \caption{Local-Linear Regression for Monetary Incentives (Cont')}
     \label{RDD_A}
     \tiny
     \centering
@@ -406,16 +445,30 @@
   \end{table}
 \end{frame}
 
+\begin{frame}
+  \input{results/Sal_AVG300_J_report.tex}
+\end{frame}
+
+\begin{frame}
+  \input{results/Sal_AVG300_I_report.tex}
+\end{frame}
+
 
 \begin{frame}\frametitle{Results: Monetary Incentives}
   \begin{itemize}
-    \item As a whole, there are not observed clear evidence for additional bonuses achieving some these round numbers.
+    \item As a whole, there are not observed clear evidence of notch or kink at the round numbers in the monetary rewards.
 
-    $\Rightarrow$ Players manipulate their performance indexes, even though there are little or no monetary incentives to do so.
+    $\Rightarrow$ Players stick to reaching the benchmarks even though there are little or no monetary incentives to do so.
 
     \item For 30 stolen-bases, our analysis does not show determinant results, so we should further results.
 
-    \item Restricting the sample to the players with the right of free agency yields essentially the same results.
+    \item Robustness
+
+    \begin{itemize}
+      \item Restricting the sample to the players with the right of free agency yields essentially the same results.
+
+      \item Removing the players just below and above the cutoffs (for batting-average, the range is .005) yields the same results.
+    \end{itemize}
 
   \end{itemize}
 \end{frame}
@@ -447,7 +500,7 @@
 \begin{frame}
   \begin{table}
     \centering
-    \caption{Manipulation Test for the Grouped Sample by Time}
+    \caption{Bunching Test for the Grouped Sample by Time}
     \label{Mani-Era}
     \tiny
     \begin{tabular}{lcccccc} \hline
@@ -482,7 +535,7 @@
 \begin{frame}
   \begin{table}
     \centering
-    \caption{RDD for the Grouped Sample by Time}
+    \caption{Local-Linear Regression for the Grouped Sample by Time}
     \label{RDD_Era}
     \tiny
     \begin{tabular}{lcccccc} \hline
@@ -515,13 +568,13 @@
 
 \begin{frame}\frametitle{}
   \begin{itemize}
-    \item About manipulation, players seems to be affected by the historical changes.
+    \item Players' attitude to the indexes seems to be affected by the historical changes.
 
     \item However, .300 of batting-average has been a solid benchmarks for the players.
 
-    \item On the other hand, team managers (since '87) does not propose any discontinuous form of contracts to the players.
+    \item On the other hand, team managers (since '87) does not propose any monetary incentives for the players.
 
-    $\Rightarrow$ Again, we argure there does not exists no monetary incentive that leads them to manipulate indexes.
+    $\Rightarrow$ Again, we argure there does not exists no monetary incentive that leads them to bunching.
 
     \item Restricting the sample to the FA players also show the same.
   \end{itemize}
@@ -531,11 +584,11 @@
 \begin{frame}\frametitle{Conclusion}
   Main Findings
   \begin{enumerate}
-    \item Players manipulate their performance indexes to meet them with some round numbers.
+    \item Bunching is observed in their performance indexes, caused by the players' adjustment of their effort level to meet them with some round numbers.
 
     \item There exist no monetary incentives in their contracts that makes players to do so.
 
-    \item Tendency of the manipulation changes through the history of baseball.
+    \item Tendency of the bunching changes through the history of baseball.
 
     - Among them, especially, .300 of AVG shows consistent results, which shows it is solid benchmarks for the players.
   \end{enumerate}
@@ -592,7 +645,7 @@
 
 \begin{frame}\frametitle{Data References}
   \begin{itemize}
-    \item \textit{fangraphs Baseball}
+    \item \textit{Fangraphs Baseball}
 
     https://www.fangraphs.com/
 
