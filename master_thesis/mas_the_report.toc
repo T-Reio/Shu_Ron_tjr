@@ -1,5 +1,5 @@
 \beamer@sectionintoc {1}{Introduction}{2}{0}{1}
 \beamer@sectionintoc {3}{Literature and Contribution}{4}{0}{2}
-\beamer@sectionintoc {4}{Frameworks and Empirical Methods}{8}{0}{3}
-\beamer@sectionintoc {5}{Results}{15}{0}{4}
-\beamer@sectionintoc {6}{Conclusions}{29}{0}{5}
+\beamer@sectionintoc {4}{Frameworks and Empirical Methods}{9}{0}{3}
+\beamer@sectionintoc {5}{Results}{16}{0}{4}
+\beamer@sectionintoc {6}{Conclusions}{30}{0}{5}
