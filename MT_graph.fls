@@ -1,8 +1,0 @@
-PWD C:/Users/easyu/Master_thesis
-INPUT c:/texlive/2018/texmf.cnf
-INPUT c:/texlive/2018/texmf-var/web2c/eptex/platex.fmt
-INPUT MT_graph.tex
-OUTPUT MT_graph.log
-INPUT c:/texlive/2018/texmf-dist/fonts/map/fontname/texfonts.map
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/ptex-fonts/standard/tmin10.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/ptex-fonts/standard/min10.tfm

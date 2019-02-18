@@ -1,4 +1,5 @@
-\documentclass[dvipdfmx, 12pt]{article}
+\documentclass[dvipdfmx, 11pt]{jsarticle}
+\usepackage{newtxtext,newtxmath}
 \usepackage{mathpazo}
 \usepackage{amsmath,amssymb}
 \usepackage{array}
@@ -9,13 +10,35 @@
 \usepackage{here}
 \usepackage{lscape}
 \usepackage[top=25truemm,bottom=30truemm,left=25truemm,right=25truemm]{geometry}
-\begin{document}
 
-\title{Reference Dependence and Monetary Incentive \\
--Evidence from Major League Baseball-}
-\author{Reio Tanji}
-\date{}
-\maketitle
+\renewcommand{\contentsname}{Contents}
+\renewcommand{\figurename}{Figure }
+\renewcommand{\tablename}{Table }
+\renewcommand{\refname}{References}
+
+\begin{document}
+\begin{titlepage}
+  \title{Reference Dependence and Monetary Incentive \\
+  -Evidence from Major League Baseball-}
+  \author{丹治 伶峰 Reio Tanji \\
+   大阪大学大学院 経済学研究科 博士前期課程1年 \\
+  Osaka University, Graduate Scool of Economics \\
+  \\
+  560-0036 大阪府豊中市蛍池西町1丁目25-8 フローライト蛍池506号室 \\
+  080-1889-8460 ot.shunie.rt@gmail.com}
+  \date{}
+  \maketitle
+  \thispagestyle{empty}
+\end{titlepage}
+
+\begin{center}
+  \Large
+  \textbf{Reference Dependence and Monetary Incentive}
+
+  \textbf{-Evidence from Major League Baseball-}
+\end{center}
+
+\section*{Abstract}
 
 \leftskip = 25pt
 \rightskip = 25pt
@@ -29,6 +52,9 @@ Many empircal studies have revealed the existance of reference-point dependent p
 
 \noindent
 \small
+\textbf{JEL Classification:} D91, J01
+
+\noindent
 \textbf{keywords:} reference dependence, round-number effect, bunching, monetary incentive
 
 \normalsize
@@ -168,23 +194,34 @@ Second, we mention the salary data. Salary data are obtained from \textit{USA TO
 
 \subsection{Frameworks}
 
-Many sports are so rich in performance indexes that record plays in variable viewpoints. Among them, especially, baseball performance indexes can distribute individual-separatable evaluation to the players, as well as units of the whole team. Thus, baseball performance indexes are interpreted as reliable proxies for the skills of the players. Here we assume that the players are trying to maximize them, subject to their internal costs depending on their talented skills. After observing of the indexes the players, team managers evaluate them and propose contracts of the next year (they also include the player-specific characteristcs: age, position and so on). Then, the players' monetary rewards are given by the following function:
+Many sports are so rich in performance indexes that record plays in variable viewpoints. Among them, especially, baseball performance indexes can distribute individual-separable evaluation to the players, as well as units of the whole team. Thus, baseball performance indexes are interpreted as reliable proxies for the skills of the players. Here we assume that the players are trying to maximize them, subject to their internal costs depending on their talented skills. After observing of the indexes the players, team managers evaluate them and propose contracts of the next year (they also include the player-specific characteristcs: age, position and so on). Then, the players' monetary rewards are given by the following benefit function:
 
 \[
-F_{it+1} = F(X_{it}, Z_{it}),
+f_{it+1} = f(X_{it}, Z_{it}),
 \]
-where $F$ stands for the monetary reward function to the player $i$ at time $t+1$, and $X_{it}$ and $Z_{it}$ express the value of the index and other player characteristcs, respectively. The player makes decision on his effort to maximize their utility, according to this benefit function.
+where $F$ stands for the monetary reward function to the player $i$ at time $t+1$, and $X_{it}$ and $Z_{it}$ express the value of the index and other player-specific characteristcs, respectively.
 
-On the other hand, another inpretation is that each player evaluates himself as an athlete: he directly yields utility by his value of the performance indexes. That is, players make decision according to their utility function
+We assume that $X_{it}$ is determined by the effort level of each player. To increase the effort level, they have to pay additional intrinsic costs. Let $e_{it}$ be an effort level of the player $i$ at season $t$, and $c_{it}(.)$ be an continuous, increasing and convex intrinsic cost function. Note that the required cost to achieve the same level of $X$ varies from player to player, according to their skills. Therefore, the maximization problem of the players are described as follows:
 
 \[
-U_{it} = U(X_{it}).
+\max_{e_{it}} U_{it} = f(X(e_{it}), Z_{it}) - c_{it}(e_{it}).
 \]
-In this model, the player no longer pays attention to his future monetary rewards similar to the first model, and he decides his effort level to maximize his utility.
 
-It is noted that we cannot determine which model is appropreate to interpret the observed behavior of the players: excess mass or bunching around the possible referene points. If the players' own reference dependent preferences about the performance indexes cause them,  then $U(.)$ has functional features that represent reference dependence. On the other hand, if their contracts designed to lead them to the bunching around some possible reference point, now we can regard that $F(.)$ has the features described. Our interest is that which of the two assumptions are in fact observed.
+We assume additive separable fucntion of the utility.
 
-Then, we consider the functional features of $F(.)$ or $U(.)$, which cause bunching of the histgrams of the indexes. In this paper, we avail the two models quated in Section 2: one is ``kink'' at the reference point, and the other is ``notch'' of the function.
+An alternative specification is that each player evaluates himself as an athlete: he directly yields benefit by his value of the performance indexes. That is, players make decision according to their benefit function
+
+\[
+b_{it} = b(X_{it}, Z_{it}).
+\]
+In this model, the player no longer pays attention to his future monetary rewards. In this model, we again assume the intrinsic cost determined by the player's skill and effort level. Another specification of the maximization problem is described as follows:
+
+\[
+\max_{e_{it}} U_{it} = b(X(e_{it}), Z_{it}) - c_{it}(e_{it}).
+\]
+These two ways of specification are different only in the first terms of the utility function $U(.)$.
+
+Then, we consider the functional features of $f(.)$ or $u(.)$, which cause bunching of the histgrams of the indexes. In this paper, we auppose $f(.)$ or $b(.)$ satisfy at least one of the two assumptions quated in Section 2: one is ``kink'' at the reference point, and the other is ``notch'' of the function.
 
 \begin{enumerate}
   \item \textbf{``notch'' at $r$} (Figure \ref{notch})
@@ -192,23 +229,23 @@ Then, we consider the functional features of $F(.)$ or $U(.)$, which cause bunch
   The first possible assumption is discontinuity at a certain cutoff point of the function, described as follows:
 
   \begin{align*}
-    \lim_{\epsilon \to 0} U_r (r + \epsilon) & \neq
-    \lim_{\epsilon \to 0} U_r (r - \epsilon) \\
-    \lim_{\epsilon \to 0} F_r (r + \epsilon) & \neq
-    \lim_{\epsilon \to 0} F_r (r - \epsilon)
+    \lim_{\epsilon \to 0} b_r (r + \epsilon) & \neq
+    \lim_{\epsilon \to 0} b_r (r - \epsilon) \\
+    \lim_{\epsilon \to 0} f_r (r + \epsilon) & \neq
+    \lim_{\epsilon \to 0} f_r (r - \epsilon)
   \end{align*}
   This is the discontinuous form of the function at the cutoff point $r$, introduced by Diecidue and Van de Ven (2008).
 
   \item \textbf{``kink'' at $r$} (Figure \ref{kink})
 
   \begin{align*}
-    \lim_{\epsilon \to 0} U'_r (r + \epsilon) & \neq
-    \lim_{\epsilon \to 0} U'_r (r - \epsilon) \\
-    \lim_{\epsilon \to 0} F'_r (r + \epsilon) & \neq
-    \lim_{\epsilon \to 0} F'_r (r - \epsilon)
+    \lim_{\epsilon \to 0} b'_r (r + \epsilon) & \neq
+    \lim_{\epsilon \to 0} b'_r (r - \epsilon) \\
+    \lim_{\epsilon \to 0} f'_r (r + \epsilon) & \neq
+    \lim_{\epsilon \to 0} f'_r (r - \epsilon)
   \end{align*}
 
-  $U'(.)$ and $F'(.)$ stand for the first-order differential of $U(.)$ and $F(.)$, respectively ($U(.)$ and $F(.)$ are assumued to be continuous differential). As we explained in the Section 2, this is the primitive form of reference dependence, introduced in Kahneman and Tversky (1979) and Tversky and Kahneman (1992).
+  $u'(.)$ and $f'(.)$ stand for the first-order differential of $u(.)$ and $f(.)$, respectively ($u(.)$ and $f(.)$ are assumued to be continuous differential). As we explained in the Section 2, this is the primitive form of reference dependence, introduced in Kahneman and Tversky (1979) and Tversky and Kahneman (1992).
 \end{enumerate}
 
 \begin{tabular}{cc}
@@ -216,7 +253,7 @@ Then, we consider the functional features of $F(.)$ or $U(.)$, which cause bunch
     \begin{figure}[H]
       \begin{tikzpicture}[domain = 0:4, samples = 200, >= stealth]
         \draw[->](-0.5, 0) -- (4.2, 0) node[right]{$X$};
-        \draw[->](0, -0.5) -- (0, 3.7) node[above]{$F(X), U(X)$};
+        \draw[->](0, -0.5) -- (0, 3.7) node[above]{$f(X), b(X)$};
         \draw[-](2.2, -0.1) -- (2.2, 0.1);
         \draw[domain=0:2.2,samples=200,>=stealth] plot (\x, {sqrt(\x)});
         \draw[domain=2.2:4.1,samples=200,>=stealth] plot (\x, {sqrt(\x) + 0.8});
@@ -227,47 +264,49 @@ Then, we consider the functional features of $F(.)$ or $U(.)$, which cause bunch
       \caption{"notch" at the reference point}
       \label{notch}
     \end{figure}
-    \end{minipage} &
-    \begin{minipage}[H]{0.5\textwidth}
-      \begin{figure}[H]
-        \begin{tikzpicture}
-          [domain = -2:2, samples = 200, >= stealth]
-          \draw[->] (-2,0) -- (2,0) node[right]{$X$};
-          \draw[->] (0,-2) -- (0,2) node[above]{$F(X), U(X)$};
-          \draw plot[domain = 0:1.7] (\x, \x);
-          \draw plot[domain = -0.9:0] (\x, {2 * \x});
-          \draw (0,0) node [below right] {$r$};
-        \end{tikzpicture}
-        \scriptsize
-        \caption{"kink" at the reference point}
-        \label{kink}
-      \end{figure}
-    \end{minipage}
+  \end{minipage} &
+  \begin{minipage}[H]{0.5\textwidth}
+    \begin{figure}[H]
+      \begin{tikzpicture}
+        [domain = -2:2, samples = 200, >= stealth]
+        \draw[->] (-2,0) -- (2,0) node[right]{$X$};
+        \draw[->] (0,-2) -- (0,2) node[above]{$f(X), b(X)$};
+        \draw plot[domain = 0:1.7] (\x, \x);
+        \draw plot[domain = -0.9:0] (\x, {2 * \x});
+        \draw (0,0) node [below right] {$r$};
+      \end{tikzpicture}
+      \scriptsize
+      \caption{"kink" at the reference point}
+      \label{kink}
+    \end{figure}
+  \end{minipage}
 \end{tabular}
+Allen \textit{et al.} (2016) also utilized these types of model, and specified bunching of the marathon runners' finish time around the round numbers.
 
 \vspace{2zw}
+We cannot determine which model is appropreate to interpret the observed behavior of the players: excess mass or bunching around the possible referene points. Our interest is that which of the two assumptions are in fact observed. If the players' own reference dependent preferences about the performance indexes cause them, then $b(.)$ has functional features that represent reference dependence. On the other hand, if their contracts designed to lead them to the bunching around some possible reference point, now we can regard that $f(.)$ has the features described.
 
-Allen \textit{et al.} (2016) also utilized these types of model, and specified bunching of the marathon runners' finish time around the round numbers. Both two possible assumptions result in bunching at the cutoff point: in our paper, we consider that these cutoffs are the round numbers of the performance indexes, such as .300 of batting-average. Therefore, it is not so important to determine which of the two is appropreate to describe the bunching itself: that is, our interest is whether $F(.)$ has these types of functional features in the number of performance indexes. In words, the players salary scheme might be designed such that players make effort to meet their cutoff points. In the rest of this subsection, we explain the possible design of the contracts.
+Both two possible assumptions result in bunching at the cutoff point: in our paper, we consider that these cutoffs are the round numbers of the performance indexes, such as .300 of batting-average. Therefore, it is not so important to determine which of the two is appropreate to describe the bunching itself: that is, our interest is whether $f(.)$ has these types of functional features in the number of performance indexes. In words, the players salary scheme might be designed such that players make effort to meet their cutoff points. In the rest of this subsection, we explain the possible design of the contracts.
 
 \vspace{1zw}
 
 Let us consider the first case: the monetary reward ``jumps'' at the possible reference point. Then, the salary function is decomposed into two terms as follows.
 
 \[
-F_{it+1}(.) = f(X_{it}, Z_{it}) + D_{it} \textit{Bonus}(X_{it})
+f_{it+1}(.) = a(X_{it}, Z_{it}) + D_{it} \textit{Bonus}(X_{it})
 \]
 
-$f(.)$ is determined by the the number of the performance index $X$ and other player-specific characteristcs $Z$, note that this term is continuous in $X$. $D$ is the dummy variable that depends on $X$: to indicate if the player's index is above the cutoff point, but otherwise zero. If the players achieve the cutoff point like .300 of batting-average, then $F$ discontinuously rise by the appearance of $\textit{Bonus}$ term. And as a result, the salary scheme with this form of function causes the excess mass around the cutoff, by the players who desire the additional monetary rewards.
+$f(.)$ is determined by the the number of the performance index $X$ and other player-specific characteristcs $Z$, note that this term is continuous in $X$. $D$ is the dummy variable that depends on $X$: to indicate if the player's index is above the cutoff point, but otherwise zero. If the players achieve the cutoff point like .300 of batting-average, then $f$ discontinuously rise by the appearance of $\textit{Bonus}$ term. And as a result, the salary scheme with this form of function causes the excess mass around the cutoff, by the players who desire the additional monetary rewards.
 
-The second case, on the other hand, expresses the ``kink'' of $F$ as follows:
+The second case, on the other hand, expresses the ``kink'' of $f$ as follows:
 
 \[
-F_{it+1}(.) = (1-I_{it})g(X_{it}, Z_{it}) + I_{it}h(X_{it}, Z_{it})
+f_{it+1}(.) = (1-I_{it})g(X_{it}, Z_{it}) + I_{it}h(X_{it}, Z_{it})
 \]
 
 $I$ is the same indicator as $D$, which indicates 1 if $X$ is larger than the cutoff, but 0 otherwise. There are two salary schemes depending on the players performance index, represented by $g$ and $h$. $g$ is applied for the players with the index below the cutoff, and $h$ is for those with above there. Furthermore, $h$ consists of two terms: $h(.,.) = g(c, Z{it}) + k(X_{it}-c)$. $c$ stands for the given cutoff. In words, players receive continuous reward in their performance index, but the return to them changes after they achieve the cutoff: in our assumption, decrease. More directly, the marginal rate of return to their performance index discontinuously diminishes: kinks at the reference point.
 
-If the observed bunching is because of the contract design, then the salary scheme has at least one of the features above. In the next section, we describe how to specify them.
+While we cannot observe $b_{it}$ directly, $f_{it}$ can be observed as the contracts that players agreed. If $f_{it}$ has the discussed functional features, then we conclude that the contracs' contribution to bunching. In the next section, we describe how to specify them.
 
  \subsection{Empirical Method}
 
@@ -279,23 +318,23 @@ If the observed bunching is because of the contract design, then the salary sche
 
   However, there is an important assumption for this specification to be valid (Lee and Lemieux, 2010): continuity of the running variable around the threshold. In other words, individuals must not be able to manipulate the running variable to cross over the cutpoint. If there exists manipulation, then a selection bias problem arises, that is, those who try to be assigned the treatment can adjust their running variable. Therefore, there are some empirical ways to test the manipulation of a variable, which is the very method I apply in our analysis. One of the frequently applied methods for this specification is  McCrary(2008)'s local linear density estimation. We avail this to our specification of bunching.
 
-  This test of the manipulation at the cutoff point $c$, proceeds in two steps. First, define $f(.)$ be the density function of the variable $x$ to be tested (here we use the performance indexes). Then we undersmooth the observed density: determine the binsize $b$ of $x$, and obtain the histgram. And finally, we conduct local linear approximation to both just above and below the cutoff point. Note that the optimal bandwidth is to be selected by the fourth order polynominal approximation. Then, we estimate the frequency at the cutoff point, $\Hat{f}(r)$, by fitting the estimated density function from both below and above the cutoff, $\hat{f}^+$ and $\hat{f}^-$, respectively. Finally, we take the difference between $\ln \hat{f}^+$ and $\ln \hat{f}^-$ to calculate the statistics $\theta$. With $\theta$ and its estimator of standard deviation, $t$-tests can be conducted to specifying manipulation.
+  This test of the manipulation at the cutoff point $c$, proceeds in two steps. First, define $d(.)$ be the density function of the variable $x$ to be tested (here we use the performance indexes). Then we undersmooth the observed density: determine the binsize $b$ of $x$, and obtain the histgram. And finally, we conduct local linear approximation to both just above and below the cutoff point. Note that the optimal bandwidth is to be selected by the fourth order polynominal approximation. Then, we estimate the frequency at the cutoff point, $\Hat{d}(r)$, by fitting the estimated density function from both below and above the cutoff, $\hat{d}^+$ and $\hat{d}^-$, respectively. Finally, we take the difference between $\ln \hat{d}^+$ and $\ln \hat{d}^-$ to calculate the statistics $\theta$. With $\theta$ and its estimator of standard deviation, $t$-tests can be conducted to specifying manipulation.
 
   \subsubsection{Monetary Incentive}
 
   Then, we examine the existance of the monetary incentive. For this procedure we use, the specification of the two functional features mentioned in Section 4.1: notch and kink at a certain cutoff points.
 
-  First, we specify the salary scheme $F(.,.)$ with notch at the cutoff. Here we exploit the linear function, that is,
+  First, we specify the salary scheme $f(.,.)$ with notch at the cutoff. Here we exploit the linear function, that is,
 
   \[
-  F(X_{it}) = w_{it} = \beta_0 + \beta_1 \text{PERF}_{it} + \beta_2 \text{ABOVE}_{it}
+  f(X_{it}) = w_{it} = \beta_0 + \beta_1 \text{PERF}_{it} + \beta_2 \text{ABOVE}_{it}
   \]
   For each player $i$ in the season $t$, $w_{it}$ is loggarithm of their annual salary in next season $t+1$. $\text{Performance}_{it}$ is the value of performance index (batting-average, on-base percentage,\ldots), described as $X_{it}$ in Section 4.1. $\text{ABOVE}_{it}$ is an indicator of the achievement of their goals for the index, which corresponds to $D$ in Section 4.1. If the estimated value of $\beta_2$ is supported to be positive and significant, then we consider there is an additional bonus paid to the player that reached a certain target value of the performance index, which leads them to bunching.
 
   As the second possibility, the kink at the reference point is specified as follows.
 
   \[
-  F(X_{it}) = w_{it} = \beta_0 + \beta_1 \text{PERF}_{it} + \beta_2 \text{ABOVE}_{it} + \beta_3 \text{PERF}_{it} \times \text{ABOVE}_{it}
+  f(X_{it}) = w_{it} = \beta_0 + \beta_1 \text{PERF}_{it} + \beta_2 \text{ABOVE}_{it} + \beta_3 \text{PERF}_{it} \times \text{ABOVE}_{it}
   \]
 
   The first-third terms in the right-hand side are the same as the specification of notch, the linear salary scheme in the performance index. In addition, we add the interaction term of $\text{PERF}_{it}$ and $\text{ABOVE}_{it}$. This term stands for the return to the performance index for the players that achieve the cutoff point. In words, players with .320 of batting-average, for example, are evaluated by $\beta_1$ until .300, and then $\beta_1 + \beta_3$ for the rest .020 (it is the case of that bunching at .300 is argued). If the estimated value of $\beta_3$ is negative and significant, then there exists kink in the reward function, which again support the bunching at the cutoff point.
@@ -309,9 +348,7 @@ If the observed bunching is because of the contract design, then the salary sche
     w_{it} &= \beta_0 + \beta_1 \text{PERF}_{it} + \beta_2 \text{ABOVE}_{it} + \beta_3 \text{PERF}_{it} \times \text{ABOVE}_{it} + \mathbf{b} \mathbf{Z}_{it}
   \end{align*}
 
-  We employ OLS in each estimation and team and individual fixed effect models are also included.
-
-  Note that we have to consider the possibility of endogeneity problem about our results. We discuss this in Section 5.
+  We employ OLS in each estimation and team and individual fixed effect models are also included. It should be noted that we have to consider the possibility of endogeneity problem about our results. We discuss this in Section 5.
 
 \section{Result}
 \subsection{Excess Mass Around The Reference Point}
@@ -321,6 +358,7 @@ In this section, we present our main results of analysis. First, we show the res
 \begin{table}
   \small
   \centering
+  \caption{Test for Manipulation, leastPA $= 200$}
   \begin{tabular}{lcccccc}\hline
     index & type & cutpoint & binsize & bandwidth & $\theta$ & $z$
     \\ \hline \hline
@@ -349,7 +387,6 @@ In this section, we present our main results of analysis. First, we show the res
     Bandwidth is optimized following the method of McCrary(2008).
     }
   \end{tabular}
-  \caption{Test for Manipulation, leastPA $= 200$}
   \label{Bunch-True}
 \end{table}
 
@@ -360,19 +397,19 @@ In this section, we present our main results of analysis. First, we show the res
     \begin{minipage}{.5\textwidth}
       \includegraphics[keepaspectratio, scale = 0.5, angle=0]{graphs/hist_AVG_all.png}
       \caption{Histgram of Batting-Average}
-      \label{}
+      \label{BA_hist}
     \end{minipage}
     } \\
     \multicolumn{1}{l}{
     \begin{minipage}{.4\textwidth}
-      \includegraphics[keepaspectratio, scale = 0.5, angle = 0]{graphs/AVG_300.png}
+      \includegraphics[keepaspectratio, scale = 0.45, angle = 0]{graphs/AVG_300.png}
       \caption{Discontinuity at .300 of AVG}
       \label{DCdensity_AVG_300}
     \end{minipage}
     } & &
     \multicolumn{1}{r}{
     \begin{minipage}{.4\textwidth}
-      \includegraphics[keepaspectratio, scale = 0.5, angle = 0]{graphs/AVG_250.png}
+      \includegraphics[keepaspectratio, scale = 0.4, angle = 0]{graphs/AVG_250.png}
       \caption{Discontinuity at .250 of AVG}
       \label{DCdensity_AVG_250}
     \end{minipage}
@@ -384,26 +421,26 @@ In this section, we present our main results of analysis. First, we show the res
   \centering
   \begin{tabular}{lr}
     \begin{minipage}{.5\textwidth}
-      \includegraphics[keepaspectratio, scale = 0.3, angle=0]{graphs/hist_OBP_all.png}
+      \includegraphics[keepaspectratio, scale = 0.25, angle=0]{graphs/hist_OBP_all.png}
       \caption{Histgram of On-Base Percentage}
       \label{hist_OBP}
     \end{minipage} &
 
     \begin{minipage}{.5\textwidth}
-      \includegraphics[keepaspectratio, scale = 0.4, angle = 0]{graphs/OBP_350.png}
+      \includegraphics[keepaspectratio, scale = 0.35, angle = 0]{graphs/OBP_350.png}
       \caption{Discontinuity at .350 of OBP}
       \label{DCdensity_OBP_350}
 
     \end{minipage} \\
 
     \begin{minipage}{.5\textwidth}
-      \includegraphics[keepaspectratio, scale = 0.3, angle=0]{graphs/hist_HR_all.png}
+      \includegraphics[keepaspectratio, scale = 0.33, angle=0]{graphs/hist_HR_all.png}
       \caption{Histgram of Homerun}
       \label{hist_HR}
       \end{minipage} &
 
       \begin{minipage}{.5\textwidth}
-        \includegraphics[keepaspectratio, scale = 0.4, angle = 0]{graphs/HR_20.png}
+        \includegraphics[keepaspectratio, scale = 0.33, angle = 0]{graphs/HR_20.png}
         \caption{Discontinuity at 20 of HR}
         \label{DCdensity_HR}
 
@@ -415,13 +452,13 @@ In this section, we present our main results of analysis. First, we show the res
   \centering
   \begin{tabular}{cc}
     \begin{minipage}{.5\textwidth}
-      \includegraphics[keepaspectratio, scale = 0.3, angle=0]{graphs/hist_RBI_all.png}
+      \includegraphics[keepaspectratio, scale = 0.27, angle=0]{graphs/hist_RBI_all.png}
       \caption{Histgram of Runs-Batted-In}
       \label{hist_RBI}
       \end{minipage} &
 
       \begin{minipage}{.5\textwidth}
-        \includegraphics[keepaspectratio, scale = 0.4, angle = 0]{graphs/RBI_100.png}
+        \includegraphics[keepaspectratio, scale = 0.33, angle = 0]{graphs/RBI_100.png}
         \caption{Discontinuity at 100 of RBI}
         \label{DCdensity_RBI_100}
 
@@ -454,14 +491,14 @@ In this section, we present our main results of analysis. First, we show the res
     } \\
     \multicolumn{1}{l}{
     \begin{minipage}{.4\textwidth}
-      \includegraphics[keepaspectratio, scale = 0.5, angle = 0]{graphs/SB_30.png}
+      \includegraphics[keepaspectratio, scale = 0.45, angle = 0]{graphs/SB_30.png}
       \caption{Discontinuity at .300 of AVG}
       \label{DCdensity_SB_30}
     \end{minipage}
     } & &
     \multicolumn{1}{r}{
     \begin{minipage}{.4\textwidth}
-      \includegraphics[keepaspectratio, scale = 0.5, angle = 0]{graphs/SB_40.png}
+      \includegraphics[keepaspectratio, scale = 0.4, angle = 0]{graphs/SB_40.png}
       \caption{Discontinuity at .250 of AVG}
       \label{DCdensity_SB_40}
     \end{minipage}
@@ -489,7 +526,7 @@ Summarizing the results, there in fact exists excess mass or bunching at the som
 
 In Section 5.1, we confirmed the discontinuities at the cutoff points of the representative indexes. Then in this section, we show whether they aim these goals by their reference dependence, or by their design of the contracts with monetary incentive.
 
-Table \ref{RDD_A} describes the results of local linear regressions on loggarithm of their salary next year, with the cutpoint of each possible reference point. Column ``Other Control'' indicates ``Yes'' if the model includes other player-specific variales (Deffence, BaseRun, player's age, WPA and dummy for possession of the right of free agency) and season dummies, but ``No'' otherwise. ``bw type'' indicates the bandwidths used in the model: ``LATE'' includes the sample that are in the optimal bandwidth calculated by Imbens and Kalyyanaraman (2009), while ``Half-BW'' and ``Double-BW'' are using a half and a twice of the LATE bandwidth, respectively. As a whole, there is no evidence that suports the existance of monetary incenive to make effort for their observed goals. There is no essential difference between the cumulative indexes and rate indexes. That is, the reward function $F(.,.)$ does not discontinuously jump at each cutoff points.
+Table \ref{RDD_A} describes the results of local linear regressions on loggarithm of their salary next year, with the cutpoint of each possible reference point. Column ``Other Control'' indicates ``Yes'' if the model includes other player-specific variales (Deffence, BaseRun, player's age, WPA and dummy for possession of the right of free agency) and season dummies, but ``No'' otherwise. ``bw type'' indicates the bandwidths used in the model: ``LATE'' includes the sample that are in the optimal bandwidth calculated by Imbens and Kalyyanaraman (2009), while ``Half-BW'' and ``Double-BW'' are using a half and a twice of the LATE bandwidth, respectively. As a whole, there is no evidence that suports the existance of monetary incenive to make effort for their observed goals. There is no essential difference between the cumulative indexes and rate indexes. That is, the reward function $f(.,.)$ does not discontinuously jump at each cutoff points.
 
 Also, we made regression analysis with an interaction term of $X_{it}$ and $\text{ABOVE}_{it}$, which considers the change in average return of the index in argument to their annual salary when the value of the index is above the cutoff point. This model corresponds to specifying kinks at the possible reference points. Tables \ref{AVG300_A} to \ref{SB40_A} show the results of this regression for each cutoff point, respectively. Results again rejected existance of monetary incentives for bunching, they therefore give us no evidence of neither kink or jump of their reward functions. Here we consider each indexes respectively.
 
@@ -498,6 +535,12 @@ First, for batting-average, results rejected the existance of any additional mon
 On-base percentage shows similar tendency. The estimated jump is negative, although the estimator is insignificant. Additionally by Table \ref{OBP350_A}, negative kink is not observed. On-base percentage is considered as relatively more important index: it is closer correlation with the winning-average of the team than batting-average. Thus, it can be the case that team managers attach a higher value to on-base percentage than to batting-average and think of paying players with higher number more. However, our results are against this hypothesis.
 
 For the cumulative indexes, observed results are almost the same: 20 of homerun, 100 of runs-batted-in, and 200 base-hits work as the cutoff points of bunching, but not as the marginal poits for the players' salary. Homeruns produce at least one score to the team, and are take one of the most ``attractive'' aspects of baseball, so there may exist an additional positive effect for the team: it may bring a lot of audience, which profits them by stadium fees. Nevertheless, discontinuous scheme of the salary was not observed. Regressions with the interaction term does not report kink at each cuttoff point.
+
+Stolen-base, however, shows different results. Some of the results from Table \ref{RDD_A} showed the significant discontinuity about 30 stolen-bases. According to tables \ref{SB30_A} and \ref{SB40_A}, some of the regressions (column (1) for 30 SB and (1) and (6) for 40 SB) support the jump and negative kink at the cutoff points. That is, not all the results are consistent with the analyses of other indexes. However, we do not regard them as sufficient support. First, in Table \ref{RDD_A}, controling other player-specific charactarisitcs, their significancy level drastically goes down. In Table \ref{SB30_A}, the estimated values are mixture of significant ones and insignificant ones, and they fluctuate from .816 to 13.567. And finally, for 40 stolen-bases, the results of estimation showed negative jump, inconsistent with that of 30, even though these results argue the same index. Thus, we conclude these results cannot support the hypothesis of no jump or kink of the salary contracts $f(.,.)$, but either vice versa. Especially in this point, we require further analysis.
+
+One possible alternative interpretation is that there exit the players that sign the contracts that include plural-year service. Such a player receive fixed salary regardless of their single-year performance. Thus, we restrict the sample to those who have the right of free-agency, which enables them to negotiate with any MLB or other professional baseball teams. These players just have finished their contract in the season, and so cannot play for any MLB teams without signing a new contract, which always reflects his performance of the previous year. In the analysis above, we consider the possession of the right of free agency by adding the dummy variable that indicates whether he holds the right or not.
+
+Table \ref{RDD_B} shows the results of local-linear regression, using the restricted sample of free-agent players. This is consistent with the main results: there does not exist evidence that supports the additional reward at each cutoff points. Analysis about stolen-bases was not conducted because of lack of players around there. Table \ref{AVG300_F} shows the results about .300 of batting-average, also for the free agent players. Obtained implication is the same as the first analysis: there is no kink and notch in the reward function.
 
 \begin{table}[H]
   \caption{Local Linear Regression on Monetary Incentives}
@@ -661,21 +704,13 @@ For the cumulative indexes, observed results are almost the same: 20 of homerun,
 \input{results/Sal_AVG300_J}
 
 
-Stolen-base, however, shows different results. Some of the results from Table \ref{RDD_A} showed the significant discontinuity about 30 stolen-bases. According to tables \ref{SB30_A} and \ref{SB40_A}, some of the regressions (column (1) for 30 SB and (1) and (6) for 40 SB) support the jump and negative kink at the cutoff points. That is, not all the results are consistent with the analyses of other indexes. However, we do not regard them as sufficient support. First, in Table \ref{RDD_A}, controling other player-specific charactarisitcs, their significancy level drastically goes down. In Table \ref{SB30_A}, the estimated values are mixture of significant ones and insignificant ones, and they fluctuate from .816 to 13.567. And finally, for 40 stolen-bases, the results of estimation showed negative jump, inconsistent with that of 30, even though these results argue the same index. Thus, we conclude these results cannot support the hypothesis of no jump or kink of the salary contracts $F(.,.)$, but either vice versa. Especially in this point, we require further analysis.
-
-One possible alternative interpretation is that there exit the players that sign the contracts that include plural-year service. Such a player receive fixed salary regardless of their single-year performance. Thus, we restrict the sample to those who have the right of free-agency, which enables them to negotiate with any MLB or other professional baseball teams. These players just have finished their contract in the season, and so cannot play for any MLB teams without signing a new contract, which always reflects his performance of the previous year. In the analysis above, we consider the possession of the right of free agency by adding the dummy variable that indicates whether he holds the right or not.
-
-Table \ref{RDD_B} shows the results of local-linear regression, using the restricted sample of free-agent players. This is consistent with the main results: there does not exist evidence that supports the additional reward at each cutoff points. Analysis about stolen-bases was not conducted because of lack of players around there. Table \ref{AVG300_F} shows the results about .300 of batting-average, also for the free agent players. Obtained implication is the same as the first analysis: there is no kink and notch in the reward function.
-
-Another important factor to explain about the results is possible  endogeneity problem. This is caused by the methodology we applied in the analysis above. As we mentioned above, we used the method of RDD to specify the monetary incentives. The required condition for this analysis is that the running variable is not manipulated by the individuals. RDD design assumes that individuals just above and just below the cutoff are almost the same except for that one is reaching the cutoff. If the some players know the jump or kink in $F(.,.)$ at the .300 of batting-average, they try to keep their batting-averages above there by avoiding the scheduled plate-appearances. If the team managers identify the players who achieved the goals in such a way, they offer a strictly lower salary to them, which makes the estimated effect downward-biased.
+Another important factor to explain about the results is possible  endogeneity problem. This is caused by the methodology we applied in the analysis above. As we mentioned above, we used the method of RDD to specify the monetary incentives. The required condition for this analysis is that the running variable is not manipulated by the individuals. RDD design assumes that individuals just above and just below the cutoff are almost the same except for that one is reaching the cutoff. If the some players know the jump or kink in $f(.,.)$ at the .300 of batting-average, they try to keep their batting-averages above there by avoiding the scheduled plate-appearances. If the team managers identify the players who achieved the goals in such a way, they offer a strictly lower salary to them, which makes the estimated effect downward-biased.
 
 To deal with this possible endogeneity, we repeat the analysis above without the players in the bandwidth of .005 of batting-average. .005 is the obtained value by a base-hit for the player with 200 at-bats. Table \ref{AVG300_E} shows the results.
 
 We report the same result: the coefficients of the dummy variable and the interaction term with the batting-average are statistically insignificant. That is, there is no jump or kink in their reward functions. Analysis of other cutoff points yield the same results.
 
-In summary, we find that players does not have monetary incentives at their observed internal goals. Observing the reward functions $F(.,.)$ for each performance index does not either jump or kink at the possible reference points that are reported in Section 5.1. That is, they adjust their effort level to make their performance indexes just above the reference points, because of their reference dependent preferences. Although we do not specify which of the two characteristics that leads to bunching is more appropreate, the players' utility function can be described with such a characteristics. In the next section, we consider other alternative explanations by conducting additional analysis, and empirical evidences.
-
-\input{results/Sal_AVG300_I}
+In summary, we find that players does not have monetary incentives at their observed internal goals. Observing the reward functions $f(.,.)$ for each performance index does not either jump or kink at the possible reference points that are reported in Section 5.1. That is, they adjust their effort level to make their performance indexes just above the reference points, because of their reference dependent preferences. Although we do not specify which of the two characteristics that leads to bunching is more appropreate, the players' utility function can be described with such a characteristics. In the next section, we consider other alternative explanations by conducting additional analysis, and empirical evidences.
 
 \section{Alternative Interpretation and Some Evidence}
 
@@ -684,6 +719,8 @@ In section 5, our analysis presented that there in fact exists bunching in some 
 \subsection{Incentivised Contract}
 
 One most possible interpretation of our results is the incentivised design of the contract. So far, we tested monetary incentives for the player, analyzing only the fixed parts of the contract. However, players often sign contracts with additional bonus according to their performances. Even though the results in Section 5.2 did not support the existance of incentives in the fixed salary, it may occurs as this additional rewards. Here we present that this hypothesis will be rejected by showing the specific contracts of the some players.
+
+\input{results/Sal_AVG300_I}
 
 Table \ref{Incentive_Contracts} shows the specific contents of the MLB position players' contracts, quated by \textit{Cot's Baseball Contracts} from \textit{Baseball Prospectus}, an open website that discloses information about that. In addition to signing bonus, fixed payment (we made analysis for this part), and other optional bonus or service, players receive some monetary incentives according to their performance. They are roughly grouped into two: award bonus and bonus for reaching certain number of their indexes. While the former includes winning Gold Glove or All-Star Game selection (a match between the two big leagues of MLB, each of which is composed by players selected by the manager and the fan's vote), the latter consists of only round numbers with plate-appearances or games they attended, neither batting-average, on-base percentage nor homeruns. In addition, there are at most 2 or three position players who sign such contracts. Pitchers are more likely to agree to ones with performance bonuses, whose trigger indexes are also related to attendances: number of games appeared, or innings pitched. Therefore, we can conclude that in the additional bonus parts of their contracts, there are no incentives that encourages them to manipulate their batting-average, on-base percentage or other batting-indexes.
 
@@ -831,9 +868,9 @@ Excess mass of homerun was significant only in the latest subsample. After the p
 
 \subsubsection{Monetary Incentive}
 
-Table \ref{RDD_Era} shows the results of the local-linear regression conducted in Section 5.2 for the restricted samples. Each column shows the statistics for the subsamples, and far right edge column displays the result using full sample, the same one as Table \ref{RDD_A}. Each results include the other controls (that is, results correspond to ``Yes'' in ``other control'' of Table \ref{RDD_A}). Results of the analysis including the intereaction terms are shown in Table \ref{AVG300_B} to \ref{AVG300_D} (for .300 of batting-average. Analysis for other cutoffs show basically the same results). According to these results, they are consistent with the  analysis in Section 5.2 for all the indexes: Any notch or kink in the players monetary rewards was not observed. Additionally, we describe the same analysis for the players with free agency in Table \ref{RDD_Era_FA} that again shows the same results. All the statistics that stand for the notch are insignificant to their fixed part of the salaries. Therefore, we repeat the same conclusion as Section 5: there are no monetary incentives that verify the reason that players bunch their indexes. It implies that the players have preferences that lead to excess mass, or that $U(X)$ of the players have kink or notch at the each cutoff point, which works as a reference point for the player.
+Table \ref{RDD_Era} shows the results of the local-linear regression conducted in Section 5.2 for the restricted samples. Each column shows the statistics for the subsamples, and far right edge column displays the result using full sample, the same one as Table \ref{RDD_A}. Each results include the other controls (that is, results correspond to ``Yes'' in ``other control'' of Table \ref{RDD_A}). Results of the analysis including the intereaction terms are shown in Table \ref{AVG300_B} to \ref{AVG300_D} (for .300 of batting-average. Analysis for other cutoffs show basically the same results). According to these results, they are consistent with the  analysis in Section 5.2 for all the indexes: Any notch or kink in the players monetary rewards was not observed. Additionally, we describe the same analysis for the players with free agency in Table \ref{RDD_Era_FA} that again shows the same results. All the statistics that stand for the notch are insignificant to their fixed part of the salaries. Therefore, we repeat the same conclusion as Section 5: there are no monetary incentives that verify the reason that players bunch their indexes. It implies that the players have preferences that lead to excess mass, or that $b(X)$ of the players have kink or notch at the each cutoff point, which works as a reference point for the player.
 
-In sum, we obtain the additional conclusion of this section: there may have some factors that cause change in the players' attitude to their index about bunching. On the other hand, it is consistent over time that team managers do not make the reward function $F(.,.)$ that lead players to bunching. That is, it is actually caused by the players' reference point dependent preferences, supporting Pope and Simonsohn (2011)'s interpretation.
+In sum, we obtain the additional conclusion of this section: there may have some factors that cause change in the players' attitude to their index about bunching. On the other hand, it is consistent over time that team managers do not make the reward function $f(.,.)$ that lead players to bunching. That is, it is actually caused by the players' reference point dependent preferences, supporting Pope and Simonsohn (2011)'s interpretation.
 
 \begin{table}[H]
   \centering
@@ -928,7 +965,7 @@ The author would like to thank Professor Masaru Sasaki from Osaka University, ou
 
 \section*{Appendix}
 
-\subsection*{Reference to the indexes}
+\subsection*{A. Reference to the indexes}
 \small
 
 Here we describe the details of the indexes used in the paper.
@@ -978,7 +1015,7 @@ Here we describe the details of the indexes used in the paper.
   \end{itemize}
 \end{itemize}
 
-\subsection*{Important Events Related to Section 6.4}
+\subsection*{B. Important Events Related to Section 6.4}
 
 \begin{itemize}
   \item Free Agency

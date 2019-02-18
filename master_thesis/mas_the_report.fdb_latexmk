@@ -1,9 +1,9 @@
 # Fdb version 3
-["dvipdf"] 1546999034 "mas_the_report.dvi" "mas_the_report.pdf" "mas_the_report" 1546999036
-  "mas_the_report.dvi" 1546999033 198556 2385356a92e804db335f6f3762802757 "latex"
+["dvipdf"] 1550022155 "mas_the_report.dvi" "mas_the_report.pdf" "mas_the_report" 1550022157
+  "mas_the_report.dvi" 1550022154 198556 e3d17d97f44bfa50889aab4693b1e43b "latex"
   (generated)
   "mas_the_report.pdf"
-["latex"] 1546999024 "mas_the_report.tex" "mas_the_report.dvi" "mas_the_report" 1546999036
+["latex"] 1550022143 "mas_the_report.tex" "mas_the_report.dvi" "mas_the_report" 1550022157
   "c:/texlive/2018/texmf-dist/fonts/map/fontname/texfonts.map" 1541079023 3332 103109f5612ad95229751940c61aada0 ""
   "c:/texlive/2018/texmf-dist/fonts/tfm/ptex-fonts/jis/jis.tfm" 1541081721 468 53f854284f6afa6c36aaa2d1090ecc12 ""
   "c:/texlive/2018/texmf-dist/fonts/tfm/ptex-fonts/standard/tmin10.tfm" 1541081721 856 39c171483fe1bb7d0e1368980c0c205b ""
@@ -204,19 +204,19 @@
   "graphs/McCrary_figD.png" 1543806315 11145 174fe4bdcd6a5afa5519c0399ef3c018 ""
   "graphs/PS_fig1.png" 1544092443 71542 a827b8039e2200637fed7cf8ce40fdb7 ""
   "graphs/hist_AVG_all.png" 1542098569 4953 e28954ec7938c3971f1f97fac4f07a10 ""
-  "mas_the_report.aux" 1546999033 10161 3322d84ad400a665d822dbcc9d2e829b ""
-  "mas_the_report.nav" 1546999033 4851 1eddcde7703b99d7cce6c5aa98c7f964 ""
-  "mas_the_report.out" 1546999033 469 87b28483f1553b60a3a5084ee4731216 ""
-  "mas_the_report.tex" 1546999011 29579 f5ae951aca9a505006d92cecc1baf542 ""
-  "mas_the_report.toc" 1546999033 271 fbd8cf32974bb7a03de8f3bdd4570bf0 ""
+  "mas_the_report.aux" 1550022154 10161 3322d84ad400a665d822dbcc9d2e829b ""
+  "mas_the_report.nav" 1550022154 4851 1eddcde7703b99d7cce6c5aa98c7f964 ""
+  "mas_the_report.out" 1550022154 469 87b28483f1553b60a3a5084ee4731216 ""
+  "mas_the_report.tex" 1550022141 29579 f5ae951aca9a505006d92cecc1baf542 ""
+  "mas_the_report.toc" 1550022154 271 fbd8cf32974bb7a03de8f3bdd4570bf0 ""
   "results/Sal_AVG300_E_report.tex" 1546836964 2940 ad75b85e3131ae5cde32c501a4d24eb7 ""
   "results/Sal_AVG300_I_report.tex" 1546843058 2915 fc4527d6197e8f02da0fd82da85e45a6 ""
   "results/Sal_AVG300_J_report.tex" 1546837657 2826 3cce158b0b63b28302dd7239b1236b0d ""
   (generated)
-  "mas_the_report.aux"
-  "mas_the_report.toc"
-  "mas_the_report.nav"
-  "mas_the_report.snm"
-  "mas_the_report.log"
-  "mas_the_report.out"
   "mas_the_report.dvi"
+  "mas_the_report.log"
+  "mas_the_report.snm"
+  "mas_the_report.toc"
+  "mas_the_report.out"
+  "mas_the_report.nav"
+  "mas_the_report.aux"

@@ -55,6 +55,8 @@ d6 <- felm(Sal ~ AVG * AVG_250 + FLD + BsR + AGE + AGE_sq + WPA + nWPA + FA + Yr
 d7 <- felm(Sal ~ AVG * AVG_250 + FLD + BsR + WPA + nWPA + FA + Yr | ID)
 d8 <- felm(Sal ~ AVG * AVG_250 + FLD + BsR + WPA + nWPA + FA + Yr | POS)
 
+summary(d)
+
 stargazer(d1,d2,d3,d4,d5,d6,d7,d8,
           out = 'C:/Users/easyu/Master_thesis/master_thesis/results/Sal_AVG250_A.tex',
           title = 'Regression on Log-Salary, Including Interaction Term: around .250',
