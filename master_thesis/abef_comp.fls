@@ -1,8 +1,8 @@
 PWD C:/Users/easyu/Master_thesis/master_thesis
 INPUT c:/texlive/2018/texmf.cnf
 INPUT c:/texlive/2018/texmf-var/web2c/eptex/platex.fmt
-INPUT abef_report.tex
-OUTPUT abef_report.log
+INPUT abef_comp.tex
+OUTPUT abef_comp.log
 INPUT c:/texlive/2018/texmf-dist/tex/latex/beamer/beamer.cls
 INPUT c:/texlive/2018/texmf-dist/tex/latex/beamer/beamer.cls
 INPUT c:/texlive/2018/texmf-dist/tex/latex/beamer/beamerbasemodes.sty
@@ -306,9 +306,9 @@ INPUT c:/texlive/2018/texmf-dist/tex/latex/graphics/lscape.sty
 INPUT c:/texlive/2018/texmf-dist/tex/latex/newtx/t1ntxtlf.fd
 INPUT c:/texlive/2018/texmf-dist/tex/latex/newtx/t1ntxtlf.fd
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/newtx/ntx-Regular-tlf-t1.tfm
-INPUT abef_report.aux
-INPUT abef_report.aux
-OUTPUT abef_report.aux
+INPUT abef_comp.aux
+INPUT abef_comp.aux
+OUTPUT abef_comp.aux
 INPUT c:/texlive/2018/texmf-dist/tex/latex/newtx/omlntxmi.fd
 INPUT c:/texlive/2018/texmf-dist/tex/latex/newtx/omlntxmi.fd
 INPUT c:/texlive/2018/texmf-dist/tex/latex/newtx/untxexa.fd
@@ -323,13 +323,13 @@ INPUT c:/texlive/2018/texmf-dist/tex/latex/hyperref/nameref.sty
 INPUT c:/texlive/2018/texmf-dist/tex/latex/hyperref/nameref.sty
 INPUT c:/texlive/2018/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 INPUT c:/texlive/2018/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
-INPUT abef_report.out
-INPUT abef_report.out
-INPUT abef_report.out
-INPUT abef_report.out
-INPUT ./abef_report.out
-INPUT ./abef_report.out
-OUTPUT abef_report.out
+INPUT abef_comp.out
+INPUT abef_comp.out
+INPUT abef_comp.out
+INPUT abef_comp.out
+INPUT ./abef_comp.out
+INPUT ./abef_comp.out
+OUTPUT abef_comp.out
 INPUT c:/texlive/2018/texmf-dist/tex/latex/translator/translator-basic-dictionary-English.dict
 INPUT c:/texlive/2018/texmf-dist/tex/latex/translator/translator-basic-dictionary-English.dict
 INPUT c:/texlive/2018/texmf-dist/tex/latex/translator/translator-bibliography-dictionary-English.dict
@@ -342,8 +342,8 @@ INPUT c:/texlive/2018/texmf-dist/tex/latex/translator/translator-numbers-diction
 INPUT c:/texlive/2018/texmf-dist/tex/latex/translator/translator-numbers-dictionary-English.dict
 INPUT c:/texlive/2018/texmf-dist/tex/latex/translator/translator-theorem-dictionary-English.dict
 INPUT c:/texlive/2018/texmf-dist/tex/latex/translator/translator-theorem-dictionary-English.dict
-INPUT abef_report.nav
-INPUT abef_report.nav
+INPUT abef_comp.nav
+INPUT abef_comp.nav
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/ptex-fonts/standard/tmin10.tfm
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/ptex-fonts/jis/jis.tfm
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/newtx/ntx-Regular-tlf-t1.tfm
@@ -366,9 +366,9 @@ INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/newtx/ntx-Regular-tlf-t1.tfm
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/ptex-fonts/standard/tmin10.tfm
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/ptex-fonts/jis/jis.tfm
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/newtx/ntx-Regular-tlf-t1.tfm
-OUTPUT abef_report.dvi
-INPUT abef_report.toc
-INPUT abef_report.toc
+OUTPUT abef_comp.dvi
+INPUT abef_comp.toc
+INPUT abef_comp.toc
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/ptex-fonts/standard/tmin10.tfm
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/ptex-fonts/jis/jis.tfm
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/newtx/ntx-Regular-tlf-t1.tfm
@@ -429,6 +429,8 @@ INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/tex-gyre/ec-qhvri.tfm
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/tex-gyre/ec-qhvri.tfm
 INPUT graphs/PS_fig1.png
 INPUT extractbb -B cropbox -O graphs/PS_fig1.png
+INPUT output/bunching_visualize_3.PNG
+INPUT extractbb -B cropbox -O output/bunching_visualize_3.png
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmss9.tfm
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmss8.tfm
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/mathpazo/zplmr7m.tfm
@@ -467,6 +469,8 @@ INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/tex-gyre/ec-qhvr.tfm
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/tex-gyre/ec-qhvri.tfm
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/tex-gyre/ec-qhvri.tfm
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/tex-gyre/ec-qhvri.tfm
+INPUT graphs/McCrary_figD.png
+INPUT extractbb -B cropbox -O graphs/McCrary_figD.png
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmss10.tfm
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/mathpazo/zplmr7m.tfm
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/mathpazo/zplmr7m.tfm
@@ -492,10 +496,6 @@ INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/tex-gyre/ec-qhvr.tfm
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/tex-gyre/ec-qhvr.tfm
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/tex-gyre/ec-qhvri.tfm
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/tex-gyre/ec-qhvri.tfm
-INPUT output/bunching_visualize_2.PNG
-INPUT extractbb -B cropbox -O output/bunching_visualize_2.png
-INPUT graphs/McCrary_figD.png
-INPUT extractbb -B cropbox -O graphs/McCrary_figD.png
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/newtx/ntx-Italic-tlf-t1.tfm
 INPUT output/Fangraphs_2.PNG
 INPUT extractbb -B cropbox -O output/FanGraphs_2.png
@@ -506,8 +506,6 @@ INPUT c:/texlive/2018/texmf-dist/fonts/tfm/ptex-fonts/jis/jis.tfm
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/newtx/ntx-Regular-tlf-t1.tfm
 INPUT graphs/hist_AVG_all_withO.png
 INPUT extractbb -B cropbox -O graphs/hist_AVG_all_withO.png
-INPUT graphs/AVG_300.png
-INPUT extractbb -B cropbox -O graphs/AVG_300.png
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmss8.tfm
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/mathpazo/zplmr7m.tfm
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/mathpazo/zplmr7y.tfm
@@ -527,12 +525,6 @@ INPUT c:/texlive/2018/texmf-dist/fonts/tfm/ptex-fonts/standard/tmin10.tfm
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/ptex-fonts/jis/jis.tfm
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/newtx/ntx-Regular-tlf-t1.tfm
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/newtx/ntx-Italic-tlf-t1.tfm
-INPUT results/Sal_AVG300_I_report.tex
-INPUT results/Sal_AVG300_I_report.tex
-INPUT results/Sal_AVG300_J_report.tex
-INPUT results/Sal_AVG300_J_report.tex
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/newtx/ntx-Italic-tlf-t1.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/newtx/ntx-Italic-tlf-t1.tfm
 INPUT c:/texlive/2018/texmf-dist/tex/latex/beamer/beamericonarticle.pdf
 INPUT extractbb -B cropbox -O beamericonarticle.pdf
 INPUT c:/texlive/2018/texmf-dist/tex/latex/beamer/beamericonarticle.pdf
@@ -546,9 +538,15 @@ INPUT c:/texlive/2018/texmf-dist/tex/latex/beamer/beamericonarticle.pdf
 INPUT c:/texlive/2018/texmf-dist/tex/latex/beamer/beamericonarticle.pdf
 INPUT c:/texlive/2018/texmf-dist/tex/latex/beamer/beamericonarticle.pdf
 INPUT c:/texlive/2018/texmf-dist/tex/latex/beamer/beamericonarticle.pdf
-OUTPUT abef_report.nav
-OUTPUT abef_report.toc
-OUTPUT abef_report.snm
-INPUT abef_report.aux
-INPUT ./abef_report.out
-INPUT ./abef_report.out
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/newtx/ntx-Italic-tlf-t1.tfm
+INPUT results/Sal_AVG300_J_report.tex
+INPUT results/Sal_AVG300_J_report.tex
+INPUT results/Sal_AVG300_I_report.tex
+INPUT results/Sal_AVG300_I_report.tex
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/newtx/ntx-Italic-tlf-t1.tfm
+OUTPUT abef_comp.nav
+OUTPUT abef_comp.toc
+OUTPUT abef_comp.snm
+INPUT abef_comp.aux
+INPUT ./abef_comp.out
+INPUT ./abef_comp.out

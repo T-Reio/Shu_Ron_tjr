@@ -1,7 +1,7 @@
 \beamer@sectionintoc {2}{Introduction}{3}{0}{1}
 \beamer@sectionintoc {3}{Theoretical Framework}{9}{0}{2}
 \beamer@sectionintoc {4}{Methodology and Data}{14}{0}{3}
-\beamer@sectionintoc {5}{Results}{18}{0}{4}
-\beamer@sectionintoc {6}{Alternative Interpretation and Discussion}{25}{0}{5}
-\beamer@sectionintoc {7}{Extention}{27}{0}{6}
-\beamer@sectionintoc {8}{Conclusion}{30}{0}{7}
+\beamer@sectionintoc {5}{Results}{19}{0}{4}
+\beamer@sectionintoc {6}{Alternative Interpretation and Discussion}{30}{0}{5}
+\beamer@sectionintoc {7}{Extention}{33}{0}{6}
+\beamer@sectionintoc {8}{Conclusion}{36}{0}{7}

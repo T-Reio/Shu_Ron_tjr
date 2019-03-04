@@ -16,7 +16,7 @@
 \usepackage{lscape}
 \setbeamertemplate{navigation symbols}{}
 
-\title{Reference Dependence and Monetary Incentive}
+\title{Reference Dependence and \\ Monetary Incentive}
 \subtitle{-Evidence from Major League Baseball-}
 \author{Reio TANJI\footnote{ot.shunie.rt@gmail.com} }
 \date{Mar. 5th, 2019}
@@ -37,40 +37,18 @@
 
 \begin{frame}\frametitle{Abstract}
   \begin{itemize}
-    \item This paper explored the relationship between observed ("apparent") reference dependent behavior and monetary incentives, using Major League Baseball (MLB) position players.
+    \item This paper explored the relationship between observed reference dependent behavior and monetary incentives.
 
-    \item Specifically, this paper obtained performance stats and contract design of MLB players, and estimated their salary determination procedure.
+    \item Specifically, this paper used performance stats and contract design of Major League Baseball (MLB) players, and identified their salary determination procedure.
 
-    \item MLB players regard some of round-numbers of performance indexes as reference points, which is not caused by their monetary incentives.
+    \item MLB players have round-number reference dependence about their performance indexes, which is not caused by their monetary incentives.
 
   \end{itemize}
-\end{frame}
-
-\begin{frame}\frametitle{Research Question}
-  \begin{itemize}
-    \item How observed reference dependence is related to the monetary incentives?
-
-    \item What factor lead individuals to recognize a reference point and make effort to achieve it?
-  \end{itemize}
-\end{frame}
-
-\begin{frame}\frametitle{Background}
-
-  \begin{itemize}
-    \item Reference dependence is one of the two main characteristcs of the prospect theory
-
-    --Individuals evaluate outcomes by the relative value to their internal benchmarks, or reference point, not by their absolute ones
-
-    \item Values of the previous periods, well-known benchmarks or round-bumbers are likely to be set as the reference points.
-
-    \item There are a lot of subsequent researches that shows the evidence for the reference dependence in field and laboratory settings.
-  \end{itemize}
-
 \end{frame}
 
 \begin{frame}\frametitle{Literature}
   \begin{itemize}
-    \item There are also some researches that use cases from athletes' decision making.
+    \item There are researches that use cases from athletes' decision making.
   \end{itemize}
 
     \begin{block}{Reference Dependence of Athletes}
@@ -106,124 +84,13 @@
   \begin{itemize}
     \item The case of MLB is different from that of marathon in that players are professinal, and receive salary, or monetary rewards.
 
-    \item There may exist an economically reasonable factor that leads them to bunching
+    \item There may exist an economically reasonable factor that leads them to bunching.
 
     --The fact that a player achieves round-number of a performance index (such as .300 of batting-average) itself is to be rewarded
 
     \item The contribution of our research is to explore this: examine if there exists any monetary incentives that make players make effort to the cutoff point.
   \end{itemize}
 \end{frame}
-
-\section{Theoretical Framework}
-
-\begin{frame}\frametitle{Benefit of Better Performance}
-  This paper assume two ways of specification of players benefit of better number of indexes.
-  \begin{enumerate}
-    \item Players yield internal benefits that depend on their performance index $X$, $b(X, Z)$. $Z$ is other observed player-specific characteristcs, such as age, position, and so on.
-
-    \item Players receive monetary reward determined by $f(X, Z)$, and they regard this as their benefit for better perfrmance.
-  \end{enumerate}
-
-  The second case corresponds to the assumption that monetary incentive leads them to bunching.
-\end{frame}
-
-\begin{frame}\frametitle{Effort Cost for Better Performance}
-  \begin{itemize}
-    \item On the other hand, getting better performance requires them to make some additional effort:
-
-    $X$ is determined by the players' effort level $e$.
-
-    \item Then, effort cost $c(.)$ is defined with $c'() > 0$ and $c"(.) >0$. Note that $c(.)$ differs from player to player.
-
-    $\Rightarrow$ Player $i$ at season $t$'s objective function of the maximization problem is:
-
-    \begin{enumerate}
-      \item $U_{it} = b(X(e_{it}), Z_{it}) - c_{it}(e_{it})$
-
-      \item $U_{it} = f(X(e)_{it}, Z_{it}) - c_{it}(e)$
-    \end{enumerate}
-
-    This specification way follows that of Allen et al (2016).
-  \end{itemize}
-\end{frame}
-
-\begin{frame}\frametitle{Assumptions for Excess Mass}
-  \begin{itemize}
-    \item There are two possible assumptions about functional form of $b(.,.)$ and $f(.,.)$, which leads to bunching around a reference point $r$.
-
-  \end{itemize}
-
-  \begin{block}{Functional Features of Bunching}
-    \begin{enumerate}
-      \footnotesize
-      \item ``Notch'' at $r$.
-      \begin{align*}
-        \lim_{\epsilon \to 0} b_r (r + \epsilon) & \neq
-        \lim_{\epsilon \to 0} b_r (r - \epsilon) \\
-        \lim_{\epsilon \to 0} f_r (r + \epsilon) & \neq
-        \lim_{\epsilon \to 0} f_r (r - \epsilon)
-      \end{align*}
-
-      \item ``Kink'' at $r$.
-      \begin{align*}
-        \lim_{\epsilon \to 0} b'_r (r + \epsilon) & \neq
-        \lim_{\epsilon \to 0} b'_r (r - \epsilon) \\
-        \lim_{\epsilon \to 0} f'_r (r + \epsilon) & \neq
-        \lim_{\epsilon \to 0} f'_r (r - \epsilon)
-      \end{align*}
-    \end{enumerate}
-  \end{block}
-\end{frame}
-
-\begin{frame}
-  \begin{tabular}{lrr}
-    \begin{minipage}[H]{0.4\textwidth}
-      \begin{figure}[H]
-        \begin{tikzpicture}[domain = 0:4, samples = 200, >= stealth]
-          \draw[->](-0.5, 0) -- (4.2, 0) node[right]{$X$};
-          \draw[->](0, -0.5) -- (0, 3.7) node[above]{$f(X),b(x)$};
-          \draw[-](2.2, -0.1) -- (2.2, 0.1);
-          \draw[domain=0:2.2,samples=200,>=stealth] plot (\x, {sqrt(\x)});
-          \draw[domain=2.2:4.1,samples=200,>=stealth] plot (\x, {sqrt(\x) + 0.8});
-          \draw (0, 0) node[below left]{O};
-          \draw (2.2, -0.3) node {$r$};
-      \end{tikzpicture}
-      \scriptsize
-      \caption{"Notch" at the reference point}
-      \label{jump}
-    \end{figure}
-  \end{minipage} &
-  \begin{minipage}[H]{0.5\textwidth}
-    \begin{figure}[H]
-      \begin{tikzpicture}
-        [domain = -2:2, samples = 200, >= stealth]
-        \draw[->] (-2,0) -- (2,0) node[right]{$X$};
-        \draw[->] (0,-2) -- (0,2) node[above]{$f(X), b(X)$};
-        \draw plot[domain = 0:1.7] (\x, \x);
-        \draw plot[domain = -0.9:0] (\x, {2 * \x});
-        \draw (0,0) node [below right] {$r$};
-      \end{tikzpicture}
-      \scriptsize
-      \caption{"Kink" at the reference point}
-      \label{kink}
-    \end{figure}
-  \end{minipage}
- \end{tabular}
-\end{frame}
-
-\begin{frame}
-  \begin{itemize}
-    \item Suppose there exists bunching around a possible reference point such as .300 of batting-average, $b$ or $f$ should have at least one of the functional forms mentioned above.
-
-    \item This paper test if $f$ has such features or not:
-
-    If the players' salary jump or kink at the reference point, then it works as the cause that lead them to bunching.
-  \end{itemize}
-\begin{center}
-  \includegraphics[keepaspectratio, scale=0.55]{output/bunching_visualize_2.png}
-\end{center}
-\end{frame}
-
 
 \section{Methodology and Data}
 \begin{frame}\frametitle{Flow of Identification}
@@ -236,6 +103,9 @@
 
     \item Then, we test if there exists additional monetary bonus where bunching was observed.
   \end{enumerate}
+  \begin{center}
+    \includegraphics[keepaspectratio, scale=0.5]{output/bunching_visualize_3.png}
+  \end{center}
 \end{frame}
 
 \begin{frame}\frametitle{Identification of Bunching}
@@ -262,21 +132,15 @@
 \begin{frame}\frametitle{Identification of Reward Function}
   \begin{itemize}
     \small
-    \item Notch of the contract design is tested by local-linear regression:
+    \item Contract design is estimated by following local-linear regression:
     \begin{align*}
       \footnotesize
-      w_{it} = & \beta_0 + \beta_1 \text{PERF}_{it} + \beta_2 \text{ABOVE}_{it} \\
+      w_{it} = \beta_0 + \beta_1 \text{PERF}_{it} + &\beta_2 \text{ABOVE}_{it} + \beta_3 \text{PERF}_{it} \times \text{ABOVE}_{it} \\
       \text{where} \\
       w_{it}: & \text{ log salary of the next season} \\
       \text{PERF}_{it}: & \text{ performance index} \\
       \text{ABOVE}_{it}: & \text{ indicator for achievement}
     \end{align*}
-
-    \item Also, kink is examined by introducing the interaction term of $\text{PERF}_{it}$ and $\text{ABOVE}_{it}$
-    \[
-    \footnotesize
-    w_{it} = \beta_0 + \beta_1 \text{PERF}_{it} + \beta_2 \text{ABOVE}_{it} + \beta_3 \text{PERF}_{it} \times \text{ABOVE}_{it}
-    \]
 
     We also conduct analysis including other performance and other player specific charactaristics.
   \end{itemize}
@@ -321,27 +185,18 @@
 \section{Results}
 
 \begin{frame}\frametitle{Results}
-  \huge
+  \large
   Step 1. Bunching
 \end{frame}
 
 \begin{frame}\frametitle{Bunching: McCrary's Test}
   \begin{figure}
     \centering
-    \caption{Histgram of Batting-Average}
-    \includegraphics[width=10cm, height=7cm, angle=0]{graphs/hist_AVG_all_withO.png}
+    \caption{Histgram of Batting-Average}        \includegraphics[width=10cm, height=7cm, angle=0]{graphs/hist_AVG_all_withO.png}
     \label{AVG_Histgram}
   \end{figure}
 \end{frame}
 
-\begin{frame}
-  \begin{figure}
-    \centering
-    \caption{Discontinuity at .300 of AVG}
-    \includegraphics[keepaspectratio, scale = 0.5, angle = 0]{graphs/AVG_300.png}
-    \label{DCdensity_AVG_300}
-  \end{figure}
-\end{frame}
 
 \begin{frame}
   \begin{table}
@@ -381,64 +236,126 @@
 \end{frame}
 
 \begin{frame}\frametitle{Results}
-  \huge
+  \large
   Step 2. Monetary Incentive
 \end{frame}
 
 \begin{frame}\frametitle{}
-  \begin{table}[!]
-    \caption{Local-Linear Regression for Monetary Incentives}
-    \label{RDD_A}
-    \tiny
-    \centering
-    \begin{tabular}{lccccccc}\hline
-      index,cutpoint & Other Control & bw type & bandwidth
-      & Observations & Estimate & Std. Error & $z$
-      \\ \hline \hline
-      AVG, .300 & No &LATE & .084 & 8514 & .047 & .061 & .773 \\
-      & &Half-BW &  .042 & 5599 & .088 & .075 & 1.174 \\
-      & & Double-BW & .170 & 8915  & .067 & .056 & 1.184 \\ \cline{3-8}
-
-      & Yes &LATE & .045 & 5930 & .034 & .056 & .615 \\
-      & &Half-BW &  .023 & 3005 & .061 & .077 & .788 \\
-      & & Double-BW & .090 & 8605  & .016 & .045 & .354 \\ \hline
-
-      AVG, .250 & No &LATE & .036 & 6110 & .019 & .068 & .286 \\
-      & &Half-BW &  .018 & 3496 & .015 & .092 & .161 \\
-      & & Double-BW & .072 & 8539  & .034 & .054 & .636 \\ \cline{3-8}
-
-      & Yes &LATE & .048 & 7271 & .070 & .052 & 1.340 \\
-      & &Half-BW &  .024 & 4402 & .066 & .069 & .953 \\
-      & & Double-BW & .096 & 8810  & .075 & .044 & 1.713 \\ \hline
-
-      HR, 20 & No & LATE & 3.32 & 1315 & .071 & .175 & .406 \\
-      & & Half-BW & 1.66 & 562 & .073 & .127 & .576 \\
-      & & Double-BW & 6.64 & 2582 & -.004 & .109 & -.034 \\ \cline{3-8}
-
-      & Yes & LATE & 3.30 & 1307 & -.002 & .141 & -.015\\
-      & & Half-BW &1.65 & 560 & .030 & .102 & .299 \\
-      & & Double-BW & 6.61 & 2558 & -.032 & .088 & -.364 \\ \hline
-
-      OBP, .350 & No &LATE & .044 & 6440 & -.038 & .065 & -.592 \\
-      & & Half-BW & .021 & 3542 & -.076 & .089 & -.849 \\
-      & & Double-BW & .087 & 8656 & -.029 & .051 & -.570 \\ \cline{3-8}
-
-      & Yes & LATE & .045 & 6525 & -.013 & .049 & -.272 \\
-      & & Half-BW & .022 & 3673 & -.055 & .069 & -.807 \\
-      & &Double-BW & .089 & 8637 & .004 & .039 & .107 \\ \hline
-
-      Note: & \multicolumn{7}{r}{***: $p<0.1\%$, **: $p<1\%$, *: $p<5\%$.} \\
-      & \multicolumn{7}{r}{Bandwidth is optimized following the method of Imbens and Kalyanaraman (2009).} \\
-      & \multicolumn{7}{r}{``Half'' and ``Double'' stands for using a half and twice of bandiwidths, respectively.} \\
-      \multicolumn{8}{r}{
-      ``Yes'' in ``Other Control'' shows including players' age (quadratic), FLD, BsR, FA dummy, Season and Position dummies.
-      }
-    \end{tabular}
-  \end{table}
+  \input{results/Sal_AVG300_E_report.tex}
 \end{frame}
 
-\begin{frame}\frametitle{}
-  \input{results/Sal_AVG300_E_report.tex}
+
+\section{Conclusion}
+
+\begin{frame}\frametitle{Conclusion}
+  Main Findings
+  \begin{enumerate}
+    \item Bunching is observed in their performance indexes, caused by the players' adjustment of their effort level to meet them with some round numbers.
+
+    \item There exist no monetary incentives in their contracts that makes players to do so.
+
+  \end{enumerate}
+
+  \begin{itemize}
+    \item Robustness checks do not change the results.
+
+    \item Because of data limitations, we could not test the
+
+  \end{itemize}
+
+\end{frame}
+
+\section*{References}
+
+\begin{frame}\frametitle{References}
+  \tiny
+  \begin{thebibliography}{99}
+    \bibitem PPope and Simonsohn. 2011.
+    Round Numbers as Goals: Evidence From Baseball, SAT Takers, and the Lab
+    \textit{Psychological Science} 22(1) 7179
+
+    \bibitem HHakes and Sauer. 2006.
+    An Economic Evaluation of the Moneyball Hypothesis
+    \textit{Journal of Economic Perspectives} Volume 20, Number 3 - Summer 2006 - Pages 173185
+
+    \bibitem AAllen, Dechow, Pope and Wu. 2016.
+    Reference-Dependent Preferences: Evidence from Marathon Runners \textit{Management Science} 63(6):1657-1672.
+
+    \bibitem PPope and Schweizer. 2011.
+    Is Tiger Woods Loss Averse? Persistent Bias in the Face of Experience, Competition, and High Stakes
+    \textit{American Economic Review} 101 (February 2011): 129157
+
+    \bibitem{}Kahneman and Tversky. 1979.
+    Prospect Theory: An Analysis of Decision under Risk.
+    \textit{Econometrica}
+    Journal of the Econometric Society47 (2):263291.
+
+    \bibitem{}McCrary. 2007.
+    Manipulation of the running variable in the regression discontinuity design: A density test
+    \textit{Journal of Econometrics} 142 (2008) 698 - 714
+
+    \bibitem{}Krautmann and Oppenheimer. 2002.
+    Contract Length and the Return to Performance in Major League Baseball
+    \textit{Journal of Sports Economics} February 2002
+
+    \bibitem{}Tversky and Kahneman. 1992.
+    Advances in Prospect Theory: Cumulative Representation of Uncertainty
+    \textit{Journal of Risk and Uncertainty}, 5:297 - 323 (1992)
+
+    \bibitem{}Imbens and Kalyanaraman. 2009.
+    \textit{NBER Working Paper Series.} 14726
+
+    \bibitem{}Alex Rees-Jones. 2018.
+    Quantifying Loss-Averse Tax Manipulation
+    \textit{Review of Economic Studies} (2018) 85, 1251 - 1278
+  \end{thebibliography}
+\end{frame}
+
+\begin{frame}\frametitle{Data}
+  \begin{itemize}
+    \item \textit{Fangraphs Baseball}
+
+    https://www.fangraphs.com/
+
+    \item \textit{Baseball Reference}
+
+    https://www.baseball-reference.com
+
+    \item \textit{USA TODAY}
+
+    https://www.usatoday.com/sports/mlb/
+
+    \item \textit{Baseball Prospectus: Cot's Baseball Contracts}
+
+    https://www.baseballprospectus.com/
+  \end{itemize}
+\end{frame}
+
+\section*{Appendix}
+\begin{frame}\frametitle{Appendix}
+  \large
+  \begin{itemize}
+
+    \item Robustness
+
+    \item Alternative Interpretations
+
+    \item Extention
+  \end{itemize}
+\end{frame}
+
+\section*{Robustness}
+
+\begin{frame}\frametitle{Plural-Year Contract}
+  \begin{itemize}
+    \item If players agree plural-year contracts, then achieving the reference points are not reflected to their rewards immediately.
+
+    \item We restrict the samples to those who have the right of free agency: those who agreed a new contract with their team.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \input{results/Sal_AVG300_J_report.tex}
 \end{frame}
 
 \begin{frame}\frametitle{Downward Biases}
@@ -457,19 +374,8 @@
   \input{results/Sal_AVG300_I_report.tex}
 \end{frame}
 
-\begin{frame}\frametitle{Plural-Year Contract}
-  \begin{itemize}
-    \item If players agree plural-year contracts, then achieving the reference points are not reflected to their rewards immediately.
 
-    \item We restrict the samples to those who have the right of free agency: those who agreed a new contract with their team.
-  \end{itemize}
-\end{frame}
-
-\begin{frame}
-  \input{results/Sal_AVG300_J_report.tex}
-\end{frame}
-
-\section{Alternative Interpretation and Discussion}
+\section*{Alternative Interpretation and Discussion}
 
 \begin{frame}\frametitle{Piece-Rate Rewards}
   \begin{itemize}
@@ -551,7 +457,7 @@
   \end{itemize}
 \end{frame}
 
-\section{Extention}
+\section*{Extention}
 
 \begin{frame}\frametitle{By-Time Analysis}
   \begin{itemize}
@@ -608,7 +514,6 @@
       }
     \end{tabular}
   \end{table}
-
 \end{frame}
 
 \begin{frame}
@@ -643,89 +548,6 @@
       & \multicolumn{6}{r}{Bandwidth is optimized following the method of Imbens-Kalyanaraman.}
     \end{tabular}
   \end{table}
-\end{frame}
-
-\section{Conclusion}
-
-\begin{frame}\frametitle{Conclusion}
-  Main Findings
-  \begin{enumerate}
-    \item Bunching is observed in their performance indexes, caused by the players' adjustment of their effort level to meet them with some round numbers.
-
-    \item There exist no monetary incentives in their contracts that makes players to do so.
-
-    \item Tendency of the bunching changes through the history of baseball.
-
-    - Among them, especially, .300 of AVG shows consistent results, which shows it is solid benchmarks for the players.
-  \end{enumerate}
-
-  Note that some indexes require following research, obatining information that makes limitation of our analysis.
-\end{frame}
-
-\section*{References}
-
-\begin{frame}\frametitle{References}
-  \tiny
-  \begin{thebibliography}{99}
-    \bibitem PPope and Simonsohn. 2011.
-    Round Numbers as Goals: Evidence From Baseball, SAT Takers, and the Lab
-    \textit{Psychological Science} 22(1) 7179
-
-    \bibitem HHakes and Sauer. 2006.
-    An Economic Evaluation of the Moneyball Hypothesis
-    \textit{Journal of Economic Perspectives} Volume 20, Number 3 - Summer 2006 - Pages 173185
-
-    \bibitem AAllen, Dechow, Pope and Wu. 2016.
-    Reference-Dependent Preferences: Evidence from Marathon Runners \textit{Management Science} 63(6):1657-1672.
-
-    \bibitem PPope and Schweizer. 2011.
-    Is Tiger Woods Loss Averse? Persistent Bias in the Face of Experience, Competition, and High Stakes
-    \textit{American Economic Review} 101 (February 2011): 129157
-
-    \bibitem{}Kahneman and Tversky. 1979.
-    Prospect Theory: An Analysis of Decision under Risk.
-    \textit{Econometrica}
-    Journal of the Econometric Society47 (2):263291.
-
-    \bibitem{}McCrary. 2007.
-    Manipulation of the running variable in the regression discontinuity design: A density test
-    \textit{Journal of Econometrics} 142 (2008) 698 - 714
-
-    \bibitem{}Krautmann and Oppenheimer. 2002.
-    Contract Length and the Return to Performance in Major League Baseball
-    \textit{Journal of Sports Economics} February 2002
-
-    \bibitem{}Tversky and Kahneman. 1992.
-    Advances in Prospect Theory: Cumulative Representation of Uncertainty
-    \textit{Journal of Risk and Uncertainty}, 5:297 - 323 (1992)
-
-    \bibitem{}Imbens and Kalyanaraman. 2009.
-    \textit{NBER Working Paper Series.} 14726
-
-    \bibitem{}Alex Rees-Jones. 2018.
-    Quantifying Loss-Averse Tax Manipulation
-    \textit{Review of Economic Studies} (2018) 85, 1251 - 1278
-  \end{thebibliography}
-\end{frame}
-
-\begin{frame}\frametitle{Data}
-  \begin{itemize}
-    \item \textit{Fangraphs Baseball}
-
-    https://www.fangraphs.com/
-
-    \item \textit{Baseball Reference}
-
-    https://www.baseball-reference.com
-
-    \item \textit{USA TODAY}
-
-    https://www.usatoday.com/sports/mlb/
-
-    \item \textit{Baseball Prospectus: Cot's Baseball Contracts}
-
-    https://www.baseballprospectus.com/
-  \end{itemize}
 \end{frame}
 
 \end{document}
